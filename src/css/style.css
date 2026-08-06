@@ -2,7 +2,8 @@
   /* Färg */
   --accent: #3E6B5F;          /* sage, primär */
   --accent-mork: #2C4E45;
-  --varm: #B5654A;            /* terrakotta, komplement */
+  --varm: #B5654A;            /* terrakotta, komplement — dekor och ytor */
+  --varm-text: #9C5238;       /* terrakotta för text, 5.5:1 mot --papper */
   --varm-ljus: #F2E4DE;
   --text: #22201D;
   --text-dampad: #625C54;
@@ -70,24 +71,26 @@ body {
 }
 
 .navbar a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;          /* träffyta för tummen, inte bara för musen */
   font-size: 0.78rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.09em;
   color: var(--text-dampad);
   text-decoration: none;
-  padding-bottom: 3px;
   border-bottom: 2px solid transparent;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
 .navbar a:hover {
-  color: var(--varm);
+  color: var(--varm-text);
 }
 
 .navbar a.aktiv {
-  color: var(--varm);
-  border-bottom-color: var(--varm);
+  color: var(--varm-text);
+  border-bottom-color: var(--varm-text);
 }
 
 /* ---------- Huvudinnehåll ---------- */
@@ -149,8 +152,24 @@ main a {
 }
 
 main a:hover {
-  color: var(--varm);
-  text-decoration-color: var(--varm);
+  color: var(--varm-text);
+  text-decoration-color: var(--varm-text);
+}
+
+/* Synlig tangentbordsfokus i sajtens egna färger, i stället för
+   webbläsarens blå ring som krockar med paletten */
+a:focus-visible {
+  outline: 2px solid var(--accent-mork);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Datumraden på guiderna — läsaren ska kunna se hur färskt rådet är */
+.datum {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--text-dampad);
+  margin: -0.5rem 0 2rem;
 }
 
 strong {
@@ -259,6 +278,7 @@ tbody tr:last-child td {
 }
 
 .produktkort {
+  position: relative;        /* bär den utsträckta länken nedan */
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -271,6 +291,12 @@ tbody tr:last-child td {
 .produktkort:hover {
   border-color: var(--varm);
   transform: translateY(-2px);
+}
+
+/* Fokusringen hör hemma runt hela kortet, eftersom hela kortet är klickbart */
+.produktkort:focus-within {
+  outline: 2px solid var(--accent-mork);
+  outline-offset: 3px;
 }
 
 .produktkort img {
@@ -301,18 +327,44 @@ tbody tr:last-child td {
 }
 
 .produktkort a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.6rem 1rem;
   font-family: var(--sans);
-  font-size: 0.8rem;
+  font-size: 0.92rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-  color: var(--varm);
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: var(--varm-text);
+  border-radius: var(--radie);
+  text-align: center;
   text-decoration: none;
+  transition: background-color 0.15s ease;
 }
 
-.produktkort a:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+/* Sträcker länkens träffyta över hela kortet — bilden och rubriken blir
+   klickbara utan att kortet behöver bli en <a> runt blockinnehåll */
+.produktkort a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radie);
+}
+
+.produktkort a:hover,
+.produktkort:hover a {
+  background: var(--accent-mork);
+}
+
+.produktkort a:focus-visible {
+  outline: none;             /* ringen ritas av .produktkort:focus-within */
+}
+
+/* Bilden ska kännas som en del av knappen, inte som ett eget mål */
+.produktkort img {
+  cursor: pointer;
 }
 
 /* ---------- Artikellista ---------- */
@@ -344,7 +396,7 @@ tbody tr:last-child td {
 }
 
 .artikellista a:hover {
-  color: var(--varm);
+  color: var(--varm-text);
 }
 
 .artikellista p {
@@ -364,8 +416,41 @@ tbody tr:last-child td {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.11em;
-  color: var(--varm);
+  color: var(--varm-text);
   margin-bottom: 0.85rem;
+}
+
+/* ---------- Läs härnäst ---------- */
+
+.las-harnast {
+  margin: 3.5rem 0 0;
+  padding: 1.5rem var(--luft);
+  background: var(--papper-tint);
+  border: 1px solid var(--kant);
+  border-radius: var(--radie);
+}
+
+.las-harnast h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.9rem;
+}
+
+.las-harnast ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.las-harnast li {
+  margin-bottom: 0.6rem;
+}
+
+.las-harnast li:last-child {
+  margin-bottom: 0;
+}
+
+.las-harnast a {
+  font-weight: 650;
 }
 
 /* ---------- Sidfot ---------- */

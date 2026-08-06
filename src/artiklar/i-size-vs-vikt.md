@@ -9,7 +9,7 @@ date: 2026-08-06
 
 - **R129** är den nyare standarden och utgår från barnets **längd**. **R44** är den äldre och utgår från **vikt**. R129 är bättre — välj den.
 - **i-Size** är en kategori inom R129. Ser du den märkningen är stolen godkänd enligt det nyare regelverket och fungerar med Isofix. i-Size är alltid R129; alla R129-stolar är inte i-Size.
-- **Lagen kräver** bakåtvänt till minst 15 månader och 76 cm, och någon form av godkänd skyddsanordning tills barnet är 135 cm.
+- **R129-standarden** tillåter inte framåtvänt före 15 månader och 76 cm. **Svensk lag** kräver godkänd skyddsanordning tills barnet är 135 cm. Två olika krav, från två olika håll.
 - **Men följ inte lagen — följ rekommendationen.** Trafikverket och NTF säger bakåtvänt till **minst fyra år**, gärna längre. Det är den siffra som spelar roll.
 - **I butiken:** leta efter R129 eller i-Size, och efter hur högt upp i längd stolen tillåter bakåtvänt åkande. Är den dessutom **Plustestad** är du klar.
 

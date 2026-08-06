@@ -32,13 +32,19 @@ Den här sajten är vad jag önskar hade funnits då.
   </article>
 </section>
 
-## Senaste guiderna
+## Mer att läsa
+
+{%- set utvalda = ["/guider/babyskydd-for-nyfodda/", "/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/", "/guider/i-size-vs-vikt/"] %}
 
 <ul class="artikellista">
 {%- for artikel in collections.artiklar | reverse %}
+{%- if artikel.url not in utvalda %}
   <li>
     <h2><a href="{{ artikel.url }}">{{ artikel.data.title | typo }}</a></h2>
     <p>{{ artikel.data.ingress | typo }}</p>
   </li>
+{%- endif %}
 {%- endfor %}
 </ul>
+
+<p><a href="/guider/">Alla guider</a></p>

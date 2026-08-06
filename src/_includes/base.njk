@@ -37,7 +37,36 @@
     {%- elif "/guider/" in page.url and page.url != "/guider/" %}<span class="kicker">Guide</span>{% endif %}
     <h1>{{ title | typo }}</h1>
     {% if ingress %}<p class="ingress">{{ ingress | typo }}</p>{% endif %}
+    {%- if date and "/guider/" in page.url and page.url != "/guider/" %}
+    <p class="datum"><time datetime="{{ date | htmlDateString }}">Senast uppdaterad {{ date | datum }}</time></p>
+    {%- endif %}
     {{ content | safe }}
+
+    {%- if "/guider/" in page.url and page.url != "/guider/" %}
+    {#- Köpguiden först när den är relevant: läsaren som just förstått reglerna
+        är i det läge där hon vill veta vilken stol hon faktiskt ska köpa. -#}
+    {%- set ovriga = [] %}
+    {%- for artikel in collections.artiklar %}
+      {%- if artikel.url != page.url and "vilken-ska-jag-kopa" in artikel.url %}
+        {%- set ovriga = (ovriga.push(artikel), ovriga) %}
+      {%- endif %}
+    {%- endfor %}
+    {%- for artikel in collections.artiklar | reverse %}
+      {%- if artikel.url != page.url and "vilken-ska-jag-kopa" not in artikel.url and ovriga.length < 2 %}
+        {%- set ovriga = (ovriga.push(artikel), ovriga) %}
+      {%- endif %}
+    {%- endfor %}
+    {%- if ovriga.length %}
+    <aside class="las-harnast">
+      <h2>Läs härnäst</h2>
+      <ul>
+        {%- for artikel in ovriga %}
+        <li><a href="{{ artikel.url }}">{{ artikel.data.title | typo }}</a></li>
+        {%- endfor %}
+      </ul>
+    </aside>
+    {%- endif %}
+    {%- endif %}
   </main>
 
   <footer class="sidfot">

@@ -11,14 +11,10 @@ Jag är inte trafiksäkerhetsingenjör. Jag är en förälder som tyckte att det
 
 ## Vad du hittar här
 
-- Uppdaterade rekommendationer av de bästa barnprylarna
-- Kort och konkret om vad du behöver veta för att du och ditt barn ska känna er trygga
-- Länkar till återförsäljare, med prisjämförelse när det går
+- Guider som förklarar reglerna och märkningarna på svenska, en sak i taget
+- Jämförelser av de stolar som klarat oberoende krocktester, med vad som skiljer dem åt
+- Datum på varje guide, så att du ser hur färskt rådet är
 
 ## Hur sajten tjänar pengar
 
 Vissa länkar är affiliatelänkar, vilket betyder att jag får en liten ersättning om du handlar via dem. Det kostar inget extra för dig, och det påverkar inte vilka produkter jag rekommenderar — en stol som inte är bra hamnar inte högt upp för att provisionen är bättre.
-
-## Hör av dig
-
-Hittar du något som är fel, otydligt eller inaktuellt vill jag veta det. Särskilt när det gäller säkerhet.
