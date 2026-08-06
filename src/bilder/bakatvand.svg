@@ -1,44 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Illustration av en bakåtvänd bilbarnstol med stödben">
-  <rect width="400" height="300" fill="#F4F2ED"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" role="img" aria-label="Ikon av en bakåtvänd bilbarnstol med hög rygg och stödben">
+  <!-- Hög rygg åt höger, sits åt vänster -->
+  <path d="M266 54 L 244 190 L 96 202"
+        fill="none" stroke="#3E6B5F" stroke-width="34"
+        stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- Färdriktning -->
-  <g stroke="#B9B3A7" stroke-width="2" fill="none">
-    <line x1="40" y1="268" x2="330" y2="268"/>
-    <polyline points="320,262 332,268 320,274" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
-  <text x="40" y="288" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="13" fill="#7A746A">Färdriktning</text>
+  <!-- Insidan -->
+  <path d="M256 72 L 238 180 L 114 191"
+        fill="none" stroke="#EFEDE7" stroke-width="12"
+        stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- Hög rygg, vänd mot färdriktningen (höger) -->
-  <path d="M268 62
-           C 296 62, 306 82, 304 108
-           L 296 210
-           C 294 226, 282 234, 266 234
-           L 132 234
-           C 116 234, 108 224, 110 208
-           L 116 168
-           C 118 152, 130 144, 146 144
-           L 236 144
-           L 244 84
-           C 246 70, 254 62, 268 62 Z"
-        fill="#4A7C6F"/>
-
-  <!-- Sittyta -->
-  <path d="M146 166 L 232 166 L 226 214 L 136 214 Z" fill="#F4F2ED" opacity="0.9"/>
-
-  <!-- Ryggstöd insida -->
-  <path d="M254 84 L 282 84 L 272 200 L 244 200 Z" fill="#F4F2ED" opacity="0.55"/>
-
-  <!-- Barnets huvud, mot ryggstödet -->
-  <circle cx="238" cy="118" r="21" fill="#E2DED6"/>
+  <!-- Barnets huvud, högt mot ryggstödet -->
+  <circle cx="248" cy="96" r="22" fill="#EFEDE7"/>
 
   <!-- Internbälte över axeln -->
-  <g stroke="#35594F" stroke-width="6" stroke-linecap="round" fill="none">
-    <line x1="228" y1="142" x2="198" y2="186"/>
-    <line x1="176" y1="150" x2="198" y2="186"/>
-    <circle cx="198" cy="192" r="8" fill="#35594F" stroke="none"/>
+  <g fill="none" stroke="#B5654A" stroke-width="6" stroke-linecap="round">
+    <path d="M234 124 L 206 158"/>
+    <path d="M262 128 L 206 158"/>
   </g>
 
-  <!-- Stödben ner mot golvet -->
-  <rect x="128" y="234" width="16" height="34" rx="4" fill="#35594F"/>
-  <rect x="112" y="264" width="48" height="9" rx="4" fill="#35594F"/>
+  <!-- Stödben mot golvet -->
+  <path d="M112 216 L 112 246" stroke="#3E6B5F" stroke-width="10" stroke-linecap="round"/>
+  <path d="M90 250 L 134 250" stroke="#3E6B5F" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Färdriktning -->
+  <g stroke="#C9C3B7" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="164" y1="266" x2="300" y2="266"/>
+    <polyline points="291,259 303,266 291,273"/>
+  </g>
 </svg>

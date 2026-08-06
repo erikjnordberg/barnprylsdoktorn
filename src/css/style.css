@@ -1,17 +1,26 @@
 :root {
-  --accent: #4A7C6F;
-  --accent-mork: #35594F;
-  --text: #2A2A2A;
-  --text-dampad: #5F5F5F;
-  --bakgrund-ljus: #F4F2ED;
-  --kant: #E2DED6;
+  /* Färg */
+  --accent: #3E6B5F;          /* sage, primär */
+  --accent-mork: #2C4E45;
+  --varm: #B5654A;            /* terrakotta, komplement */
+  --varm-ljus: #F2E4DE;
+  --text: #22201D;
+  --text-dampad: #625C54;
+  --papper: #FBFAF7;          /* sidbakgrund */
+  --papper-tint: #F4F1EA;     /* bildytor, tabellhuvud */
+  --kant: #E4DFD5;
 
+  /* Typografi */
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  /* Mått */
   --luft: 1.5rem;
-  --radie: 6px;
-  --max-bredd: 46rem;
+  --radie: 3px;
+  --max-text: 40rem;
+  --max-bred: 62rem;
 }
 
-/* Gör så att padding räknas in i elementets bredd — sparar mycket huvudvärk */
 *,
 *::before,
 *::after {
@@ -20,181 +29,264 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--sans);
   font-size: 1.125rem;
-  line-height: 1.7;
+  line-height: 1.75;
   color: var(--text);
-  background-color: var(--bakgrund-ljus);
+  background-color: var(--papper);
+  -webkit-font-smoothing: antialiased;
 }
 
-/* ---------- Sidhuvud och navigering ---------- */
+/* ---------- Sidhuvud ---------- */
 
 .sidhuvud {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  gap: var(--luft);
-  max-width: var(--max-bredd);
+  align-items: baseline;
+  gap: 1rem var(--luft);
+  max-width: var(--max-bred);
   margin: 0 auto;
-  padding: var(--luft) var(--luft) 0;
+  padding: 2rem var(--luft) 1.5rem;
+  border-bottom: 1px solid var(--kant);
 }
 
 .logga {
+  font-family: var(--serif);
+  font-size: 1.5rem;
   font-weight: 700;
-  font-size: 1.15rem;
-  letter-spacing: -0.01em;
-  color: var(--accent);
+  letter-spacing: -0.015em;
+  color: var(--text);
   text-decoration: none;
+}
+
+.logga:hover {
+  color: var(--accent);
 }
 
 .navbar {
   display: flex;
-  gap: 1.25rem;
+  gap: 1.75rem;
 }
 
 .navbar a {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
   color: var(--text-dampad);
   text-decoration: none;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
   border-bottom: 2px solid transparent;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
 .navbar a:hover {
-  color: var(--accent);
+  color: var(--varm);
 }
 
 .navbar a.aktiv {
-  color: var(--accent);
-  border-bottom-color: var(--accent);
+  color: var(--varm);
+  border-bottom-color: var(--varm);
 }
 
 /* ---------- Huvudinnehåll ---------- */
 
 main {
-  max-width: var(--max-bredd);
+  max-width: var(--max-text);
   margin: 0 auto;
-  padding: calc(var(--luft) * 2) var(--luft);
+  padding: 3.5rem var(--luft) 1rem;
 }
 
 h1 {
-  font-size: 2.25rem;
-  line-height: 1.2;
+  font-family: var(--serif);
+  font-size: clamp(2.1rem, 5.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.12;
   letter-spacing: -0.02em;
-  margin: 0 0 0.75rem;
+  margin: 0 0 1rem;
+  text-wrap: balance;
 }
 
 h2 {
-  font-size: 1.5rem;
-  line-height: 1.3;
-  margin: calc(var(--luft) * 2) 0 0.5rem;
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin: 3rem 0 0.6rem;
 }
 
 h3 {
-  font-size: 1.15rem;
-  margin: var(--luft) 0 0.4rem;
+  font-family: var(--serif);
+  font-size: 1.22rem;
+  font-weight: 700;
+  margin: 2rem 0 0.4rem;
 }
 
 p {
-  margin: 0 0 1.1rem;
+  margin: 0 0 1.2rem;
 }
 
+/* Ingress i serif kursiv — den redaktionella signalen */
 .ingress {
-  font-size: 1.25rem;
-  line-height: 1.6;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.45;
   color: var(--text-dampad);
-  margin-bottom: calc(var(--luft) * 1.5);
+  margin: 0 0 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--kant);
+  text-wrap: pretty;
 }
 
 main a {
   color: var(--accent);
+  text-decoration-color: rgba(62, 107, 95, 0.35);
   text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
+  text-underline-offset: 3px;
 }
 
 main a:hover {
-  color: var(--accent-mork);
+  color: var(--varm);
+  text-decoration-color: var(--varm);
+}
+
+strong {
+  font-weight: 650;
 }
 
 img {
   max-width: 100%;
   height: auto;
-  border-radius: var(--radie);
 }
 
-ul {
-  padding-left: 1.25rem;
+ul,
+ol {
+  padding-left: 1.2rem;
 }
 
 li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.55rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--kant);
+  margin: 2.5rem 0;
+}
+
+blockquote {
+  margin: 2rem 0;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--varm);
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--text-dampad);
 }
 
 /* ---------- Tabeller ---------- */
 
-.tabellwrapper {
-  overflow-x: auto;
-  margin: var(--luft) 0;
-}
-
 table {
   border-collapse: collapse;
   width: 100%;
+  margin: 1.75rem 0;
+  font-family: var(--sans);
   font-size: 0.95rem;
   background: #fff;
   border: 1px solid var(--kant);
-  border-radius: var(--radie);
 }
 
 th,
 td {
   text-align: left;
-  padding: 0.7rem 0.9rem;
+  padding: 0.75rem 0.9rem;
   border-bottom: 1px solid var(--kant);
+  vertical-align: top;
 }
 
 th {
-  background: #FAF9F6;
-  font-size: 0.85rem;
-  letter-spacing: 0.02em;
+  background: var(--papper-tint);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-dampad);
+  white-space: nowrap;
+}
+
+td:nth-child(2) {
+  white-space: nowrap;
 }
 
 tbody tr:last-child td {
   border-bottom: none;
 }
 
-/* ---------- Produktkort ---------- */
+/* ---------- Kort på startsidan ---------- */
 
 .produktkort-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: var(--luft);
-  margin: calc(var(--luft) * 2) 0;
+  gap: 1.75rem;
+  margin: 2rem 0 3rem;
+  padding: 0;
+  list-style: none;
 }
 
 .produktkort {
+  display: flex;
+  flex-direction: column;
   background: #fff;
   border: 1px solid var(--kant);
   border-radius: var(--radie);
-  padding: 1.25rem;
+  overflow: hidden;
+  transition: border-color 0.15s ease, transform 0.15s ease;
 }
 
-.produktkort h3 {
-  margin-top: 0.75rem;
-  font-size: 1.05rem;
+.produktkort:hover {
+  border-color: var(--varm);
+  transform: translateY(-2px);
 }
 
 .produktkort img {
+  display: block;
   width: 100%;
+  background: var(--papper-tint);
+  border-bottom: 1px solid var(--kant);
+}
+
+.produktkort h3 {
+  font-size: 1.15rem;
+  margin: 1.15rem 1.25rem 0.35rem;
 }
 
 .produktkort p {
   font-size: 0.95rem;
+  line-height: 1.6;
   color: var(--text-dampad);
-  margin-bottom: 0;
+  margin: 0 1.25rem 1rem;
+}
+
+.produktkort p:last-child {
+  margin-top: auto;
+  padding-top: 0.25rem;
+}
+
+.produktkort a {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--varm);
+  text-decoration: none;
+}
+
+.produktkort a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* ---------- Artikellista ---------- */
@@ -202,12 +294,12 @@ tbody tr:last-child td {
 .artikellista {
   list-style: none;
   padding: 0;
-  margin: calc(var(--luft) * 1.5) 0 0;
+  margin: 0;
 }
 
 .artikellista li {
-  padding-bottom: var(--luft);
-  margin-bottom: var(--luft);
+  padding-bottom: 1.75rem;
+  margin-bottom: 1.75rem;
   border-bottom: 1px solid var(--kant);
 }
 
@@ -216,55 +308,84 @@ tbody tr:last-child td {
 }
 
 .artikellista h2 {
-  margin: 0 0 0.25rem;
-  font-size: 1.25rem;
+  font-size: 1.45rem;
+  margin: 0 0 0.35rem;
 }
 
 .artikellista a {
+  color: var(--text);
   text-decoration: none;
 }
 
 .artikellista a:hover {
-  text-decoration: underline;
+  color: var(--varm);
 }
 
 .artikellista p {
   margin: 0;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.5;
   color: var(--text-dampad);
-  font-size: 1rem;
+}
+
+/* Liten etikett över rubriker — den redaktionella "kickern" */
+.kicker {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: var(--varm);
+  margin-bottom: 0.85rem;
 }
 
 /* ---------- Sidfot ---------- */
 
 .sidfot {
-  max-width: var(--max-bredd);
-  margin: calc(var(--luft) * 2) auto 0;
-  padding: var(--luft);
-  border-top: 1px solid var(--kant);
+  max-width: var(--max-text);
+  margin: 4rem auto 0;
+  padding: 2rem var(--luft) 3rem;
+  border-top: 3px solid var(--varm);
   color: var(--text-dampad);
-  font-size: 0.9rem;
+  font-size: 0.92rem;
 }
 
 .sidfot p {
-  margin: 0 0 0.35rem;
+  margin: 0 0 0.4rem;
+}
+
+.sidfot a {
+  color: var(--text-dampad);
 }
 
 .finstilt {
-  font-size: 0.8rem;
+  font-size: 0.82rem;
+  opacity: 0.85;
 }
 
 /* ---------- Mobil ---------- */
 
 @media (max-width: 34rem) {
-  h1 {
-    font-size: 1.75rem;
+  body {
+    font-size: 1.06rem;
+  }
+
+  main {
+    padding-top: 2.25rem;
   }
 
   .ingress {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .sidhuvud {
-    justify-content: center;
+    padding-top: 1.5rem;
+  }
+
+  h2 {
+    margin-top: 2.25rem;
   }
 }

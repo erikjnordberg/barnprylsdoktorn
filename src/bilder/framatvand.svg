@@ -1,39 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Illustration av en framåtvänd bältesstol">
-  <rect width="400" height="300" fill="#F4F2ED"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" role="img" aria-label="Ikon av en framåtvänd bältesstol med bilbältet över bröstet">
+  <!-- Rygg åt vänster, sits åt höger -->
+  <path d="M94 54 L 116 190 L 264 202"
+        fill="none" stroke="#3E6B5F" stroke-width="34"
+        stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- Färdriktning -->
-  <g stroke="#B9B3A7" stroke-width="2" fill="none">
-    <line x1="40" y1="268" x2="330" y2="268"/>
-    <polyline points="320,262 332,268 320,274" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
-  <text x="40" y="288" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="13" fill="#7A746A">Färdriktning</text>
-
-  <!-- Ryggstöd åt vänster, barnet tittar framåt (höger) -->
-  <path d="M132 66
-           C 118 66, 110 78, 112 94
-           L 124 208
-           C 126 224, 138 234, 154 234
-           L 286 234
-           C 302 234, 310 224, 308 208
-           L 302 170
-           C 300 154, 288 146, 272 146
-           L 168 146
-           L 158 88
-           C 156 74, 146 66, 132 66 Z"
-        fill="#4A7C6F"/>
-
-  <!-- Sittyta -->
-  <path d="M172 168 L 288 168 L 292 214 L 178 214 Z" fill="#F4F2ED" opacity="0.9"/>
-
-  <!-- Ryggstöd insida -->
-  <path d="M130 88 L 156 88 L 170 200 L 142 200 Z" fill="#F4F2ED" opacity="0.55"/>
+  <!-- Insidan -->
+  <path d="M104 72 L 122 180 L 246 191"
+        fill="none" stroke="#EFEDE7" stroke-width="12"
+        stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- Barnets huvud -->
-  <circle cx="166" cy="116" r="22" fill="#E2DED6"/>
+  <circle cx="112" cy="96" r="22" fill="#EFEDE7"/>
 
-  <!-- Bilbältet diagonalt över bröstet -->
-  <g stroke="#35594F" stroke-width="6" stroke-linecap="round" fill="none">
-    <line x1="150" y1="138" x2="228" y2="200"/>
-    <line x1="184" y1="204" x2="252" y2="204"/>
+  <!-- Bilbältet diagonalt över bröstet och över höften -->
+  <g fill="none" stroke="#B5654A" stroke-width="6" stroke-linecap="round">
+    <path d="M120 126 L 194 178"/>
+    <path d="M150 186 L 232 186"/>
+  </g>
+
+  <!-- Färdriktning -->
+  <g stroke="#C9C3B7" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="70" y1="266" x2="290" y2="266"/>
+    <polyline points="281,259 293,266 281,273"/>
   </g>
 </svg>

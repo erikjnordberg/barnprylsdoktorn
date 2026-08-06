@@ -33,14 +33,17 @@
   </header>
 
   <main>
+    {% if kicker %}<span class="kicker">{{ kicker }}</span>
+    {%- elif "/guider/" in page.url and page.url != "/guider/" %}<span class="kicker">Guide</span>{% endif %}
     <h1>{{ title }}</h1>
     {% if ingress %}<p class="ingress">{{ ingress }}</p>{% endif %}
     {{ content | safe }}
   </main>
 
   <footer class="sidfot">
-    <p>Barnprylsdoktorn &middot; Skriven av en förälder som googlade för mycket.</p>
-    <p class="finstilt">Vissa länkar är affiliatelänkar. Det påverkar inte vad vi rekommenderar.</p>
+    <p><strong>Barnprylsdoktorn</strong> — skriven av en förälder som googlade för mycket.</p>
+    <p><a href="/guider/">Guider</a> &middot; <a href="/om/">Om sajten</a> &middot; <a href="/feed.xml">RSS</a></p>
+    <p class="finstilt">Vissa länkar är affiliatelänkar. Det påverkar inte vad vi rekommenderar. Innehållet ersätter inte tillverkarens monteringsanvisning.</p>
   </footer>
 
 </body>
