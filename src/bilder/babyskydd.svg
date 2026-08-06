@@ -2,32 +2,32 @@
 
   <!-- Bärhandtag -->
   <path d="M104 176 C 116 26, 250 26, 268 152"
-        fill="none" stroke="#3E6B5F" stroke-width="10"
+        fill="none" stroke="#181614" stroke-width="10"
         stroke-linecap="round" opacity="0.45"/>
 
   <!-- Skalet: fotände, botten, ryggände -->
   <path d="M92 152 L 110 212 L 238 204 L 262 108"
-        fill="none" stroke="#3E6B5F" stroke-width="32"
+        fill="none" stroke="#181614" stroke-width="32"
         stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- Barnet, tillbakalutat med uppdragna ben -->
-  <g stroke="#B5654A" stroke-linecap="round" stroke-linejoin="round" fill="none">
+  <g stroke="#B5581F" stroke-linecap="round" stroke-linejoin="round" fill="none">
     <path d="M150 168 L 140 144" stroke-width="16"/>
     <path d="M186 182 L 150 168" stroke-width="19"/>
     <path d="M220 156 L 186 182" stroke-width="27"/>
   </g>
 
   <!-- Huvud -->
-  <circle cx="230" cy="130" r="23" fill="#B5654A" stroke="#F4F1EA" stroke-width="5"/>
+  <circle cx="230" cy="130" r="23" fill="#B5581F" stroke="#F7F5F2" stroke-width="5"/>
 
   <!-- Internbälte -->
-  <g stroke="#22201D" stroke-linecap="round" fill="none">
+  <g stroke="#181614" stroke-linecap="round" fill="none">
     <path d="M217 146 L 196 180" stroke-width="5"/>
-    <circle cx="205" cy="164" r="5.5" fill="#22201D" stroke="none"/>
+    <circle cx="205" cy="164" r="5.5" fill="#181614" stroke="none"/>
   </g>
 
   <!-- Färdriktning -->
-  <g stroke="#B0A99B" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <g stroke="#A8A29A" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
     <line x1="60" y1="276" x2="290" y2="276"/>
     <polyline points="281,269 293,276 281,283"/>
   </g>

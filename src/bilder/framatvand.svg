@@ -2,27 +2,27 @@
 
   <!-- Stolen: rygg åt vänster, sits åt höger -->
   <path d="M86 44 L 110 194 L 268 206"
-        fill="none" stroke="#3E6B5F" stroke-width="36"
+        fill="none" stroke="#181614" stroke-width="36"
         stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- Barnet: underben, lår, bål -->
-  <g stroke="#B5654A" stroke-linecap="round" stroke-linejoin="round" fill="none">
+  <g stroke="#B5581F" stroke-linecap="round" stroke-linejoin="round" fill="none">
     <path d="M210 162 L 218 194" stroke-width="17"/>
     <path d="M164 172 L 210 162" stroke-width="21"/>
     <path d="M124 122 L 164 172" stroke-width="29"/>
   </g>
 
   <!-- Huvud -->
-  <circle cx="118" cy="94" r="23" fill="#B5654A" stroke="#F4F1EA" stroke-width="5"/>
+  <circle cx="118" cy="94" r="23" fill="#B5581F" stroke="#F7F5F2" stroke-width="5"/>
 
   <!-- Bilbältet: diagonalt över bröstet och över höften -->
-  <g stroke="#22201D" stroke-linecap="round" fill="none">
+  <g stroke="#181614" stroke-linecap="round" fill="none">
     <path d="M128 116 L 178 174" stroke-width="5"/>
     <path d="M164 180 L 216 172" stroke-width="5"/>
   </g>
 
   <!-- Färdriktning -->
-  <g stroke="#B0A99B" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <g stroke="#A8A29A" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
     <line x1="60" y1="276" x2="290" y2="276"/>
     <polyline points="281,269 293,276 281,283"/>
   </g>
