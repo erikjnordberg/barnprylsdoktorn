@@ -1,0 +1,49 @@
+# Typsnittsfiler
+
+Fem filer ska ligga i den här mappen. De hämtas en gång och checkas in i repot.
+
+| Filnamn | Typsnitt | Vikt | Används till |
+|---|---|---|---|
+| `playfair-display-700.woff2` | Playfair Display | 700 | Alla rubriker och loggan |
+| `playfair-display-italic.woff2` | Playfair Display | 400 kursiv | Citat (blockquote) |
+| `source-sans-3-400.woff2` | Source Sans 3 | 400 | Brödtext |
+| `source-sans-3-600.woff2` | Source Sans 3 | 600 | Menyn |
+| `source-sans-3-700.woff2` | Source Sans 3 | 700 | Fet text, tabellhuvuden, knappar |
+
+Namnen måste stämma exakt — CSS:en letar efter just de här.
+
+## Hämta filerna
+
+**Playfair Display** — gå till
+https://gwfh.mranftl.com/fonts/playfair-display?subsets=latin,latin-ext
+
+1. Under *Select charsets*: **latin** och **latin-ext** ska vara ikryssade
+2. Under *Select styles*: kryssa i **italic** och **700**
+3. Scrolla ner till *Download files* och klicka på den blå zip-knappen
+4. Packa upp, byt namn:
+   - filen med `700` i namnet → `playfair-display-700.woff2`
+   - filen med `italic` i namnet → `playfair-display-italic.woff2`
+
+**Source Sans 3** — gå till
+https://gwfh.mranftl.com/fonts/source-sans-3?subsets=latin,latin-ext
+
+1. Samma charsets: **latin** och **latin-ext**
+2. Under *Select styles*: kryssa i **600** och **700** (*regular* är redan ikryssad)
+3. Ladda ner zip-filen
+4. Packa upp, byt namn:
+   - `regular` → `source-sans-3-400.woff2`
+   - `600` → `source-sans-3-600.woff2`
+   - `700` → `source-sans-3-700.woff2`
+
+Lägg alla fem filerna i den här mappen. Ignorera övriga filer i zip-arkiven.
+
+## Om filerna saknas
+
+Sajten fungerar ändå. CSS:en faller tillbaka på Georgia för rubriker och
+systemets sans-serif för brödtext. Det ser inte likadant ut, men ingenting
+går sönder.
+
+## Licens
+
+Båda typsnitten är licensierade under SIL Open Font License 1.1, vilket
+tillåter användning och distribution på en webbplats.

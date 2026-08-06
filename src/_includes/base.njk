@@ -6,10 +6,12 @@
   <title>{{ title }} | {{ site.namn }}</title>
   <meta name="description" content="{{ beskrivning or site.beskrivning }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  {# Typsnitten ligger på vår egen server — inga anrop till Google, och en
+     uppkoppling mindre innan sidan kan ritas. Rubrikfonten laddas i förväg
+     eftersom den behövs direkt för h1. #}
+  <link rel="preload" href="/fonter/playfair-display-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonter/source-sans-3-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css?v={{ assets.cssVersion }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.namn }}" href="/feed.xml">
 
   {# Så här ser sidan ut när någon delar länken i Messenger, Slack eller på Facebook #}
