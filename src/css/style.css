@@ -1,37 +1,33 @@
 :root {
-  /* Färg */
-  --accent: #3E6B5F;          /* sage, primär */
-  --accent-mork: #2C4E45;
-  --varm: #B5654A;            /* terrakotta, komplement — dekor och ytor */
-  --varm-text: #9C5238;       /* terrakotta för text, 5.5:1 mot --papper */
-  --varm-ljus: #F2E4DE;
-  --text: #22201D;
-  --text-dampad: #625C54;
-  --papper: #FBFAF7;          /* sidbakgrund */
-  --papper-tint: #F4F1EA;     /* bildytor, tabellhuvud */
-  --kant: #E4DFD5;
+  /* Färg — enfärgad accent, redaktionell känsla */
+  --accent: #B5581F;
+  --accent-mork: #8a4317;
+  --varm: #B5581F;
+  --varm-text: #B5581F;
+  --varm-ljus: #F7F0E6;
+  --text: #181614;
+  --text-dampad: #78726a;
+  --papper: #FFFFFF;
+  --papper-tint: #F7F5F2;
+  --kant: rgba(24, 22, 20, 0.12);
 
   /* Typografi */
-  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
-  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --sans: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
   /* Mått */
   --luft: 1.5rem;
-  --radie: 3px;
-  --max-text: 40rem;
-  --max-bred: 62rem;
+  --radie: 2px;
+  --max-text: 42rem;
+  --max-bred: 70rem;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+*, *::before, *::after { box-sizing: border-box; }
 
 body {
   margin: 0;
   font-family: var(--sans);
-  font-size: 1.125rem;
+  font-size: 1.0625rem;
   line-height: 1.75;
   color: var(--text);
   background-color: var(--papper);
@@ -48,49 +44,42 @@ body {
   gap: 1rem var(--luft);
   max-width: var(--max-bred);
   margin: 0 auto;
-  padding: 2rem var(--luft) 1.5rem;
-  border-bottom: 1px solid var(--kant);
+  padding: 1.6rem var(--luft);
+  border-bottom: 2px solid var(--text);
 }
 
 .logga {
   font-family: var(--serif);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
   color: var(--text);
   text-decoration: none;
 }
 
-.logga:hover {
-  color: var(--accent);
-}
+.logga:hover { color: var(--accent); }
 
-.navbar {
-  display: flex;
-  gap: 1.75rem;
-}
+.navbar { display: flex; gap: 1.75rem; }
 
 .navbar a {
   display: flex;
   align-items: center;
-  min-height: 44px;          /* träffyta för tummen, inte bara för musen */
+  min-height: 44px;
   font-size: 0.78rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.09em;
-  color: var(--text-dampad);
+  color: var(--text);
   text-decoration: none;
   border-bottom: 2px solid transparent;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
-.navbar a:hover {
-  color: var(--varm-text);
-}
+.navbar a:hover { color: var(--accent); }
 
 .navbar a.aktiv {
-  color: var(--varm-text);
-  border-bottom-color: var(--varm-text);
+  color: var(--text);
+  border-bottom-color: var(--accent);
 }
 
 /* ---------- Huvudinnehåll ---------- */
@@ -98,73 +87,67 @@ body {
 main {
   max-width: var(--max-text);
   margin: 0 auto;
-  padding: 3.5rem var(--luft) 1rem;
+  padding: 4rem var(--luft) 1rem;
 }
 
 h1 {
   font-family: var(--serif);
-  font-size: clamp(2.1rem, 5.5vw, 3rem);
+  font-size: clamp(2.2rem, 5.5vw, 3.2rem);
   font-weight: 700;
-  line-height: 1.12;
-  letter-spacing: -0.02em;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
   margin: 0 0 1rem;
   text-wrap: balance;
 }
 
 h2 {
   font-family: var(--serif);
-  font-size: 1.6rem;
+  font-size: 1.55rem;
   font-weight: 700;
   line-height: 1.25;
-  letter-spacing: -0.01em;
-  margin: 3rem 0 0.6rem;
+  margin: 3rem 0 0.7rem;
 }
 
 h3 {
   font-family: var(--serif);
-  font-size: 1.22rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  margin: 2rem 0 0.4rem;
+  margin: 0 0 0.5rem;
 }
 
-p {
-  margin: 0 0 1.2rem;
-}
+p { margin: 0 0 1.2rem; }
 
-/* Ingress i serif kursiv — den redaktionella signalen */
+/* Ingress — sans, dämpad, ingen kursiv. Den redaktionella underrubriken. */
 .ingress {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.4rem;
-  line-height: 1.45;
+  font-family: var(--sans);
+  font-size: 1.2rem;
+  line-height: 1.6;
   color: var(--text-dampad);
   margin: 0 0 2rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--kant);
   text-wrap: pretty;
+  max-width: 34rem;
 }
 
 main a {
   color: var(--accent);
-  text-decoration-color: rgba(62, 107, 95, 0.35);
+  text-decoration-color: rgba(181, 88, 31, 0.35);
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
 
 main a:hover {
-  color: var(--varm-text);
-  text-decoration-color: var(--varm-text);
+  color: var(--accent-mork);
+  text-decoration-color: var(--accent-mork);
 }
 
-/* Synlig tangentbordsfokus i sajtens egna färger, i stället för
-   webbläsarens blå ring som krockar med paletten */
 a:focus-visible {
   outline: 2px solid var(--accent-mork);
   outline-offset: 3px;
   border-radius: 2px;
 }
 
-/* Datumraden på guiderna — läsaren ska kunna se hur färskt rådet är */
 .datum {
   font-family: var(--sans);
   font-size: 0.82rem;
@@ -172,34 +155,16 @@ a:focus-visible {
   margin: -0.5rem 0 2rem;
 }
 
-strong {
-  font-weight: 650;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-ul,
-ol {
-  padding-left: 1.2rem;
-}
-
-li {
-  margin-bottom: 0.55rem;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid var(--kant);
-  margin: 2.5rem 0;
-}
+strong { font-weight: 650; }
+img { max-width: 100%; height: auto; }
+ul, ol { padding-left: 1.2rem; }
+li { margin-bottom: 0.55rem; }
+hr { border: none; border-top: 1px solid var(--kant); margin: 2.5rem 0; }
 
 blockquote {
   margin: 2rem 0;
   padding-left: 1.25rem;
-  border-left: 3px solid var(--varm);
+  border-left: 3px solid var(--accent);
   font-family: var(--serif);
   font-style: italic;
   color: var(--text-dampad);
@@ -207,7 +172,6 @@ blockquote {
 
 /* ---------- Tabeller ---------- */
 
-/* Tabeller får bryta ut ur textkolumnen, som bildmaterial i ett magasin */
 table {
   border-collapse: collapse;
   width: 100%;
@@ -220,28 +184,14 @@ table {
 }
 
 @media (min-width: 52rem) {
-  main table {
-    width: calc(100% + 9rem);
-    margin-left: -4.5rem;
-  }
+  main table { width: calc(100% + 9rem); margin-left: -4.5rem; }
 }
 
 @media (max-width: 44rem) {
-  main table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-  }
+  main table { display: block; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
 }
 
-th,
-td {
-  text-align: left;
-  padding: 0.7rem 0.85rem;
-  border-bottom: 1px solid var(--kant);
-  vertical-align: top;
-}
+th, td { text-align: left; padding: 0.7rem 0.85rem; border-bottom: 1px solid var(--kant); vertical-align: top; }
 
 th {
   background: var(--papper-tint);
@@ -253,162 +203,103 @@ th {
   white-space: nowrap;
 }
 
-td {
-  white-space: nowrap;
-}
+td { white-space: nowrap; }
+td:first-child { white-space: normal; min-width: 11rem; }
+tbody tr:last-child td { border-bottom: none; }
 
-td:first-child {
-  white-space: normal;
-  min-width: 11rem;
-}
-
-tbody tr:last-child td {
-  border-bottom: none;
-}
-
-/* ---------- Kort på startsidan ---------- */
+/* ---------- Kort på startsidan — editorial, ingen box ---------- */
 
 .produktkort-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 1.75rem;
+  gap: 2.5rem;
   margin: 2rem 0 3rem;
   padding: 0;
   list-style: none;
 }
 
 .produktkort {
-  position: relative;        /* bär den utsträckta länken nedan */
+  position: relative;
   display: flex;
   flex-direction: column;
-  background: #fff;
-  border: 1px solid var(--kant);
-  border-radius: var(--radie);
-  overflow: hidden;
-  transition: border-color 0.15s ease, transform 0.15s ease;
-}
-
-.produktkort:hover {
-  border-color: var(--varm);
-  transform: translateY(-2px);
-}
-
-/* Fokusringen hör hemma runt hela kortet, eftersom hela kortet är klickbart */
-.produktkort:focus-within {
-  outline: 2px solid var(--accent-mork);
-  outline-offset: 3px;
 }
 
 .produktkort img {
   display: block;
   width: 100%;
-  height: 116px;
+  height: 150px;
   object-fit: contain;
-  padding: 0.9rem 0;
+  padding: 1rem 0;
   background: var(--papper-tint);
-  border-bottom: 1px solid var(--kant);
+  margin-bottom: 1.1rem;
 }
 
-.produktkort h3 {
-  font-size: 1.15rem;
-  margin: 1.15rem 1.25rem 0.35rem;
-}
+.produktkort h3 { margin: 0 0 0.5rem; }
 
 .produktkort p {
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--text-dampad);
-  margin: 0 1.25rem 1rem;
+  margin: 0 0 0.9rem;
 }
 
-.produktkort p:last-child {
-  margin-top: auto;
-  padding-top: 0.25rem;
-}
+.produktkort p:last-child { margin-top: auto; padding-top: 0; }
 
 .produktkort a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
   min-height: 44px;
-  padding: 0.6rem 1rem;
   font-family: var(--sans);
-  font-size: 0.92rem;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.04em;
-  color: #fff;
-  background: var(--varm-text);
-  border-radius: var(--radie);
-  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent);
   text-decoration: none;
-  transition: background-color 0.15s ease;
 }
 
-/* Sträcker länkens träffyta över hela kortet — bilden och rubriken blir
-   klickbara utan att kortet behöver bli en <a> runt blockinnehåll */
-.produktkort a::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: var(--radie);
-}
-
-.produktkort a:hover,
-.produktkort:hover a {
-  background: var(--accent-mork);
-}
-
-.produktkort a:focus-visible {
-  outline: none;             /* ringen ritas av .produktkort:focus-within */
-}
-
-/* Bilden ska kännas som en del av knappen, inte som ett eget mål */
-.produktkort img {
-  cursor: pointer;
-}
+.produktkort a::after { content: ""; position: absolute; inset: 0; }
+.produktkort a:hover { color: var(--accent-mork); }
+.produktkort a:focus-visible { outline: none; }
+.produktkort:focus-within { outline: 2px solid var(--accent-mork); outline-offset: 4px; }
 
 /* ---------- Artikellista ---------- */
 
-.artikellista {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+.artikellista { list-style: none; padding: 0; margin: 0; }
 
 .artikellista li {
-  padding-bottom: 1.75rem;
-  margin-bottom: 1.75rem;
+  padding: 1.5rem 0;
   border-bottom: 1px solid var(--kant);
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: baseline;
+  flex-wrap: wrap;
 }
 
-.artikellista li:last-child {
-  border-bottom: none;
-}
+.artikellista li:last-child { border-bottom: none; }
 
-.artikellista h2 {
-  font-size: 1.45rem;
-  margin: 0 0 0.35rem;
-}
+.artikellista h2 { font-size: 1.2rem; margin: 0; flex: 1 1 16rem; }
 
-.artikellista a {
-  color: var(--text);
-  text-decoration: none;
-}
-
-.artikellista a:hover {
-  color: var(--varm-text);
-}
+.artikellista a { color: var(--text); text-decoration: none; }
+.artikellista a:hover { color: var(--accent); }
 
 .artikellista p {
   margin: 0;
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.05rem;
-  line-height: 1.5;
+  font-family: var(--sans);
+  font-style: normal;
+  font-size: 0.92rem;
+  line-height: 1.55;
   color: var(--text-dampad);
+  flex: 1 1 18rem;
+  max-width: 24rem;
+  text-align: right;
 }
 
-/* Liten etikett över rubriker — den redaktionella "kickern" */
+@media (max-width: 34rem) {
+  .artikellista p { text-align: left; }
+}
+
 .kicker {
   display: block;
   font-family: var(--sans);
@@ -416,7 +307,7 @@ tbody tr:last-child td {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.11em;
-  color: var(--varm-text);
+  color: var(--accent);
   margin-bottom: 0.85rem;
 }
 
@@ -424,79 +315,40 @@ tbody tr:last-child td {
 
 .las-harnast {
   margin: 3.5rem 0 0;
-  padding: 1.5rem var(--luft);
-  background: var(--papper-tint);
-  border: 1px solid var(--kant);
+  padding: 1.75rem var(--luft);
+  background: var(--text);
   border-radius: var(--radie);
 }
 
-.las-harnast h2 {
-  font-size: 1.15rem;
-  margin: 0 0 0.9rem;
-}
-
-.las-harnast ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.las-harnast li {
-  margin-bottom: 0.6rem;
-}
-
-.las-harnast li:last-child {
-  margin-bottom: 0;
-}
-
-.las-harnast a {
-  font-weight: 650;
-}
+.las-harnast h2 { font-size: 1.1rem; margin: 0 0 1rem; color: #fff; }
+.las-harnast ul { list-style: none; padding: 0; margin: 0; }
+.las-harnast li { margin-bottom: 0.6rem; }
+.las-harnast li:last-child { margin-bottom: 0; }
+.las-harnast a { font-weight: 650; color: var(--varm-ljus); }
+.las-harnast a:hover { color: #fff; }
 
 /* ---------- Sidfot ---------- */
 
 .sidfot {
   max-width: var(--max-text);
   margin: 4rem auto 0;
-  padding: 2rem var(--luft) 3rem;
-  border-top: 3px solid var(--varm);
+  padding: 1.75rem var(--luft) 3rem;
+  border-top: 2px solid var(--text);
   color: var(--text-dampad);
-  font-size: 0.92rem;
+  font-size: 0.88rem;
 }
 
-.sidfot p {
-  margin: 0 0 0.4rem;
-}
-
-.sidfot a {
-  color: var(--text-dampad);
-}
-
-.finstilt {
-  font-size: 0.82rem;
-  opacity: 0.85;
-}
+.sidfot p { margin: 0 0 0.4rem; }
+.sidfot a { color: var(--text-dampad); }
+.sidfot a:hover { color: var(--accent); }
+.finstilt { font-size: 0.8rem; opacity: 0.85; }
 
 /* ---------- Mobil ---------- */
 
 @media (max-width: 34rem) {
-  body {
-    font-size: 1.06rem;
-  }
-
-  main {
-    padding-top: 2.25rem;
-  }
-
-  .ingress {
-    font-size: 1.2rem;
-  }
-
-  .sidhuvud {
-    padding-top: 1.5rem;
-  }
-
-  h2 {
-    margin-top: 2.25rem;
-  }
+  body { font-size: 1.02rem; }
+  main { padding-top: 2.5rem; }
+  .ingress { font-size: 1.05rem; }
+  .sidhuvud { padding-top: 1.5rem; }
+  h2 { margin-top: 2.25rem; }
 }
