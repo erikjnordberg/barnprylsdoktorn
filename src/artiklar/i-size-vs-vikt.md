@@ -23,7 +23,7 @@ Bilbarnstolar godkänns enligt EU-standarder. Den äldre heter **R44** och delar
 
 Längd är det bättre måttet. Två barn som väger lika mycket kan vara olika långa, och det är längden som avgör om huvudet och nacken faktiskt får skydd av stolens sidor. Vikt säger mest om hur mycket krafter som ska tas upp — längd säger var barnet sitter i stolen.
 
-**i-Size** är namnet på den del av R129 som också ställer krav på att stolen ska fungera med Isofix och passa i alla bilar som är i-Size-märkta. Så: i-Size innebär alltid R129, men alla R129-stolar är inte i-Size.
+**i-Size** är namnet på den del av R129 som också ställer krav på att stolen ska fungera med [Isofix](/guider/isofix-eller-balte/) och passa i alla bilar som är i-Size-märkta. Så: i-Size innebär alltid R129, men alla R129-stolar är inte i-Size.
 
 ## Vad lagen faktiskt kräver
 
@@ -41,7 +41,7 @@ Trafikverket och NTF rekommenderar att barn åker **bakåtvänt till minst fyra 
 
 Femton månader är alltså inte "då byter man". Det är "då är det inte längre olagligt att byta".
 
-De flesta bakåtvända stolar på svenska marknaden tar barn upp till omkring 105 cm, vilket ungefär motsvarar fyra år. Därefter är nästa steg en framåtvänd bältesstol eller bälteskudde — fram tills barnet når 135 cm, vilket för de flesta inträffar någonstans kring 9–10 år.
+De flesta bakåtvända stolar på svenska marknaden tar barn upp till omkring 105 cm, vilket ungefär motsvarar fyra år — men [det finns stolar som tar barnet betydligt längre](/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/). Därefter är nästa steg en framåtvänd [bältesstol eller bälteskudde](/guider/baltesstol-eller-balteskudde/) — fram tills barnet når 135 cm, vilket för de flesta inträffar någonstans kring 9–10 år.
 
 ## Källor
 

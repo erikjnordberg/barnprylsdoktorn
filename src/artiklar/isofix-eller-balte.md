@@ -9,7 +9,7 @@ I butiken framställs Isofix ofta som det säkra alternativet och bältesmonteri
 
 ## Ur säkerhetssynpunkt: ingen skillnad
 
-En korrekt monterad bältesstol och en korrekt monterad Isofix-stol skyddar barnet lika bra. Båda är godkända enligt samma regelverk och testade enligt samma krav. NTF är tydliga på den punkten.
+En korrekt monterad bältesstol och en korrekt monterad Isofix-stol skyddar barnet lika bra. Båda är godkända enligt [samma regelverk](/guider/i-size-vs-vikt/) och testade enligt samma krav. NTF är tydliga på den punkten.
 
 Isofix är ett fästsystem — två metallbeslag i bilens ram som stolen klickar fast i. Bältesmontering använder bilens vanliga trepunktsbälte för att spänna fast stolen. Olika vägar till samma resultat.
 
@@ -43,7 +43,7 @@ Vid bakåtvänd montering med Isofix finns en total viktgräns på **33 kg — s
 
 Bältesmonterade stolar har ingen sådan begränsning. Där ligger gränsen oftast på 25 kg, och i R129-regelverket finns modeller upp till 36 kg.
 
-Eftersom det viktigaste av allt är att barnet kan sitta **bakåtvänt så länge som möjligt** — helst till sex–sju år — kan bältesmontering vara det bättre valet för den stol som ska räcka längst. Vissa lättare Isofix-stolar tar barnet till 23 kg och 125 cm, men de är undantaget.
+Eftersom det viktigaste av allt är att barnet kan sitta **bakåtvänt så länge som möjligt** — helst till sex–sju år — kan bältesmontering vara det bättre valet för den stol som ska räcka längst. Vissa lättare Isofix-stolar tar barnet till 23 kg och 125 cm, men de är undantaget. [Så här ser de faktiska alternativen ut](/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/).
 
 ## Sammanfattat
 

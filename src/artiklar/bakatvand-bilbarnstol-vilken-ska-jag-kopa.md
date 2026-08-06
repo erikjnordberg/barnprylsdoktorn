@@ -51,7 +51,7 @@ Priset du betalar: monteringen tar längre tid och kräver att du gör rätt.
 
 Dubbelt så dyr som Britax-stolen, och ett betyg lägre. Så varför är den med?
 
-Två skäl. Det första är att den är godkänd från **40 cm**, alltså från nyfödd. Den kan ersätta babyskyddet helt, vilket sparar ett köp — men du tappar smidigheten med ett bärbart skydd som går att lyfta ur bilen med barnet i.
+Två skäl. Det första är att den är godkänd från **40 cm**, alltså från nyfödd. Den kan [ersätta babyskyddet](/guider/babyskydd-for-nyfodda/) helt, vilket sparar ett köp — men du tappar smidigheten med ett bärbart skydd som går att lyfta ur bilen med barnet i.
 
 Det andra är vridbarheten. Folksam lyfter fram att den går att vrida mot dörröppningen när du sätter i barnet. Det låter som en bekvämlighetsdetalj, och det är det — men det är också den funktion föräldrar oftast säger att de inte skulle vilja vara utan, särskilt med en dålig rygg eller en trång parkeringsplats.
 
@@ -84,6 +84,8 @@ Räcker längst → Max-Safe Pro, med 36 kg.
 Bekvämlighet → BeSafe Beyond, med vridfunktionen.
 
 Och oavsett vilken du landar i: **provmontera den i din bil innan du bestämmer dig.** Flera tillverkare har billistor, och vissa återförsäljare erbjuder fri retur om stolen inte passar. En bra stol som inte går att montera rätt i just din bil är fel stol.
+
+När stolen väl är urvuxen — någonstans kring sex–sju år med de här modellerna — är nästa steg [bältesstol eller bälteskudde](/guider/baltesstol-eller-balteskudde/).
 
 ## Ett förbehåll om priserna
 

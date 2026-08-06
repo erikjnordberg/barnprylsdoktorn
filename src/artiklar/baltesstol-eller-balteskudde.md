@@ -18,11 +18,11 @@ Här gör de flesta sitt enda riktiga misstag: de byter för tidigt.
 
 Den bakåtvända stolen är urvuxen när barnets **ögon är i höjd med stolens övre kant** — eller ungefär när en tredjedel av huvudet sticker upp ovanför ryggen. Alternativt när stolens angivna längd- eller viktgräns passerats.
 
-Den är alltså **inte** urvuxen för att benen ser trångt placerade ut. Det är nästan alltid vi vuxna som stör oss på det, inte barnet. En bakåtvänd stol godkänd till 125 cm räcker för många barn till sex–sju år, och varje extra år bakåtvänt är den billigaste säkerhetsuppgradering du kan göra.
+Den är alltså **inte** urvuxen för att benen ser trångt placerade ut. Det är nästan alltid vi vuxna som stör oss på det, inte barnet. [En bakåtvänd stol godkänd till 125 cm](/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/) räcker för många barn till sex–sju år, och varje extra år bakåtvänt är den billigaste säkerhetsuppgradering du kan göra.
 
 NTF får frågan om man får sätta en stor treåring i bältesstol. Svaret är ja, det får du — men de avråder. Huvudet är tungt i förhållande till kroppen och nacken är inte färdig. I en frontalkrock löper ett framåtvänt barn upp till fem gånger högre risk för nack- och skallskador.
 
-En sak till som är värd att veta innan du handlar: **ingen framåtvänd stol klarar Plustestet.** Det frivilliga svenska testet mäter nackkrafterna i en frontalkollision, och hittills har bara bakåtvända stolar klarat det. Leta alltså inte efter Plustest-märkning på bältesstolar — den finns inte att hitta.
+En sak till som är värd att veta innan du handlar: **ingen framåtvänd stol klarar Plustestet.** [Det frivilliga svenska testet](/guider/babyskydd-for-nyfodda/) mäter nackkrafterna i en frontalkollision, och hittills har bara bakåtvända stolar klarat det. Leta alltså inte efter Plustest-märkning på bältesstolar — den finns inte att hitta.
 
 ## Bältesstol och bälteskudde — vad är skillnaden?
 
@@ -50,14 +50,14 @@ Kolla etiketten. Står det inte 125 cm, låt den stå kvar på hyllan.
 
 ## Vad märkningen betyder
 
-Sedan **1 september 2024** får bara stolar godkända enligt **R129** säljas nya. Din gamla R44-stol är fortfarande fullt laglig att använda — det finns inget slutdatum för användning, bara för försäljning — och kan användas hela sin livslängd på ungefär tio år.
+Sedan **1 september 2024** får bara stolar godkända enligt **[R129](/guider/i-size-vs-vikt/)** säljas nya. Din gamla R44-stol är fortfarande fullt laglig att använda — det finns inget slutdatum för användning, bara för försäljning — och kan användas hela sin livslängd på ungefär tio år.
 
 R129-bältesstolar är märkta efter längd, oftast i två spann:
 
 - **100–125 cm** — bältesstol med ryggstöd, för de yngre
 - **125–150 cm** — täcker de större barnen, ofta som kudde eller stol med lågt ryggstöd
 
-Har stolen Isofix-fästen håller de bara **stolen** på plats i bilen. Det är alltid bilens bälte som håller fast barnet. Därför gäller inte heller 33-kilosgränsen som begränsar bakåtvända Isofix-stolar här — den handlar om vad fästena orkar hålla, och en bältesstol belastar dem inte på samma sätt.
+Har stolen [Isofix-fästen](/guider/isofix-eller-balte/) håller de bara **stolen** på plats i bilen. Det är alltid bilens bälte som håller fast barnet. Därför gäller inte heller 33-kilosgränsen som begränsar bakåtvända Isofix-stolar här — den handlar om vad fästena orkar hålla, och en bältesstol belastar dem inte på samma sätt.
 
 En praktisk konsekvens av det: **en bältesmonterad stol eller kudde måste spännas fast med bältet även när barnet inte sitter i den.** Annars är den ett löst föremål som far runt i kupén vid en krock.
 

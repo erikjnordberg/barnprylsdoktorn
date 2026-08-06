@@ -13,17 +13,17 @@ Det goda är att valet är enklare än det ser ut. Fyra saker avgör.
 
 Ett babyskydd används från födseln till ungefär **sex till nio månader**, och är typiskt godkänt för 0–13 kg eller 40–75 cm. Signalen att byta är inte åldern utan att barnet kan sitta upprätt själv, eller att huvudet når stolens överkant.
 
-Babyskyddet är alltså en kort etapp. Den stora investeringen är nästa stol — den bakåtvända, som ska räcka till fyra år och gärna sex–sju. Lägg din research där.
+Babyskyddet är alltså en kort etapp. Den stora investeringen är nästa stol — den bakåtvända, som ska räcka till fyra år och gärna sex–sju. [Lägg din research där](/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/).
 
 ## 2. Bilen bestämmer mer än du vill
 
-Isofix finns i princip i alla bilar tillverkade efter 2006, men inte på alla platser. Har du en äldre bil, byter bil ofta, eller ska stolen sitta fram — kontrollera vad som faktiskt går att montera innan du beställer.
+Isofix finns i princip i alla bilar tillverkade efter 2006, men inte på alla platser. Har du en äldre bil, byter bil ofta, eller ska stolen sitta fram — kontrollera vad som faktiskt går att montera innan du beställer. Är du osäker på om du ens vill ha Isofix, [går vi igenom valet mot bältesmontering här](/guider/isofix-eller-balte/).
 
 **Och det viktigaste:** ett babyskydd får aldrig sitta framför en aktiv krockkudde. Ska det i framsätet måste krockkudden stängas av. Kontrollera i bilens manual, inte i minnet.
 
 ## 3. Plustestet är den märkning som betyder något
 
-Alla stolar som säljs i Sverige är godkända enligt R44 eller R129. Det är ett minimikrav, inte ett kvalitetsbetyg — varenda stol i butiken klarar det.
+Alla stolar som säljs i Sverige är godkända enligt [R44 eller R129](/guider/i-size-vs-vikt/). Det är ett minimikrav, inte ett kvalitetsbetyg — varenda stol i butiken klarar det.
 
 **Plustestet** är något annat: ett frivilligt svenskt test där stolen krockas i högre hastighet och med kortare inbromsningssträcka, med sensorer som mäter belastningen på barnets nacke. Orkar du bry dig om en enda sak, leta efter den dekalen.
 
