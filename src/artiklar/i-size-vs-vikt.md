@@ -5,7 +5,17 @@ beskrivning: i-Size, R129 och R44 förklarat på svenska — vad skillnaden är,
 date: 2026-08-06
 ---
 
-Om du står i butiken och hör "den här är i-Size" utan att veta om det är bra eller bara marknadsföring: det är bra, och här är varför.
+## Kort svar
+
+- **R129** är den nyare standarden och utgår från barnets **längd**. **R44** är den äldre och utgår från **vikt**. R129 är bättre — välj den.
+- **i-Size** är en kategori inom R129. Ser du den märkningen är stolen godkänd enligt det nyare regelverket och fungerar med Isofix. i-Size är alltid R129; alla R129-stolar är inte i-Size.
+- **Lagen kräver** bakåtvänt till minst 15 månader och 76 cm, och någon form av godkänd skyddsanordning tills barnet är 135 cm.
+- **Men följ inte lagen — följ rekommendationen.** Trafikverket och NTF säger bakåtvänt till **minst fyra år**, gärna längre. Det är den siffra som spelar roll.
+- **I butiken:** leta efter R129 eller i-Size, och efter hur högt upp i längd stolen tillåter bakåtvänt åkande. Är den dessutom **Plustestad** är du klar.
+
+Det är allt du behöver för att gå in i en butik. Vill du veta varför, fortsätt läsa.
+
+---
 
 ## R44 och R129 är två olika sätt att mäta
 
@@ -23,7 +33,7 @@ Två olika saker, och de blandas ofta ihop:
 
 **Skyddsanordning över huvud taget:** Enligt svensk trafikförordning måste barn som är kortare än **135 cm** använda bilbarnstol, bälteskudde eller annan godkänd skyddsanordning, i stället för eller tillsammans med bilbältet.
 
-## Vad som faktiskt rekommenderas i Sverige
+## Varför rekommendationen är en helt annan siffra
 
 Här är det viktiga: lagens minimum och det som är säkert är inte samma sak.
 
@@ -32,12 +42,6 @@ Trafikverket och NTF rekommenderar att barn åker **bakåtvänt till minst fyra 
 Femton månader är alltså inte "då byter man". Det är "då är det inte längre olagligt att byta".
 
 De flesta bakåtvända stolar på svenska marknaden tar barn upp till omkring 105 cm, vilket ungefär motsvarar fyra år. Därefter är nästa steg en framåtvänd bältesstol eller bälteskudde — fram tills barnet når 135 cm, vilket för de flesta inträffar någonstans kring 9–10 år.
-
-## Sammanfattat
-
-- **R129/i-Size** mäter längd, **R44** mäter vikt. R129 är den nyare och bättre standarden.
-- **Lagen:** bakåtvänt till minst 15 månader och 76 cm; någon form av skyddsanordning tills barnet är 135 cm.
-- **Rekommendationen:** bakåtvänt till minst fyra år. Följ den, inte lagens minimum.
 
 ## Källor
 

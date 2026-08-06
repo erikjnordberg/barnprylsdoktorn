@@ -19,32 +19,39 @@ Det är i **monteringen** frågan avgörs, inte i konstruktionen.
 
 Isofix är svårare att göra fel. Du klickar in stolen, indikatorerna blir gröna, klart. Bältesmontering kräver att bältet dras rätt väg genom rätt spår och spänns ordentligt — fler moment, fler tillfällen att missa. Och en felmonterad stol skyddar sämre, oavsett hur bra stolen är.
 
-Så den ärliga rekommendationen: **välj Isofix om din bil har det och stolen du vill ha finns i den varianten.** Inte för att den är säkrare i sig, utan för att den är svårare att sabba.
+Så för de flesta: **välj Isofix om din bil har det och stolen finns i den varianten.** Inte för att den är säkrare i sig, utan för att den är svårare att sabba.
 
-Har du en bil utan Isofix, eller vill ha en bältesmonterad stol av andra skäl, är det inget säkerhetsproblem. Många moderna bältesstolar har smarta lösningar som självåtdragande förankringsband, och de går att montera rätt på under en minut när man väl kan det.
+## Men om du inte har en egen bil
 
-## Två saker att kolla i din bil
+Här är anledningen till att vi landade i bältesmontering, och som ingen i butiken tog upp.
 
-**Isofix finns i princip i alla bilar tillverkade efter 2006** — men inte nödvändigtvis på alla platser. Baksätets ytterplatser brukar ha det, mittplatsen ofta inte, framsätet sällan.
+Vi äger ingen bil. Vi hyr, leasar och lånar — en Golf en helg, en kombi nästa, svärfars bil när det är storhandling. Och då blir Isofix plötsligt fel verktyg.
 
-Har du flera barn kan du behöva kombinera: en Isofix-stol där fästena finns, en bältesmonterad där de inte finns. Det är helt i sin ordning.
+Problemet är inte att Isofix saknas i hyrbilar. Det finns oftast. Problemet är att **du inte vet var det finns förrän du står på parkeringen**. Alla platser i baksätet har inte fästen. Vissa bilar har dem bara på ytterplatserna, vissa har dem svåråtkomliga bakom klädseln, och tillverkarnas billistor täcker inte varenda modellår i en uthyrningsflotta. Har du ett babyskydd med Isofix-bas ska dessutom basen med i varje bil — den är klumpig, väger en del och ligger i vägen i bagageluckan.
+
+En bältesmonterad stol bryr sig inte om något av det. **Varje bil som är laglig att köra har ett trepunktsbälte.** Stolen går i vilken bil som helst, i vilken plats som helst, utan att du behöver kontrollera något i förväg.
+
+Priset du betalar är monteringsmomentet — och det är ett riktigt pris. Första gångerna tar det tid och känns osäkert. Men det är samma handgrepp varje gång oavsett bil, och efter tio–femton gånger sitter det. Numera gör jag det på under en minut i en bil jag aldrig satt i förut.
+
+**Tumregeln:** har du en bil som stolen får sitta kvar i, ta Isofix. Byter du bil ofta, ta bältesmontering — flexibiliteten är värd mer än de sekunder Isofix sparar.
 
 ## Viktbegränsningen som ingen nämner
 
-Här är detaljen som överraskar folk, och som kan avgöra ditt val.
+Här är detaljen som överraskar folk, och som kan avgöra ditt val även om du har egen bil.
 
 Vid bakåtvänd montering med Isofix finns en total viktgräns på **33 kg — stol plus barn tillsammans**. Väger stolen 15 kg får barnet alltså väga 18 kg. Det är därför de flesta bakåtvända Isofix-stolar är godkända upp till just 18 kg.
 
 Bältesmonterade stolar har ingen sådan begränsning. Där ligger gränsen oftast på 25 kg, och i R129-regelverket finns modeller upp till 36 kg.
 
-Eftersom det viktigaste av allt är att barnet kan sitta **bakåtvänt så länge som möjligt** — helst till sex–sju år — kan bältesmontering faktiskt vara det bättre valet för den stol som ska räcka längst. Vissa lättare Isofix-stolar tar barnet till 23 kg och 125 cm, men de är undantaget.
+Eftersom det viktigaste av allt är att barnet kan sitta **bakåtvänt så länge som möjligt** — helst till sex–sju år — kan bältesmontering vara det bättre valet för den stol som ska räcka längst. Vissa lättare Isofix-stolar tar barnet till 23 kg och 125 cm, men de är undantaget.
 
 ## Sammanfattat
 
 - **Säkerhet:** likvärdigt, när båda monteras rätt.
-- **Risk för felmontering:** lägre med Isofix. Det är det starkaste argumentet.
+- **Risk för felmontering:** lägre med Isofix. Det är det starkaste argumentet för.
+- **Byter du bil ofta:** bältesmontering, utan tvekan. Den funkar i allt.
 - **Hur länge barnet får sitta bakåtvänt:** ofta längre med bältesmontering, tack vare 33-kilosgränsen på Isofix.
-- **Slutsats:** Isofix till babyskyddet och den första bakåtvända stolen. För stolen som ska räcka till sexårsåldern — kolla maxgränserna innan du bestämmer dig.
+- **Slutsats:** egen bil och stolen får sitta kvar → Isofix. Hyrbil, leasing eller flera bilar → bältesmontering.
 
 ## Källor
 
