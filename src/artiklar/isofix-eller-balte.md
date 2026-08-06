@@ -2,7 +2,7 @@
 title: Isofix eller bälte — spelar det roll?
 ingress: "Kort svar: inte för säkerheten. Men för chansen att du monterar rätt, och det är där olyckorna faktiskt sker."
 beskrivning: Isofix eller bältesmontering av bilbarnstol — vad skillnaden är, vad som är säkrast, och vilket du bör välja.
-datum: 2026-08-06
+date: 2026-08-06
 ---
 
 I butiken framställs Isofix ofta som det säkra alternativet och bältesmontering som det gamla. Det är en förenkling som är på gränsen till fel.

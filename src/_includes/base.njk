@@ -3,9 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ title }} | Barnprylsdoktorn</title>
-  <meta name="description" content="{{ beskrivning or 'Barnprylsdoktorn hjälper dig välja rätt bilbarnstol utan att du behöver göra researchen själv.' }}">
+  <title>{{ title }} | {{ site.namn }}</title>
+  <meta name="description" content="{{ beskrivning or site.beskrivning }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.namn }}" href="/feed.xml">
+
+  {# Så här ser sidan ut när någon delar länken i Messenger, Slack eller på Facebook #}
+  <meta property="og:type" content="{% if page.url and '/guider/' in page.url and page.url != '/guider/' %}article{% else %}website{% endif %}">
+  <meta property="og:site_name" content="{{ site.namn }}">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ beskrivning or site.beskrivning }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/bilder/delningsbild.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 

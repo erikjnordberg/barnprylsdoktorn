@@ -2,7 +2,7 @@
 title: Babyskydd för nyfödda — så väljer du rätt
 ingress: Den första stolen är den du köper när du har minst koll och mest annat att tänka på. Här är det som faktiskt avgör.
 beskrivning: Så väljer du babyskydd till en nyfödd — vad Plustestet betyder, hur länge skyddet räcker, och de misstag som är lättast att göra.
-datum: 2026-08-05
+date: 2026-08-05
 ---
 
 Babyskyddet köps oftast innan barnet ens är fött, av föräldrar som aldrig satt en bilbarnstol i en bil. Det är en dålig kombination — och det är därför butikerna kan sälja dig nästan vad som helst.

@@ -2,7 +2,7 @@
 title: i-Size och R129 — vad betyder det egentligen?
 ingress: Två standarder, en massa siffror, och en säljare som pratar som om du redan förstår. Här är översättningen.
 beskrivning: i-Size, R129 och R44 förklarat på svenska — vad skillnaden är, vad lagen kräver, och vad som faktiskt rekommenderas i Sverige.
-datum: 2026-08-06
+date: 2026-08-06
 ---
 
 Om du står i butiken och hör "den här är i-Size" utan att veta om det är bra eller bara marknadsföring: det är bra, och här är varför.

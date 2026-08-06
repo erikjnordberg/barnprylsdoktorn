@@ -12,6 +12,17 @@ module.exports = function (eleventyConfig) {
     })
   );
 
+  // Datumformat för sitemap och RSS-flöde
+  eleventyConfig.addFilter("htmlDateString", (value) =>
+    new Date(value).toISOString().slice(0, 10)
+  );
+
+  eleventyConfig.addFilter("isoDate", (value) => new Date(value).toISOString());
+
+  eleventyConfig.addFilter("rssDate", (post) =>
+    new Date(post ? post.date : Date.now()).toISOString()
+  );
+
   return {
     dir: {
       input: "src",
