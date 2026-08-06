@@ -9,8 +9,8 @@ permalink: /guider/index.html
 <ul class="artikellista">
 {%- for artikel in collections.artiklar | reverse %}
   <li>
-    <h2><a href="{{ artikel.url }}">{{ artikel.data.title }}</a></h2>
-    <p>{{ artikel.data.ingress }}</p>
+    <h2><a href="{{ artikel.url }}">{{ artikel.data.title | typo }}</a></h2>
+    <p>{{ artikel.data.ingress | typo }}</p>
   </li>
 {%- else %}
   <li><p>Inga guider publicerade än — de första är på väg.</p></li>

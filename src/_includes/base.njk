@@ -35,8 +35,8 @@
   <main>
     {% if kicker %}<span class="kicker">{{ kicker }}</span>
     {%- elif "/guider/" in page.url and page.url != "/guider/" %}<span class="kicker">Guide</span>{% endif %}
-    <h1>{{ title }}</h1>
-    {% if ingress %}<p class="ingress">{{ ingress }}</p>{% endif %}
+    <h1>{{ title | typo }}</h1>
+    {% if ingress %}<p class="ingress">{{ ingress | typo }}</p>{% endif %}
     {{ content | safe }}
   </main>
 

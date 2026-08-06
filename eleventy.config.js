@@ -12,6 +12,13 @@ module.exports = function (eleventyConfig) {
     })
   );
 
+  // Binder tankstrecket till ordet före, så att rader aldrig börjar med "—"
+  eleventyConfig.addFilter("typo", (value) =>
+    typeof value === "string"
+      ? value.replace(/ \u2014 /g, "\u00A0\u2014 ")
+      : value
+  );
+
   // Datumformat för sitemap och RSS-flöde
   eleventyConfig.addFilter("htmlDateString", (value) =>
     new Date(value).toISOString().slice(0, 10)

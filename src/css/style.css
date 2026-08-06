@@ -188,27 +188,45 @@ blockquote {
 
 /* ---------- Tabeller ---------- */
 
+/* Tabeller får bryta ut ur textkolumnen, som bildmaterial i ett magasin */
 table {
   border-collapse: collapse;
   width: 100%;
-  margin: 1.75rem 0;
+  margin: 2rem 0;
   font-family: var(--sans);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
   background: #fff;
   border: 1px solid var(--kant);
+}
+
+@media (min-width: 52rem) {
+  main table {
+    width: calc(100% + 9rem);
+    margin-left: -4.5rem;
+  }
+}
+
+@media (max-width: 44rem) {
+  main table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 th,
 td {
   text-align: left;
-  padding: 0.75rem 0.9rem;
+  padding: 0.7rem 0.85rem;
   border-bottom: 1px solid var(--kant);
   vertical-align: top;
 }
 
 th {
   background: var(--papper-tint);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -216,8 +234,13 @@ th {
   white-space: nowrap;
 }
 
-td:nth-child(2) {
+td {
   white-space: nowrap;
+}
+
+td:first-child {
+  white-space: normal;
+  min-width: 11rem;
 }
 
 tbody tr:last-child td {
@@ -253,6 +276,9 @@ tbody tr:last-child td {
 .produktkort img {
   display: block;
   width: 100%;
+  height: 116px;
+  object-fit: contain;
+  padding: 0.9rem 0;
   background: var(--papper-tint);
   border-bottom: 1px solid var(--kant);
 }

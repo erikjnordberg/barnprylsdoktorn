@@ -37,8 +37,8 @@ Den här sajten är vad jag önskar hade funnits då.
 <ul class="artikellista">
 {%- for artikel in collections.artiklar | reverse %}
   <li>
-    <h2><a href="{{ artikel.url }}">{{ artikel.data.title }}</a></h2>
-    <p>{{ artikel.data.ingress }}</p>
+    <h2><a href="{{ artikel.url }}">{{ artikel.data.title | typo }}</a></h2>
+    <p>{{ artikel.data.ingress | typo }}</p>
   </li>
 {%- endfor %}
 </ul>
