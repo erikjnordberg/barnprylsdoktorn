@@ -13,19 +13,22 @@ Den här sajten är vad jag önskar hade funnits då.
 
 <section class="produktkort-grid">
   <article class="produktkort">
-    <img src="https://placehold.co/400x300" alt="Babyskydd för nyfödda">
+    <img src="/bilder/babyskydd.svg" alt="Bakåtvänt babyskydd i genomskärning, med bärhandtag och internbälte" loading="lazy" width="400" height="300">
     <h3>Babyskydd</h3>
-    <p>Den första stolen, för de allra minsta. Bärbar och fästs oftast i en bas i bilen.</p>
+    <p>Från nyfödd till ungefär sex–nio månader. Bärbart, och fästs oftast i en bas i bilen.</p>
+    <p><a href="/guider/babyskydd-for-nyfodda/">Så väljer du babyskydd</a></p>
   </article>
   <article class="produktkort">
-    <img src="https://placehold.co/400x300" alt="Bakåtvänd bilbarnstol">
+    <img src="/bilder/bakatvand.svg" alt="Bakåtvänd bilbarnstol med hög rygg och stödben mot golvet" loading="lazy" width="400" height="300">
     <h3>Bakåtvänd stol</h3>
-    <p>Nästa steg när babyskyddet blir för litet. Den säkraste positionen så länge som möjligt.</p>
+    <p>Nästa steg, och den viktigaste investeringen. Ska räcka till minst fyra år — gärna sex–sju.</p>
+    <p><a href="/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/">Vilken ska jag köpa?</a></p>
   </article>
   <article class="produktkort">
-    <img src="https://placehold.co/400x300" alt="Framåtvänd bilbarnstol och bältesstol">
+    <img src="/bilder/framatvand.svg" alt="Framåtvänd bältesstol där bilbältet går diagonalt över barnets bröst" loading="lazy" width="400" height="300">
     <h3>Framåtvänt och bältesstol</h3>
-    <p>För de större barnen, fram tills bilbältet sitter rätt utan hjälp.</p>
+    <p>För de större barnen, fram tills bilbältet sitter rätt utan hjälp — oftast kring 135 cm.</p>
+    <p><a href="/guider/i-size-vs-vikt/">Vad reglerna säger</a></p>
   </article>
 </section>
 

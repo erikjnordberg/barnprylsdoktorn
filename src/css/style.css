@@ -131,6 +131,41 @@ li {
   margin-bottom: 0.5rem;
 }
 
+/* ---------- Tabeller ---------- */
+
+.tabellwrapper {
+  overflow-x: auto;
+  margin: var(--luft) 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.95rem;
+  background: #fff;
+  border: 1px solid var(--kant);
+  border-radius: var(--radie);
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid var(--kant);
+}
+
+th {
+  background: #FAF9F6;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--text-dampad);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
 /* ---------- Produktkort ---------- */
 
 .produktkort-grid {
