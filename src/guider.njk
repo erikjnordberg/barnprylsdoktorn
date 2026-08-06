@@ -1,0 +1,18 @@
+---
+layout: base.njk
+title: Guider
+ingress: Allt du behöver veta innan du köper, förklarat en sak i taget.
+beskrivning: Guider om bilbarnstolar — regler, storlekar, montering och jämförelser.
+permalink: /guider/index.html
+---
+
+<ul class="artikellista">
+{%- for artikel in collections.artiklar | reverse %}
+  <li>
+    <h2><a href="{{ artikel.url }}">{{ artikel.data.title }}</a></h2>
+    <p>{{ artikel.data.ingress }}</p>
+  </li>
+{%- else %}
+  <li><p>Inga guider publicerade än — de första är på väg.</p></li>
+{%- endfor %}
+</ul>

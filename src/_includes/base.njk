@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }} | Barnprylsdoktorn</title>
+  <meta name="description" content="{{ beskrivning or 'Barnprylsdoktorn hjälper dig välja rätt bilbarnstol utan att du behöver göra researchen själv.' }}">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header class="sidhuvud">
+    <a class="logga" href="/">Barnprylsdoktorn</a>
+    <nav class="navbar">
+      <a href="/" {% if page.url == "/" %}class="aktiv"{% endif %}>Hem</a>
+      <a href="/guider/" {% if "/guider/" in page.url %}class="aktiv"{% endif %}>Guider</a>
+      <a href="/om/" {% if page.url == "/om/" %}class="aktiv"{% endif %}>Om</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>{{ title }}</h1>
+    {% if ingress %}<p class="ingress">{{ ingress }}</p>{% endif %}
+    {{ content | safe }}
+  </main>
+
+  <footer class="sidfot">
+    <p>Barnprylsdoktorn &middot; Skriven av en förälder som googlade för mycket.</p>
+    <p class="finstilt">Vissa länkar är affiliatelänkar. Det påverkar inte vad vi rekommenderar.</p>
+  </footer>
+
+</body>
+</html>

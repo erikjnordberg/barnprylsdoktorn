@@ -1,0 +1,5 @@
+{
+  "layout": "base.njk",
+  "tags": "artiklar",
+  "permalink": "/guider/{{ page.fileSlug }}/index.html"
+}

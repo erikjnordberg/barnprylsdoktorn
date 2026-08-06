@@ -1,0 +1,235 @@
+:root {
+  --accent: #4A7C6F;
+  --accent-mork: #35594F;
+  --text: #2A2A2A;
+  --text-dampad: #5F5F5F;
+  --bakgrund-ljus: #F4F2ED;
+  --kant: #E2DED6;
+
+  --luft: 1.5rem;
+  --radie: 6px;
+  --max-bredd: 46rem;
+}
+
+/* Gör så att padding räknas in i elementets bredd — sparar mycket huvudvärk */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text);
+  background-color: var(--bakgrund-ljus);
+}
+
+/* ---------- Sidhuvud och navigering ---------- */
+
+.sidhuvud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--luft);
+  max-width: var(--max-bredd);
+  margin: 0 auto;
+  padding: var(--luft) var(--luft) 0;
+}
+
+.logga {
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.navbar a {
+  color: var(--text-dampad);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.navbar a:hover {
+  color: var(--accent);
+}
+
+.navbar a.aktiv {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ---------- Huvudinnehåll ---------- */
+
+main {
+  max-width: var(--max-bredd);
+  margin: 0 auto;
+  padding: calc(var(--luft) * 2) var(--luft);
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin: calc(var(--luft) * 2) 0 0.5rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  margin: var(--luft) 0 0.4rem;
+}
+
+p {
+  margin: 0 0 1.1rem;
+}
+
+.ingress {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--text-dampad);
+  margin-bottom: calc(var(--luft) * 1.5);
+}
+
+main a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+main a:hover {
+  color: var(--accent-mork);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radie);
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* ---------- Produktkort ---------- */
+
+.produktkort-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: var(--luft);
+  margin: calc(var(--luft) * 2) 0;
+}
+
+.produktkort {
+  background: #fff;
+  border: 1px solid var(--kant);
+  border-radius: var(--radie);
+  padding: 1.25rem;
+}
+
+.produktkort h3 {
+  margin-top: 0.75rem;
+  font-size: 1.05rem;
+}
+
+.produktkort img {
+  width: 100%;
+}
+
+.produktkort p {
+  font-size: 0.95rem;
+  color: var(--text-dampad);
+  margin-bottom: 0;
+}
+
+/* ---------- Artikellista ---------- */
+
+.artikellista {
+  list-style: none;
+  padding: 0;
+  margin: calc(var(--luft) * 1.5) 0 0;
+}
+
+.artikellista li {
+  padding-bottom: var(--luft);
+  margin-bottom: var(--luft);
+  border-bottom: 1px solid var(--kant);
+}
+
+.artikellista li:last-child {
+  border-bottom: none;
+}
+
+.artikellista h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.25rem;
+}
+
+.artikellista a {
+  text-decoration: none;
+}
+
+.artikellista a:hover {
+  text-decoration: underline;
+}
+
+.artikellista p {
+  margin: 0;
+  color: var(--text-dampad);
+  font-size: 1rem;
+}
+
+/* ---------- Sidfot ---------- */
+
+.sidfot {
+  max-width: var(--max-bredd);
+  margin: calc(var(--luft) * 2) auto 0;
+  padding: var(--luft);
+  border-top: 1px solid var(--kant);
+  color: var(--text-dampad);
+  font-size: 0.9rem;
+}
+
+.sidfot p {
+  margin: 0 0 0.35rem;
+}
+
+.finstilt {
+  font-size: 0.8rem;
+}
+
+/* ---------- Mobil ---------- */
+
+@media (max-width: 34rem) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .ingress {
+    font-size: 1.1rem;
+  }
+
+  .sidhuvud {
+    justify-content: center;
+  }
+}
