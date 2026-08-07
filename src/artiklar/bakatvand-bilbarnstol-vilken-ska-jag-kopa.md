@@ -27,7 +27,7 @@ Vill du veta varför, fortsätt läsa.
 
 ## Varför just Folksams test
 
-Det finns hur många "bäst i test"-listor som helst, och de flesta rankar om varandra utan att ha rört en stol.
+Det finns hur många "bäst i test"-listor som helst, och de flesta rankar om varandra utan att ha rört en stol. (Vill du se hela kedjan i stället — babyskydd, bakåtvänt och bältesstol på en sida — finns den i [Bästa bilbarnstolen 2026](/guider/basta-bilbarnstolen/).)
 
 Folksam gör något annat. De har testat bilbarnstolar sedan 2015, testerna är oberoende och betygssättningen är offentlig. De krocktestar inte själva i det här testet — alla stolar är redan krocktestade enligt lagkraven — utan bedömer de egenskaper som forskningen visar påverkar skyddet mest: hur länge barnet får plats bakåtvänt, hur stolen skyddar vid en krock, och hur lätt den är att använda fel.
 

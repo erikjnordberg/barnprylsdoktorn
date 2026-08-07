@@ -3,13 +3,14 @@ title: Babyskydd för nyfödda — så väljer du rätt
 ingress: Den första stolen är den du köper när du har minst koll och mest annat att tänka på. Här är det som faktiskt avgör.
 beskrivning: Så väljer du babyskydd till en nyfödd — hur länge skyddet räcker, vad bilen kräver, vad Plustestet betyder, och misstaget alla gör.
 date: 2026-08-05
+uppdaterad: 2026-08-07
 ---
 
 ## Kort svar
 
 - Räcker ungefär sex–nio månader (0–13 kg / 40–75 cm) — byt när barnet sitter upprätt själv, inte efter ålder.
 - Aldrig framför en aktiv krockkudde.
-- Leta efter Plustest-märkningen — R44/R129 är bara minimikrav.
+- Plustest-märkningen finns inte på babyskydd — spara det kravet till nästa stol.
 - Babyskyddet får luta mer än en vanlig bakåtvänd stol, men aldrig ligga helt plant under färd.
 - Ta av ytterkläder innan barnet spänns fast — lägg filten ovanpå bältet i stället.
 
@@ -23,7 +24,7 @@ Det goda är att valet är enklare än det ser ut. Fyra saker avgör.
 
 Ett babyskydd används från födseln till ungefär **sex till nio månader**, och är typiskt godkänt för 0–13 kg eller 40–75 cm. Signalen att byta är inte åldern utan att barnet kan sitta upprätt själv, eller att huvudet når stolens överkant.
 
-Babyskyddet är alltså en kort etapp. Den stora investeringen är nästa stol — den bakåtvända, som ska räcka till fyra år och gärna sex–sju. [Lägg din research där](/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/).
+Babyskyddet är alltså en kort etapp. Den stora investeringen är nästa stol — den bakåtvända, som ska räcka till fyra år och gärna sex–sju. [Lägg din research där](/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/), eller läs [hela kedjan från babyskydd till bältesstol](/guider/basta-bilbarnstolen/) på en sida.
 
 Just för att etappen är så kort är babyskyddet också den bilbarnstol som oftast säljs vidare i nästan nyskick. [Så kontrollerar du att en begagnad stol faktiskt är säker](/guider/begagnad-bilbarnstol/) innan du köper den av någon annan.
 
@@ -33,11 +34,17 @@ Isofix finns i princip i alla bilar tillverkade efter 2006, men inte på alla pl
 
 **Och det viktigaste:** ett babyskydd får aldrig sitta framför en aktiv krockkudde. Ska det i framsätet måste krockkudden stängas av. Kontrollera i bilens manual, inte i minnet — [så här funkar reglerna, och varför framsätet ändå ofta är ett bra val](/guider/bilbarnstol-fram-och-airbag/).
 
-## 3. Plustestet är den märkning som betyder något
+## 3. Plustestet gäller inte babyskydd
 
 Alla stolar som säljs i Sverige är godkända enligt [R44 eller R129](/guider/i-size-vs-vikt/). Det är ett minimikrav, inte ett kvalitetsbetyg — varenda stol i butiken klarar det.
 
-**Plustestet** är något annat: ett frivilligt svenskt test där stolen krockas i högre hastighet och med kortare inbromsningssträcka, med sensorer som mäter belastningen på barnets nacke. Orkar du bry dig om en enda sak, leta efter den dekalen.
+**Plustestet** är något annat: ett frivilligt svenskt test hos VTI där stolen krockas i 56 km/h med kortare inbromsningssträcka än lagkravet, och sensorer mäter belastningen på barnets nacke. Det är den märkning jag annars rekommenderar att leta efter — men inte här.
+
+VTI:s lista över godkända stolar innehåller inte ett enda babyskydd. Samtliga poster är godkända till minst 18 kg eller 105 cm, alltså bakåtvända småbarnsstolar. Letar du efter Plustest-dekalen på ett babyskydd kommer du inte att hitta den.
+
+Det betyder inte att babyskydd är osäkra. Det betyder att testet är byggt för det skede där barnet sitter längst och nackbelastningen är farligast. **Spara Plustest-kravet till nästa köp** — [den bakåtvända stolen](/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/), där det faktiskt går att ställa.
+
+Ingår babyskyddet i ett modulsystem kan fortsättningsstolen vara Plustestad. Det är i så fall stolen som är testad, inte skyddet — läs vad dekalen faktiskt gäller innan du betalar för den.
 
 ## 4. Lutningen är detaljen alla missar
 
@@ -49,7 +56,7 @@ Lutningen är bara en av flera detaljer som avgör om skyddet fungerar som det s
 
 ## Innan du bokar hem något
 
-- Har stolen **Plustest**-märkning?
+- Är den godkänd enligt **R129** och rätt i längdspannet för barnet?
 - Passar den i **din** bil, på platsen du tänkt använda? Tillverkarna har billistor.
 - Kan du montera den utan att svettas? En krånglig stol monteras fel — och en felmonterad bra stol är sämre än en rätt monterad enkel.
 - Köper du begagnat: vet du stolens historia? Har den varit med i en krock ska den kasseras, och det syns inte utifrån. Svensk rekommendation är cirka tio års livslängd från inköpsdatum.
@@ -62,5 +69,6 @@ Ta av tjocka ytterkläder innan barnet spänns fast. Overallen gör att internb�
 
 - [NTF — Bilbarnstolsskolan](https://ntf.se/konsumentupplysning/barn-i-bil/bilbarnstolsskola/)
 - [Folksam — Test av bilbarnstolar](https://www.folksam.se/tester-och-goda-rad/vara-tester/bilbarnstolar)
+- [VTI — Plustestade bilbarnstolar](https://www.vti.se/en/services/laboratory-and-testing/crash-safety-testing/child-restraint-systems/the-plus-test/plus-tested-models)
 - [Folksam — Krocktest med vinterkläder](https://www.folksam.se/forsakringar/barnforsakring/krocktest-med-vinterklader)
 - [NTF — Bilbarnstolars livslängd](https://ntf.se/konsumentupplysning/barn-i-bil/bilbarnstolars-livslangd/)

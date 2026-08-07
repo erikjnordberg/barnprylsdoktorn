@@ -10,6 +10,8 @@ När vi skulle köpa vår första bilbarnstol nickade jag i butiken medan sälja
 
 Den här sajten är vad jag önskar hade funnits då.
 
+**Vill du bara ha svaret?** [Bästa bilbarnstolen 2026 — vilken du ska köpa, i vilket skede](/guider/basta-bilbarnstolen/) samlar alla tre köpen på en sida.
+
 ## Var ska du börja?
 
 <section class="produktkort-grid">
