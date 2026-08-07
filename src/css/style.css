@@ -52,7 +52,7 @@
   --varm-text: #B5581F;
   --varm-ljus: #F7F0E6;
   --text: #181614;
-  --text-dampad: #78726a;
+  --text-dampad: #6b6459;
   --papper: #FFFFFF;
   --papper-tint: #F7F5F2;
   --kant: rgba(24, 22, 20, 0.12);
@@ -234,14 +234,38 @@ table {
 }
 
 @media (max-width: 44rem) {
-  main table { display: block; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+  main table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* Skugga i högerkanten som försvinner när man scrollat klart —
+       den enda affordansen som fungerar utan att ta plats. */
+    background:
+      linear-gradient(to right, var(--papper) 30%, rgba(255,255,255,0)) left center,
+      linear-gradient(to left, var(--papper) 30%, rgba(255,255,255,0)) right center,
+      radial-gradient(farthest-side at 0 50%, rgba(24,22,20,0.15), rgba(0,0,0,0)) left center,
+      radial-gradient(farthest-side at 100% 50%, rgba(24,22,20,0.15), rgba(0,0,0,0)) right center;
+    background-repeat: no-repeat;
+    background-size: 3rem 100%, 3rem 100%, 1rem 100%, 1rem 100%;
+    background-attachment: local, local, scroll, scroll;
+  }
+
+  /* Låt cellerna brytas så att tabellen krymper i stället för att svälla */
+  main table td,
+  main table th { white-space: normal; }
+  main table td:first-child { min-width: 8rem; }
+
+  /* Minska den fasta bredden på den bredaste kolumnen */
+  main table { font-size: 0.85rem; }
+  main table th,
+  main table td { padding: 0.6rem 0.6rem; }
 }
 
 th, td { text-align: left; padding: 0.7rem 0.85rem; border-bottom: 1px solid var(--kant); vertical-align: top; }
 
 th {
   background: var(--papper-tint);
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -441,7 +465,11 @@ tbody tr:last-child td { border-bottom: none; }
 .sidfot p { margin: 0 0 0.4rem; }
 .sidfot a { color: var(--text-dampad); }
 .sidfot a:hover { color: var(--accent); }
-.finstilt { font-size: 0.8rem; opacity: 0.85; }
+.finstilt {
+  font-size: 0.82rem;
+  /* Ingen opacity — dämpa med färgen i stället, så kontrasten går att räkna på */
+  color: var(--text-dampad);
+}
 
 /* ---------- Mobil ---------- */
 
