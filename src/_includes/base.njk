@@ -21,7 +21,7 @@
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ beskrivning or site.beskrivning }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="og:image" content="{{ site.url }}/bilder/delningsbild.png">
+  <meta property="og:image" content="{{ site.url }}{{ '/bilder/delningsbild.png' | version }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
@@ -33,7 +33,7 @@
     "@type": "Article",
     "headline": {{ title | dump | safe }},
     "description": {{ (beskrivning or site.beskrivning) | dump | safe }},
-    "image": {{ (site.url ~ "/bilder/delningsbild.png") | dump | safe }},
+    "image": {{ (site.url ~ ("/bilder/delningsbild.png" | version)) | dump | safe }},
     "author": {
       "@type": "Person",
       "name": "Erik Nordberg"
