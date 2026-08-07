@@ -1,6 +1,8 @@
 node_modules/
 _site/
 .DS_Store
+# Claude Codes lokala godkännanden — hör till den här datorn, inte till repot
+.claude/settings.local.json
 # Gammalt kursmaterial och övningsfiler — ligger kvar på disken, men hör inte till sajten
 arkiv/
 kodhandledare-bilbarnstolar.md
