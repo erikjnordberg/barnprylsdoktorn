@@ -5,9 +5,9 @@ beskrivning: Sex vanliga monteringsfel på bilbarnstol — från slaka underför
 date: 2026-08-07
 ---
 
-Du har läst testerna, jämfört stolar och betalat femtusen kronor för den som Folksam rekommenderade. Sedan monterade du den på en parkering i höstmörkret med en skrikande bebis i vagnen bredvid, och du är faktiskt inte helt säker på att du gjorde rätt.
+Du har läst testerna och betalat femtusen kronor för rätt stol. Sedan monterade du den på en parkering i höstmörkret med en skrikande bebis bredvid — och är inte helt säker på att du gjorde rätt.
 
-Det här är den delen ingen pratar om. Valet av stol får all uppmärksamhet, men det är monteringen som avgör hur mycket av skyddet du faktiskt får ut.
+Valet av stol får all uppmärksamhet. Det är monteringen som avgör hur mycket skydd du faktiskt får.
 
 ## Kort svar
 
@@ -16,7 +16,7 @@ Det här är den delen ingen pratar om. Valet av stol får all uppmärksamhet, m
 - **Näst vanligaste: bältet utanpå vinterjackan.** Ungefär hälften av föräldrarna gör det, och Folksams krockprov visar att belastningen på barnet ökar.
 - **Minutkontrollen:** ryck i stolen vid bältesvägen — den ska knappt röra sig. Kläm på selen vid nyckelbenet — knappt ett finger ska få plats. Titta på stödbenet eller top tethern — den ska faktiskt vara i kontakt.
 
-*Vill du veta varför, fortsätt läsa.*
+Vill du veta varför, fortsätt läsa.
 
 ## Varför montering är hela grejen
 

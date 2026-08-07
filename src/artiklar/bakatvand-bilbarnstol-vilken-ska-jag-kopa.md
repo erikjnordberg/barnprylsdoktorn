@@ -15,8 +15,8 @@ Folksam testade fem nya bakåtvända bilbarnstolar 2025. Tre fick betyget **Bra 
 | **BeSafe Beyond** | 8 998 kr | 40–125 cm, max 22 kg | Isofix | Ja | 3 |
 | **TinySeats Two** | 5 995 kr | 61–125 cm, max 23 kg | Isofix | Nej | 3 |
 
-- **Vill du inte tänka mer:** ta **Britax Römer Max-Safe Pro**. Högsta betyget, lägsta priset, högsta viktgränsen och lättast av de tre.
-- **Har du redan babyskydd och vill ha Isofix:** **BeSafe Beyond**. Den kan vridas mot dörren, vilket räddar ryggen när du lyfter i barnet.
+- **Vill du inte tänka mer:** **Britax Römer Max-Safe Pro** — högst betyg, lägst pris, högst viktgräns.
+- **Har du redan babyskydd och vill ha Isofix:** **BeSafe Beyond** — vrids mot dörren, skonar ryggen vid i- och urlyft.
 - **Behöver du en stol som går att fälla ihop och ta med:** **TinySeats Two** — men läs varningen nedan först.
 
 {% kopblock "britax-max-safe-pro" %}
@@ -37,13 +37,13 @@ En viktig detalj i deras betygssättning: **en stol som tillåter framåtvänt �
 
 **4 495 kr · 61–125 cm, max 36 kg · bältesmonterad · Plustestad till 125 cm · betyg 4**
 
-Det här är testets enda fyra, och det märkliga är att den samtidigt är billigast av de tre.
+Det här är testets enda fyra — och billigast av de tre.
 
 Folksams kommentar är kort: mycket rymlig, hög rygg, godkänd upp till 36 kg, låg vikt på 9 kg. Den där viktgränsen är viktigare än den låter. Som vi gick igenom i [guiden om Isofix och bälte](/guider/isofix-eller-balte/) finns det en total viktgräns på 33 kg för stol plus barn vid bakåtvänd Isofix-montering — vilket i praktiken stoppar de flesta Isofix-stolar vid 18 kg barn. Max-Safe Pro är bältesmonterad och slipper den begränsningen helt.
 
 36 kg och 125 cm betyder att ett normalstort barn kan sitta bakåtvänt en bra bit förbi sexårsdagen. Det är den enskilt viktigaste egenskapen hos en bilbarnstol, och den här stolen har mest av den.
 
-Vill du pressa den ytterligare handlar det ofta lika mycket om platsen i bilen som om stolen: [framsätet har vanligen mer benutrymme än baksätet och kan ge upp till ett år till bakåtvänt](/guider/bilbarnstol-fram-och-airbag/), förutsatt att krockkudden är avstängd.
+Vill du pressa den ytterligare handlar det lika mycket om platsen i bilen: [framsätet ger ofta mer benutrymme och upp till ett år till bakåtvänt](/guider/bilbarnstol-fram-och-airbag/), förutsatt att krockkudden är avstängd.
 
 **Att den är bältesmonterad är alltså inte en kompromiss här — det är förklaringen till att den vinner.** Har du dessutom ingen egen bil är valet enkelt: en bältesmonterad stol går i vilken bil som helst.
 

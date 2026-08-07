@@ -5,7 +5,17 @@ beskrivning: Isofix eller bältesmontering av bilbarnstol — vad skillnaden är
 date: 2026-08-06
 ---
 
-I butiken framställs Isofix ofta som det säkra alternativet och bältesmontering som det gamla. Det är en förenkling som är på gränsen till fel.
+## Kort svar
+
+- Säkerhet: likvärdigt, om båda monteras rätt.
+- Risk för felmontering: lägre med Isofix — det är dess starkaste argument.
+- Byter du bil ofta: bältesmontering, den funkar i alla bilar.
+- Ska stolen räcka längst bakåtvänt: ofta bältesmontering, tack vare 33-kilosgränsen på Isofix.
+- Egen bil, stolen får sitta kvar → Isofix. Hyrbil eller flera bilar → bältesmontering.
+
+Vill du veta varför, fortsätt läsa.
+
+I butiken framställs Isofix ofta som det säkra alternativet. Det är en förenkling som är på gränsen till fel.
 
 ## Ur säkerhetssynpunkt: ingen skillnad
 
@@ -23,7 +33,7 @@ Så för de flesta: **välj Isofix om din bil har det och stolen finns i den var
 
 ## Men om du inte har en egen bil
 
-Här är anledningen till att vi landade i bältesmontering, och som ingen i butiken tog upp.
+Anledningen till att vi landade i bältesmontering — och som ingen i butiken tog upp:
 
 Vi äger ingen bil. Vi hyr, leasar och lånar — en Golf en helg, en kombi nästa, svärfars bil när det är storhandling. Och då blir Isofix plötsligt fel verktyg.
 
@@ -37,7 +47,7 @@ Priset du betalar är monteringsmomentet — och det är ett riktigt pris. Förs
 
 ## Viktbegränsningen som ingen nämner
 
-Här är detaljen som överraskar folk, och som kan avgöra ditt val även om du har egen bil.
+Detaljen som överraskar folk, och som kan avgöra ditt val även med egen bil:
 
 Vid bakåtvänd montering med Isofix finns en total viktgräns på **33 kg — stol plus barn tillsammans**. Väger stolen 15 kg får barnet alltså väga 18 kg. Det är därför de flesta bakåtvända Isofix-stolar är godkända upp till just 18 kg.
 
@@ -48,14 +58,6 @@ Eftersom det viktigaste av allt är att barnet kan sitta **bakåtvänt så läng
 ## Om stolen ska sitta i framsätet
 
 Isofix-fästen finns oftast bara i baksätet, men vissa bilar har dem fram också. Ska stolen monteras i framsätet är det första du behöver ta reda på inte fästena, utan krockkudden — [här går vi igenom vad lagen kräver och när framsätet faktiskt är ett bra val](/guider/bilbarnstol-fram-och-airbag/).
-
-## Sammanfattat
-
-- **Säkerhet:** likvärdigt, när båda monteras rätt.
-- **Risk för felmontering:** lägre med Isofix. Det är det starkaste argumentet för.
-- **Byter du bil ofta:** bältesmontering, utan tvekan. Den funkar i allt.
-- **Hur länge barnet får sitta bakåtvänt:** ofta längre med bältesmontering, tack vare 33-kilosgränsen på Isofix.
-- **Slutsats:** egen bil och stolen får sitta kvar → Isofix. Hyrbil, leasing eller flera bilar → bältesmontering.
 
 ## Källor
 

@@ -6,7 +6,7 @@ beskrivning: Hur Barnprylsdoktorn finansieras, vad annonslänkarna i guiderna be
 permalink: /sa-tjanar-sajten-pengar/
 ---
 
-Barnprylsdoktorn drivs av en person, inte en säljavdelning. Så här funkar det ekonomiska.
+Barnprylsdoktorn drivs av en person, inte en säljavdelning — så här funkar pengarna.
 
 ## Annonslänkar
 

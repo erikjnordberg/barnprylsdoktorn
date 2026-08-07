@@ -17,7 +17,7 @@ Vill du veta varför, fortsätt läsa.
 
 ---
 
-Frågan de flesta googlar är om det är dumt att köpa begagnat. Svaret är nej — men det hänger på två saker som är svåra att avgöra på en bild: stolens ålder, och om den varit med om en krock. Den sista går inte att verifiera hos en främling, och det är därför NTF:s råd längre ner är ovanligt rakt för att komma från dem.
+De flesta googlar om det är dumt att köpa begagnat. Svaret är nej — men det hänger på två saker som är svåra att se på en bild: ålder och krockhistorik. Den sista går inte att verifiera hos en främling, och det är därför NTF:s råd längre ner är ovanligt rakt för att komma från dem.
 
 Den produkt som oftast byter ägare är [babyskyddet](/guider/babyskydd-for-nyfodda/). Det används i knappt ett år innan barnet växer ur det, vilket gör att fler har ett i nästan nyskick liggande i en garderob än av någon annan bilbarnstol.
 
@@ -39,7 +39,7 @@ En sak till att hålla koll på om du letar begagnat bland [bältesstolar och b�
 
 Den räknas **från inköpsdagen — alltså från att stolen började användas**, inte från tillverkningsdatumet. Och den är ingen exakt gräns: livslängden kan bli både längre och kortare beroende på typ av stol, hantering, slitage och materialets åldersbeständighet. Folksam formulerar det kort: "det är skicket som avgör." Sol och värme påskyndar dessutom plastens åldrande, så hur stolen förvarats spelar roll, inte bara hur gammal den är.
 
-Här uppstår ett praktiskt problem: rekommendationen räknar från första användning, men en begagnad stol kommer sällan med kvitto. NTF:s besked är att du då får utgå från **tillverkningsdatumet**, som ska finnas inpräglat, ingjutet, stämplat eller på en klisteretikett. Det gör din uppskattning försiktigare än verkligheten — stolen kan ha stått i lager ett år innan den såldes första gången. Det är en marginal till din fördel, inte tvärtom.
+Här uppstår ett praktiskt problem: rekommendationen räknar från första användning, men en begagnad stol kommer sällan med kvitto. NTF:s besked är att du då får utgå från **tillverkningsdatumet**, som ska finnas inpräglat, ingjutet, stämplat eller på en klisteretikett. Det gör din uppskattning försiktigare än verkligheten, till din fördel.
 
 Folksams tumregel: **köp helst en stol som inte är äldre än 4–5 år**, så att du hinner använda den ordentligt innan tioårsgränsen. Det är ett råd, inte en regel.
 

@@ -5,6 +5,16 @@ beskrivning: Så väljer du babyskydd till en nyfödd — hur länge skyddet rä
 date: 2026-08-05
 ---
 
+## Kort svar
+
+- Räcker ungefär sex–nio månader (0–13 kg / 40–75 cm) — byt när barnet sitter upprätt själv, inte efter ålder.
+- Aldrig framför en aktiv krockkudde.
+- Leta efter Plustest-märkningen — R44/R129 är bara minimikrav.
+- Babyskyddet får luta mer än en vanlig bakåtvänd stol, men aldrig ligga helt plant under färd.
+- Ta av ytterkläder innan barnet spänns fast — lägg filten ovanpå bältet i stället.
+
+Vill du veta varför, fortsätt läsa.
+
 Babyskyddet köps oftast innan barnet ens är fött, av föräldrar som aldrig satt en bilbarnstol i en bil. Det är en dålig kombination — och det är därför butikerna kan sälja dig nästan vad som helst.
 
 Det goda är att valet är enklare än det ser ut. Fyra saker avgör.

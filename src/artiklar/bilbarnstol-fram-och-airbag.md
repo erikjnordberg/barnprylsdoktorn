@@ -19,7 +19,7 @@ Vill du veta varför, fortsätt läsa.
 
 ## Vad lagen kräver, och vad som bara är rekommendation
 
-Det här är hela poängen med den här artikeln. De flesta sajter blandar ihop det.
+De flesta sajter blandar ihop det här — det är hela poängen med artikeln.
 
 **Lagen är entydig på en punkt:** ett barn får inte färdas i en bakåtvänd skyddsanordning på en plats med krockkudde framför, om inte krockkudden är urkopplad. Det slår trafikförordningen fast (4 kap. 10 §), tillsammans med Transportstyrelsens föreskrift TSFS 2014:52. Undantaget är bilar där krockkudden kopplas ur automatiskt när en bakåtvänd stol monteras, eller där den stängts av manuellt och bilen har ett märke som upplyser om det.
 
@@ -61,7 +61,7 @@ NTF konstaterar torrt att eftersom inget barn under 140 cm kan sitta framför en
 
 ## Sidokrockkuddar — den vanliga oron, avfärdad
 
-Det här är värt ett eget stycke, för det är den vanligaste missuppfattningen.
+Den vanligaste missuppfattningen förtjänar ett eget stycke:
 
 Sidokrockkuddar och krockgardiner är inte samma sak som krockkudden framför passagerarplatsen, och de är inte farliga. Transportstyrelsen: "sidokrockkuddar är ingen fara för barn i bilbarnstol." NTF: de "är betydligt mindre, utgör ingen fara för barn i bilen." Folksam går längst: "Det finns inga studier som visar att varken sidokrockkuddar eller krockgardiner är farliga för barn i babyskydd eller i bakåtvänd bilbarnstol" — och pekar på amerikanska studier som tvärtom visar att de är positiva för barns säkerhet.
 
@@ -69,7 +69,7 @@ Det är alltså bara krockkudden rakt framför barnet som frågan handlar om.
 
 ## Varför framsätet ofta är ett bättre val än man tror
 
-Många utgår från att baksätet alltid är säkrast. Det stämmer inte, och det är artikelns viktigaste poäng.
+Många utgår från att baksätet alltid är säkrast. Det stämmer inte — det är artikelns viktigaste poäng.
 
 Ur ren krocksäkerhetssynpunkt är fram- och baksätet **likvärdiga** för ett bakåtvänt barn, så länge krockkudden är urkopplad. Det är den nationella rekommendationen, återgiven av både Folksam och NTF.
 

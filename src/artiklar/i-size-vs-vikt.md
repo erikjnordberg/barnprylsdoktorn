@@ -35,7 +35,7 @@ Två olika saker, och de blandas ofta ihop:
 
 ## Varför rekommendationen är en helt annan siffra
 
-Här är det viktiga: lagens minimum och det som är säkert är inte samma sak.
+Lagens minimum och det som är säkert är inte samma sak.
 
 Trafikverket och NTF rekommenderar att barn åker **bakåtvänt till minst fyra års ålder, gärna längre**. Sverige har ovanligt låga dödstal för barn i trafiken, och långt bakåtvänt åkande är en stor del av förklaringen. Vid en frontalkrock — den vanligaste allvarliga krocktypen — fördelar en bakåtvänd stol krafterna över hela barnets rygg i stället för att slita i nacken.
 

@@ -5,7 +5,7 @@ beskrivning: Bilbarnstol i taxi — vad lagen kräver, de två undantagen för k
 date: 2026-08-07
 ---
 
-Klockan är halv fem på morgonen, du ska till flygplatsen, och taxin står på gatan utan bilbarnstol. Eller: barnet har feber och du ska till akuten, nu. Frågan kommer alltid i en situation där du inte har tid att slå upp den.
+Klockan är halv fem, taxin väntar, och det finns ingen bilbarnstol. Eller: barnet har feber och du ska till akuten, nu. Frågan kommer alltid när du inte har tid att slå upp den.
 
 Så här är svaret, innan du behöver det.
 
@@ -16,7 +16,7 @@ Så här är svaret, innan du behöver det.
 - **Undantag 2 — gäller bara taxi:** barn **under tre år** får åka vid tillfällig färd i taxi under korta sträckor, förutsatt att barnet **inte sitter i framsätet**.
 - Undantaget finns för akutsituationer. Det är inte tänkt som en lösning på flygplatstransfern.
 
-*Vill du veta varför, fortsätt läsa.*
+Vill du veta varför, fortsätt läsa.
 
 ## Vad reglerna faktiskt säger
 

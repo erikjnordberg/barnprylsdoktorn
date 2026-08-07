@@ -5,7 +5,7 @@ beskrivning: Bilbarnstol på flyg och i hyrbil — vad som krävs för att ta me
 date: 2026-08-07
 ---
 
-Frågan dyker upp någon vecka före avresan, ungefär samtidigt som du inser hur mycket annat som ska med. Att bära en femton kilos bilbarnstol genom en flygplats med ett barn i famnen känns orimligt. Att kryssa i "barnstol" för 90 kronor om dagen i hyrbilsbokningen känns som en lösning.
+Frågan dyker upp veckan före avresan. Att bära en femton kilos bilbarnstol genom flygplatsen känns orimligt. Att kryssa i "barnstol" för 90 kronor om dagen i hyrbilsbokningen känns som en lösning.
 
 Det är det ibland. Men inte alltid, och det beror på saker som inte står i bokningsflödet.
 
@@ -17,7 +17,7 @@ Det är det ibland. Men inte alltid, och det beror på saker som inte står i bo
 - **Checka in stolen som bagage är gratis hos de flesta bolag**, men bagagehantering kan skada plasten utan att det syns.
 - **En CARES-sele** är ett godkänt alternativ ombord och väger några hundra gram, för barn ungefär 10–20 kg.
 
-*Vill du veta varför, fortsätt läsa.*
+Vill du veta varför, fortsätt läsa.
 
 ## Hyrbilsstolen: problemet ingen nämner
 

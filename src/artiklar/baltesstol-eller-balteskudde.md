@@ -12,6 +12,8 @@ date: 2026-08-06
 - **Bälteskudde utan rygg är bara till för de större barnen.** Nya modeller får bara användas från 125 cm.
 - Lagen släpper barnet vid **135 cm**. Rekommendationen säger **10–12 år**. Följ rekommendationen.
 
+Vill du veta varför, fortsätt läsa.
+
 ## När är det dags?
 
 Här gör de flesta sitt enda riktiga misstag: de byter för tidigt.
@@ -22,7 +24,7 @@ Den är alltså **inte** urvuxen för att benen ser trångt placerade ut. Det ä
 
 NTF får frågan om man får sätta en stor treåring i bältesstol. Svaret är ja, det får du — men de avråder. Huvudet är tungt i förhållande till kroppen och nacken är inte färdig. I en frontalkrock löper ett framåtvänt barn upp till fem gånger högre risk för nack- och skallskador.
 
-En sak till som är värd att veta innan du handlar: **ingen framåtvänd stol klarar Plustestet.** [Det frivilliga svenska testet](/guider/babyskydd-for-nyfodda/) mäter nackkrafterna i en frontalkollision, och hittills har bara bakåtvända stolar klarat det. Leta alltså inte efter Plustest-märkning på bältesstolar — den finns inte att hitta.
+Värt att veta: **ingen framåtvänd stol klarar Plustestet.** [Det frivilliga svenska testet](/guider/babyskydd-for-nyfodda/) mäter nackkrafterna i en frontalkollision, och hittills har bara bakåtvända stolar klarat det. Leta alltså inte efter Plustest-märkning på bältesstolar — den finns inte att hitta.
 
 ## Bältesstol och bälteskudde — vad är skillnaden?
 
@@ -85,15 +87,6 @@ Och den viktigaste vanan av alla: **kontrollera själv.** Vid den här åldern s
 Barnet ska vara minst **140 cm** för att sitta framför en aktiv krockkudde, om inte biltillverkaren säger något annat för just din bil. Notera att det är en högre siffra än de 135 cm lagen kräver för skyddsanordning — de två gränserna har olika ursprung och råkar bara ligga nära varandra.
 
 Sidokrockkuddar och krockgardiner är däremot inget problem, varken för framåtvända eller bakåtvända barn.
-
-## Sammanfattat
-
-- Byt när stolen är urvuxen, inte när benen ser trånga ut. Tidigast 4–5 år.
-- Bältesstol med rygg framför lös kudde, hela vägen upp till åtminstone 125 cm.
-- Bälteskudde utan rygg: kolla att etiketten säger 125 cm.
-- Nya stolar är R129-märkta efter längd. Din gamla R44-stol får användas ut sin livslängd.
-- Lagen slutar vid 135 cm. Barnets skelett gör det inte förrän vid 10–12 år.
-- Kontrollera bältet varje gång, även när barnet spänner fast sig självt.
 
 ## Källor
 

@@ -5,7 +5,7 @@ ingress: Du har inte tid att läsa tjugo tester och en EU-förordning. Det har j
 beskrivning: Guider och jämförelser som hjälper dig välja rätt bilbarnstol — förklarat på svenska, utan branschjargong.
 ---
 
-När vi skulle köpa vår första bilbarnstol stod jag i butiken och nickade medan säljaren sa "i-Size" och "R129" som om det var självklara ord. Det var det inte. Jag åkte hem, googlade i tre kvällar, och insåg att informationen fanns — den var bara utspridd, motsägelsefull och skriven för folk som redan förstod.
+När vi skulle köpa vår första bilbarnstol nickade jag i butiken medan säljaren sa "i-Size" och "R129" som om det var självklart. Det var det inte. Jag googlade i tre kvällar och insåg att informationen fanns — bara utspridd, motsägelsefull och skriven för folk som redan förstod.
 
 Den här sajten är vad jag önskar hade funnits då.
 
