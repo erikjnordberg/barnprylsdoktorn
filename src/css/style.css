@@ -373,6 +373,60 @@ tbody tr:last-child td { border-bottom: none; }
 .las-harnast a { font-weight: 650; color: var(--varm-ljus); }
 .las-harnast a:hover { color: #fff; }
 
+/* ---------- Köpblock ---------- */
+
+.kopblock {
+  margin: 2rem 0;
+  padding: 1.5rem var(--luft);
+  background: var(--papper-tint);
+  border: 1px solid var(--kant);
+  border-radius: var(--radie);
+}
+
+.kopblock-namn { margin: 0 0 0.4rem; }
+
+.kopblock-spec {
+  font-size: 0.88rem;
+  color: var(--text-dampad);
+  margin: 0 0 0.9rem;
+}
+
+.kopblock-motivering { margin: 0 0 0.9rem; }
+
+.kopblock-pris {
+  font-weight: 650;
+  margin: 0 0 1rem;
+}
+
+.kopblock-markning {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text-dampad);
+  margin: 0 0 1rem;
+}
+
+.kopblock-knapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 1.5rem;
+  background: var(--accent);
+  color: var(--papper);
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: var(--radie);
+  text-align: center;
+}
+
+.kopblock-knapp:hover { background: var(--accent-mork); color: var(--papper); }
+
+@media (min-width: 34rem) {
+  .kopblock-knapp { display: inline-flex; }
+}
+
 /* ---------- Sidfot ---------- */
 
 .sidfot {

@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
+const produkter = require("./src/_data/produkter.js");
 
 module.exports = function (eleventyConfig) {
   // Kopiera CSS och bilder rakt igenom till den färdiga sajten
@@ -41,6 +42,29 @@ module.exports = function (eleventyConfig) {
       ? value.replace(/ \u2014 /g, "\u00A0\u2014 ")
       : value
   );
+
+  // Köpblock i artiklarna: {% kopblock "produktnyckel" %}
+  // Saknar produkten en url renderas blocket utan knapp och utan annonsmärkning —
+  // affiliatelänkarna läggs till senare, ett ställe per produkt, i produkter.js.
+  eleventyConfig.addShortcode("kopblock", (nyckel) => {
+    const produkt = produkter[nyckel];
+    if (!produkt) {
+      throw new Error(`kopblock: hittar ingen produkt med nyckeln "${nyckel}" i produkter.js`);
+    }
+
+    const knappOchMarkning = produkt.url
+      ? `
+    <p class="kopblock-markning">Annonslänk. Sajten får provision om du köper via den — priset för dig är detsamma. <a href="/sa-tjanar-sajten-pengar/">Så tjänar sajten pengar</a></p>
+    <a class="kopblock-knapp" href="${produkt.url}" rel="sponsored nofollow noopener" target="_blank">Se priset hos ${produkt.handlare}</a>`
+      : "";
+
+    return `<div class="kopblock">
+    <h3 class="kopblock-namn">${produkt.namn}</h3>
+    <p class="kopblock-spec">${produkt.specifikation}</p>
+    <p class="kopblock-motivering">${produkt.motivering}</p>
+    <p class="kopblock-pris">${produkt.pris}</p>${knappOchMarkning}
+  </div>`;
+  });
 
   // Datumformat för sitemap och RSS-flöde
   eleventyConfig.addFilter("htmlDateString", (value) =>

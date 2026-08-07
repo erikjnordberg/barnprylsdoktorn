@@ -47,6 +47,8 @@ Vill du pressa den ytterligare handlar det ofta lika mycket om platsen i bilen s
 
 Priset du betalar: monteringen tar längre tid och kräver att du gör rätt.
 
+{% kopblock "britax-max-safe-pro" %}
+
 ## BeSafe Beyond — den bekväma
 
 **8 998 kr · 40–125 cm, max 22 kg · Isofix · Plustestad till 125 cm · betyg 3**
@@ -59,6 +61,8 @@ Det andra är vridbarheten. Folksam lyfter fram att den går att vrida mot dörr
 
 Viktgränsen på 22 kg är den lägsta av de tre. Isofix-begränsningen slår igenom.
 
+{% kopblock "besafe-beyond" %}
+
 ## TinySeats 2 — resestolen med ett förbehåll
 
 **5 995 kr · 61–125 cm, max 23 kg · Isofix · inte Plustestad · betyg 3**
@@ -70,6 +74,8 @@ Men två saker måste sägas rakt ut.
 **Den är inte Plustestad.** Plustestet är det frivilliga svenska testet som mäter belastningen på barnets nacke vid en hårdare krock än lagkravet, och det är den märkning jag annars rekommenderar att leta efter. TinySeats 2 har fått Bra val ändå, på sina övriga egenskaper — men om Plustest är ditt beslutskriterium faller den bort. Det är en fullt rimlig linje att dra.
 
 **Folksam noterar risk för felanvändning om den monteras framåtvänd.** Det är en varning värd att ta på allvar, eftersom en stol som går att montera fel förr eller senare monteras fel.
+
+{% kopblock "tinyseats-2" %}
 
 ## Så väljer du mellan dem
 
