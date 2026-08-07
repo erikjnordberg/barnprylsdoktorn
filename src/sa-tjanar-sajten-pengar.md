@@ -24,4 +24,4 @@ Stolar utan affiliateprogram rekommenderas på exakt samma villkor som stolar me
 
 ## Om något känns fel
 
-Hör gärna av dig om en rekommendation någonsin verkar styrd av annat än vad som faktiskt är säkrast. Det är precis den typen av granskning som håller sajten ärlig.
+Verkar en rekommendation någonsin styrd av annat än vad som faktiskt är säkrast — ifrågasätt den. Det är precis den typen av granskning som håller sajten ärlig.

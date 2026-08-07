@@ -13,11 +13,11 @@ Folksam testade fem nya bakåtvända bilbarnstolar 2025. Tre fick betyget **Bra 
 |---|---|---|---|---|---|
 | **Britax Römer Max-Safe Pro** | 4 495 kr | 61–125 cm, max 36 kg | Bälte | Ja | 4 |
 | **BeSafe Beyond** | 8 998 kr | 40–125 cm, max 22 kg | Isofix | Ja | 3 |
-| **TinySeats 2** | 5 995 kr | 61–125 cm, max 23 kg | Isofix | Nej | 3 |
+| **TinySeats Two** | 5 995 kr | 61–125 cm, max 23 kg | Isofix | Nej | 3 |
 
 - **Vill du inte tänka mer:** ta **Britax Römer Max-Safe Pro**. Högsta betyget, lägsta priset, högsta viktgränsen och lättast av de tre.
 - **Har du redan babyskydd och vill ha Isofix:** **BeSafe Beyond**. Den kan vridas mot dörren, vilket räddar ryggen när du lyfter i barnet.
-- **Behöver du en stol som går att fälla ihop och ta med:** **TinySeats 2** — men läs varningen nedan först.
+- **Behöver du en stol som går att fälla ihop och ta med:** **TinySeats Two** — men läs varningen nedan först.
 
 {% kopblock "britax-max-safe-pro" %}
 
@@ -65,7 +65,7 @@ Viktgränsen på 22 kg är den lägsta av de tre. Isofix-begränsningen slår ig
 
 {% kopblock "besafe-beyond" %}
 
-## TinySeats 2 — resestolen med ett förbehåll
+## TinySeats Two — resestolen med ett förbehåll
 
 **5 995 kr · 61–125 cm, max 23 kg · Isofix · inte Plustestad · betyg 3**
 

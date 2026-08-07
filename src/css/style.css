@@ -349,7 +349,7 @@ tbody tr:last-child td { border-bottom: none; }
 
 .artikellista li:last-child { border-bottom: none; }
 
-.artikellista h2 { font-size: 1.2rem; margin: 0; flex: 1 1 16rem; }
+.artikellista h3 { font-size: 1.2rem; margin: 0; flex: 1 1 16rem; }
 
 .artikellista a { color: var(--text); text-decoration: none; }
 .artikellista a:hover { color: var(--accent); }
@@ -378,8 +378,11 @@ tbody tr:last-child td { border-bottom: none; }
   text-transform: uppercase;
   letter-spacing: 0.11em;
   color: var(--accent);
+  text-decoration: none;
   margin-bottom: 0.85rem;
 }
+
+a.kicker:hover { color: var(--accent-mork); }
 
 /* ---------- Läs härnäst ---------- */
 

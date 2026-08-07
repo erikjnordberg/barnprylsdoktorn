@@ -25,6 +25,58 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
+
+  {%- if date and "/guider/" in page.url and page.url != "/guider/" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ title | dump | safe }},
+    "description": {{ (beskrivning or site.beskrivning) | dump | safe }},
+    "image": {{ (site.url ~ "/bilder/delningsbild.png") | dump | safe }},
+    "author": {
+      "@type": "Person",
+      "name": "Erik Nordberg"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": {{ site.namn | dump | safe }}
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": {{ (site.url ~ page.url) | dump | safe }}
+    },
+    "datePublished": {{ (date | isoDate) | dump | safe }},
+    "dateModified": {{ ((uppdaterad or date) | isoDate) | dump | safe }}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Hem",
+        "item": {{ site.url | dump | safe }}
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Guider",
+        "item": {{ (site.url ~ "/guider/") | dump | safe }}
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": {{ title | dump | safe }},
+        "item": {{ (site.url ~ page.url) | dump | safe }}
+      }
+    ]
+  }
+  </script>
+  {%- endif %}
 </head>
 <body>
 
@@ -39,11 +91,11 @@
 
   <main>
     {% if kicker %}<span class="kicker">{{ kicker }}</span>
-    {%- elif "/guider/" in page.url and page.url != "/guider/" %}<span class="kicker">Guide</span>{% endif %}
+    {%- elif "/guider/" in page.url and page.url != "/guider/" %}<a class="kicker" href="/guider/">Guide</a>{% endif %}
     <h1>{{ title | typo }}</h1>
     {% if ingress %}<p class="ingress">{{ ingress | typo }}</p>{% endif %}
     {%- if date and "/guider/" in page.url and page.url != "/guider/" %}
-    <p class="datum"><time datetime="{{ date | htmlDateString }}">Senast uppdaterad {{ date | datum }}</time></p>
+    <p class="datum">Av Erik Nordberg &middot; Publicerad <time datetime="{{ date | htmlDateString }}">{{ date | datum }}</time>{%- if uppdaterad and (uppdaterad | htmlDateString) != (date | htmlDateString) %} &middot; Uppdaterad <time datetime="{{ uppdaterad | htmlDateString }}">{{ uppdaterad | datum }}</time>{%- endif %}</p>
     {%- endif %}
     {{ content | safe }}
 
@@ -75,7 +127,7 @@
   </main>
 
   <footer class="sidfot">
-    <p><strong>Barnprylsdoktorn</strong> — skriven av en förälder som googlade för mycket.</p>
+    <p><strong>Barnprylsdoktorn</strong> — skriven av Erik Nordberg, en förälder som googlade för mycket.</p>
     <p><a href="/guider/">Guider</a> &middot; <a href="/om/">Om sajten</a> &middot; <a href="/sa-tjanar-sajten-pengar/">Så tjänar sajten pengar</a> &middot; <a href="/feed.xml">RSS</a></p>
     <p class="finstilt">Vissa länkar är affiliatelänkar. Det påverkar inte vad vi rekommenderar. Innehållet ersätter inte tillverkarens monteringsanvisning.</p>
   </footer>

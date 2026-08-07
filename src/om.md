@@ -1,13 +1,13 @@
 ---
 layout: base.njk
-title: Om Barnprylsdoktorn
+title: Om sajten och vem som skriver
 ingress: En sajt för dig som vill köpa rätt sak utan att först bli expert.
 beskrivning: Varför Barnprylsdoktorn finns, vem som skriver, och hur sajten tjänar pengar.
 ---
 
 Barnprylsdoktorn är till för dig som är på jakt efter något nytt till ditt barn, men som varken har tid eller ork att göra researchen själv.
 
-Jag är inte trafiksäkerhetsingenjör. Jag är en förälder som tyckte att det var absurt svårt att förstå vad man faktiskt ska välja — och som blev tillräckligt irriterad för att läsa in sig ordentligt. Det jag skriver här bygger på tillverkarnas egen dokumentation, oberoende krocktester och gällande EU-regler, och jag skriver ut var informationen kommer ifrån så att du kan kontrollera den själv.
+Jag heter Erik Nordberg. Jag är inte trafiksäkerhetsingenjör — jag är en förälder som tyckte att det var absurt svårt att förstå vad man faktiskt ska välja, och som blev tillräckligt irriterad för att läsa in sig ordentligt. Det jag skriver här bygger på tillverkarnas egen dokumentation, oberoende krocktester och gällande EU-regler, och jag skriver ut var informationen kommer ifrån så att du kan kontrollera den själv.
 
 ## Vad du hittar här
 

@@ -22,7 +22,7 @@ module.exports = {
     handlare: "",
   },
   "tinyseats-2": {
-    namn: "TinySeats 2",
+    namn: "TinySeats Two",
     pris: "5 995 kr",
     specifikation: "61–125 cm · max 23 kg · Isofix · inte Plustestad",
     motivering:

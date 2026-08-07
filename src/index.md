@@ -40,7 +40,7 @@ Den här sajten är vad jag önskar hade funnits då.
 {%- for artikel in collections.artiklar | reverse %}
 {%- if artikel.url not in utvalda %}
   <li>
-    <h2><a href="{{ artikel.url }}">{{ artikel.data.title | typo }}</a></h2>
+    <h3><a href="{{ artikel.url }}">{{ artikel.data.title | typo }}</a></h3>
     <p>{{ artikel.data.ingress | typo }}</p>
   </li>
 {%- endif %}
