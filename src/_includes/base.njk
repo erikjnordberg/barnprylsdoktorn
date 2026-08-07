@@ -92,7 +92,7 @@
   <main>
     {% if kicker %}<span class="kicker">{{ kicker }}</span>
     {%- elif "/guider/" in page.url and page.url != "/guider/" %}<a class="kicker" href="/guider/">Guide</a>{% endif %}
-    <h1>{{ title | typo }}</h1>
+    <h1>{{ (h1 or title) | typo }}</h1>
     {% if ingress %}<p class="ingress">{{ ingress | typo }}</p>{% endif %}
     {%- if date and "/guider/" in page.url and page.url != "/guider/" %}
     <p class="datum">Av Erik Nordberg &middot; Publicerad <time datetime="{{ date | htmlDateString }}">{{ date | datum }}</time>{%- if uppdaterad and (uppdaterad | htmlDateString) != (date | htmlDateString) %} &middot; Uppdaterad <time datetime="{{ uppdaterad | htmlDateString }}">{{ uppdaterad | datum }}</time>{%- endif %}</p>

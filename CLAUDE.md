@@ -41,6 +41,7 @@ om han inte ber om det.
 ```bash
 npx @11ty/eleventy --serve     # lokal dev-server, http://localhost:8080
 npx @11ty/eleventy             # bygg till _site/
+npm run statistik              # hämta besöksstatistik manuellt, kräver CF_API_TOKEN
 ```
 
 Kör alltid ett bygge innan du säger att något är klart. Ett bygge som går igenom är
@@ -53,6 +54,7 @@ src/
   _includes/base.njk       layout för samtliga sidor, inkl. JSON-LD
   _data/site.js            namn, url, beskrivning
   _data/produkter.js       produktdata till köpblocken
+  _data/popularitet.json   besöksstatistik per guide-slug, se nedan — kan saknas
   css/style.css            hela sajtens styling
   fonter/                  self-hostade woff2-filer
   bilder/                  tre SVG-illustrationer + delningsbild
@@ -60,9 +62,12 @@ src/
   artiklar/artiklar.json   permalink /guider/<slug>/
   index.md, om.md, guider.njk, sa-tjanar-sajten-pengar.md, 404.md
   feed.njk, sitemap.njk, robots.njk
+scripts/hamta-statistik.js hämtar besöksstatistik från Cloudflare, se nedan
+.github/workflows/statistik.yml   schemalägger scriptet varje måndag
 research/                  underlag och granskningar — ingår inte i bygget
 copy-granskning.md         senaste copygranskningen, i roten
-eleventy.config.js         filter: version, datum, typo, htmlDateString, isoDate, rssDate
+eleventy.config.js         filter: version, datum, typo, htmlDateString, isoDate, rssDate,
+                           sorteraEfterBesok
                            shortcode: kopblock
 ```
 
@@ -143,6 +148,13 @@ Tio publicerade guider:
 
 Utöver guiderna finns `/sa-tjanar-sajten-pengar/`, länkad i sidfoten tillsammans med en
 kort affiliatemärkning.
+
+Guiderna på `/guider/` och i "Mer att läsa" på startsidan sorteras fallande efter besök,
+via filtret `sorteraEfterBesok`. Siffrorna kommer från `src/_data/popularitet.json`, som
+uppdateras automatiskt varje måndag 05:00 UTC av `.github/workflows/statistik.yml` — jobbet
+kör `scripts/hamta-statistik.js` mot Cloudflare Web Analytics och committar filen bara om
+den ändrats. `CF_API_TOKEN` ligger som secret i GitHub-repot, inte lokalt — den behövs inte
+för att bygga sajten, bara för att hämta statistik manuellt med `npm run statistik`.
 
 Guiderna är korslänkade i löptexten **och** har ett `Läs härnäst`-block sist. Löptextlänken
 är den viktiga — nya artiklar ska länkas in i de befintliga på de ställen där frågan

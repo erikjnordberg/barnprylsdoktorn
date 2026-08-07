@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: Rätt bilbarnstol, utan researchen
+h1: Köp inte fel bilbarnstol
 ingress: Du har inte tid att läsa tjugo tester och en EU-förordning. Det har jag gjort åt dig.
 beskrivning: Guider och jämförelser som hjälper dig välja rätt bilbarnstol — förklarat på svenska, utan branschjargong.
 ---
@@ -15,7 +16,7 @@ Den här sajten är vad jag önskar hade funnits då.
   <article class="produktkort">
     <img src="{{ '/bilder/babyskydd.svg' | version }}" alt="Bakåtvänt babyskydd i genomskärning, med bärhandtag och internbälte" width="360" height="300">
     <h3>Babyskydd</h3>
-    <p>Från nyfödd till ungefär sex–nio månader. Bärbart, och fästs oftast i en bas i bilen.</p>
+    <p>Från nyfödd till ungefär sex–nio månader. Du bär den i handtaget och klickar fast den i bilen, oftast i en platta som får sitta kvar mellan gångerna.</p>
     <p><a href="/guider/babyskydd-for-nyfodda/">Så väljer du babyskydd</a></p>
   </article>
   <article class="produktkort">
@@ -37,7 +38,7 @@ Den här sajten är vad jag önskar hade funnits då.
 {%- set utvalda = ["/guider/babyskydd-for-nyfodda/", "/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/", "/guider/i-size-vs-vikt/"] %}
 
 <ul class="artikellista">
-{%- for artikel in collections.artiklar | reverse %}
+{%- for artikel in collections.artiklar | reverse | sorteraEfterBesok %}
 {%- if artikel.url not in utvalda %}
   <li>
     <h3><a href="{{ artikel.url }}">{{ artikel.data.title | typo }}</a></h3>

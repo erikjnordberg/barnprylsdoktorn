@@ -1,0 +1,33 @@
+name: Uppdatera besöksstatistik
+
+on:
+  schedule:
+    - cron: "0 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  statistik:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Hämta statistik från Cloudflare
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+        run: node scripts/hamta-statistik.js
+
+      - name: Committa om filen ändrats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -f src/_data/popularitet.json ]; then
+            git add src/_data/popularitet.json
+            git diff --staged --quiet || (git commit -m "Uppdatera besöksstatistik" && git push)
+          fi

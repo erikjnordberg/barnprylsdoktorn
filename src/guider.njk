@@ -7,7 +7,7 @@ permalink: /guider/index.html
 ---
 
 <ul class="artikellista">
-{%- for artikel in collections.artiklar | reverse %}
+{%- for artikel in collections.artiklar | reverse | sorteraEfterBesok %}
   <li>
     <h3><a href="{{ artikel.url }}">{{ artikel.data.title | typo }}</a></h3>
     <p>{{ artikel.data.ingress | typo }}</p>

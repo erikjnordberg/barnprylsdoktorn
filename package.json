@@ -4,7 +4,8 @@
   "description": "Innehallssajt om bilbarnstolar",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "statistik": "node scripts/hamta-statistik.js"
   },
   "keywords": [],
   "author": "",

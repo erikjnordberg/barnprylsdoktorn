@@ -3,6 +3,16 @@ const path = require("path");
 const crypto = require("crypto");
 const produkter = require("./src/_data/produkter.js");
 
+// Besöksstatistik från scripts/hamta-statistik.js, uppdateras varje måndag av
+// GitHub Actions. Filen kan saknas (första körningen, eller lokalt) — då sorteras
+// guiderna i sin nuvarande ordning, bygget ska aldrig krascha på det.
+let popularitet = {};
+try {
+  popularitet = require("./src/_data/popularitet.json");
+} catch {
+  popularitet = {};
+}
+
 module.exports = function (eleventyConfig) {
   // Kopiera CSS och bilder rakt igenom till den färdiga sajten
   eleventyConfig.addPassthroughCopy("src/css");
@@ -76,6 +86,17 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("rssDate", (post) =>
     new Date(post ? post.date : Date.now()).toISOString()
+  );
+
+  // Sorterar en lista guider fallande efter besök från popularitet.json.
+  // Stabil sortering (Array.prototype.sort är stabil i Node) — saknas siffra
+  // eller hela filen räknas det som 0, och ordningen förblir oförändrad.
+  eleventyConfig.addFilter("sorteraEfterBesok", (guider) =>
+    [...guider].sort((a, b) => {
+      const aBesok = popularitet[a.fileSlug] ?? 0;
+      const bBesok = popularitet[b.fileSlug] ?? 0;
+      return bBesok - aBesok;
+    })
   );
 
   return {
