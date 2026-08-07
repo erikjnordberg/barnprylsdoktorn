@@ -19,6 +19,8 @@ Folksam testade fem nya bakåtvända bilbarnstolar 2025. Tre fick betyget **Bra 
 - **Har du redan babyskydd och vill ha Isofix:** **BeSafe Beyond**. Den kan vridas mot dörren, vilket räddar ryggen när du lyfter i barnet.
 - **Behöver du en stol som går att fälla ihop och ta med:** **TinySeats 2** — men läs varningen nedan först.
 
+{% kopblock "britax-max-safe-pro" %}
+
 Vill du veta varför, fortsätt läsa.
 
 ---
