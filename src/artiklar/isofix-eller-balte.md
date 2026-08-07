@@ -45,6 +45,10 @@ Bältesmonterade stolar har ingen sådan begränsning. Där ligger gränsen ofta
 
 Eftersom det viktigaste av allt är att barnet kan sitta **bakåtvänt så länge som möjligt** — helst till sex–sju år — kan bältesmontering vara det bättre valet för den stol som ska räcka längst. Vissa lättare Isofix-stolar tar barnet till 23 kg och 125 cm, men de är undantaget. [Så här ser de faktiska alternativen ut](/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/).
 
+## Om stolen ska sitta i framsätet
+
+Isofix-fästen finns oftast bara i baksätet, men vissa bilar har dem fram också. Ska stolen monteras i framsätet är det första du behöver ta reda på inte fästena, utan krockkudden — [här går vi igenom vad lagen kräver och när framsätet faktiskt är ett bra val](/guider/bilbarnstol-fram-och-airbag/).
+
 ## Sammanfattat
 
 - **Säkerhet:** likvärdigt, när båda monteras rätt.

@@ -19,7 +19,7 @@ Babyskyddet är alltså en kort etapp. Den stora investeringen är nästa stol �
 
 Isofix finns i princip i alla bilar tillverkade efter 2006, men inte på alla platser. Har du en äldre bil, byter bil ofta, eller ska stolen sitta fram — kontrollera vad som faktiskt går att montera innan du beställer. Är du osäker på om du ens vill ha Isofix, [går vi igenom valet mot bältesmontering här](/guider/isofix-eller-balte/).
 
-**Och det viktigaste:** ett babyskydd får aldrig sitta framför en aktiv krockkudde. Ska det i framsätet måste krockkudden stängas av. Kontrollera i bilens manual, inte i minnet.
+**Och det viktigaste:** ett babyskydd får aldrig sitta framför en aktiv krockkudde. Ska det i framsätet måste krockkudden stängas av. Kontrollera i bilens manual, inte i minnet — [så här funkar reglerna, och varför framsätet ändå ofta är ett bra val](/guider/bilbarnstol-fram-och-airbag/).
 
 ## 3. Plustestet är den märkning som betyder något
 

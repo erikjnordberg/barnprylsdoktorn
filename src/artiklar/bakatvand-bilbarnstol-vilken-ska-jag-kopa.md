@@ -41,6 +41,8 @@ Folksams kommentar är kort: mycket rymlig, hög rygg, godkänd upp till 36 kg, 
 
 36 kg och 125 cm betyder att ett normalstort barn kan sitta bakåtvänt en bra bit förbi sexårsdagen. Det är den enskilt viktigaste egenskapen hos en bilbarnstol, och den här stolen har mest av den.
 
+Vill du pressa den ytterligare handlar det ofta lika mycket om platsen i bilen som om stolen: [framsätet har vanligen mer benutrymme än baksätet och kan ge upp till ett år till bakåtvänt](/guider/bilbarnstol-fram-och-airbag/), förutsatt att krockkudden är avstängd.
+
 **Att den är bältesmonterad är alltså inte en kompromiss här — det är förklaringen till att den vinner.** Har du dessutom ingen egen bil är valet enkelt: en bältesmonterad stol går i vilken bil som helst.
 
 Priset du betalar: monteringen tar längre tid och kräver att du gör rätt.
