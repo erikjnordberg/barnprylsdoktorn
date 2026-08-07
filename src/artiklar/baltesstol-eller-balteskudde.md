@@ -38,6 +38,8 @@ Lägg till att barn somnar i bilen. Ett sovande barn utan ryggstöd faller fram�
 
 **Välj bältesstol.** Kudden sparar några hundralappar och lite bagageutrymme, och det är inte värt det för ett barn under 125 cm.
 
+Ett undantag: som extrastol att ha i väskan, till exempel för [en taxiresa](/guider/bilbarnstol-i-taxi/) eller en semester, är en kompakt kudde svår att slå för de äldre barnen — den väger nästan ingenting och tar ingen plats.
+
 ## 125 cm-regeln du inte visste fanns
 
 Det här överraskade mig mest när jag läste på.

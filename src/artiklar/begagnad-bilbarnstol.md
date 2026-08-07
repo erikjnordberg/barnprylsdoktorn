@@ -57,6 +57,8 @@ Därför landar NTF i ett råd som är ovanligt kategoriskt för att komma från
 
 Det här ska vara artikelns tydligaste besked. Blocket och Facebook Marketplace är fulla av stolar från okända säljare, och den transaktionen är inte samma sak som att ta över en stol från en syster eller en kollega.
 
+En hyrbilsstol är samma problem i en annan förklädnad: [ingen på uthyrningsfirman kan svara på om just den stolen varit med i en krock](/guider/bilbarnstol-flyg-och-hyrbil/), och du får inte veta det förrän du redan står på parkeringen.
+
 ## Checklistan: åtta saker att göra innan du betalar
 
 Ordningen följer Folksams och NTF:s egna beskrivningar.

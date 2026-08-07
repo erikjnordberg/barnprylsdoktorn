@@ -17,7 +17,7 @@ Isofix är ett fästsystem — två metallbeslag i bilens ram som stolen klickar
 
 Det är i **monteringen** frågan avgörs, inte i konstruktionen.
 
-Isofix är svårare att göra fel. Du klickar in stolen, indikatorerna blir gröna, klart. Bältesmontering kräver att bältet dras rätt väg genom rätt spår och spänns ordentligt — fler moment, fler tillfällen att missa. Och en felmonterad stol skyddar sämre, oavsett hur bra stolen är.
+Isofix är svårare att göra fel. Du klickar in stolen, indikatorerna blir gröna, klart. Bältesmontering kräver att bältet dras rätt väg genom rätt spår och spänns ordentligt — fler moment, fler tillfällen att missa. Och en felmonterad stol skyddar sämre, oavsett hur bra stolen är — [det är faktiskt där de flesta olyckorna med bilbarnstolar sker](/guider/vanliga-monteringsfel/), inte i valet av stol.
 
 Så för de flesta: **välj Isofix om din bil har det och stolen finns i den varianten.** Inte för att den är säkrare i sig, utan för att den är svårare att sabba.
 

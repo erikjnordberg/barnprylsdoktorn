@@ -47,7 +47,7 @@ Vill du pressa den ytterligare handlar det ofta lika mycket om platsen i bilen s
 
 **Att den är bältesmonterad är alltså inte en kompromiss här — det är förklaringen till att den vinner.** Har du dessutom ingen egen bil är valet enkelt: en bältesmonterad stol går i vilken bil som helst.
 
-Priset du betalar: monteringen tar längre tid och kräver att du gör rätt.
+Priset du betalar: monteringen tar längre tid och kräver att du gör rätt — [det vanligaste felet är slaka underförankringsband](/guider/vanliga-monteringsfel/), och det tar under en minut att kontrollera.
 
 {% kopblock "britax-max-safe-pro" %}
 

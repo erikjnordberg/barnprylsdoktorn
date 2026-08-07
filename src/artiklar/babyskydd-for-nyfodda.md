@@ -35,6 +35,8 @@ Ett babyskydd får lutas mer än en vanlig bakåtvänd stol — ungefär 40–45
 
 Men vissa babyskydd går att fälla ner helt plant. **Det läget ska aldrig användas under färd.** Krockkrafterna mot ett barn som ligger plant kan vara livsfarliga. Plant läge är för när bilen står still.
 
+Lutningen är bara en av flera detaljer som avgör om skyddet fungerar som det ska. [Här är de vanligaste monteringsfelen](/guider/vanliga-monteringsfel/) — värda att kolla igenom innan du kör i väg första gången.
+
 ## Innan du bokar hem något
 
 - Har stolen **Plustest**-märkning?

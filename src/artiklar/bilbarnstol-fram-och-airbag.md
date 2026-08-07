@@ -85,6 +85,8 @@ Ska stolen monteras med Isofix i framsätet gäller samma sak som bak: [fästena
 
 Och resonemanget om airbag och plats i bilen slutar inte vid den bakåtvända stolen — det följer med [när barnet växt ur bakåtvänt och går vidare till bältesstol eller bälteskudde](/guider/baltesstol-eller-balteskudde/) också.
 
+Oavsett var i bilen stolen sitter är själva monteringen det som avgör mest. [Här är de vanligaste felen](/guider/vanliga-monteringsfel/), oavsett om stolen står fram eller bak.
+
 ## När baksätet ändå vinner
 
 Ett argument talar tydligt för baksätet: vid en sidokollision är barnet mer skyddat på **mittplatsen bak** än i framsätet. NTF beskriver den platsen som "längst ifrån alla krockzoner". Folksam nyanserar dock att sidokrockar är mer ovanliga än frontalkrockar.
