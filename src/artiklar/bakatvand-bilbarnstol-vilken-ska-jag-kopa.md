@@ -99,6 +99,8 @@ När stolen väl är urvuxen — någonstans kring sex–sju år med de här mod
 
 Priserna kommer från Folksams test och är ungefärliga. Bilbarnstolar prisvarierar kraftigt mellan återförsäljare och över året — kontrollera aktuellt pris innan du köper, och låt inte prisskillnaden ensam avgöra. Skillnaden mellan de här tre stolarna och en osäker stol är betydligt större än skillnaden mellan dem inbördes.
 
+Tycker du ändå att till exempel BeSafe Beyonds 8 998 kr är mycket att lägga på en stol du växer ur om några år, är begagnat ett fullt rimligt alternativ för just de här tre modellerna — [så länge du kontrollerar rätt saker innan du betalar](/guider/begagnad-bilbarnstol/).
+
 ## Källor
 
 - [Folksam — Test av bilbarnstolar 2025](https://www.folksam.se/tester-och-goda-rad/vara-tester/bilbarnstolar)

@@ -15,6 +15,8 @@ Ett babyskydd används från födseln till ungefär **sex till nio månader**, o
 
 Babyskyddet är alltså en kort etapp. Den stora investeringen är nästa stol — den bakåtvända, som ska räcka till fyra år och gärna sex–sju. [Lägg din research där](/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/).
 
+Just för att etappen är så kort är babyskyddet också den bilbarnstol som oftast säljs vidare i nästan nyskick. [Så kontrollerar du att en begagnad stol faktiskt är säker](/guider/begagnad-bilbarnstol/) innan du köper den av någon annan.
+
 ## 2. Bilen bestämmer mer än du vill
 
 Isofix finns i princip i alla bilar tillverkade efter 2006, men inte på alla platser. Har du en äldre bil, byter bil ofta, eller ska stolen sitta fram — kontrollera vad som faktiskt går att montera innan du beställer. Är du osäker på om du ens vill ha Isofix, [går vi igenom valet mot bältesmontering här](/guider/isofix-eller-balte/).
