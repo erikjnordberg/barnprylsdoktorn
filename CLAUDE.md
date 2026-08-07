@@ -27,12 +27,14 @@ om han inte ber om det.
 ## Teknik
 
 - Eleventy (11ty) v3, artiklar i Markdown
-- Repo: `erikjnordberg/barnprylsdoktorn`, branch `main`
+- Repo: `erikjnordberg/barnprylsdoktorn`, branch `main`, lokalt i `~/Desktop/bilbarnstolar`
 - Cloudflare Pages deployar automatiskt vid push till `main`
 - Projektnamn i Cloudflare: `barnprylsdoktorn`, konto-ID `ef8466a755154bee4f5f7028ac3a96ff`
 - Domänen köpt hos Loopia, DNS och DNSSEC hos Cloudflare
-- Google Search Console verifierad via TXT-post i DNS, sitemap inskickad
+- Google Search Console verifierad via TXT-post i DNS, sitemap inskickad.
+  Nya artiklar indexeringsbegärs manuellt i GSC.
 - Cloudflare Web Analytics påslagen med automatisk injicering — inga cookies, ingen samtyckesbanner
+- JSON-LD för sajt och artiklar ligger i `base.njk`
 
 ## Kommandon
 
@@ -48,19 +50,24 @@ minimikravet, inte beviset — kontrollera i dev-servern att sidan ser rätt ut.
 
 ```
 src/
-  _includes/base.njk     layout för samtliga sidor
-  _data/site.js          namn, url, beskrivning
-  css/style.css          hela sajtens styling
-  fonter/                self-hostade woff2-filer
-  bilder/                tre SVG-illustrationer + delningsbild
-  artiklar/              guiderna i Markdown
-  artiklar/artiklar.json permalink /guider/<slug>/
-  index.md, om.md, guider.njk, 404.md
+  _includes/base.njk       layout för samtliga sidor, inkl. JSON-LD
+  _data/site.js            namn, url, beskrivning
+  _data/produkter.js       produktdata till köpblocken
+  css/style.css            hela sajtens styling
+  fonter/                  self-hostade woff2-filer
+  bilder/                  tre SVG-illustrationer + delningsbild
+  artiklar/                guiderna i Markdown
+  artiklar/artiklar.json   permalink /guider/<slug>/
+  index.md, om.md, guider.njk, sa-tjanar-sajten-pengar.md, 404.md
   feed.njk, sitemap.njk, robots.njk
-eleventy.config.js       filter: datum, typo, version, htmlDateString m.fl.
+research/                  underlag och granskningar — ingår inte i bygget
+copy-granskning.md         senaste copygranskningen, i roten
+eleventy.config.js         filter: version, datum, typo, htmlDateString, isoDate, rssDate
+                           shortcode: kopblock
 ```
 
-`kodhandledare-bilbarnstolar.md` i repot är inaktuell som kursplan. Följ den inte.
+`arkiv/` och `kodhandledare-bilbarnstolar.md` är gammalt kursmaterial. De är gitignorerade
+och ligger utanför projektet — rör dem inte.
 
 ## Design
 
@@ -70,19 +77,40 @@ i `src/fonter/`.
 **Anropa aldrig Google Fonts** — det skickar besökarnas IP till Google.
 
 ```
---accent: #B5581F   terrakotta
+--accent: #B5581F        terrakotta
+--accent-mork: #8a4317   hover, fokusring, knappar
+--varm-ljus: #F7F0E6     länkar i mörka block
 --text: #181614
---text-dampad: #78726a
+--text-dampad: #6b6459   satt för att klara 4.5:1 mot papper-tint
 --papper: #FFFFFF
 --papper-tint: #F7F5F2
+--kant: rgba(24, 22, 20, 0.12)
+--radie: 2px
 --max-text: 42rem
 --max-bred: 70rem
 ```
+
+Brödtext 17 px med line-height 1.75 — rör den inte.
 
 Den gamla sage-paletten (`#3E6B5F`, `#4A7C6F`) är borta — återinför den inte.
 Illustrationerna är omfärgade till svart stol och terrakotta barn.
 
 Sajten ska fungera bäst på mobil. Utgå från mobilvyn först.
+
+### Komponenter
+
+- **Köpblock.** `{% kopblock "nyckel" %}` hämtar produkten ur `src/_data/produkter.js`.
+  Saknas `url` renderas blocket utan knapp och utan annonsmärkning — det är läget nu.
+  Blocket ska ligga både vid beslutet (direkt efter punktlistan i Kort svar) och vid
+  motiveringen i produktavsnittet.
+- **`.las-harnast`** — mörkt block sist i guiderna med två relaterade artiklar.
+- **`.produktkort`** — korten på startsidan, hela kortet klickbart.
+- **Tabeller** scrollar horisontellt under 44 rem med en skuggkant som affordans.
+
+### Tillgänglighet
+
+Minst 4.5:1 i kontrast, uträknat och inte uppskattat. Dämpa aldrig text med `opacity` —
+använd färgen, så går kontrasten att räkna på. Klickytor minst 44 px.
 
 ## Cachning — viktigt
 
@@ -98,7 +126,7 @@ ska alltid gå genom filtret.**
 
 ## Innehåll
 
-Fem publicerade guider:
+Tio publicerade guider:
 
 | Slug | Ämne |
 |---|---|
@@ -107,9 +135,18 @@ Fem publicerade guider:
 | `i-size-vs-vikt` | R129, R44, i-Size, vad lagen kräver |
 | `isofix-eller-balte` | Monteringssätt, 33-kilosgränsen |
 | `baltesstol-eller-balteskudde` | Steget efter bakåtvänt, 125 cm-regeln |
+| `bilbarnstol-fram-och-airbag` | Framsätet, krockkudde, extra benutrymme |
+| `begagnad-bilbarnstol` | Andrahandsköp, tioårsregeln, krockhistorik |
+| `vanliga-monteringsfel` | Sex fel, minutkontrollen |
+| `bilbarnstol-i-taxi` | Undantagen i lagen, aldrig framsätet |
+| `bilbarnstol-flyg-och-hyrbil` | Egen stol ombord, CARES, hyrbilsstolens historia |
 
-Guiderna är korslänkade i löptexten. Nya artiklar ska länkas in i de befintliga på de
-ställen där frågan uppstår för läsaren — inte som en läs-mer-lista i botten.
+Utöver guiderna finns `/sa-tjanar-sajten-pengar/`, länkad i sidfoten tillsammans med en
+kort affiliatemärkning.
+
+Guiderna är korslänkade i löptexten **och** har ett `Läs härnäst`-block sist. Löptextlänken
+är den viktiga — nya artiklar ska länkas in i de befintliga på de ställen där frågan
+uppstår för läsaren. `Läs härnäst` är ett komplement, inte en ersättning.
 
 ### Röst
 
@@ -117,7 +154,11 @@ ställen där frågan uppstår för läsaren — inte som en läs-mer-lista i bo
 konkret, inte generisk produktdatabas.
 
 Artiklarna börjar oftast med ett **Kort svar** i punktform, följt av
-`Vill du veta varför, fortsätt läsa`. Källförteckning sist.
+`Vill du veta varför, fortsätt läsa`. Källförteckning sist. Varje guide har byline och
+`Senast uppdaterad`-datum.
+
+**Kort text vinner.** Sajten ska gå att ta sig an snabbt. Skriv hellre kortare än längre,
+och stryk hellre än förklara mer.
 
 Erik godkänner text och tonläge innan publicering.
 
@@ -129,6 +170,13 @@ beläggas mot NTF, Folksam, Trafikverket eller Transportstyrelsen.
 Håll isär vad **lagen** kräver (135 cm) och vad som **rekommenderas** (bakåtvänt till
 4–5 år, bältesstol till 10–12 år). Gissa aldrig en siffra — slå upp den.
 
+Vid granskningar av copy eller UX: flagga säkerhetssiffror, ändra dem aldrig utan att Erik
+godkänt. Större genomgångar läggs som markdownfil i `research/` med ordagranna FÖRE-citat
+och färdig CSS, så att ändringarna blir exakt sök-och-ersätt i stället för fri omskrivning.
+
+**Produktnamn och priser** ska stämma överens mellan `produkter.js`, tabellen och löptexten.
+Ändras ett namn på ett ställe ska alla tre uppdateras.
+
 ## Git och deploy
 
 Push till `main` deployar direkt till live. Därför:
@@ -137,14 +185,25 @@ Push till `main` deployar direkt till live. Därför:
 - **Fråga alltid innan `git push origin main`**
 - Skriv commit-meddelanden på svenska, kort och beskrivande
 
+Körs du i en sandlåda utan GitHub-inloggning fastnar `git` på låsfiler och pushen går inte
+igenom. Förbered ändringen och låt Erik köra:
+
+```bash
+cd ~/Desktop/bilbarnstolar
+rm -f .git/HEAD.lock .git/index.lock
+git add -A && git commit -m "..." && git push origin main
+```
+
 Efter deploy: kontrollera i webbläsaren att det faktiskt ser rätt ut, inte bara att bygget
-gick igenom. Lägg på en query-parameter (`?v=2`) för att gå runt cachen vid kontroll.
+gick igenom. Lägg på en query-parameter (`?v=2`) för att gå runt cachen vid kontroll —
+både din egen och Cloudflares.
 
 ## Nästa steg i projektet
 
-1. **Fler artiklar** — det är fortfarande det som avgör om projektet ger inkomst.
-   Uppenbara luckor: montering steg för steg, vanliga monteringsfel, bilbarnstol fram och
-   airbag, andrahandsköp, taxi och flyg och hyrbil.
-2. **Mobilgenomgång** med `ux-granskning`-skillen.
-3. **Affiliate** via Adtraction eller Awin — men först när det finns trafik. De flesta
-   program vill se besökare innan de godkänner.
+1. **Affiliate** via Adtraction eller Awin. Köpblock, transparenssida och märkning finns
+   redan — det som saknas är `url` och `handlare` i `produkter.js`. Tio guider live är ett
+   rimligt underlag att ansöka med.
+2. **Fler artiklar.** De uppenbara luckorna från starten är skrivna. Kvar: montering steg
+   för steg som egen guide. Fråga Erik innan du börjar på nästa — urvalet är inte
+   självklart längre.
+3. **Löpande UX- och mobilgenomgång** med `ux-granskning`-skillen.
