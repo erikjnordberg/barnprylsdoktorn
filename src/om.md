@@ -16,3 +16,9 @@ Jag heter Erik Nordberg. Jag är ingen trafiksäkerhetsingenjör — bara en fö
 ## Hur sajten tjänar pengar
 
 Vissa länkar är affiliatelänkar, vilket betyder att jag får en liten ersättning om du handlar via dem. Det kostar inget extra för dig, och det påverkar inte vilka produkter jag rekommenderar — en stol som inte är bra hamnar inte högt upp för att provisionen är bättre.
+
+## Kontakt
+
+Har du hittat ett fel, saknar du en guide eller vill du bara fråga något? Mejla [info@barnprylsdoktorn.se](mailto:info@barnprylsdoktorn.se). Jag läser allt och svarar så gott jag hinner.
+
+Rättelser är särskilt välkomna. Har jag skrivit fel om en regel eller en gräns vill jag veta det — hellre en pinsam rättelse än att någon monterar en stol fel.
