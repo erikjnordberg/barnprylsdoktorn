@@ -14,10 +14,11 @@ module.exports = {
   },
   "besafe-beyond": {
     namn: "BeSafe Beyond",
-    pris: "8 998 kr",
-    specifikation: "61–125 cm · max 22 kg · Isofix med bas · Plustestad",
+    pris: "6 299 kr",
+    specifikation:
+      "61–125 cm · max 22 kg · Isofix, basen säljs separat · Plustestad",
     motivering:
-      "Vrids mot dörren vid i- och urlyft och går att luta med en hand — bekvämast om ryggen eller en trång parkering är problemet.",
+      "Vrids mot dörren vid i- och urlyft och går att luta med en hand — bekvämast om ryggen eller en trång parkering är problemet. Isofix-basen tillkommer utöver priset.",
     url: "",
     handlare: "",
   },

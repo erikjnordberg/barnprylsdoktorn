@@ -12,8 +12,10 @@ Folksam testade fem nya bakåtvända bilbarnstolar 2025. Tre fick betyget **Bra 
 | Stol | Pris ca | Längd/vikt | Montering | Plustest | Betyg |
 |---|---|---|---|---|---|
 | **Britax Römer Max-Safe Pro** | 4 495 kr | 61–125 cm, max 36 kg | Bälte | Ja | 4 |
-| **BeSafe Beyond** | 8 998 kr | 40–125 cm, max 22 kg | Isofix | Ja | 3 |
+| **BeSafe Beyond** | 6 299 kr* | 61–125 cm, max 22 kg | Isofix | Ja | 3 |
 | **TinySeats Two** | 5 995 kr | 61–125 cm, max 23 kg | Isofix | Nej | 3 |
+
+*Isofix-basen till BeSafe Beyond säljs separat och ingår inte i priset.
 
 - **Vill du inte tänka mer:** **Britax Römer Max-Safe Pro** — högst betyg, lägst pris, högst viktgräns.
 - **Har du redan babyskydd och vill ha Isofix:** **BeSafe Beyond** — vrids mot dörren, skonar ryggen vid i- och urlyft.
@@ -53,15 +55,15 @@ Priset du betalar: monteringen tar längre tid och kräver att du gör rätt —
 
 ## BeSafe Beyond — den bekväma
 
-**8 998 kr · 40–125 cm, max 22 kg · Isofix · Plustestad till 125 cm · betyg 3**
+**6 299 kr · 61–125 cm, max 22 kg · Isofix, basen säljs separat · Plustestad till 125 cm · betyg 3**
 
-Dubbelt så dyr som Britax-stolen, och ett betyg lägre. Så varför är den med?
+Dyrare än Britax-stolen, och ett betyg lägre. Så varför är den med?
 
-Två skäl. Det första är att den är godkänd från **40 cm**, alltså från nyfödd. Den kan [ersätta babyskyddet](/guider/babyskydd-for-nyfodda/) helt, vilket sparar ett köp — men du tappar smidigheten med ett bärbart skydd som går att lyfta ur bilen med barnet i.
-
-Det andra är vridbarheten. Folksam lyfter fram att den går att vrida mot dörröppningen när du sätter i barnet. Det låter som en bekvämlighetsdetalj, och det är det — men det är också den funktion föräldrar oftast säger att de inte skulle vilja vara utan, särskilt med en dålig rygg eller en trång parkeringsplats.
+Framför allt vridbarheten. Folksam lyfter fram att den går att vrida mot dörröppningen när du sätter i barnet. Det låter som en bekvämlighetsdetalj, och det är det — men det är också den funktion föräldrar oftast säger att de inte skulle vilja vara utan, särskilt med en dålig rygg eller en trång parkeringsplats.
 
 Viktgränsen på 22 kg är den lägsta av de tre. Isofix-begränsningen slår igenom.
+
+Räkna in Isofix-basen i budgeten — den säljs separat och priset ovan gäller bara stolen.
 
 {% kopblock "besafe-beyond" %}
 
@@ -101,7 +103,7 @@ När stolen väl är urvuxen — någonstans kring sex–sju år med de här mod
 
 Priserna kommer från Folksams test och är ungefärliga. Bilbarnstolar prisvarierar kraftigt mellan återförsäljare och över året — kontrollera aktuellt pris innan du köper, och låt inte prisskillnaden ensam avgöra. Skillnaden mellan de här tre stolarna och en osäker stol är betydligt större än skillnaden mellan dem inbördes.
 
-Tycker du ändå att till exempel BeSafe Beyonds 8 998 kr är mycket att lägga på en stol du växer ur om några år, är begagnat ett fullt rimligt alternativ för just de här tre modellerna — [så länge du kontrollerar rätt saker innan du betalar](/guider/begagnad-bilbarnstol/).
+Tycker du ändå att till exempel BeSafe Beyonds 6 299 kr (plus basen) är mycket att lägga på en stol du växer ur om några år, är begagnat ett fullt rimligt alternativ för just de här tre modellerna — [så länge du kontrollerar rätt saker innan du betalar](/guider/begagnad-bilbarnstol/).
 
 ## Källor
 

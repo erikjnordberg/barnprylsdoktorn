@@ -64,12 +64,14 @@ Folksam testade fem nya bakåtvända stolar 2025. Tre fick betyget **Bra val**:
 | Stol | Pris ca | Längd/vikt | Montering | Plustest | Betyg |
 |---|---|---|---|---|---|
 | **Britax Römer Max-Safe Pro** | 4 495 kr | 61–125 cm, max 36 kg | Bälte | Ja | 4 |
-| **BeSafe Beyond** | 8 998 kr | 40–125 cm, max 22 kg | Isofix | Ja | 3 |
+| **BeSafe Beyond** | 6 299 kr* | 61–125 cm, max 22 kg | Isofix | Ja | 3 |
 | **TinySeats Two** | 5 995 kr | 61–125 cm, max 23 kg | Isofix | Nej | 3 |
+
+*Isofix-basen till BeSafe Beyond säljs separat och ingår inte i priset.
 
 **Britax Römer Max-Safe Pro** är testets enda fyra och billigast av de tre. Den är godkänd till 36 kg, vilket ingen annan testad stol är. Att den är bältesmonterad är inte en kompromiss utan förklaringen till att den vinner: bakåtvänd Isofix-montering har en total viktgräns på 33 kg för stol plus barn, vilket i praktiken stoppar Isofix-stolarna vid 18 kg barn.
 
-**BeSafe Beyond** är dubbelt så dyr och ett betyg lägre, men godkänd från 40 cm — den kan ersätta babyskyddet helt — och går att vrida mot dörren vid i- och urlyft.
+**BeSafe Beyond** är dyrare och ett betyg lägre, men går att vrida mot dörren vid i- och urlyft — värdefullt med en dålig rygg eller en trång parkeringsplats. Räkna med att Isofix-basen tillkommer utöver priset.
 
 **TinySeats Two** är hopfällbar och byggd för hyrbil och taxi utomlands. Den är inte Plustestad, och Folksam noterar risk för felanvändning om den monteras framåtvänd.
 
