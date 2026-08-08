@@ -7,7 +7,7 @@ date: 2026-08-07
 
 Du har läst testerna och betalat femtusen kronor för rätt stol. Sedan monterade du den på en parkering i höstmörkret med en skrikande bebis bredvid — och är inte helt säker på att du gjorde rätt.
 
-Valet av stol får all uppmärksamhet. Det är monteringen som avgör hur mycket skydd du faktiskt får.
+Valet av stol får all uppmärksamhet. Det är monteringen som avgör hur mycket skydd du faktiskt får. Den här guiden handlar om vad som brukar bli fel — ska du montera från början är [steg för steg-guiden](/guider/montera-bilbarnstol-steg-for-steg/) rätt ställe att börja.
 
 ## Kort svar
 

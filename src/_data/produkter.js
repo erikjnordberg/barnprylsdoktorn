@@ -5,7 +5,7 @@
 module.exports = {
   "britax-max-safe-pro": {
     namn: "Britax Römer Max-Safe Pro",
-    pris: "4 495 kr",
+    pris: "3 495 kr",
     specifikation: "61–125 cm · max 36 kg · bältesmonterad · Plustestad",
     motivering:
       "Högst betyg, lägst pris och högst viktgräns av de tre — bäst om du vill slippa fundera mer.",

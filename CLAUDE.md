@@ -131,7 +131,7 @@ ska alltid gå genom filtret.**
 
 ## Innehåll
 
-Tio publicerade guider:
+Tolv publicerade guider:
 
 | Slug | Ämne |
 |---|---|
@@ -145,6 +145,8 @@ Tio publicerade guider:
 | `vanliga-monteringsfel` | Sex fel, minutkontrollen |
 | `bilbarnstol-i-taxi` | Undantagen i lagen, aldrig framsätet |
 | `bilbarnstol-flyg-och-hyrbil` | Egen stol ombord, CARES, hyrbilsstolens historia |
+| `basta-bilbarnstolen` | Hela kedjan på en sida, babyskydd till bältesstol |
+| `montera-bilbarnstol-steg-for-steg` | Monteringen i ordning, bälte och Isofix |
 
 Utöver guiderna finns `/sa-tjanar-sajten-pengar/`, länkad i sidfoten tillsammans med en
 kort affiliatemärkning.

@@ -11,7 +11,7 @@ Folksam testade fem nya bakåtvända bilbarnstolar 2025. Tre fick betyget **Bra 
 
 | Stol | Pris ca | Längd/vikt | Montering | Plustest | Betyg |
 |---|---|---|---|---|---|
-| **Britax Römer Max-Safe Pro** | 4 495 kr | 61–125 cm, max 36 kg | Bälte | Ja | 4 |
+| **Britax Römer Max-Safe Pro** | 3 495 kr | 61–125 cm, max 36 kg | Bälte | Ja | 4 |
 | **BeSafe Beyond** | 8 998 kr | 40–125 cm, max 22 kg | Isofix | Ja | 3 |
 | **TinySeats Two** | 5 995 kr | 61–125 cm, max 23 kg | Isofix | Nej | 3 |
 
@@ -35,7 +35,7 @@ En viktig detalj i deras betygssättning: **en stol som tillåter framåtvänt �
 
 ## Britax Römer Max-Safe Pro — den som vinner på allt
 
-**4 495 kr · 61–125 cm, max 36 kg · bältesmonterad · Plustestad till 125 cm · betyg 4**
+**3 495 kr · 61–125 cm, max 36 kg · bältesmonterad · Plustestad till 125 cm · betyg 4**
 
 Det här är testets enda fyra — och billigast av de tre.
 
@@ -47,7 +47,7 @@ Vill du pressa den ytterligare handlar det lika mycket om platsen i bilen: [fram
 
 **Att den är bältesmonterad är alltså inte en kompromiss här — det är förklaringen till att den vinner.** Har du dessutom ingen egen bil är valet enkelt: en bältesmonterad stol går i vilken bil som helst.
 
-Priset du betalar: monteringen tar längre tid och kräver att du gör rätt — [det vanligaste felet är slaka underförankringsband](/guider/vanliga-monteringsfel/), och det tar under en minut att kontrollera.
+Priset du betalar: monteringen tar längre tid och kräver att du gör rätt — [det vanligaste felet är slaka underförankringsband](/guider/vanliga-monteringsfel/), och det tar under en minut att kontrollera. Har du aldrig gjort det förut finns [hela monteringen steg för steg](/guider/montera-bilbarnstol-steg-for-steg/).
 
 {% kopblock "britax-max-safe-pro" %}
 
