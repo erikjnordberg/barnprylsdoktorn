@@ -77,7 +77,7 @@ Men två saker måste sägas rakt ut.
 
 **Folksam noterar risk för felanvändning om den monteras framåtvänd.** Det är en varning värd att ta på allvar, eftersom en stol som går att montera fel förr eller senare monteras fel.
 
-{% kopblock "tinyseats-2" %}
+{% kopblock "tinyseats-two" %}
 
 ## Så väljer du mellan dem
 

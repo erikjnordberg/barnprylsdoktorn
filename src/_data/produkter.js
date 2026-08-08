@@ -15,16 +15,17 @@ module.exports = {
   "besafe-beyond": {
     namn: "BeSafe Beyond",
     pris: "8 998 kr",
-    specifikation: "40–125 cm · max 22 kg · Isofix · Plustestad",
+    specifikation: "61–125 cm · max 22 kg · Isofix med bas · Plustestad",
     motivering:
-      "Vrids mot dörren vid i- och urlyft och tar barnet redan från 40 cm — bekvämast om ryggen eller en trång parkering är problemet.",
+      "Vrids mot dörren vid i- och urlyft och går att luta med en hand — bekvämast om ryggen eller en trång parkering är problemet.",
     url: "",
     handlare: "",
   },
-  "tinyseats-2": {
+  "tinyseats-two": {
     namn: "TinySeats Two",
     pris: "5 995 kr",
-    specifikation: "61–125 cm · max 23 kg · Isofix · inte Plustestad",
+    specifikation:
+      "Bakåtvänt till 125 cm / 23 kg · sedan bältesstol till 135 cm · Isofix · inte Plustestad",
     motivering:
       "Hopfällbar och lätt att resa med, men inte Plustestad — läs varningen om felmontering innan du väljer den.",
     url: "",
