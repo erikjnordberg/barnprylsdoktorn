@@ -133,7 +133,7 @@ ska alltid gå genom filtret.**
 
 ## Innehåll
 
-Tolv publicerade guider:
+Tretton publicerade guider:
 
 | Slug | Ämne |
 |---|---|
@@ -149,6 +149,7 @@ Tolv publicerade guider:
 | `bilbarnstol-flyg-och-hyrbil` | Egen stol ombord, CARES, hyrbilsstolens historia |
 | `basta-bilbarnstolen` | Hela kedjan på en sida, babyskydd till bältesstol |
 | `montera-bilbarnstol-steg-for-steg` | Monteringen i ordning, bälte och Isofix |
+| `bilbarnstol-plats-i-bilen` | Fordonslista, mittplatsen, två eller tre stolar bak |
 
 Utöver guiderna finns `/sa-tjanar-sajten-pengar/`, länkad i sidfoten tillsammans med en
 kort affiliatemärkning.
@@ -163,6 +164,25 @@ för att bygga sajten, bara för att hämta statistik manuellt med `npm run stat
 Guiderna är korslänkade i löptexten **och** har ett `Läs härnäst`-block sist. Löptextlänken
 är den viktiga — nya artiklar ska länkas in i de befintliga på de ställen där frågan
 uppstår för läsaren. `Läs härnäst` är ett komplement, inte en ersättning.
+
+**Varje guide sätter sina två `Läs härnäst`-länkar själv**, via `lasharnast` i frontmatter:
+
+```yaml
+lasharnast: ["slug-ett", "slug-tva"]
+```
+
+Fallbacken i `base.njk` plockar köpguiden plus den nyaste artikeln. Den räckte med tio
+guider men gör att alla guider utan `lasharnast` pekar på samma två artiklar så fort en ny
+publiceras. **Ny guide ska alltid ha `lasharnast` satt**, och ska dessutom läggas in i
+`lasharnast` på minst en befintlig guide — annars blir den föräldralös i navigeringen.
+
+Ändras sakinnehållet i en publicerad guide sätts `uppdaterad: ÅÅÅÅ-MM-DD` i frontmatter.
+`base.njk` visar det bara när det skiljer sig från `date`.
+
+En avgränsning som är lätt att bryta mot: **`bilbarnstol-plats-i-bilen` äger platsfrågan.**
+`montera-bilbarnstol-steg-for-steg` handlar om handgreppen och sammanfattar bara platsvalet
+i tre punkter innan den länkar vidare. Låt inte montera-guiden växa tillbaka in i
+mittplatsen, fordonslistor eller flera stolar bak.
 
 ### Röst
 
@@ -217,9 +237,9 @@ både din egen och Cloudflares.
 ## Nästa steg i projektet
 
 1. **Affiliate** via Adtraction eller Awin. Köpblock, transparenssida och märkning finns
-   redan — det som saknas är `url` och `handlare` i `produkter.js`. Tio guider live är ett
-   rimligt underlag att ansöka med.
-2. **Fler artiklar.** De uppenbara luckorna från starten är skrivna. Kvar: montering steg
-   för steg som egen guide. Fråga Erik innan du börjar på nästa — urvalet är inte
+   redan — det som saknas är `url` och `handlare` i `produkter.js`. Tretton guider live är
+   ett rimligt underlag att ansöka med.
+2. **Fler artiklar.** De uppenbara luckorna från starten är skrivna, inklusive montering
+   steg för steg och plats i bilen. Fråga Erik innan du börjar på nästa — urvalet är inte
    självklart längre.
 3. **Löpande UX- och mobilgenomgång** med `ux-granskning`-skillen.

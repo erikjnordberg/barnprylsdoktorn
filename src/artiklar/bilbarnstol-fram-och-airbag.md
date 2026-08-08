@@ -3,6 +3,8 @@ title: Bilbarnstol i framsätet — vad säger lagen om airbag?
 ingress: "Kort svar: bakåtvänt mot en aktiv krockkudde är förbjudet i lag. Är kudden avstängd är framsätet ofta det bättre valet — inte en kompromiss."
 beskrivning: Bilbarnstol i framsätet och krockkudde — vad lagen kräver, vad som bara är rekommendation, och varför framsätet ofta är säkrare än man tror.
 date: 2026-08-07
+uppdaterad: 2026-08-08
+lasharnast: ["bilbarnstol-plats-i-bilen", "montera-bilbarnstol-steg-for-steg"]
 ---
 
 ## Kort svar

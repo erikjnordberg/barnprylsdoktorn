@@ -3,6 +3,7 @@ title: Begagnad bilbarnstol — är det säkert att köpa?
 ingress: "Kort svar: ja — men det hänger på två saker du inte kan se på en bild, och en av dem går inte att kontrollera hos en främling."
 beskrivning: Att köpa begagnad bilbarnstol — vad lagen tillåter, tioårsregeln, hur du kontrollerar skicket, och varför krockhistoriken avgör om du ska köpa alls.
 date: 2026-08-07
+lasharnast: ["bakatvand-bilbarnstol-vilken-ska-jag-kopa", "vanliga-monteringsfel"]
 ---
 
 ## Kort svar

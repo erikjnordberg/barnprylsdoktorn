@@ -3,6 +3,7 @@ title: i-Size och R129 — vad betyder det egentligen?
 ingress: Två standarder, en massa siffror, och en säljare som pratar som om du redan förstår. Här är översättningen.
 beskrivning: i-Size, R129 och R44 förklarat på svenska — vad skillnaden är, vad lagen kräver, och vad som faktiskt rekommenderas i Sverige.
 date: 2026-08-06
+lasharnast: ["bakatvand-bilbarnstol-vilken-ska-jag-kopa", "isofix-eller-balte"]
 ---
 
 ## Kort svar

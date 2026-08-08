@@ -3,6 +3,8 @@ title: Bilbarnstol i taxi — vad lagen faktiskt säger
 ingress: "Kort svar: ja, det finns ett undantag. Det är smalare än de flesta tror, och det gäller aldrig framsätet."
 beskrivning: Bilbarnstol i taxi — vad lagen kräver, de två undantagen för korta sträckor, och hur du undviker att stå utan stol vid akuten eller på flygplatsen.
 date: 2026-08-07
+uppdaterad: 2026-08-08
+lasharnast: ["bilbarnstol-flyg-och-hyrbil", "baltesstol-eller-balteskudde"]
 ---
 
 Klockan är halv fem, taxin väntar, och det finns ingen bilbarnstol. Eller: barnet har feber och du ska till akuten, nu. Frågan kommer alltid när du inte har tid att slå upp den.

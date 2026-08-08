@@ -3,6 +3,8 @@ title: Bakåtvänd bilbarnstol — vilken ska jag köpa?
 ingress: Folksam testade fem stolar 2025 och rekommenderade tre. Här är vad som skiljer dem åt, och vilken som passar din situation.
 beskrivning: Tre bakåtvända bilbarnstolar med betyget Bra val av Folksam 2025 — pris, längdgränser, Plustest och montering, samt vilken som passar vem.
 date: 2026-08-06
+uppdaterad: 2026-08-08
+lasharnast: ["montera-bilbarnstol-steg-for-steg", "bilbarnstol-plats-i-bilen"]
 ---
 
 ## Kort svar
@@ -72,6 +74,8 @@ Räkna in Isofix-basen i budgeten — den säljs separat och priset ovan gäller
 **5 995 kr · 61–125 cm, max 23 kg · Isofix · inte Plustestad · betyg 3**
 
 Den här är hopfällbar, vilket är ovanligt och användbart om stolen ska med på flyget eller flytta mellan hushåll. Rymlig och hög rygg, godkänd till 23 kg.
+
+Den fortsätter dessutom som bältesstol till 135 cm när barnet vuxit ur det bakåtvända läget. En sak att veta då: den inbyggda selen får inte användas framåtvänt — där är det bilens bälte som gäller.
 
 Men två saker måste sägas rakt ut.
 

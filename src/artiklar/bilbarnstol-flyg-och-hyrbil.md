@@ -3,6 +3,8 @@ title: Flyg och hyrbil — ska du släpa med stolen?
 ingress: "Kort svar: ja, oftare än du tror. Hyrbilsstolen har en historia ingen kan redogöra för, och ombord krävs rätt märkning."
 beskrivning: Bilbarnstol på flyg och i hyrbil — vad som krävs för att ta med egen stol ombord, riskerna med hyrbilens egen stol, och CARES-selen som alternativ.
 date: 2026-08-07
+uppdaterad: 2026-08-08
+lasharnast: ["bilbarnstol-i-taxi", "begagnad-bilbarnstol"]
 ---
 
 Frågan dyker upp veckan före avresan. Att bära en femton kilos bilbarnstol genom flygplatsen känns orimligt. Att kryssa i "barnstol" för 90 kronor om dagen i hyrbilsbokningen känns som en lösning.

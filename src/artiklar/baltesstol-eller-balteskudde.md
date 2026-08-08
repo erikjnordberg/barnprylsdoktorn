@@ -3,6 +3,8 @@ title: Bältesstol eller bälteskudde — vad kommer efter den bakåtvända?
 ingress: Steget efter bakåtvänt är det sämst beskrivna i hela kedjan. Här är vad som faktiskt skiljer alternativen åt, och när bytet ska ske.
 beskrivning: Bältesstol eller bälteskudde efter den bakåtvända bilbarnstolen — när barnet är redo, vad 135 cm-regeln betyder, och varför kudden bara får användas över 125 cm.
 date: 2026-08-06
+uppdaterad: 2026-08-08
+lasharnast: ["bilbarnstol-fram-och-airbag", "vanliga-monteringsfel"]
 ---
 
 ## Kort svar
@@ -84,7 +86,7 @@ Och den viktigaste vanan av alla: **kontrollera själv.** Vid den här åldern s
 
 ## Framsätet då?
 
-Barnet ska vara minst **140 cm** för att sitta framför en aktiv krockkudde, om inte biltillverkaren säger något annat för just din bil. Notera att det är en högre siffra än de 135 cm lagen kräver för skyddsanordning — de två gränserna har olika ursprung och råkar bara ligga nära varandra.
+Rekommendationen är att barnet ska vara minst **140 cm** för att sitta framför en aktiv krockkudde, om inte biltillverkaren säger något annat för just din bil. Notera att det är en högre siffra än de 135 cm lagen kräver för skyddsanordning — och att 140 cm är en rekommendation medan 135 cm är lag. De två gränserna har olika ursprung och råkar bara ligga nära varandra.
 
 Sidokrockkuddar och krockgardiner är däremot inget problem, varken för framåtvända eller bakåtvända barn.
 

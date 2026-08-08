@@ -3,6 +3,8 @@ title: Sitter stolen rätt? Sex fel som nästan alla gör
 ingress: "Kort svar: bara fyra av tio bältesmonterade stolar satt rätt när Folksam kontrollerade. Här är felen — och kontrollen som tar en minut."
 beskrivning: Sex vanliga monteringsfel på bilbarnstol — från slaka underförankringsband till bältet utanpå vinterjackan — och minutkontrollen som visar om din stol sitter rätt.
 date: 2026-08-07
+uppdaterad: 2026-08-08
+lasharnast: ["montera-bilbarnstol-steg-for-steg", "bilbarnstol-fram-och-airbag"]
 ---
 
 Du har läst testerna och betalat femtusen kronor för rätt stol. Sedan monterade du den på en parkering i höstmörkret med en skrikande bebis bredvid — och är inte helt säker på att du gjorde rätt.

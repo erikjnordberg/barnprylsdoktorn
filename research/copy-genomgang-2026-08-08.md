@@ -2,7 +2,7 @@
 
 Omfattning: samtliga 13 guider, `produkter.js`, `index.md`, `guider.njk`, `om.md`, `sa-tjanar-sajten-pengar.md` och `base.njk`. Fokus på konsistens efter contentändringarna, inte på tonläge.
 
-**Inget är ändrat.** Säkerhetssiffror är flaggade för ditt godkännande enligt projektreglerna.
+**Status: allt nedan är genomfört och godkänt av Erik 2026-08-08.** Filen står kvar som underlag för vad som ändrades och varför. A1–A3 och B1–B2 rör säkerhetssiffror och gjordes först efter uttryckligt godkännande.
 
 Metod: alla siffror som förekommer på fler än ett ställe är jämförda mot varandra och mot primärkälla (NTF:s FAQ om montering och placering, Folksams pressmeddelande om observationsstudien 2022). Interna länkar och `Läs härnäst` är kontrollerade mot byggd HTML i `_site/`.
 

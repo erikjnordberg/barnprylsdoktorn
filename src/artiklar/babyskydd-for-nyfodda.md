@@ -3,6 +3,7 @@ title: Babyskydd för nyfödda — så väljer du rätt
 ingress: Den första stolen är den du köper när du har minst koll och mest annat att tänka på. Här är det som faktiskt avgör.
 beskrivning: Så väljer du babyskydd till en nyfödd — hur länge skyddet räcker, vad bilen kräver, vad Plustestet betyder, och misstaget alla gör.
 date: 2026-08-05
+lasharnast: ["bakatvand-bilbarnstol-vilken-ska-jag-kopa", "basta-bilbarnstolen"]
 uppdaterad: 2026-08-07
 ---
 

@@ -3,6 +3,7 @@ title: Bästa bilbarnstolen 2026 — vilken du ska köpa, i vilket skede
 ingress: Tre skeden, tre olika köp. Här är vad som faktiskt avgör i varje, och vilka stolar som har ett testresultat bakom sig.
 beskrivning: Bästa bilbarnstolen 2026 enligt Folksams test och VTI:s Plustest — babyskydd, bakåtvänd stol och bältesstol, med vad som avgör i varje skede.
 date: 2026-08-07
+lasharnast: ["bakatvand-bilbarnstol-vilken-ska-jag-kopa", "babyskydd-for-nyfodda"]
 ---
 
 ## Kort svar

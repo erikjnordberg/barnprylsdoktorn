@@ -3,6 +3,8 @@ title: Isofix eller bälte — spelar det roll?
 ingress: "Kort svar: inte för säkerheten. Men för chansen att du monterar rätt, och det är där olyckorna faktiskt sker."
 beskrivning: Isofix eller bältesmontering av bilbarnstol — vad skillnaden är, vad som är säkrast, och vilket du bör välja.
 date: 2026-08-06
+uppdaterad: 2026-08-08
+lasharnast: ["montera-bilbarnstol-steg-for-steg", "bilbarnstol-plats-i-bilen"]
 ---
 
 ## Kort svar
@@ -51,7 +53,7 @@ Priset du betalar är monteringsmomentet — och det är ett riktigt pris. Förs
 
 Detaljen som överraskar folk, och som kan avgöra ditt val även med egen bil:
 
-Vid bakåtvänd montering med Isofix finns en total viktgräns på **33 kg — stol plus barn tillsammans**. Väger stolen 15 kg får barnet alltså väga 18 kg. Det är därför de flesta bakåtvända Isofix-stolar är godkända upp till just 18 kg.
+Vid Isofix-montering finns en total viktgräns på **33 kg — stol plus barn tillsammans**. Den gäller bakåtvänt åkande och framåtvänt med internbälte. Väger stolen 15 kg får barnet alltså väga 18 kg. Det är därför de flesta bakåtvända Isofix-stolar är godkända upp till just 18 kg.
 
 Bältesmonterade stolar har ingen sådan begränsning. Där ligger gränsen oftast på 25 kg, och i R129-regelverket finns modeller upp till 36 kg.
 
