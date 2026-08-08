@@ -37,7 +37,7 @@ Anledningen till att vi landade i bältesmontering — och som ingen i butiken t
 
 Vi äger ingen bil. Vi hyr, leasar och lånar — en Golf en helg, en kombi nästa, svärfars bil när det är storhandling. Och då blir Isofix plötsligt fel verktyg.
 
-Problemet är inte att Isofix saknas i hyrbilar. Det finns oftast. Problemet är att **du inte vet var det finns förrän du står på parkeringen**. Alla platser i baksätet har inte fästen. Vissa bilar har dem bara på ytterplatserna, vissa har dem svåråtkomliga bakom klädseln, och tillverkarnas billistor täcker inte varenda modellår i en uthyrningsflotta. Har du ett babyskydd med Isofix-bas ska dessutom basen med i varje bil — den är klumpig, väger en del och ligger i vägen i bagageluckan.
+Problemet är inte att Isofix saknas i hyrbilar. Det finns oftast. Problemet är att **du inte vet var det finns förrän du står på parkeringen**. Alla platser i baksätet har inte fästen. Vissa bilar har dem bara på ytterplatserna, vissa har dem svåråtkomliga bakom klädseln, och tillverkarnas billistor täcker inte varenda modellår i en uthyrningsflotta. Har du ett babyskydd med Isofix-bas ska dessutom basen med i varje bil — den är klumpig, väger en del och ligger i vägen i bagageluckan. [Så tar du reda på vilka platser i bilen som faktiskt fungerar](/guider/bilbarnstol-plats-i-bilen/), oavsett montering.
 
 En bältesmonterad stol bryr sig inte om något av det. **Varje bil som är laglig att köra har ett trepunktsbälte.** Stolen går i vilken bil som helst, i vilken plats som helst, utan att du behöver kontrollera något i förväg.
 

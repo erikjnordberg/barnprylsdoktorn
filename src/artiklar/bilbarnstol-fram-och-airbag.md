@@ -81,7 +81,7 @@ Framsätet har dessutom några praktiska fördelar som väger tungt:
 
 **Bättre social kontakt** mellan barn och förare, vilket spelar roll om du ofta kör ensam med barnet, enligt både Folksam och NTF.
 
-Ska stolen monteras med Isofix i framsätet gäller samma sak som bak: [fästena finns inte alltid där du tror, och det är värt att kontrollera innan du bestämmer dig](/guider/isofix-eller-balte/).
+Ska stolen monteras med Isofix i framsätet gäller samma sak som bak: [fästena finns inte alltid där du tror, och det är värt att kontrollera innan du bestämmer dig](/guider/isofix-eller-balte/). Väger du framsätet mot de olika platserna bak är det [värt att se på hela pusslet med plats i bilen](/guider/bilbarnstol-plats-i-bilen/) — särskilt om ni ska få in fler än en stol.
 
 Och resonemanget om airbag och plats i bilen slutar inte vid den bakåtvända stolen — det följer med [när barnet växt ur bakåtvänt och går vidare till bältesstol eller bälteskudde](/guider/baltesstol-eller-balteskudde/) också.
 

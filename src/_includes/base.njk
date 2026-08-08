@@ -103,6 +103,15 @@
     {#- Köpguiden först när den är relevant: läsaren som just förstått reglerna
         är i det läge där hon vill veta vilken stol hon faktiskt ska köpa. -#}
     {%- set ovriga = [] %}
+    {%- if lasharnast %}
+    {%- for slug in lasharnast %}
+      {%- for artikel in collections.artiklar %}
+        {%- if artikel.url == "/guider/" + slug + "/" %}
+          {%- set ovriga = (ovriga.push(artikel), ovriga) %}
+        {%- endif %}
+      {%- endfor %}
+    {%- endfor %}
+    {%- else %}
     {%- for artikel in collections.artiklar %}
       {%- if artikel.url != page.url and "vilken-ska-jag-kopa" in artikel.url %}
         {%- set ovriga = (ovriga.push(artikel), ovriga) %}
@@ -113,6 +122,7 @@
         {%- set ovriga = (ovriga.push(artikel), ovriga) %}
       {%- endif %}
     {%- endfor %}
+    {%- endif %}
     {%- if ovriga.length %}
     <aside class="las-harnast">
       <h2>Läs härnäst</h2>

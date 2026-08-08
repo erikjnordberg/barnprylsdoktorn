@@ -93,7 +93,7 @@ Ja → Max-Safe Pro eller BeSafe Beyond. TinySeats faller bort.
 Räcker längst → Max-Safe Pro, med 36 kg.
 Bekvämlighet → BeSafe Beyond, med vridfunktionen.
 
-Och oavsett vilken du landar i: **provmontera den i din bil innan du bestämmer dig.** Flera tillverkare har billistor, och vissa återförsäljare erbjuder fri retur om stolen inte passar. En bra stol som inte går att montera rätt i just din bil är fel stol.
+Och oavsett vilken du landar i: **provmontera den i din bil innan du bestämmer dig.** Flera tillverkare har billistor, och vissa återförsäljare erbjuder fri retur om stolen inte passar. En bra stol som inte går att montera rätt i just din bil är fel stol — [så tar du reda på om den faktiskt får plats](/guider/bilbarnstol-plats-i-bilen/), oavsett om ni ska ha en eller tre stolar i baksätet.
 
 När stolen väl är urvuxen — någonstans kring sex–sju år med de här modellerna — är nästa steg [bältesstol eller bälteskudde](/guider/baltesstol-eller-balteskudde/).
 
