@@ -71,7 +71,7 @@ Det är alltså bara krockkudden rakt framför barnet som frågan handlar om.
 
 Många utgår från att baksätet alltid är säkrast. Det stämmer inte — det är artikelns viktigaste poäng.
 
-Ur ren krocksäkerhetssynpunkt är fram- och baksätet **likvärdiga** för ett bakåtvänt barn, så länge krockkudden är urkopplad. Det är den nationella rekommendationen, återgiven av både Folksam och NTF. (Ska barnet ändå sitta bak är [mittplatsen den tekniskt bästa](/guider/montera-bilbarnstol-steg-for-steg/#var-i-bilen-ska-stolen-sitta), när bilen och stolen tillåter det.)
+Ur ren krocksäkerhetssynpunkt är fram- och baksätet **likvärdiga** för ett bakåtvänt barn, så länge krockkudden är urkopplad. Det är den nationella rekommendationen, återgiven av både Folksam och NTF. (Ska barnet ändå sitta bak är [mittplatsen den tekniskt bästa](/guider/bilbarnstol-plats-i-bilen/#mittplatsen-bast-i-teorin-ofta-omojlig-i-praktiken), när bilen och stolen tillåter det.)
 
 Framsätet har dessutom några praktiska fördelar som väger tungt:
 

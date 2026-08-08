@@ -37,6 +37,8 @@ Mittplatsen bak är den plats som ligger längst ifrån bilens krockzoner, och N
 
 Har bilen bara ett höftbälte i mitten är det en sämre plats än man tror. NTF beskriver två problem: risken för underglidning, där benen dras framåt vid en krock och höften glider under bältet, och att överkroppen kastas fram så att risken för ansikts- och skallskador ökar. Risken växer ju större personen är — så om någon måste sitta på tvåpunktsbältet bör det inte vara den vuxna i familjen.
 
+Och en genväg som inte finns: **bältesförlängare löser det inte.** De som säljs är avsedda för gods och är inte godkända för bilbarnstolar. Står det inget om alternativ bältesdragning i stolens bruksanvisning är platsen helt enkelt inte användbar för den stolen.
+
 En praktisk detalj: en stol med stödben behöver inte luta mot sätet framför, vilket ofta gör den lättare att få till på mittplatsen. Ett babyskydd ska heller inte luta mot framsätet eller instrumentbrädan.
 
 Och en avvägning ingen nämner: sätter du barnet i mitten ser du det knappt från förarsätet.
@@ -44,6 +46,8 @@ Och en avvägning ingen nämner: sätter du barnet i mitten ser du det knappt fr
 ## Två stolar bak
 
 Det här är det vanligaste pusslet, och lösningen ligger sällan i att köpa den smalaste stolen på marknaden. Den ligger i vilka platser som har vad.
+
+Mät ändå bredden på stolen du redan har innan du köper den andra. Bakåtvända stolar är breda, och tre bredvid varandra går sällan i en vanlig personbil utan att minst en är en smal bältesstol. Har du bara två barn: ta ytterplatserna och låt mitten stå tom, hellre än att pressa ihop tre.
 
 Isofix finns i de flesta nyare bilars baksäten, men sällan på alla tre platser, och bara ibland i framsätet. Det betyder att du ofta hamnar i en blandning: en isofix-monterad stol på en ytterplats och en bältesmonterad på den andra, eller på mittplatsen. Det är helt i sin ordning — det är bilens bälte respektive isofix-fästena som håller stolen, och båda är säkra när de används rätt.
 
@@ -70,8 +74,8 @@ Den sista punkten avgör mer än man tror. En stol som är krånglig att använd
 
 ## Källor
 
-- NTF, *Köpråd och godkännanden* — fordonslista, i-Size-plats, 33-kilosgränsen
-- NTF, *Montering och placering* — mittplats, trepunktsbälte, krockkudde och 140 cm
-- NTF, *Vem ska använda mittbältet?* — underglidning och risker med tvåpunktsbälte
-- NTF, *Bilbarnstolsskola* — billistor och val av plats
-- Transportstyrelsen — kravet på skyddsanordning under 135 cm
+- [NTF — Köpråd och godkännanden](https://ntf.se/konsumentupplysning/barn-i-bil/koprad-och-godkannanden/) — fordonslista, i-Size-plats, 33-kilosgränsen
+- [NTF — Vanliga frågor om montering och placering](https://ntf.se/fragor-och-svar/barn-i-bil/montering-och-placering/) — mittplats, trepunktsbälte, bältesförlängare, krockkudde och 140 cm
+- [NTF — Vem ska använda mittbältet?](https://ntf.se/fragor-och-svar/barn-i-bil/placering-montering/vem-ska-anvanda-mittbaltet/) — underglidning och risker med tvåpunktsbälte
+- [NTF — Bilbarnstolsskolan](https://ntf.se/konsumentupplysning/barn-i-bil/bilbarnstolsskola/) — billistor och val av plats
+- [Transportstyrelsen — Bältesregler](https://www.transportstyrelsen.se/sv/vagtrafik/trafikregler-och-vagmarken/trafikregler/i-fordonet/baltesregler/) — kravet på skyddsanordning under 135 cm

@@ -75,8 +75,9 @@ Kör du själv i utlandet: googla "child car seat law" plus landet, och räkna m
 
 ## Källor
 
-- Transportstyrelsen, *Bältesregler* samt *Så skyddar du barnen — regler och tips*
-- FAA, *Flying with Children* — om godkända barnfasthållningsanordningar ombord
-- AmSafe, *CARES Kids Fly Safe* — produktspecifikation och godkännanden
-- Folksam, *Så monterar du bilbarnstolen säkert*
-- NTF, *Konsumentupplysning: Barn i bil*
+- [Transportstyrelsen — Bältesregler](https://www.transportstyrelsen.se/sv/vagtrafik/trafikregler-och-vagmarken/trafikregler/i-fordonet/baltesregler/)
+- [Transportstyrelsen — Så skyddar du barnen: regler och tips](https://www.transportstyrelsen.se/sv/vagtrafik/trafikregler-och-vagmarken/trafikregler/i-fordonet/Sa-skyddar-du-barnen---regler-och-tips/)
+- [FAA — Flying with Children](https://www.faa.gov/travelers/fly_children) — godkända barnfasthållningsanordningar ombord, märkning, fönsterplats
+- [AmSafe — CARES Kids Fly Safe](https://www.amsafe.com/kidsflysafe-com/) — produktspecifikation och godkännanden
+- [Folksam — Så monterar du bilbarnstolen säkert](https://www.folksam.se/forsakringar/barnforsakring/montera-bilbarnstol)
+- [NTF — Konsumentupplysning: Barn i bil](https://ntf.se/konsumentupplysning/barn-i-bil/)

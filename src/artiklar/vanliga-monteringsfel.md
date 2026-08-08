@@ -70,9 +70,9 @@ Ungefär hälften av föräldrarna gör det här. Det är också det enklaste av
 
 ## Två saker till, medan du ändå står där
 
-**Lutningen.** En nyfödd som sitter för upprätt kan få hakan mot bröstet och andningen begränsad. NTF anger 20–35 graders lutning som riktvärde, och de flesta stolar har en vattenpassmarkering eller en linje som ska ligga vågrätt. Mer om det i [guiden om babyskydd](/guider/babyskydd-for-nyfodda/).
+**Lutningen.** En nyfödd som sitter för upprätt kan få hakan mot bröstet och andningen begränsad. NTF anger cirka 40–45 grader för ett babyskydd och högst 30–35 för en bakåtvänd bilbarnstol, och de flesta stolar har en vattenpassmarkering eller en linje som ska ligga vågrätt. Mer om det i [guiden om babyskydd](/guider/babyskydd-for-nyfodda/).
 
-**Krockkudden.** I Folksams kontroll satt 16 procent av barnen i framsätet framför en aktiv krockkudde, och ett av dem bakåtvänt. Det sista är direkt livsfarligt. [Vad som gäller i framsätet](/guider/bilbarnstol-fram-och-airbag/) är en egen guide.
+**Krockkudden.** Av de 31 barn under 140 cm som satt i framsätet i Folksams kontroll satt fem — 16 procent — framför en aktiv krockkudde, och ett av dem bakåtvänt. Det sista är direkt livsfarligt. [Vad som gäller i framsätet](/guider/bilbarnstol-fram-och-airbag/) är en egen guide.
 
 ## Minutkontrollen
 
@@ -88,8 +88,8 @@ Och en sak till: den enda instruktionen som gäller din exakta stol i din exakta
 
 ## Källor
 
-- Folksam, *Föräldrar i Sverige slarvar vid montering av bilbarnstolar* — observationsstudie 2022, 180 kontroller vid 13 förskolor i Storstockholm
-- Folksam, *Så monterar du bilbarnstolen säkert*
-- NTF, *Montering* samt *Konsumentupplysning: Bakåtvänd bilbarnstol*
-- NTF, *Vanliga frågor om montering och placering av bilbarnstol*
-- Transportstyrelsen, *Så skyddar du barnen — regler och tips*
+- [Folksam — Föräldrar i Sverige slarvar vid montering av bilbarnstolar](https://news.cision.com/se/folksam/r/foraldrar-i-sverige-slarvar-vid-montering-av-bilbarnstolar,c3636696) — observationsstudie 2022, över 180 kontroller vid 13 förskolor i Storstockholm
+- [Folksam — Så monterar du bilbarnstolen säkert](https://www.folksam.se/forsakringar/barnforsakring/montera-bilbarnstol)
+- [NTF — Konsumentupplysning: Bakåtvänd bilbarnstol](https://ntf.se/konsumentupplysning/barn-i-bil/bakatvand-bilbarnstol/)
+- [NTF — Vanliga frågor om montering och placering av bilbarnstol](https://ntf.se/fragor-och-svar/barn-i-bil/montering-och-placering/)
+- [Transportstyrelsen — Så skyddar du barnen: regler och tips](https://www.transportstyrelsen.se/sv/vagtrafik/trafikregler-och-vagmarken/trafikregler/i-fordonet/Sa-skyddar-du-barnen---regler-och-tips/)

@@ -64,8 +64,8 @@ Och när du väl har en stol på plats: [kontrollera att den sitter rätt](/guid
 
 ## Källor
 
-- Transportstyrelsen, *Bältesregler*
-- Transportstyrelsen, *Så skyddar du barnen — regler och tips*
-- Trafikförordningen (1998:1276), 4 kap.
-- Rikshandboken i barnhälsovård, *Barn i bil*
-- NTF, *Konsumentupplysning: Barn i bil*
+- [Transportstyrelsen — Bältesregler](https://www.transportstyrelsen.se/sv/vagtrafik/trafikregler-och-vagmarken/trafikregler/i-fordonet/baltesregler/)
+- [Transportstyrelsen — Så skyddar du barnen: regler och tips](https://www.transportstyrelsen.se/sv/vagtrafik/trafikregler-och-vagmarken/trafikregler/i-fordonet/Sa-skyddar-du-barnen---regler-och-tips/)
+- [Trafikförordning (1998:1276), 4 kap.](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/trafikforordning-19981276_sfs-1998-1276/)
+- [Rikshandboken i barnhälsovård — Barn i bil](https://www.rikshandboken-bhv.se/foraldraskapsstod/barnsakerhet/barn-i-bil/)
+- [NTF — Konsumentupplysning: Barn i bil](https://ntf.se/konsumentupplysning/barn-i-bil/)
