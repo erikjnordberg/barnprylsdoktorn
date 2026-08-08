@@ -82,8 +82,7 @@ Känner du dig osäker efteråt är det värt att veta att flera NTF-förbund oc
 ## Källor
 
 - NTF, *Konsumentupplysning: Bakåtvänd bilbarnstol* — montering, axelhöjd
-- NTF, *Vanliga frågor om montering och placering av bilbarnstol* — lutning för babyskydd respektive bakåtvänd stol
-- NTF, *Vanliga frågor om montering och placering av bilbarnstol* — mittplatsen bak, trepunktsbälte, bältesförlängare, inga lagliga restriktioner för placering
+- NTF, *Vanliga frågor om montering och placering av bilbarnstol* — lutning per stoltyp, mittplatsen bak, trepunktsbälte, bältesförlängare, inga lagliga restriktioner för placering
 - Folksam, *Så monterar du bilbarnstolen säkert* — bältesmontering, underförankringsband, Isofix-indikatorer, 140 cm och krockkudde
 - Folksam, *Föräldrar i Sverige slarvar vid montering av bilbarnstolar* — observationsstudie 2022, 180 kontroller vid förskolor i Storstockholm
 - Transportstyrelsen, *Så skyddar du barnen — regler och tips*
