@@ -69,6 +69,8 @@ copy-granskning.md         senaste copygranskningen, i roten
 eleventy.config.js         filter: version, datum, typo, htmlDateString, isoDate, rssDate,
                            sorteraEfterBesok
                            shortcode: kopblock
+                           markdown-it-anchor ger h2 och h3 id via rubrikTillId,
+                           som translittererar å/ä/ö. Bara id, ingen länkikon.
 ```
 
 `arkiv/` och `kodhandledare-bilbarnstolar.md` är gammalt kursmaterial. De är gitignorerade

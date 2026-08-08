@@ -41,6 +41,8 @@ Problemet är inte att Isofix saknas i hyrbilar. Det finns oftast. Problemet är
 
 En bältesmonterad stol bryr sig inte om något av det. **Varje bil som är laglig att köra har ett trepunktsbälte.** Stolen går i vilken bil som helst, i vilken plats som helst, utan att du behöver kontrollera något i förväg.
 
+Samma sak gäller mittplatsen bak, som är den tekniskt säkraste platsen i bilen. Isofix-fästen saknas ofta just där, medan ett bälte nästan alltid finns — [mer om hur du väljer plats](/guider/montera-bilbarnstol-steg-for-steg/#var-i-bilen-ska-stolen-sitta).
+
 Priset du betalar är monteringsmomentet — och det är ett riktigt pris. Första gångerna tar det tid och känns osäkert. Men det är samma handgrepp varje gång oavsett bil, och efter tio–femton gånger sitter det. Numera gör jag det på under en minut i en bil jag aldrig satt i förut. [Ordningen att göra det i finns här](/guider/montera-bilbarnstol-steg-for-steg/), för både bälte och Isofix.
 
 **Tumregeln:** har du en bil som stolen får sitta kvar i, ta Isofix. Byter du bil ofta, ta bältesmontering — flexibiliteten är värd mer än de sekunder Isofix sparar.

@@ -2,6 +2,18 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 const produkter = require("./src/_data/produkter.js");
+const anchor = require("markdown-it-anchor");
+
+// Rubriktext -> id att länka till: "Var i bilen ska stolen sitta?" blir
+// "var-i-bilen-ska-stolen-sitta". Egen funktion i stället för standardvarianten,
+// som procentkodar å, ä och ö till oläsliga adresser.
+const rubrikTillId = (text) =>
+  text
+    .toLowerCase()
+    .replace(/[åä]/g, "a")
+    .replace(/ö/g, "o")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 
 // Besöksstatistik från scripts/hamta-statistik.js, uppdateras varje måndag av
 // GitHub Actions. Filen kan saknas (första körningen, eller lokalt) — då sorteras
@@ -14,6 +26,12 @@ try {
 }
 
 module.exports = function (eleventyConfig) {
+  // Ger varje h2 och h3 ett id, så att avsnitt går att länka till direkt.
+  // Bara id — ingen synlig länkikon och ingen ändring av rubrikernas utseende.
+  eleventyConfig.amendLibrary("md", (mdLib) =>
+    mdLib.use(anchor, { level: [2, 3], slugify: rubrikTillId })
+  );
+
   // Kopiera CSS och bilder rakt igenom till den färdiga sajten
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/bilder");
