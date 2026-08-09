@@ -1,0 +1,77 @@
+---
+layout: base.njk
+permalink: /vilken-bilbarnstol/
+title: Vilken bilbarnstol passar mitt barn?
+h1: Vilken bilbarnstol passar mitt barn?
+ingress: Tre frågor, ett svar. Ingen mejladress, ingen inloggning — och ingen produkt du måste köpa.
+beskrivning: Svara på tre frågor om barnets ålder, längd och bilens fästen så får du veta vilken sorts bilbarnstol som gäller just nu — enligt NTF:s och Transportstyrelsens rekommendationer.
+---
+
+<form class="valjare" id="valjare" novalidate>
+
+  <fieldset class="valjare-fraga">
+    <legend>1. Hur gammalt är barnet?</legend>
+    <div class="valjare-alternativ">
+      <label><input type="radio" name="alder" value="nyfodd"><span>Väntar barn eller nyfödd</span></label>
+      <label><input type="radio" name="alder" value="under1"><span>Under 1 år</span></label>
+      <label><input type="radio" name="alder" value="1-4"><span>1–4 år</span></label>
+      <label><input type="radio" name="alder" value="4-7"><span>4–7 år</span></label>
+      <label><input type="radio" name="alder" value="7plus"><span>7 år eller äldre</span></label>
+    </div>
+  </fieldset>
+
+  <fieldset class="valjare-fraga">
+    <legend>2. Hur långt är barnet?</legend>
+    <div class="valjare-alternativ">
+      <label><input type="radio" name="langd" value="under85"><span>Under 85 cm</span></label>
+      <label><input type="radio" name="langd" value="85-105"><span>85–105 cm</span></label>
+      <label><input type="radio" name="langd" value="105-125"><span>105–125 cm</span></label>
+      <label><input type="radio" name="langd" value="125-135"><span>125–135 cm</span></label>
+      <label><input type="radio" name="langd" value="over135"><span>Över 135 cm</span></label>
+      <label><input type="radio" name="langd" value="vetinte"><span>Vet inte</span></label>
+    </div>
+  </fieldset>
+
+  <fieldset class="valjare-fraga">
+    <legend>3. Har bilen ISOFIX-fästen?</legend>
+    <div class="valjare-alternativ">
+      <label><input type="radio" name="isofix" value="ja"><span>Ja</span></label>
+      <label><input type="radio" name="isofix" value="nej"><span>Nej, bara bilbälte</span></label>
+      <label><input type="radio" name="isofix" value="vetinte"><span>Vet inte</span></label>
+    </div>
+  </fieldset>
+
+  <p class="valjare-status" id="valjare-status">Svara på alla tre frågorna så visas svaret här.</p>
+
+</form>
+
+<div class="valjare-svar" id="valjare-svar" role="region" aria-live="polite" aria-label="Ditt svar" hidden></div>
+
+<noscript>
+  <p><strong>Väljaren kräver JavaScript.</strong> Här är guiderna den skulle ha länkat till:</p>
+  <ul>
+    <li><a href="/guider/babyskydd-for-nyfodda/">Babyskydd för nyfödda</a></li>
+    <li><a href="/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/">Bakåtvänd bilbarnstol — vilken ska jag köpa?</a></li>
+    <li><a href="/guider/baltesstol-eller-balteskudde/">Bältesstol eller bälteskudde</a></li>
+    <li><a href="/guider/isofix-eller-balte/">ISOFIX eller bälte</a></li>
+  </ul>
+</noscript>
+
+<h2 id="vad-svaret-bygger-pa">Vad svaret bygger på</h2>
+
+<p>Väljaren följer de svenska rekommendationerna, inte tillverkarnas marknadsföring. Två saker är värda att hålla isär:</p>
+
+<p><strong>Lagen</strong> säger att barn kortare än 135 cm ska använda en särskild skyddsanordning&nbsp;— babyskydd, bilbarnstol, bältesstol eller bälteskudde.</p>
+
+<p><strong>Rekommendationen</strong> går längre. NTF vill att barn åker bakåtvänt så länge det går, minst till 4–5 års ålder, och läkare och forskare rekommenderar bältesstol eller bälteskudde ända till 10–12 år.</p>
+
+<p>Väljaren ger dig en kategori, inte en modell. Vilken stol som passar beror också på din bil&nbsp;— kontrollera alltid fordonslistan som följer med stolen, och prova stolen i bilen med barnet i innan du köper.</p>
+
+<h2 id="kallor">Källor</h2>
+
+<ul>
+  <li><a href="https://www.transportstyrelsen.se/sv/vagtrafik/trafikregler-och-vagmarken/trafikregler/i-fordonet/Sa-skyddar-du-barnen---regler-och-tips/">Transportstyrelsen&nbsp;— Så skyddar du barnen, regler och tips</a></li>
+  <li><a href="https://ntf.se/konsumentupplysning/barn-i-bil/koprad-och-godkannanden/">NTF&nbsp;— Köpråd och godkännanden</a></li>
+</ul>
+
+<script src="{{ '/js/valjare.js' | version }}" defer></script>

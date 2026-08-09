@@ -23,6 +23,8 @@ Ett barn behöver tre stolar innan bältet sitter rätt av sig självt. De köps
 
 {% kopblock "britax-max-safe-pro" %}
 
+Är du osäker på vilket skede ni är i just nu? [Svara på tre frågor om barnets ålder och längd](/vilken-bilbarnstol/), så får du kategorin utan att läsa hela sidan.
+
 Vill du veta varför, fortsätt läsa.
 
 ---

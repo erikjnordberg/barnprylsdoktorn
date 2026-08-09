@@ -12,6 +12,8 @@ Den här sajten är vad jag önskar hade funnits då.
 
 **Vill du bara ha svaret?** [Bästa bilbarnstolen 2026 — vilken du ska köpa, i vilket skede](/guider/basta-bilbarnstolen/) samlar alla tre köpen på en sida.
 
+<a class="valjare-ingang" href="/vilken-bilbarnstol/"><strong>Vilken bilbarnstol passar mitt barn?</strong><span>Tre frågor om barnets ålder, längd och bilens fästen — så får du veta vilken sorts stol som gäller just nu.</span></a>
+
 ## Var ska du börja?
 
 <section class="produktkort-grid">

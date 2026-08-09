@@ -16,6 +16,8 @@ lasharnast: ["bakatvand-bilbarnstol-vilken-ska-jag-kopa", "isofix-eller-balte"]
 
 Det är allt du behöver för att gå in i en butik. Vill du veta varför, fortsätt läsa.
 
+Vill du bara veta vilken stolstyp som gäller för ert barn i dag, [svara på tre frågor i väljaren](/vilken-bilbarnstol/) i stället.
+
 ---
 
 ## R44 och R129 är två olika sätt att mäta

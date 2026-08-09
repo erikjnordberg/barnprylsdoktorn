@@ -23,7 +23,7 @@ Det goda är att valet är enklare än det ser ut. Fyra saker avgör.
 
 ## 1. Det räcker kortare tid än du tror
 
-Ett babyskydd används från födseln till ungefär **sex till nio månader**, och är typiskt godkänt för 0–13 kg eller 40–75 cm. Signalen att byta är inte åldern utan att barnet kan sitta upprätt själv, eller att huvudet når stolens överkant.
+Ett babyskydd används från födseln till ungefär **sex till nio månader**, och är typiskt godkänt för 0–13 kg eller 40–75 cm. Signalen att byta är inte åldern utan att barnet kan sitta upprätt själv, eller att huvudet når stolens överkant. Är ni redan där? [Väljaren säger vilken stol som är nästa steg](/vilken-bilbarnstol/).
 
 Babyskyddet är alltså en kort etapp. Den stora investeringen är nästa stol — den bakåtvända, som ska räcka till fyra år och gärna sex–sju. [Lägg din research där](/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/), eller läs [hela kedjan från babyskydd till bältesstol](/guider/basta-bilbarnstolen/) på en sida.
 

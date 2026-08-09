@@ -22,6 +22,8 @@ Här gör de flesta sitt enda riktiga misstag: de byter för tidigt.
 
 Den bakåtvända stolen är urvuxen när barnets **ögon är i höjd med stolens övre kant** — eller ungefär när en tredjedel av huvudet sticker upp ovanför ryggen. Alternativt när stolens angivna längd- eller viktgräns passerats.
 
+Osäker på om ni är där än? [Väljaren tar er igenom det på tre frågor](/vilken-bilbarnstol/).
+
 Den är alltså **inte** urvuxen för att benen ser trångt placerade ut. Det är nästan alltid vi vuxna som stör oss på det, inte barnet. [En bakåtvänd stol godkänd till 125 cm](/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/) räcker för många barn till sex–sju år, och varje extra år bakåtvänt är den billigaste säkerhetsuppgradering du kan göra.
 
 NTF får frågan om man får sätta en stor treåring i bältesstol. Svaret är ja, det får du — men de avråder. Huvudet är tungt i förhållande till kroppen och nacken är inte färdig. I en frontalkrock löper ett framåtvänt barn upp till fem gånger högre risk för nack- och skallskador.

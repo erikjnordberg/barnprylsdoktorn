@@ -78,8 +78,12 @@ src/
   css/style.css            hela sajtens styling
   fonter/                  self-hostade woff2-filer
   bilder/                  tre SVG-illustrationer + delningsbild
+  js/valjare.js            logiken bakom bilbarnstolsväljaren
   artiklar/                guiderna i Markdown
   artiklar/artiklar.json   permalink /guider/<slug>/
+  vilken-bilbarnstol.njk   väljaren, permalink /vilken-bilbarnstol/
+                           OBS: .njk-filer parsar inte Markdown — skriv HTML här,
+                           annars renderas "## Rubrik" och länkar som råtext
   index.md, om.md, guider.njk, sa-tjanar-sajten-pengar.md, 404.md
   feed.njk, sitemap.njk, robots.njk
 scripts/hamta-statistik.js hämtar besöksstatistik från Cloudflare, se nedan
@@ -89,6 +93,7 @@ copy-granskning.md         senaste copygranskningen, i roten
 eleventy.config.js         filter: version, datum, typo, htmlDateString, isoDate, rssDate,
                            sorteraEfterBesok
                            shortcode: kopblock
+                           passthrough: css, bilder, fonter, js, _headers
                            markdown-it-anchor ger h2 och h3 id via rubrikTillId,
                            som translittererar å/ä/ö. Bara id, ingen länkikon.
 ```
@@ -133,6 +138,15 @@ Sajten ska fungera bäst på mobil. Utgå från mobilvyn först.
 - **`.las-harnast`** — mörkt block sist i guiderna med två relaterade artiklar.
 - **`.produktkort`** — korten på startsidan, hela kortet klickbart.
 - **Tabeller** scrollar horisontellt under 44 rem med en skuggkant som affordans.
+- **Bilbarnstolsväljaren** på `/vilken-bilbarnstol/`. Tre frågor — ålder, längd,
+  ISOFIX — ger en stolskategori, aldrig en modell. All logik och alla texter ligger
+  i `src/js/valjare.js`; markup och källförteckning i `src/vilken-bilbarnstol.njk`.
+  Ingenting sparas och ingenting skickas — svaret kodas i adressen med
+  `history.replaceState`, så att en länk kan klistras in i ett forum och ge samma
+  svar. Siffrorna i svaren är belagda mot Transportstyrelsen och NTF: ändra dem
+  aldrig utan att slå upp källan först.
+- **`.valjare-ingang`** — mörkt block som länkar in till väljaren, används på
+  startsidan. I guiderna länkas väljaren från löptexten i stället.
 
 ### Tillgänglighet
 

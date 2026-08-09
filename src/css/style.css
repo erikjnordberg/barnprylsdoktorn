@@ -454,6 +454,198 @@ a.kicker:hover { color: var(--accent-mork); }
   .kopblock-knapp { display: inline-flex; }
 }
 
+/* ---------- Bilbarnstolsväljaren ---------- */
+
+.valjare {
+  margin: 2rem 0 0;
+  padding: 0;
+  border: none;
+}
+
+.valjare-fraga {
+  margin: 0 0 2rem;
+  padding: 0;
+  border: none;
+}
+
+.valjare-fraga legend {
+  padding: 0;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.9rem;
+}
+
+.valjare-alternativ {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+/* Hela etiketten är klickytan. Radioknappen finns kvar för skärmläsare och
+   tangentbord — den är bara flyttad utanför bilden, inte display: none. */
+.valjare-alternativ input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.valjare-alternativ label {
+  display: block;
+  cursor: pointer;
+}
+
+.valjare-alternativ span {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.4rem 1rem;
+  background: var(--papper-tint);
+  border: 1px solid var(--kant);
+  border-radius: var(--radie);
+  font-size: 0.95rem;
+  line-height: 1.3;
+  color: var(--text);
+}
+
+.valjare-alternativ label:hover span {
+  border-color: var(--accent);
+  color: var(--accent-mork);
+}
+
+/* Vald: vit text på terrakotta ger 4.79:1, samma par som köpblockets knapp */
+.valjare-alternativ input:checked + span {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--papper);
+  font-weight: 650;
+}
+
+.valjare-alternativ input:focus-visible + span {
+  outline: 2px solid var(--accent-mork);
+  outline-offset: 3px;
+}
+
+.valjare-status {
+  font-size: 0.9rem;
+  color: var(--text-dampad);
+  margin: 0;
+}
+
+.valjare-svar {
+  margin: 2.5rem 0 1rem;
+  padding: 1.75rem var(--luft);
+  background: var(--papper-tint);
+  border: 1px solid var(--kant);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radie);
+}
+
+.valjare-etikett {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dampad);
+  margin: 0 0 0.4rem;
+}
+
+.valjare-rubrik {
+  font-size: 1.5rem;
+  margin: 0 0 0.7rem;
+}
+
+.valjare-sammanfattning { margin: 0 0 1.2rem; }
+
+.valjare-punkter {
+  margin: 0 0 1.2rem;
+  padding-left: 1.2rem;
+}
+
+.valjare-isofix {
+  margin: 0 0 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--kant);
+  font-size: 0.95rem;
+  color: var(--text-dampad);
+}
+
+.valjare-lankar {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+
+.valjare-lankar li { margin-bottom: 0.5rem; }
+.valjare-lankar a { font-weight: 650; }
+
+.valjare-omstart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 1.25rem;
+  background: none;
+  border: 1px solid var(--kant);
+  border-radius: var(--radie);
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 650;
+  color: var(--text-dampad);
+  cursor: pointer;
+}
+
+.valjare-omstart:hover {
+  border-color: var(--accent);
+  color: var(--accent-mork);
+}
+
+.valjare-omstart:focus-visible {
+  outline: 2px solid var(--accent-mork);
+  outline-offset: 3px;
+}
+
+@media (min-width: 34rem) {
+  .valjare-omstart { display: inline-flex; }
+}
+
+/* Ingång till väljaren, från startsidan och ur löptexten i guiderna */
+.valjare-ingang {
+  display: block;
+  margin: 2rem 0;
+  padding: 1.25rem var(--luft);
+  background: var(--text);
+  border-radius: var(--radie);
+  text-decoration: none;
+}
+
+.valjare-ingang strong {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--varm-ljus);
+  margin-bottom: 0.25rem;
+}
+
+.valjare-ingang span {
+  display: block;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #ded6c9;
+}
+
+main a.valjare-ingang { text-decoration: none; }
+main a.valjare-ingang:hover strong { color: #fff; }
+
 /* ---------- Sidfot ---------- */
 
 .sidfot {
