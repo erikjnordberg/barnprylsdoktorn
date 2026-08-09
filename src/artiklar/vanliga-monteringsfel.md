@@ -16,7 +16,7 @@ Valet av stol får all uppmärksamhet. Det är monteringen som avgör hur mycket
 - När Folksam kontrollerade bilbarnstolar utanför förskolor i Storstockholm 2022 var **bara 41 procent av de bältesmonterade stolarna rätt monterade**. För Isofix-monterade stolar var siffran 95 procent.
 - **Vanligaste felet: slaka underförankringsband.** Drygt hälften av de bältesmonterade stolarna hade det.
 - **Näst vanligaste: bältet utanpå vinterjackan.** Ungefär hälften av föräldrarna gör det, och Folksams krockprov visar att belastningen på barnet ökar.
-- **Minutkontrollen:** ryck i stolen vid bältesvägen — den ska knappt röra sig. Kläm på selen vid nyckelbenet — knappt ett finger ska få plats. Titta på stödbenet eller top tethern — den ska faktiskt vara i kontakt.
+- **Minutkontrollen:** ryck i stolen vid bältesvägen — den ska knappt röra sig. Kläm på selen mot bröstkorgen — bara två fingrar ska få plats. Titta på stödbenet eller top tethern — den ska faktiskt vara i kontakt.
 
 Vill du veta varför, fortsätt läsa.
 
@@ -60,7 +60,7 @@ Den glöms bort, för stolen sitter fast och känns klar utan den. Kroken sitter
 
 Nu lämnar vi stolens montering och går över till barnets. NTF:s riktlinje: internbältet ska ligga i axelhöjd, och axelbanden är enklast att justera *innan* stolen sitter i bilen.
 
-För en bakåtvänd stol ska selen löpa rakt ut från eller strax ovanför axlarna — det är NTF:s formulering. För framåtvänt gäller i eller strax över. Och den ska vara spänd — knappt ett finger ska få plats mellan bandet och barnets nyckelben.
+För en bakåtvänd stol ska selen löpa rakt ut från eller strax ovanför axlarna — det är NTF:s formulering. För framåtvänt gäller i eller strax över. Och den ska vara spänd — NTF:s tumregel är att bara två fingrar ska få plats mellan bältet och barnets bröstkorg.
 
 <div class="infografik">
   <img src="{{ '/bilder/selhojd.svg' | version }}" alt="Två barn framifrån i bakåtvänd bilbarnstol. Rätt: internbältet löper rakt ut från eller strax ovanför axlarna. Fel: bältet kommer ut en bit under axelhöjd." width="360" height="260">
@@ -87,7 +87,7 @@ Gör den här när du monterat om, när stolen flyttats mellan bilar, och en gå
 1. **Ryck i stolen vid bältesvägen.** Max ett par centimeter rörelse.
 2. **Följ bältet eller titta på Isofix-indikatorerna.** Rätt väg, inte vridet, grönt på båda sidor.
 3. **Titta på stödbenet eller top tethern.** Kontakt respektive spänd.
-4. **Kläm på selen vid nyckelbenet.** Knappt ett finger.
+4. **Kläm på selen mot bröstkorgen.** Bara två fingrar.
 5. **Känn efter att det inte är en jacka mellan bandet och barnet.**
 
 Och en sak till: den enda instruktionen som gäller din exakta stol i din exakta bil är tillverkarens manual. Har du köpt stolen [begagnad](/guider/begagnad-bilbarnstol/) och manualen saknas finns den nästan alltid som PDF hos tillverkaren. Flera återförsäljare och NTF-förbund erbjuder dessutom kostnadsfri monteringskontroll — det är den bästa gratistjänsten i hela den här branschen.

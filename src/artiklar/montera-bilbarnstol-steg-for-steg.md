@@ -71,7 +71,7 @@ En sak att hålla reda på: framåtvända barn under 140 cm ska enligt Folksam i
 
 ## Sedan då?
 
-Spänn fast barnet innanför ytterkläderna, inte utanpå. Selen ska ligga så tätt att du inte kan nypa ihop ett veck i bandet vid nyckelbenet.
+Spänn fast barnet innanför ytterkläderna, inte utanpå. Selen ska ligga så tätt att du inte kan nypa ihop ett veck i bandet — NTF:s tumregel är att bara två fingrar ska få plats mellan bältet och barnets bröstkorg.
 
 Och gör om kontrollen: när du monterat om, när stolen bytt bil, och en gång i månaden annars. [Minutkontrollen och de sex vanligaste felen](/guider/vanliga-monteringsfel/) tar mindre tid än att skrapa rutan.
 
