@@ -12,7 +12,7 @@ Den här sajten är vad jag önskar hade funnits då.
 
 **Vill du bara ha svaret?** [Bästa bilbarnstolen 2026 — vilken du ska köpa, i vilket skede](/guider/basta-bilbarnstolen/) samlar alla tre köpen på en sida.
 
-<a class="valjare-ingang" href="/vilken-bilbarnstol/"><strong>Vilken bilbarnstol passar mitt barn?</strong><span>Tre frågor om barnets ålder, längd och bilens fästen — så får du veta vilken sorts stol som gäller just nu.</span></a>
+<a class="valjare-ingang" href="/vilken-bilbarnstol/"><strong>Vilken bilbarnstol passar mitt barn?</strong><span>Tre frågor om barnets ålder, längd och bilens fästen — så får du veta vilken sorts stol som gäller just nu.</span><span class="valjare-ingang-cta">Svara på tre frågor →</span></a>
 
 <div class="infografik">
   <img src="{{ '/bilder/langdtrappan.svg' | version }}" alt="Längdskala från 40 till 150 centimeter: babyskydd gäller 40 till 75 cm, bakåtvänd bilbarnstol 61 till 125 cm, bälteskudde utan ryggstöd från 125 cm, och lagen kräver skyddsanordning tills barnet är 135 cm." width="360" height="300">

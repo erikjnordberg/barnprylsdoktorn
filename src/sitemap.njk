@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
 {%- for sida in collections.all %}
   <url>
     <loc>{{ site.url }}{{ sida.url }}</loc>
-    <lastmod>{{ sida.date | htmlDateString }}</lastmod>
+    <lastmod>{{ (sida.data.uppdaterad or sida.date) | htmlDateString }}</lastmod>
   </url>
 {%- endfor %}
 </urlset>

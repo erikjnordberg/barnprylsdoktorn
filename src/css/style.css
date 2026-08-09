@@ -649,8 +649,19 @@ a.kicker:hover { color: var(--accent-mork); }
   color: #ded6c9;
 }
 
+.valjare-ingang span.valjare-ingang-cta {
+  margin-top: 0.9rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--varm-ljus);
+}
+
 main a.valjare-ingang { text-decoration: none; }
 main a.valjare-ingang:hover strong { color: #fff; }
+main a.valjare-ingang:hover .valjare-ingang-cta { color: #fff; }
 
 /* ---------- Sidfot ---------- */
 

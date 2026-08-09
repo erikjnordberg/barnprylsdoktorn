@@ -20,5 +20,3 @@ Vissa länkar är affiliatelänkar, vilket betyder att jag får en liten ersätt
 ## Kontakt
 
 Har du hittat ett fel, saknar du en guide eller vill du bara fråga något? Mejla [info@barnprylsdoktorn.se](mailto:info@barnprylsdoktorn.se). Jag läser allt och svarar så gott jag hinner.
-
-Rättelser är särskilt välkomna. Har jag skrivit fel om en regel eller en gräns vill jag veta det — hellre en pinsam rättelse än att någon monterar en stol fel.
