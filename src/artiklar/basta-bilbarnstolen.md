@@ -8,6 +8,10 @@ lasharnast: ["bakatvand-bilbarnstol-vilken-ska-jag-kopa", "babyskydd-for-nyfodda
 
 ## Kort svar
 
+<div class="infografik">
+  <img src="{{ '/bilder/langdtrappan.svg' | version }}" alt="Längdskala från 40 till 150 centimeter: babyskydd gäller 40 till 75 cm, bakåtvänd bilbarnstol 61 till 125 cm, bälteskudde utan ryggstöd från 125 cm, och lagen kräver skyddsanordning tills barnet är 135 cm." width="360" height="300">
+</div>
+
 Ett barn behöver tre stolar innan bältet sitter rätt av sig självt. De köps vid olika tillfällen och på olika grunder.
 
 | Skede | Ålder ungefär | Det som avgör | Rekommendation |

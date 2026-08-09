@@ -51,6 +51,10 @@ Ingår babyskyddet i ett modulsystem kan fortsättningsstolen vara Plustestad. D
 
 Ett babyskydd får lutas mer än en vanlig bakåtvänd stol — ungefär 40–45 grader mot 20–35. Nyfödda behöver lutningen för att luftvägarna ska hållas öppna.
 
+<div class="infografik">
+  <img src="{{ '/bilder/lutning.svg' | version }}" alt="Ett babyskydd och en bakåtvänd bilbarnstol i genomskärning. Babyskyddet lutar 40 till 45 grader bort från upprätt läge, den bakåtvända bilbarnstolen 20 till 35 grader och sitter alltså mer upprätt." width="360" height="260">
+</div>
+
 Men vissa babyskydd går att fälla ner helt plant. **Det läget ska aldrig användas under färd.** Krockkrafterna mot ett barn som ligger plant kan vara livsfarliga. Plant läge är för när bilen står still.
 
 Lutningen är bara en av flera detaljer som avgör om skyddet fungerar som det ska. [Här är de vanligaste monteringsfelen](/guider/vanliga-monteringsfel/) — värda att kolla igenom innan du kör i väg första gången.

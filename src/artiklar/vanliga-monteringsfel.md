@@ -62,6 +62,10 @@ Nu lämnar vi stolens montering och går över till barnets. NTF:s riktlinje: in
 
 För en bakåtvänd stol ska selen löpa rakt ut från eller strax ovanför axlarna — det är NTF:s formulering. För framåtvänt gäller i eller strax över. Och den ska vara spänd — knappt ett finger ska få plats mellan bandet och barnets nyckelben.
 
+<div class="infografik">
+  <img src="{{ '/bilder/selhojd.svg' | version }}" alt="Två barn framifrån i bakåtvänd bilbarnstol. Rätt: internbältet löper rakt ut från eller strax ovanför axlarna. Fel: bältet kommer ut en bit under axelhöjd." width="360" height="260">
+</div>
+
 Det här är felet med snabbast konsekvens. Är selen lös glider barnet framåt innan stolen börjar bromsa, och huvudet fortsätter längre än stolen är byggd för. Folksams skadedata visar att huvudskador är den vanligaste skadan hos barn i bil.
 
 ## Fel 6: Bältet utanpå vinterjackan
