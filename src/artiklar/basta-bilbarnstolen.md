@@ -38,7 +38,7 @@ Vill du veta varför, fortsätt läsa.
 
 Två källor, båda svenska och båda oberoende.
 
-**Folksams test** rankar bakåtvända stolar sedan 2015. De krocktestar inte själva — alla stolar i handeln är redan krocktestade enligt lagkravet — utan bedömer det som forskningen visar spelar störst roll: hur länge barnet får plats bakåtvänt, hur stolen skyddar i en krock, och hur lätt den är att använda fel. En stol som tillåter framåtvänt under 105 cm kan inte få deras högsta betyg.
+**Folksams test** rankar bakåtvända stolar sedan 2015. De krocktestar inte själva — alla stolar i handeln är redan krocktestade enligt lagkravet — utan bedömer det som forskningen visar spelar störst roll: hur länge barnet får plats bakåtvänt, hur stolen skyddar i en krock, och hur lätt den är att använda fel. En stol som tillåter framåtvänt under 105 cm kan inte få deras utmärkelse Bra val.
 
 **Plustestet** görs av VTI i Linköping. Stolen krockas i 56 km/h med tio centimeter kortare inbromsningssträcka än det vanliga testet, och sensorer mäter kraften på barnets nacke. Det är frivilligt, det är hårdare än lagkravet, och listan över godkända stolar är offentlig.
 
@@ -102,6 +102,7 @@ Folksam testar ett urval varje år. Plustestet är bredare — listan hos VTI in
 | BeSafe Stretch B | VTI-0042 |
 | Britax Max-Safe Pro, Safe-Way M | VTI-0044 |
 | Joie i-Prodigi | VTI-0043 |
+| Klippan Opti 129, Deplus | VTI-0027 |
 | Karwala AV370 Sky | VTI-0038 |
 | Karwala AV370.Q | VTI-0039 |
 | Karwala Astro | VTI-0052 |

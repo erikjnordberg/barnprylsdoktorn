@@ -303,9 +303,16 @@ både din egen och Cloudflares.
 2. **Tillbehörslänkar i löptexten.** Åtta placeringar är kartlagda med ordagranna
    FÖRE-citat i `research/tillbehorslankar-2026-08-09.md`. **Obeslutat och blockerande:**
    hur en affiliatelänk i löptext ska annonsmärkas — köpblockets märkning gäller inte där.
-3. **Faktakoll att åtgärda.** `research/faktakoll-2026-08-09.md` listar tre punkter, varav
-   två i begagnatguiden: T-märkta stolar får inte användas efter 9 maj 2008, och
-   godkännandenumret måste börja på 03 eller 04. Plustestets 56 km/h är obelagt mot VTI.
+3. **Faktakoll att åtgärda.** `research/faktakoll-2026-08-09.md` listar två kvarvarande
+   punkter, båda i begagnatguiden: T-märkta stolar får inte användas efter 9 maj 2008, och
+   godkännandenumret måste börja på 03 eller 04. Plustestets 56 km/h är numera belagt direkt
+   mot VTI och behöver inte kontrolleras igen.
+   En bredare genomgång av samtliga tretton guider ligger i
+   `research/faktakoll-alla-guider-2026-08-09.md` — elva fynd, alla åtgärdade. **Öppen fråga
+   därifrån:** live låg efter `main` trots rent arbetsträd, vilket pekar på att ett
+   Cloudflare-bygge inte gått igenom. Kontrollera det innan nästa innehållsändring.
+   Plustest-tabellen i `basta-bilbarnstolen` bör stämmas av mot VTI kvartalsvis — listan
+   uppdateras löpande, och sidan är klientrenderad så den går bara att läsa i webbläsare.
 4. **Indexeringen är den verkliga flaskhalsen**, inte affiliategodkännandena. Search
    Console visar 2026-08-09 att **bara 4 av 16 kända sidor är indexerade** — tolv ligger på
    "Genomsökt – inte indexerad för närvarande", inklusive `vanliga-monteringsfel`,

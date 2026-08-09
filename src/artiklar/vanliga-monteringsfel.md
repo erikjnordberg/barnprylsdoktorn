@@ -15,7 +15,7 @@ Valet av stol får all uppmärksamhet. Det är monteringen som avgör hur mycket
 
 - När Folksam kontrollerade bilbarnstolar utanför förskolor i Storstockholm 2022 var **bara 41 procent av de bältesmonterade stolarna rätt monterade**. För Isofix-monterade stolar var siffran 95 procent.
 - **Vanligaste felet: slaka underförankringsband.** Drygt hälften av de bältesmonterade stolarna hade det.
-- **Näst vanligaste: bältet utanpå vinterjackan.** Ungefär hälften av föräldrarna gör det, och Folksams krockprov visar att belastningen på barnet ökar.
+- **Näst vanligaste: bältet utanpå vinterjackan.** I upp till hälften av fallen, enligt Folksams kontroll — och deras krockprov visar att belastningen på barnet ökar.
 - **Minutkontrollen:** ryck i stolen vid bältesvägen — den ska knappt röra sig. Kläm på selen mot bröstkorgen — bara två fingrar ska få plats. Titta på stödbenet eller top tethern — den ska faktiskt vara i kontakt.
 
 Vill du veta varför, fortsätt läsa.
@@ -72,7 +72,7 @@ Det här är felet med snabbast konsekvens. Är selen lös glider barnet framåt
 
 Folksam har krocktestat det här på docka: när bältet dras utanpå tjocka ytterkläder ökar belastningen på barnet, eftersom bältet inte får kontakt med kroppen. Vid krocken pressas jackan platt på några millisekunder, och då finns plötsligt flera centimeter slack som barnet får ta ut med kroppen.
 
-Ungefär hälften av föräldrarna gör det här. Det är också det enklaste av alla sex felen att åtgärda: av med jackan, spänn fast, lägg jackan över som filt.
+Folksam såg det i upp till hälften av fallen. Det är också det enklaste av alla sex felen att åtgärda: av med jackan, spänn fast, lägg jackan över som filt.
 
 ## Två saker till, medan du ändå står där
 

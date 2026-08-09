@@ -3,6 +3,7 @@ title: Begagnad bilbarnstol — är det säkert att köpa?
 ingress: "Kort svar: ja — men det hänger på två saker du inte kan se på en bild, och en av dem går inte att kontrollera hos en främling."
 beskrivning: Att köpa begagnad bilbarnstol — vad lagen tillåter, tioårsregeln, hur du kontrollerar skicket, och varför krockhistoriken avgör om du ska köpa alls.
 date: 2026-08-07
+uppdaterad: 2026-08-09
 lasharnast: ["bakatvand-bilbarnstol-vilken-ska-jag-kopa", "vanliga-monteringsfel"]
 ---
 
@@ -26,7 +27,7 @@ Den produkt som oftast byter ägare är [babyskyddet](/guider/babyskydd-for-nyfo
 
 Alla bilbarnskydd som används i Sverige måste vara godkända enligt **UN R.44 eller UN R.129**. Båda är giltiga att använda, enligt NTF.
 
-Sedan **1 september 2024 får bara stolar godkända enligt UN R.129 säljas nya** — ett beslut taget av EU. Men det gäller försäljning av nya stolar i handeln, inte begagnathandel mellan privatpersoner. **En begagnad R44-stol är alltså fullt laglig att köpa av en privatperson och använda.** Det är en vanlig missuppfattning att R44 är förbjudet — det är det inte.
+Sedan **1 september 2024 får bara stolar godkända enligt UN R.129 säljas nya** — ett beslut taget av EU. Men det gäller försäljning av nya stolar i handeln, inte begagnathandel mellan privatpersoner. **NTF:s besked är att en begagnad R44-stol är laglig att köpa av en privatperson och använda.** Det är en vanlig missuppfattning att R44 är förbjudet — det är det inte.
 
 R44 är heller inte osäkert. NTF skriver: "UN R.129 är ett nyare reglemente men det betyder inte att bilbarnstolar godkända enligt UN R.44 är osäkra. Så länge bilbarnstolen är Plus-testad och godkänd enligt UN R.44 eller UN R.129 är stolen ett bra och säkert val."
 
@@ -48,7 +49,7 @@ Folksams tumregel: **köp helst en stol som inte är äldre än 4–5 år**, så
 
 Det här är den punkt som faktiskt avgör om du ska köpa begagnat eller inte.
 
-En stol som varit med om en allvarlig krock ska kasseras. Vid en mindre krock i låg fart, till exempel på en parkeringsplats, behöver stolen däremot inte bytas ut om den är oskadad.
+En stol som varit med om en allvarlig krock ska kasseras. Vid en mindre krock i låg fart, till exempel på en parkeringsplats, behöver stolen enligt Folksam däremot inte bytas ut om den är oskadad.
 
 Problemet är att skador inte alltid syns utanpå. Folksams trafikforskare Maria Klingegård: "Om du hittar sprickor eller skador på bilbarnstolen kan det vara ett tecken på att den varit med om en olycka." Men du kan inte se det du inte vet du ska leta efter, och en säljare som vill bli av med en stol efter en krock kommer knappast att berätta det.
 
