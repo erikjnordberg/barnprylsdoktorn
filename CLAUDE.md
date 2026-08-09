@@ -7,6 +7,26 @@ Sajten är live på https://barnprylsdoktorn.se och fungerar. Utgå från att al
 
 ## Svara alltid på svenska.
 
+## Den här filen är sanningen om sajten
+
+Projektet har två uppsättningar instruktioner. Den här filen läses av Claude Code i
+terminalen. Erik har dessutom projektinstruktioner i Cowork.
+
+Uppdelningen:
+
+- **`CLAUDE.md` (den här filen) äger allt som förändras** — teknik, filstruktur, kommandon,
+  designtokens, komponenter, innehållslistan, deploy-uppgifter och nästa steg. Ändras något
+  av det ska den här filen uppdateras **i samma commit**.
+- **Cowork-instruktionerna äger arbetssättet** — roll, beslutsordning, röst, principer,
+  git-flöde. De ska inte innehålla filträd, färgkoder, artikellistor eller statusrapporter.
+  Hamnar sådant där ska det flyttas hit.
+- Behöver du veta något konkret: läs den här filen och repot. Gissa aldrig.
+- Säger filerna emot varandra gäller den här för teknik och innehåll. Är motsägelsen
+  principiell — säg till Erik i stället för att välja åt honom.
+
+Rollen, rösten och faktakollen står i båda filerna med flit, eftersom Claude Code bara ser
+den här. Den dubbleringen är avsiktlig — håll den synkad.
+
 ## Om Erik och din roll
 
 Erik är PM på BookBeat och har jobbat nära utvecklare i fyra år — bekväm med terminologi,
@@ -243,3 +263,6 @@ både din egen och Cloudflares.
    steg för steg och plats i bilen. Fråga Erik innan du börjar på nästa — urvalet är inte
    självklart längre.
 3. **Löpande UX- och mobilgenomgång** med `ux-granskning`-skillen.
+
+Den här listan är färskvara. Blir ett steg klart, stryk det i samma commit — och lägg till
+guiden i innehållstabellen ovan när en ny publiceras.
