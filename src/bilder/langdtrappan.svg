@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" role="img" aria-label="Längdskala från 40 till 150 centimeter som visar vilken stol som gäller när: babyskydd 40 till 75 cm, bakåtvänd bilbarnstol 61 till 125 cm, bälteskudde utan ryggstöd från 125 cm, och lagens gräns vid 135 cm">
+
+  <g font-family="Source Sans 3, system-ui, sans-serif">
+
+    <!-- Skala -->
+    <g stroke="#A8A29A" stroke-width="1.5" fill="none" stroke-linecap="round">
+      <line x1="30" y1="44" x2="340" y2="44"/>
+      <line x1="30" y1="44" x2="30" y2="50"/>
+      <line x1="86.4" y1="44" x2="86.4" y2="50"/>
+      <line x1="142.7" y1="44" x2="142.7" y2="50"/>
+      <line x1="199.1" y1="44" x2="199.1" y2="50"/>
+      <line x1="255.4" y1="44" x2="255.4" y2="50"/>
+      <line x1="311.8" y1="44" x2="311.8" y2="50"/>
+    </g>
+    <g font-size="11" fill="#6b6459" text-anchor="middle">
+      <text x="30" y="34">40</text>
+      <text x="86.4" y="34">60</text>
+      <text x="142.7" y="34">80</text>
+      <text x="199.1" y="34">100</text>
+      <text x="255.4" y="34">120</text>
+      <text x="311.8" y="34">140</text>
+      <text x="340" y="34" text-anchor="end">cm</text>
+    </g>
+
+    <!-- Babyskydd -->
+    <text x="30" y="76" font-size="14" font-weight="600" fill="#181614">Babyskydd</text>
+    <text x="30" y="92" font-size="11.5" fill="#6b6459">40–75 cm · cirka 6–9 månader</text>
+    <rect x="30" y="100" width="98.6" height="16" rx="2" fill="#181614"/>
+
+    <!-- Bakåtvänd bilbarnstol -->
+    <text x="30" y="144" font-size="14" font-weight="600" fill="#181614">Bakåtvänd bilbarnstol</text>
+    <text x="30" y="160" font-size="11.5" fill="#6b6459">61–125 cm · till 4–5 år, gärna längre</text>
+    <rect x="89.2" y="168" width="180.3" height="16" rx="2" fill="#B5581F"/>
+
+    <!-- Bälteskudde -->
+    <text x="30" y="212" font-size="14" font-weight="600" fill="#181614">Bälteskudde utan ryggstöd</text>
+    <text x="30" y="228" font-size="11.5" fill="#6b6459">från 125 cm</text>
+    <rect x="269.5" y="236" width="70.5" height="16" rx="2" fill="#181614"/>
+
+    <!-- Lagens gräns vid 135 cm -->
+    <line x1="297.7" y1="44" x2="297.7" y2="260" stroke="#B5581F" stroke-width="1.5"
+          stroke-dasharray="4 3" fill="none"/>
+
+    <!-- Teckenförklaring -->
+    <line x1="30" y1="280" x2="48" y2="280" stroke="#B5581F" stroke-width="1.5"
+          stroke-dasharray="4 3" fill="none"/>
+    <text x="54" y="284" font-size="11.5" fill="#6b6459">135 cm — lagens gräns för skyddsanordning</text>
+
+  </g>
+</svg>

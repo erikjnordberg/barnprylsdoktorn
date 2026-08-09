@@ -3,7 +3,7 @@ title: Sitter stolen rätt? Sex fel som nästan alla gör
 ingress: "Kort svar: bara fyra av tio bältesmonterade stolar satt rätt när Folksam kontrollerade. Här är felen — och kontrollen som tar en minut."
 beskrivning: Sex vanliga monteringsfel på bilbarnstol — från slaka underförankringsband till bältet utanpå vinterjackan — och minutkontrollen som visar om din stol sitter rätt.
 date: 2026-08-07
-uppdaterad: 2026-08-08
+uppdaterad: 2026-08-09
 lasharnast: ["montera-bilbarnstol-steg-for-steg", "bilbarnstol-fram-och-airbag"]
 ---
 
@@ -60,7 +60,7 @@ Den glöms bort, för stolen sitter fast och känns klar utan den. Kroken sitter
 
 Nu lämnar vi stolens montering och går över till barnets. NTF:s riktlinje: internbältet ska ligga i axelhöjd, och axelbanden är enklast att justera *innan* stolen sitter i bilen.
 
-För en bakåtvänd stol ska selen komma ut i eller strax under axelhöjd. För framåtvänt gäller i eller strax över. Och den ska vara spänd — knappt ett finger ska få plats mellan bandet och barnets nyckelben.
+För en bakåtvänd stol ska selen löpa rakt ut från eller strax ovanför axlarna — det är NTF:s formulering. För framåtvänt gäller i eller strax över. Och den ska vara spänd — knappt ett finger ska få plats mellan bandet och barnets nyckelben.
 
 Det här är felet med snabbast konsekvens. Är selen lös glider barnet framåt innan stolen börjar bromsa, och huvudet fortsätter längre än stolen är byggd för. Folksams skadedata visar att huvudskador är den vanligaste skadan hos barn i bil.
 
@@ -72,7 +72,7 @@ Ungefär hälften av föräldrarna gör det här. Det är också det enklaste av
 
 ## Två saker till, medan du ändå står där
 
-**Lutningen.** En nyfödd som sitter för upprätt kan få hakan mot bröstet och andningen begränsad. NTF anger cirka 40–45 grader för ett babyskydd och högst 30–35 för en bakåtvänd bilbarnstol, och de flesta stolar har en vattenpassmarkering eller en linje som ska ligga vågrätt. Mer om det i [guiden om babyskydd](/guider/babyskydd-for-nyfodda/).
+**Lutningen.** En nyfödd som sitter för upprätt kan få hakan mot bröstet och andningen begränsad. NTF anger cirka 40–45 grader för ett babyskydd och 20–35 för en bakåtvänd bilbarnstol, och de flesta stolar har en vattenpassmarkering eller en linje som ska ligga vågrätt. Mer om det i [guiden om babyskydd](/guider/babyskydd-for-nyfodda/).
 
 **Krockkudden.** Av de 31 barn under 140 cm som satt i framsätet i Folksams kontroll satt fem — 16 procent — framför en aktiv krockkudde, och ett av dem bakåtvänt. Det sista är direkt livsfarligt. [Vad som gäller i framsätet](/guider/bilbarnstol-fram-och-airbag/) är en egen guide.
 

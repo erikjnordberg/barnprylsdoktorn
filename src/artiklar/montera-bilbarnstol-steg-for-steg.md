@@ -3,6 +3,7 @@ title: Montera bilbarnstolen — steg för steg
 ingress: Stolen ligger i kartongen och bilen står på parkeringen. Här är ordningen att göra det i, för bälte och för Isofix.
 beskrivning: Så monterar du en bilbarnstol rätt, steg för steg — bältesmonterad och Isofix, underförankringsband, stödben, lutning och kontrollen på slutet.
 date: 2026-08-08
+uppdaterad: 2026-08-09
 lasharnast: ["vanliga-monteringsfel", "bilbarnstol-plats-i-bilen"]
 ---
 
@@ -13,7 +14,7 @@ lasharnast: ["vanliga-monteringsfel", "bilbarnstol-plats-i-bilen"]
 - **Justera axelbanden innan** du bär in stolen i bilen. Efteråt är det ett tvåmansjobb.
 - **Bältesmonterat:** trä bältet rätt väg, lås det, tryck ned stolen med din kroppsvikt *samtidigt* som du drar åt underförankringsbanden. Det sista steget är det som nästan alla missar.
 - **Isofix:** båda fästena ska klicka och visa grönt, stödbenet ska nå golvet och stödbygeln spännas mot ryggstödet.
-- **Lutningen** beror på stoltypen: ett babyskydd får luta cirka 40–45 grader, en bakåtvänd bilbarnstol högst 30–35. De flesta stolar har en markering som visar när du är rätt.
+- **Lutningen** beror på stoltypen: ett babyskydd får luta cirka 40–45 grader, en bakåtvänd bilbarnstol 20–35. De flesta stolar har en markering som visar när du är rätt.
 
 Vill du veta varför, fortsätt läsa.
 
@@ -25,7 +26,7 @@ Tre saker som sparar tid och gör resten enklare.
 
 **Bestäm platsen.** Se avsnittet nedan — det är värt en egen fundering och avgörs innan du bär in något.
 
-**Justera axelbanden.** För en bakåtvänd stol ska selen komma ut i eller strax under axelhöjd. Det görs på tio sekunder när stolen står på golvet, och tar tio minuter när den sitter i bilen.
+**Justera axelbanden.** För en bakåtvänd stol ska selen löpa rakt ut från eller strax ovanför axlarna. Det görs på tio sekunder när stolen står på golvet, och tar tio minuter när den sitter i bilen.
 
 **Ta fram båda manualerna.** Stolens, för bältesvägen. Bilens, för var Isofix-fästena, top tether-kroken och eventuella fästöglor sitter — och för om golvfacken under baksätet tål ett stödben. Står det inget om det: utgå från att de inte gör det.
 
@@ -45,7 +46,7 @@ Tre saker räcker att veta innan du monterar:
 
 Bältesmontering och Isofix är [lika säkra när de görs rätt](/guider/isofix-eller-balte/). Skillnaden är att bältesmonteringen har fler steg där du kan slarva — Folksams kontroll utanför Stockholmsförskolor 2022 visade att bara 41 procent av de bältesmonterade stolarna satt helt rätt.
 
-1. **Ställ stolen på plats** och kontrollera lutningen mot stolens markering, ofta ett vattenpass eller en linje som ska ligga vågrätt. Ett babyskydd för de allra minsta ska luta mer än en bakåtvänd stol — cirka 40–45 grader mot 30–35 — eftersom en nyfödd som sitter för upprätt kan få hakan mot bröstet och andningen begränsad.
+1. **Ställ stolen på plats** och kontrollera lutningen mot stolens markering, ofta ett vattenpass eller en linje som ska ligga vågrätt. Ett babyskydd för de allra minsta ska luta mer än en bakåtvänd stol — cirka 40–45 grader mot 20–35 — eftersom en nyfödd som sitter för upprätt kan få hakan mot bröstet och andningen begränsad.
 2. **Trä bilbältet genom rätt öppningar.** Tillverkarna färgkodar dem, ofta blått för bakåtvänt och rött för framåtvänt. Följ bältet med fingret hela vägen och se till att det inte är vridet. Det är ett av stegen som gör att bara 41 procent av de bältesmonterade stolarna satt helt rätt i Folksams kontroll.
 3. **Lås bältet** och dra åt allt slack, först i höftdelen och sedan i diagonaldelen.
 4. **Fäst underförankringsbanden.** Många bilar har färdiga öglor på framstolens skenor. Saknas de går bandet runt själva skenan under stolen.

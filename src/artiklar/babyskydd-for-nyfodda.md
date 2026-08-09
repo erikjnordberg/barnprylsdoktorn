@@ -4,7 +4,7 @@ ingress: Den första stolen är den du köper när du har minst koll och mest an
 beskrivning: Så väljer du babyskydd till en nyfödd — hur länge skyddet räcker, vad bilen kräver, vad Plustestet betyder, och misstaget alla gör.
 date: 2026-08-05
 lasharnast: ["bakatvand-bilbarnstol-vilken-ska-jag-kopa", "basta-bilbarnstolen"]
-uppdaterad: 2026-08-07
+uppdaterad: 2026-08-09
 ---
 
 ## Kort svar
@@ -49,7 +49,7 @@ Ingår babyskyddet i ett modulsystem kan fortsättningsstolen vara Plustestad. D
 
 ## 4. Lutningen är detaljen alla missar
 
-Ett babyskydd får lutas mer än en vanlig bakåtvänd stol — ungefär 40–45 grader mot 30–35. Nyfödda behöver lutningen för att luftvägarna ska hållas öppna.
+Ett babyskydd får lutas mer än en vanlig bakåtvänd stol — ungefär 40–45 grader mot 20–35. Nyfödda behöver lutningen för att luftvägarna ska hållas öppna.
 
 Men vissa babyskydd går att fälla ner helt plant. **Det läget ska aldrig användas under färd.** Krockkrafterna mot ett barn som ligger plant kan vara livsfarliga. Plant läge är för när bilen står still.
 
@@ -69,6 +69,8 @@ Ta av tjocka ytterkläder innan barnet spänns fast. Overallen gör att internb�
 ## Källor
 
 - [NTF — Bilbarnstolsskolan](https://ntf.se/konsumentupplysning/barn-i-bil/bilbarnstolsskola/)
+- [NTF — Babyskydd](https://ntf.se/konsumentupplysning/barn-i-bil/babyskydd/) — lutning 40–45 grader
+- [NTF — Bakåtvänd bilbarnstol](https://ntf.se/konsumentupplysning/barn-i-bil/bakatvand-bilbarnstol/) — lutning 20–35 grader
 - [Folksam — Test av bilbarnstolar](https://www.folksam.se/tester-och-goda-rad/vara-tester/bilbarnstolar)
 - [VTI — Plustestade bilbarnstolar](https://www.vti.se/en/services/laboratory-and-testing/crash-safety-testing/child-restraint-systems/the-plus-test/plus-tested-models)
 - [Folksam — Krocktest med vinterkläder](https://www.folksam.se/forsakringar/barnforsakring/krocktest-med-vinterklader)
