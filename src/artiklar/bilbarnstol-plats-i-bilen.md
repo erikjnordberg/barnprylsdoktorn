@@ -29,6 +29,10 @@ Osäker på skillnaden mellan systemen? Jag har skrivit om det i [i-Size vs. vik
 
 ## Mittplatsen: bäst i teorin, ofta omöjlig i praktiken
 
+<div class="infografik">
+  <img src="{{ '/bilder/bilbarnstol-placering.svg' | version }}" alt="Bil sedd uppifrån som visar att mittplatsen i baksätet är bäst för en bilbarnstol eftersom den ligger längst från krockzonerna, att de yttre baksätena och framsätet med urkopplad krockkudde fungerar som alternativ, och att mittplatsen kräver trepunktsbälte, tillverkarens godkännande och en stol godkänd för montering där." width="360" height="575">
+</div>
+
 Mittplatsen bak är den plats som ligger längst ifrån bilens krockzoner, och NTF:s bedömning är att bakåtvänt på mittplatsen tekniskt sett borde vara en mycket säker placering. Men det finns tre villkor:
 
 1. **Bilen måste ha trepunktsbälte där** — eller så måste stolen vara godkänd för montering med tvåpunktsbälte. Vissa bakåtvända stolar är testade för det, andra inte. Det ska framgå av stolens instruktioner.
