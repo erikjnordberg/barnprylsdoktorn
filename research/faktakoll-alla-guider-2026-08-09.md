@@ -22,10 +22,11 @@ redan vara rättade i källan men inte synliga på sajten:
 | F10 og:image utan version-filter | Redan rättad — `base.njk` kör filtret |
 | F11 saknad rad i Plustest-tabellen | Rättad nu, `basta-bilbarnstolen` — Klippan Opti 129, Deplus (VTI-0027) tillagd |
 
-**Den viktigaste iakttagelsen är inte något av fynden ovan.** Live låg efter `main` trots att
-arbetsträdet var rent och inget var opushat. Kontrollera att Cloudflare-bygget faktiskt gick
-igenom efter commit `f8ec89b` och `2a26928` — annars är det deploysteget som brister, inte
-texten.
+Samtliga elva är verifierade live 2026-08-09 efter commit `fd80c66`.
+
+**Lärdom för nästa granskning:** de fem "redan rättade" fynden var falska larm som uppstod för
+att granskningen lästes mot publicerad HTML medan repot låg före. Läs källfilerna i repot först
+och använd live bara för att bekräfta att en ändring gått ut.
 
 **Om FÖRE-citaten.** Granskningen är gjord mot publicerad HTML på barnprylsdoktorn.se, inte mot repot — jag har inte filåtkomst. Citaten är ordagranna från renderad sida och fungerar som sökträngar, men radnummer saknas och källfilen kan ha annan markup (t.ex. fetstil). Kontrollera träffen innan du ersätter.
 

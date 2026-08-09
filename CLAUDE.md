@@ -308,9 +308,7 @@ både din egen och Cloudflares.
    godkännandenumret måste börja på 03 eller 04. Plustestets 56 km/h är numera belagt direkt
    mot VTI och behöver inte kontrolleras igen.
    En bredare genomgång av samtliga tretton guider ligger i
-   `research/faktakoll-alla-guider-2026-08-09.md` — elva fynd, alla åtgärdade. **Öppen fråga
-   därifrån:** live låg efter `main` trots rent arbetsträd, vilket pekar på att ett
-   Cloudflare-bygge inte gått igenom. Kontrollera det innan nästa innehållsändring.
+   `research/faktakoll-alla-guider-2026-08-09.md` — elva fynd, alla åtgärdade och live.
    Plustest-tabellen i `basta-bilbarnstolen` bör stämmas av mot VTI kvartalsvis — listan
    uppdateras löpande, och sidan är klientrenderad så den går bara att läsa i webbläsare.
 4. **Indexeringen är den verkliga flaskhalsen**, inte affiliategodkännandena. Search
