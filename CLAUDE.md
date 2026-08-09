@@ -77,7 +77,14 @@ src/
   _data/popularitet.json   besöksstatistik per guide-slug, se nedan — kan saknas
   css/style.css            hela sajtens styling
   fonter/                  self-hostade woff2-filer
-  bilder/                  tre SVG-illustrationer + delningsbild
+  bilder/                  tre SVG-illustrationer (babyskydd, bakatvand, framatvand),
+                           fyra informationsgrafiker (langdtrappan, lutning, selhojd,
+                           bilbarnstol-placering) + delningsbild
+                           OBS: en SVG som laddas via <img> kan inte hämta externa
+                           resurser. Self-hostade typsnitt gäller alltså inte i dem —
+                           använd font-family "Source Sans 3, system-ui, sans-serif"
+                           och räkna med systemfallbacken. Internt aria-label ignoreras
+                           också; alt-texten i <img> är den som läses upp.
   js/valjare.js            logiken bakom bilbarnstolsväljaren
   artiklar/                guiderna i Markdown
   artiklar/artiklar.json   permalink /guider/<slug>/
@@ -147,6 +154,14 @@ Sajten ska fungera bäst på mobil. Utgå från mobilvyn först.
   aldrig utan att slå upp källan först.
 - **`.valjare-ingang`** — mörkt block som länkar in till väljaren, används på
   startsidan. I guiderna länkas väljaren från löptexten i stället.
+- **`.infografik`** — wrapper runt en informationsgrafik i löptexten, max 460 px och
+  centrerad. Bilden läggs som `<img>` med `version`-filtret, riktig `alt`-text och
+  `width`/`height` för att slippa layouthopp. Används på fyra ställen:
+  `langdtrappan` på startsidan och överst i `basta-bilbarnstolen`, `lutning` i
+  `babyskydd-for-nyfodda`, `selhojd` i `vanliga-monteringsfel` under Fel 5, och
+  `bilbarnstol-placering` i `bilbarnstol-plats-i-bilen`.
+  Siffrorna i grafikerna är belagda mot NTF — ändra dem aldrig utan att slå upp källan,
+  och håll dem synkade med löptexten i den guide de sitter i.
 
 ### Tillgänglighet
 
@@ -240,6 +255,13 @@ beläggas mot NTF, Folksam, Trafikverket eller Transportstyrelsen.
 Håll isär vad **lagen** kräver (135 cm) och vad som **rekommenderas** (bakåtvänt till
 4–5 år, bältesstol till 10–12 år). Gissa aldrig en siffra — slå upp den.
 
+Belagda siffror att utgå från, verifierade 2026-08-09 mot NTF och Transportstyrelsen:
+lutning **40–45°** babyskydd och **20–35°** bakåtvänd stol, selen **rakt ut från eller
+strax ovanför** axlarna, **max två fingrar** mellan bälte och kropp, **33 kg** totalvikt
+vid Isofix (gäller inte bältesstolar och bälteskuddar), **140 cm** framför aktiv
+krockkudde, **125 cm** för bälteskudde utan rygg, **cirka tio års** livslängd.
+Hela genomgången med ordagranna citat ligger i `research/faktakoll-2026-08-09.md`.
+
 Vid granskningar av copy eller UX: flagga säkerhetssiffror, ändra dem aldrig utan att Erik
 godkänt. Större genomgångar läggs som markdownfil i `research/` med ordagranna FÖRE-citat
 och färdig CSS, så att ändringarna blir exakt sök-och-ersätt i stället för fri omskrivning.
@@ -270,13 +292,33 @@ både din egen och Cloudflares.
 
 ## Nästa steg i projektet
 
-1. **Affiliate** via Adtraction eller Awin. Köpblock, transparenssida och märkning finns
-   redan — det som saknas är `url` och `handlare` i `produkter.js`. Tretton guider live är
-   ett rimligt underlag att ansöka med.
-2. **Fler artiklar.** De uppenbara luckorna från starten är skrivna, inklusive montering
-   steg för steg och plats i bilen. Fråga Erik innan du börjar på nästa — urvalet är inte
-   självklart längre.
-3. **Löpande UX- och mobilgenomgång** med `ux-granskning`-skillen.
+1. **Affiliate — väntar på godkännanden.** Ansökningar inne hos Awin för Babyshop SE,
+   Lekmer SE och Kids Concept SE; alla tre står som Pending, och Babyshop och Lekmer har
+   historiskt 100 % approval rate. Gemensam programkontakt för de två första är
+   `affiliate@babyshop.se`. Hos Adtraction är **inga** ansökningar inskickade än, eftersom
+   kanalen Barnprylsdoktorn (ID 2100860918) ligger på granskning med status Waiting —
+   inget går att söka förrän den godkänts. Relevanta program där när det öppnar: Axkid,
+   Safekid, Baby V, Jollyroom, Babysam, Emmaljunga, Köpbarnvagn, Babyland, Kid's Concept.
+   Det som saknas i koden är fortfarande bara `url` och `handlare` i `produkter.js`.
+2. **Tillbehörslänkar i löptexten.** Åtta placeringar är kartlagda med ordagranna
+   FÖRE-citat i `research/tillbehorslankar-2026-08-09.md`. **Obeslutat och blockerande:**
+   hur en affiliatelänk i löptext ska annonsmärkas — köpblockets märkning gäller inte där.
+3. **Faktakoll att åtgärda.** `research/faktakoll-2026-08-09.md` listar tre punkter, varav
+   två i begagnatguiden: T-märkta stolar får inte användas efter 9 maj 2008, och
+   godkännandenumret måste börja på 03 eller 04. Plustestets 56 km/h är obelagt mot VTI.
+4. **Indexeringen är den verkliga flaskhalsen**, inte affiliategodkännandena. Search
+   Console visar 2026-08-09 att **bara 4 av 16 kända sidor är indexerade** — tolv ligger på
+   "Genomsökt – inte indexerad för närvarande", inklusive `vanliga-monteringsfel`,
+   `montera-bilbarnstol-steg-for-steg`, `babyskydd-for-nyfodda` och `basta-bilbarnstolen`.
+   Startsidan är indexerad. Omindexering begärd manuellt för de fem sidor som ändrades
+   2026-08-09. Så länge tre fjärdedelar av sajten ligger utanför indexet spelar
+   länkplaceringar ingen roll. Kanalen hos Adtraction anger 30 unika besökare i månaden —
+   uppdatera den siffran när den stiger, det är enda fältet som går att redigera i
+   efterhand.
+5. **Fler artiklar.** De uppenbara luckorna från starten är skrivna. Fråga Erik innan du
+   börjar på nästa — urvalet är inte självklart längre. Diskuterad breddning: cykelbarnstol,
+   cykelkärra och barncykelhjälm först, barnvagn därefter.
+6. **Löpande UX- och mobilgenomgång** med `ux-granskning`-skillen.
 
 Den här listan är färskvara. Blir ett steg klart, stryk det i samma commit — och lägg till
 guiden i innehållstabellen ovan när en ny publiceras.
