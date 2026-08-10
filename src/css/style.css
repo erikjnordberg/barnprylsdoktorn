@@ -406,6 +406,36 @@ a.kicker:hover { color: var(--accent-mork); }
 .las-harnast a { font-weight: 650; color: var(--varm-ljus); }
 .las-harnast a:hover { color: #fff; }
 
+/* ---------- Annonsmärkning ---------- */
+
+/* Notisen högst upp i guiden. Adtractions regler och Jollyrooms programvillkor
+   kräver att märkningen ligger före innehållet, inte i en fotnot. */
+.annonsnotis {
+  margin: 1.5rem 0 2.5rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--papper-tint);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radie);
+}
+
+.annonsnotis p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  /* 5.37:1 mot --papper-tint, uträknat. Ingen opacity. */
+  color: var(--text-dampad);
+}
+
+/* --accent klarar bara 4.41:1 mot papper-tint — mörka varianten ger 6.66:1 */
+.annonsnotis a { color: var(--accent-mork); }
+
+/* Affiliatelänk i löptext */
+.annonslank-markning {
+  font-size: 0.82em;
+  color: var(--text-dampad);
+  white-space: nowrap;
+}
+
 /* ---------- Köpblock ---------- */
 
 .kopblock {

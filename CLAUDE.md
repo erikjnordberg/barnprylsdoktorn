@@ -142,6 +142,21 @@ Sajten ska fungera bäst på mobil. Utgå från mobilvyn först.
   Saknas `url` renderas blocket utan knapp och utan annonsmärkning — det är läget nu.
   Blocket ska ligga både vid beslutet (direkt efter punktlistan i Kort svar) och vid
   motiveringen i produktavsnittet.
+- **Annonsmärkning.** Två delar, båda krävs av Adtractions regler och Jollyrooms
+  programvillkor:
+  - **`.annonsnotis`** — notisen högst upp i guiden, före innehållet. Renderas av
+    `base.njk` när `annonslankar` finns i frontmatter. Sätt den till en lista med
+    handlarnamn — `annonslankar: ["Jollyroom", "Babyland"]` — så blir texten
+    "innehåller reklam genom annonslänkar för Jollyroom och Babyland", vilket är
+    exakt den formulering Jollyroom kräver. Sätt `true` bara om guiden har
+    generella länkar utan namngiven handlare. Utelämnas nyckeln syns ingen notis.
+    Filtret `listaSvenska` radar upp namnen ("A, B och C").
+  - **`{% annonslank "url", "Handlare", "länktext" %}`** — affiliatelänk i löptext.
+    Sätter `rel="sponsored nofollow noopener"` och lägger "(annonslänk till X)"
+    inuti `<a>`, så att skärmläsare som listar sidans länkar också hör märkningen.
+    Notisen högst upp är den primära märkningen; den här är förstärkningen.
+  **En guide med affiliatelänkar ska alltid ha `annonslankar` satt** — annars är
+  löptextlänkarna märkta men sidan saknar märkning högst upp.
 - **`.las-harnast`** — mörkt block sist i guiderna med två relaterade artiklar.
 - **`.produktkort`** — korten på startsidan, hela kortet klickbart.
 - **Tabeller** scrollar horisontellt under 44 rem med en skuggkant som affordans.
@@ -295,14 +310,21 @@ både din egen och Cloudflares.
 1. **Affiliate — väntar på godkännanden.** Ansökningar inne hos Awin för Babyshop SE,
    Lekmer SE och Kids Concept SE; alla tre står som Pending, och Babyshop och Lekmer har
    historiskt 100 % approval rate. Gemensam programkontakt för de två första är
-   `affiliate@babyshop.se`. Hos Adtraction är **inga** ansökningar inskickade än, eftersom
-   kanalen Barnprylsdoktorn (ID 2100860918) ligger på granskning med status Waiting —
-   inget går att söka förrän den godkänts. Relevanta program där när det öppnar: Axkid,
-   Safekid, Baby V, Jollyroom, Babysam, Emmaljunga, Köpbarnvagn, Babyland, Kid's Concept.
+   `affiliate@babyshop.se`. Kanalen Barnprylsdoktorn hos Adtraction (ID 2100860918) är
+   godkänd sedan 2026-08-10, och nio ansökningar är inskickade samma dag, alla med status
+   Waiting: Axkid (5 %), Jollyroom (5 %, 7 % på egna varumärken), Babyland (4 %),
+   Babysam (8 %), Bonti (5 %), Köpbarnvagn (5 %), Baby V (7 %), Stor&Liten (4 %) och
+   Emmaljunga (10 %). Kvar att söka när det finns anledning: Safekid, Kid's Concept.
+   Jollyroom är osäkrast av de nio — de nekar directorysajter och väljer publicister
+   utifrån varumärkesstrategi. Emmaljunga har bara ett babyskydd (BeSafe iZi Go Modular
+   X1) plus vagnadaptrar, alltså tunnast sortiment för nischen.
    Det som saknas i koden är fortfarande bara `url` och `handlare` i `produkter.js`.
+   **Ingen SEM på varumärkesnamn** i något av programmen — påverkar inget idag, men låser
+   en eventuell Google Ads-satsning.
 2. **Tillbehörslänkar i löptexten.** Åtta placeringar är kartlagda med ordagranna
-   FÖRE-citat i `research/tillbehorslankar-2026-08-09.md`. **Obeslutat och blockerande:**
-   hur en affiliatelänk i löptext ska annonsmärkas — köpblockets märkning gäller inte där.
+   FÖRE-citat i `research/tillbehorslankar-2026-08-09.md`. Frågan om annonsmärkning är
+   löst — använd `{% annonslank %}` i löptexten och sätt `annonslankar` i frontmatter,
+   se Komponenter ovan.
 3. **Faktakoll att åtgärda.** `research/faktakoll-2026-08-09.md` listar två kvarvarande
    punkter, båda i begagnatguiden: T-märkta stolar får inte användas efter 9 maj 2008, och
    godkännandenumret måste börja på 03 eller 04. Plustestets 56 km/h är numera belagt direkt

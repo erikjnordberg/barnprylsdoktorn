@@ -96,6 +96,27 @@ module.exports = function (eleventyConfig) {
   </div>`;
   });
 
+  // Radar upp namn på svenska: ["A"] -> "A", ["A","B"] -> "A och B",
+  // ["A","B","C"] -> "A, B och C". Används i annonsnotisen högst upp i guiderna.
+  eleventyConfig.addFilter("listaSvenska", (varden) => {
+    const lista = [].concat(varden || []).filter(Boolean);
+    if (lista.length <= 1) return lista[0] || "";
+    return `${lista.slice(0, -1).join(", ")} och ${lista[lista.length - 1]}`;
+  });
+
+  // Affiliatelänk i löptext: {% annonslank "https://...", "Handlare", "länktext" %}
+  // Märkningen ligger inuti <a> med flit — skärmläsare som listar sidans länkar
+  // läser då upp att länken är reklam, precis som en seende läsare ser det.
+  // Notisen högst upp i guiden är den primära märkningen; den här är förstärkningen.
+  eleventyConfig.addShortcode("annonslank", (url, handlare, text) => {
+    if (!url || !handlare || !text) {
+      throw new Error(
+        `annonslank: kräver url, handlare och länktext — fick "${url}", "${handlare}", "${text}"`
+      );
+    }
+    return `<a class="annonslank" href="${url}" rel="sponsored nofollow noopener" target="_blank">${text}<span class="annonslank-markning"> (annonslänk till ${handlare})</span></a>`;
+  });
+
   // Datumformat för sitemap och RSS-flöde
   eleventyConfig.addFilter("htmlDateString", (value) =>
     new Date(value).toISOString().slice(0, 10)

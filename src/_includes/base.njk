@@ -97,6 +97,15 @@
     {%- if date and "/guider/" in page.url and page.url != "/guider/" %}
     <p class="datum">Av Erik Nordberg &middot; Publicerad <time datetime="{{ date | htmlDateString }}">{{ date | datum }}</time>{%- if uppdaterad and (uppdaterad | htmlDateString) != (date | htmlDateString) %} &middot; Uppdaterad <time datetime="{{ uppdaterad | htmlDateString }}">{{ uppdaterad | datum }}</time>{%- endif %}</p>
     {%- endif %}
+    {%- if annonslankar %}
+    {#- Annonsmärkningen ska ligga högst upp, före innehållet — Adtractions
+        generella regel och Jollyrooms programvillkor kräver båda det.
+        Sätt `annonslankar` i frontmatter till en lista med handlarnamn, eller
+        till true om guiden bara har generella länkar. -#}
+    <aside class="annonsnotis">
+      <p>{% if annonslankar is iterable and annonslankar is not string %}Den här guiden innehåller reklam genom annonslänkar för {{ annonslankar | listaSvenska }}.{% else %}Den här guiden innehåller reklam genom annonslänkar.{% endif %} Köper du något efter att ha klickat vidare får sajten provision — priset för dig är detsamma, och det påverkar inte vad som rekommenderas. <a href="/sa-tjanar-sajten-pengar/">Så tjänar sajten pengar</a></p>
+    </aside>
+    {%- endif %}
     {{ content | safe }}
 
     {%- if "/guider/" in page.url and page.url != "/guider/" %}
