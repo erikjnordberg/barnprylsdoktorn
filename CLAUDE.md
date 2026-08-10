@@ -333,13 +333,19 @@ både din egen och Cloudflares.
    `research/faktakoll-alla-guider-2026-08-09.md` — elva fynd, alla åtgärdade och live.
    Plustest-tabellen i `basta-bilbarnstolen` bör stämmas av mot VTI kvartalsvis — listan
    uppdateras löpande, och sidan är klientrenderad så den går bara att läsa i webbläsare.
-4. **Indexeringen är den verkliga flaskhalsen**, inte affiliategodkännandena. Search
-   Console visar 2026-08-09 att **bara 4 av 16 kända sidor är indexerade** — tolv ligger på
-   "Genomsökt – inte indexerad för närvarande", inklusive `vanliga-monteringsfel`,
-   `montera-bilbarnstol-steg-for-steg`, `babyskydd-for-nyfodda` och `basta-bilbarnstolen`.
-   Startsidan är indexerad. Omindexering begärd manuellt för de fem sidor som ändrades
-   2026-08-09. Så länge tre fjärdedelar av sajten ligger utanför indexet spelar
-   länkplaceringar ingen roll. Kanalen hos Adtraction anger 30 unika besökare i månaden —
+4. **Indexeringen rampar upp normalt** — den är inte den flaskhals vi trodde. Genomgången
+   2026-08-10 ligger i `research/indexering-2026-08-10.md`. Kort: sajten är fyra dagar
+   gammal, GSC-rapporten är daterad 2026-08-07 och därför föråldrad, och en `site:`-sökning
+   2026-08-10 ger **sex indexerade sidor** — startsidan, `/guider/`, `/om/`,
+   `/vilken-bilbarnstol/`, `/sa-tjanar-sajten-pengar/` och `babyskydd-for-nyfodda`.
+   Tekniken är kontrollerad och ren: robots, sitemap, canonical, JSON-LD, unika titlar,
+   ingen noindex. Ingen kannibalisering (högsta överlapp mellan två guider 6 %) och ingen
+   föräldralös guide (minst två inkommande löptextlänkar var).
+   **Det som avgör takten härifrån är externa länkar** — sajten har i praktiken inga.
+   Begär inte omindexering manuellt igen; sidorna är redan genomsökta och det påverkar bara
+   kön. Svagast internt länkade är `bilbarnstol-i-taxi`, `bilbarnstol-flyg-och-hyrbil`,
+   `basta-bilbarnstolen` och `montera-bilbarnstol-steg-for-steg`. Tunnast är
+   `i-size-vs-vikt` med 550 ord. Kanalen hos Adtraction anger 30 unika besökare i månaden —
    uppdatera den siffran när den stiger, det är enda fältet som går att redigera i
    efterhand.
 5. **Fler artiklar.** De uppenbara luckorna från starten är skrivna. Fråga Erik innan du
