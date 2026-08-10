@@ -124,7 +124,7 @@ När det väl är dags: **välj bältesstol med ryggstöd, inte bara kudde.** Ry
 
 Ingen framåtvänd stol klarar Plustestet — leta alltså inte efter den dekalen här, den finns inte att hitta.
 
-Lagen släpper barnet vid 135 cm. Rekommendationen säger 10–12 år. [Följ rekommendationen, och här är varför](/guider/baltesstol-eller-balteskudde/).
+Lagen släpper barnet vid 135 cm. Rekommendationen säger 10–12 år. [Följ rekommendationen, och här är varför](/guider/baltesstol-eller-balteskudde/). Hur du ser i din egen bil om bältet sitter rätt utan kudde står i guiden om [när barnet är klart](/guider/nar-ar-barnet-klart-med-bilbarnstol/).
 
 ## Tre saker som gäller oavsett skede
 

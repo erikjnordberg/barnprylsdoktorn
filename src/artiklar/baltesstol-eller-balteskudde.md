@@ -73,9 +73,11 @@ En praktisk konsekvens av det: **en bältesmonterad stol eller kudde måste spä
 
 Svensk lag kräver godkänd skyddsanordning tills barnet är **135 cm** (4 kap. 10 och 10 a §§ trafikförordningen). Över det får barnet sitta direkt på sätet.
 
-Men läkare och forskare rekommenderar bältesstol eller bälteskudde upp till **10–12 års ålder**. Skälet är konkret: barnets höftkammar får sin kantiga, vuxna form först i puberteten. Innan dess finns det helt enkelt ingenting för höftbältet att haka fast i — det glider upp över magen oavsett hur noga du drar åt.
+Men läkare och forskare rekommenderar bältesstol eller bälteskudde upp till **10–12 års ålder**. NTF uttrycker skälet som att barnets kropp dessförinnan inte är tillräckligt utvecklad för att hålla bilbältet på plats. Konkret handlar det om höftbenets kanter, som inte är färdigformade — och finns det ingen form för höftbältet att haka fast i glider det upp över magen, oavsett hur noga du drar åt.
 
 135 cm är alltså inte en gräns för när barnet är färdigväxt. Det är en gräns för när polisen slutar bry sig.
+
+Frågan om när barnet faktiskt är klart — och hur du ser i din egen bil om bältet sitter rätt utan kudde — har jag samlat i [en egen guide](/guider/nar-ar-barnet-klart-med-bilbarnstol/).
 
 ## Fyra fel som gör skyddet sämre
 

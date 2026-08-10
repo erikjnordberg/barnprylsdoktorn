@@ -211,7 +211,7 @@ ska alltid gå genom filtret.**
 
 ## Innehåll
 
-Fjorton publicerade guider:
+Femton publicerade guider:
 
 | Slug | Ämne |
 |---|---|
@@ -229,6 +229,7 @@ Fjorton publicerade guider:
 | `montera-bilbarnstol-steg-for-steg` | Monteringen i ordning, bälte och Isofix |
 | `bilbarnstol-plats-i-bilen` | Fordonslista, mittplatsen, två eller tre stolar bak |
 | `vinterklader-bilbarnstol` | Vinteroverall och åkpåse, Folksams krockprov 2016 |
+| `nar-ar-barnet-klart-med-bilbarnstol` | 135 cm mot 10–12 år, kontroll av bältets passform |
 
 Utöver guiderna finns `/sa-tjanar-sajten-pengar/`, länkad i sidfoten tillsammans med en
 kort affiliatemärkning.
