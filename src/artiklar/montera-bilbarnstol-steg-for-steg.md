@@ -4,7 +4,7 @@ ingress: Stolen ligger i kartongen och bilen står på parkeringen. Här är ord
 beskrivning: Så monterar du en bilbarnstol rätt, steg för steg — bältesmonterad och Isofix, underförankringsband, stödben, lutning och kontrollen på slutet.
 date: 2026-08-08
 uppdaterad: 2026-08-09
-lasharnast: ["vanliga-monteringsfel", "bilbarnstol-plats-i-bilen"]
+lasharnast: ["vanliga-monteringsfel", "vinterklader-bilbarnstol"]
 ---
 
 ## Kort svar

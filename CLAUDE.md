@@ -197,7 +197,7 @@ ska alltid gå genom filtret.**
 
 ## Innehåll
 
-Tretton publicerade guider:
+Fjorton publicerade guider:
 
 | Slug | Ämne |
 |---|---|
@@ -214,6 +214,7 @@ Tretton publicerade guider:
 | `basta-bilbarnstolen` | Hela kedjan på en sida, babyskydd till bältesstol |
 | `montera-bilbarnstol-steg-for-steg` | Monteringen i ordning, bälte och Isofix |
 | `bilbarnstol-plats-i-bilen` | Fordonslista, mittplatsen, två eller tre stolar bak |
+| `vinterklader-bilbarnstol` | Vinteroverall och åkpåse, Folksams krockprov 2016 |
 
 Utöver guiderna finns `/sa-tjanar-sajten-pengar/`, länkad i sidfoten tillsammans med en
 kort affiliatemärkning.
@@ -348,9 +349,12 @@ både din egen och Cloudflares.
    `i-size-vs-vikt` med 550 ord. Kanalen hos Adtraction anger 30 unika besökare i månaden —
    uppdatera den siffran när den stiger, det är enda fältet som går att redigera i
    efterhand.
-5. **Fler artiklar.** De uppenbara luckorna från starten är skrivna. Fråga Erik innan du
-   börjar på nästa — urvalet är inte självklart längre. Diskuterad breddning: cykelbarnstol,
-   cykelkärra och barncykelhjälm först, barnvagn därefter.
+5. **Fler artiklar.** De uppenbara luckorna från starten är skrivna, och vinterguiden är
+   publicerad. Kvar från `research/sokordsluckor-2026-08.md`: *när är barnet klart med
+   bilbarnstol* och *bilbarnstolsregler i andra länder* (skriv den i mars–april, inte maj —
+   indexeringen tar fyra till åtta veckor på den här domänen, så säsongsinnehåll måste
+   ligga ute i god tid före säsongen). Fråga Erik innan du börjar på nästa. Diskuterad
+   breddning: cykelbarnstol, cykelkärra och barncykelhjälm först, barnvagn därefter.
 6. **Löpande UX- och mobilgenomgång** med `ux-granskning`-skillen.
 
 Den här listan är färskvara. Blir ett steg klart, stryk det i samma commit — och lägg till

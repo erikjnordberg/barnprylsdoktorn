@@ -74,6 +74,8 @@ Folksam har krocktestat det här på docka: när bältet dras utanpå tjocka ytt
 
 Folksam såg det i upp till hälften av fallen. Det är också det enklaste av alla sex felen att åtgärda: av med jackan, spänn fast, lägg jackan över som filt.
 
+Siffrorna från krockprovet — och vad du gör när det är minusgrader och overallen inte går av utan bråk — står i [guiden om vinterkläder i bilbarnstolen](/guider/vinterklader-bilbarnstol/).
+
 ## Två saker till, medan du ändå står där
 
 **Lutningen.** En nyfödd som sitter för upprätt kan få hakan mot bröstet och andningen begränsad. NTF anger cirka 40–45 grader för ett babyskydd och 20–35 för en bakåtvänd bilbarnstol, och de flesta stolar har en vattenpassmarkering eller en linje som ska ligga vågrätt. Mer om det i [guiden om babyskydd](/guider/babyskydd-for-nyfodda/).

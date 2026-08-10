@@ -68,7 +68,7 @@ Lutningen är bara en av flera detaljer som avgör om skyddet fungerar som det s
 
 ## En sak till
 
-Ta av tjocka ytterkläder innan barnet spänns fast. Overallen gör att internbältet hamnar för långt från kroppen, och Folksams krocktester med vinterkläder visar att skaderisken ökar. Det känns fel att åka iväg utan overall en januarimorgon — men filten över bältet är rätt svar, inte overallen under det.
+Ta av tjocka ytterkläder innan barnet spänns fast. Overallen gör att internbältet hamnar för långt från kroppen, och Folksams krocktester med vinterkläder visar att skaderisken ökar. Det känns fel att åka iväg utan overall en januarimorgon — men filten över bältet är rätt svar, inte overallen under det. [Hela genomgången av vinterkläder i bilbarnstolen](/guider/vinterklader-bilbarnstol/) finns som egen guide.
 
 ## Källor
 

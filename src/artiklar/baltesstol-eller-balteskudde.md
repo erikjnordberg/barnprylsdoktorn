@@ -82,7 +82,7 @@ Men läkare och forskare rekommenderar bältesstol eller bälteskudde upp till *
 1. **Bältet under armen.** Vanligast av alla, och farligast. Barnet tycker det skaver mot halsen och lägger det under armhålan. Då finns inget som håller emot överkroppen i en frontalkrock.
 2. **Diagonalbältet över bältesguiden i stället för under.** Läs bruksanvisningen — det finns en avsedd väg genom guiden, och den är inte alltid självklar.
 3. **Höftbältet upp över magen.** Det ska ligga lågt, över låren och höftbenen. Kontrollera att stolens höftguider används.
-4. **Tjocka vinterkläder under bältet.** Overallen komprimeras i krockögonblicket och bältet blir plötsligt löst. Ta av jackan och lägg en filt över i stället. Tumregeln är max två fingrar mellan bälte och kropp.
+4. **Tjocka vinterkläder under bältet.** Overallen komprimeras i krockögonblicket och bältet blir plötsligt löst. Ta av jackan och lägg en filt över i stället. Tumregeln är max två fingrar mellan bälte och kropp. Folksams krockprov gjordes på just den här åldersgruppen — [vad det visade](/guider/vinterklader-bilbarnstol/) är värt att veta om barnet spänner fast sig själv.
 
 Och den viktigaste vanan av alla: **kontrollera själv.** Vid den här åldern spänner barnet fast sig självt, och det är lätt att sluta titta. Folksam är uttryckliga på den punkten — lita inte på att det större barnet fått bältet rätt.
 
