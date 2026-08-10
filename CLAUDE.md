@@ -358,10 +358,11 @@ både din egen och Cloudflares.
    - Placering 2 (CARES) — säljs inte av Babysam. Placering 7 och 8 stryks enligt
      underlaget.
    Mät klickfrekvensen på de fem som ligger inne innan resten läggs in.
-3. **Faktakoll att åtgärda.** `research/faktakoll-2026-08-09.md` listar två kvarvarande
-   punkter, båda i begagnatguiden: T-märkta stolar får inte användas efter 9 maj 2008, och
-   godkännandenumret måste börja på 03 eller 04. Plustestets 56 km/h är numera belagt direkt
-   mot VTI och behöver inte kontrolleras igen.
+3. **Faktakoll — inga kända öppna punkter.** De två kvarvarande punkterna i
+   `research/faktakoll-2026-08-09.md` är åtgärdade 2026-08-10: begagnatguiden anger nu att
+   godkännandenumret ska börja på 03 eller 04 och att stolar med enbart T-märkning inte får
+   användas efter 9 maj 2008, båda belagda mot Transportstyrelsen som numera står i guidens
+   källförteckning. Plustestets 56 km/h är belagt direkt mot VTI.
    En bredare genomgång av samtliga tretton guider ligger i
    `research/faktakoll-alla-guider-2026-08-09.md` — elva fynd, alla åtgärdade och live.
    Plustest-tabellen i `basta-bilbarnstolen` bör stämmas av mot VTI kvartalsvis — listan
@@ -381,12 +382,12 @@ både din egen och Cloudflares.
    `i-size-vs-vikt` med 550 ord. Kanalen hos Adtraction anger 30 unika besökare i månaden —
    uppdatera den siffran när den stiger, det är enda fältet som går att redigera i
    efterhand.
-5. **Fler artiklar.** De uppenbara luckorna från starten är skrivna, och vinterguiden är
-   publicerad. Kvar från `research/sokordsluckor-2026-08.md`: *när är barnet klart med
-   bilbarnstol* och *bilbarnstolsregler i andra länder* (skriv den i mars–april, inte maj —
-   indexeringen tar fyra till åtta veckor på den här domänen, så säsongsinnehåll måste
-   ligga ute i god tid före säsongen). Fråga Erik innan du börjar på nästa. Diskuterad
-   breddning: cykelbarnstol, cykelkärra och barncykelhjälm först, barnvagn därefter.
+5. **Fler artiklar.** Samtliga luckor från `research/sokordsluckor-2026-08.md` är nu
+   skrivna utom en: *bilbarnstolsregler i andra länder*. Den ska skrivas i mars–april, inte
+   maj — indexeringen tar fyra till åtta veckor på den här domänen, så säsongsinnehåll
+   måste ligga ute i god tid före säsongen. Den kräver dessutom löpande underhåll, med
+   datum och källa per land. Fråga Erik innan du börjar på nästa. Diskuterad breddning:
+   cykelbarnstol, cykelkärra och barncykelhjälm först, barnvagn därefter.
 6. **Löpande UX- och mobilgenomgång** med `ux-granskning`-skillen.
 
 Den här listan är färskvara. Blir ett steg klart, stryk det i samma commit — och lägg till

@@ -3,7 +3,7 @@ title: Begagnad bilbarnstol — är det säkert att köpa?
 ingress: "Kort svar: ja — men det hänger på två saker du inte kan se på en bild, och en av dem går inte att kontrollera hos en främling."
 beskrivning: Att köpa begagnad bilbarnstol — vad lagen tillåter, tioårsregeln, hur du kontrollerar skicket, och varför krockhistoriken avgör om du ska köpa alls.
 date: 2026-08-07
-uppdaterad: 2026-08-09
+uppdaterad: 2026-08-10
 lasharnast: ["bakatvand-bilbarnstol-vilken-ska-jag-kopa", "vanliga-monteringsfel"]
 ---
 
@@ -11,6 +11,7 @@ lasharnast: ["bakatvand-bilbarnstol-vilken-ska-jag-kopa", "vanliga-monteringsfel
 
 - Ja, det går att köpa begagnat — men två saker måste stämma
 - Godkännande: R44 eller R129 gäller båda. R44 får inte säljas nytt sedan september 2024, men får användas och säljas begagnat
+- Etiketten ska dessutom ha ett godkännandenummer som **börjar på 03 eller 04**, och en stol med **enbart T-märkning** får inte användas — den regeln gäller sedan 2008
 - Ålder: cirka tio års livslängd, räknat från att stolen började användas. Köp helst en som är max 4–5 år
 - Skick: ta av klädseln och leta efter sprickor i plast och frigolit. Sprickor betyder ofta krock
 - Krockhistorik går inte att verifiera hos en främling. Köp av någon du känner, annars nytt
@@ -26,6 +27,10 @@ Den produkt som oftast byter ägare är [babyskyddet](/guider/babyskydd-for-nyfo
 ## Vad som faktiskt är lagligt
 
 Alla bilbarnskydd som används i Sverige måste vara godkända enligt **UN R.44 eller UN R.129**. Båda är giltiga att använda, enligt NTF.
+
+Men "det står R44 på etiketten" räcker inte, och det är här en begagnad stol kan falla. Transportstyrelsen anger två saker till. **Godkännandenumret ska börja på 03 eller 04** — det motsvarar ECE-reglemente 44-03 eller senare, så en äldre R44-01 eller R44-02 duger inte. Och **stolar med enbart T-märkning får inte användas efter den 9 maj 2008.** Vissa bakåtvända stolar har dubbelmärkning, alltså både E och T, och de är i sin ordning.
+
+Det här är ingen teoretisk kontroll på en stol som passerat tio år. Det är precis de årgångarna som dyker upp i annonserna.
 
 Sedan **1 september 2024 får bara stolar godkända enligt UN R.129 säljas nya** — ett beslut taget av EU. Men det gäller försäljning av nya stolar i handeln, inte begagnathandel mellan privatpersoner. **NTF:s besked är att en begagnad R44-stol är laglig att köpa av en privatperson och använda.** Det är en vanlig missuppfattning att R44 är förbjudet — det är det inte.
 
@@ -65,7 +70,7 @@ En hyrbilsstol är samma problem i en annan förklädnad: [ingen på uthyrningsf
 
 Ordningen följer Folksams och NTF:s egna beskrivningar.
 
-1. **Kontrollera godkännandet.** Etiketten ska visa UN R.44 eller UN R.129. Finns ingen etikett, köp inte stolen.
+1. **Kontrollera godkännandet.** Etiketten ska visa UN R.44 eller UN R.129, och godkännandenumret ska börja på **03 eller 04**. Har stolen **bara** T-märkning får den inte användas — dubbelmärkning E och T är däremot godkänd. Finns ingen etikett alls, köp inte stolen.
 2. **Kontrollera åldern.** Tillverkningsdatum ska finnas inpräglat, ingjutet, stämplat eller på klisteretikett. Fråga efter kvitto om det finns.
 3. **Kontrollera att utrustningen är komplett.** Monteringsanvisning och underförankringsband är det som oftast försvinner. Saknas anvisningen går den ofta att ladda ner hos tillverkaren; saknas en monteringsdetalj, kontakta tillverkaren.
 4. **Kontrollera låsen.** De ska gå att stänga ordentligt.
@@ -92,6 +97,7 @@ Så: känner du inte säljaren och kan inte lita på vad hen säger om historien
 
 ## Källor
 
+- [Transportstyrelsen — Så skyddar du barnen: regler och tips](https://www.transportstyrelsen.se/sv/vagtrafik/trafikregler-och-vagmarken/trafikregler/i-fordonet/Sa-skyddar-du-barnen---regler-och-tips/) — godkännandenumret 03 eller 04, och T-märkningen efter 9 maj 2008
 - [Folksam — Så väljer du begagnad bilbarnstol](https://www.folksam.se/forsakringar/barnforsakring/valja-begagnad-bilbarnstol)
 - [Folksam — Barn i bil, så använder du bilbarnstolen rätt](https://www.folksam.se/forsakringar/bilforsakring/trafikforskning/barn-i-bil)
 - [NTF — Köpråd och godkännanden](https://ntf.se/konsumentupplysning/barn-i-bil/koprad-och-godkannanden/)
