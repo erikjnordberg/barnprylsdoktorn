@@ -3,8 +3,9 @@ title: Flyg och hyrbil — ska du släpa med stolen?
 ingress: "Kort svar: ja, oftare än du tror. Hyrbilsstolen har en historia ingen kan redogöra för, och ombord krävs rätt märkning."
 beskrivning: Bilbarnstol på flyg och i hyrbil — vad som krävs för att ta med egen stol ombord, riskerna med hyrbilens egen stol, och CARES-selen som alternativ.
 date: 2026-08-07
-uppdaterad: 2026-08-08
+uppdaterad: 2026-08-10
 lasharnast: ["bilbarnstol-i-taxi", "begagnad-bilbarnstol"]
+annonslankar: ["Babysam"]
 ---
 
 Frågan dyker upp veckan före avresan. Att bära en femton kilos bilbarnstol genom flygplatsen känns orimligt. Att kryssa i "barnstol" för 90 kronor om dagen i hyrbilsbokningen känns som en lösning.
@@ -33,7 +34,7 @@ Lägg till att stolen ofta är fel storlek. Du bokar "barnstol" i ett formulär 
 
 ## Ta med egen: två sätt
 
-**Som incheckat bagage.** Gratis hos de flesta större bolag och det enklaste. Risken är hanteringen: en stol som slängs i en lastlucka kan få mikrosprickor i skalet, och det syns inte utifrån. En vadderad transportväska kostar några hundralappar och löser problemet hyfsat. Fotografera stolen före incheckning — det underlättar om du behöver reklamera.
+**Som incheckat bagage.** Gratis hos de flesta större bolag och det enklaste. Risken är hanteringen: en stol som slängs i en lastlucka kan få mikrosprickor i skalet, och det syns inte utifrån. En {% annonslank "https://www.babysam.se/axkid-up-transportvaeska-black-onesize", "Babysam", "vadderad transportväska" %} kostar några hundralappar och löser problemet hyfsat. Fotografera stolen före incheckning — det underlättar om du behöver reklamera.
 
 **Som handbagage och sittplats ombord.** Bättre för stolen, dyrare för dig, och bäst för barnet under själva flygningen.
 

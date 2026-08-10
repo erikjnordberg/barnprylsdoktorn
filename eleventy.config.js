@@ -15,6 +15,42 @@ const rubrikTillId = (text) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 
+// Adtraction-spårning. Affiliatelänkarna i produkter.js och i löptexten pekar på
+// handlarens riktiga produktsida — spårningen läggs på här, på ett ställe, i stället
+// för att klistras in i varje länk. Byter vi nätverk eller kanal ändras bara det här.
+//
+// Värdet per handlare är **hela spårlänken som Adtraction ger dig**, utan `url`-parameter
+// på slutet — den lägger vi på här. Klistra in den rakt av; varje program kan ha sin egen
+// spårdomän (Babysam spårar via to.babyworld.se, inte track.adtraction.com), så det går
+// inte att bygga länken av bara ett ID.
+//
+// I länken är `a` annonsörens brand ad ID, `as` vår kanal (Barnprylsdoktorn = 2100860918),
+// och t=2 + tk=1 säger att måladressen ligger i url-parametern. Nytt godkänt program:
+// lägg till en rad här, inget annat.
+const ADTRACTION_PROGRAM = {
+  Babysam: "https://to.babyworld.se/t/t?a=1945556823&as=2100860918&t=2&tk=1",
+};
+
+// Bygger den spårade adressen. Saknas handlaren returneras null, och då renderas
+// köpblocket utan knapp och annonslänken som vanlig text — hellre en osynlig länk än
+// en länk som skickar trafik vi inte får betalt för.
+const varnade = new Set();
+const harProgram = (handlare) =>
+  typeof ADTRACTION_PROGRAM[handlare] === "string" &&
+  ADTRACTION_PROGRAM[handlare].startsWith("https://");
+const sparadUrl = (handlare, malUrl) => {
+  if (!harProgram(handlare)) {
+    if (!varnade.has(handlare)) {
+      varnade.add(handlare);
+      console.warn(
+        `[annonslank] Ingen Adtraction-spårlänk för ${handlare} — länkarna renderas omärkta och ospårade. Lägg till en rad i ADTRACTION_PROGRAM i eleventy.config.js.`
+      );
+    }
+    return null;
+  }
+  return `${ADTRACTION_PROGRAM[handlare]}&url=${encodeURIComponent(malUrl)}`;
+};
+
 // Besöksstatistik från scripts/hamta-statistik.js, uppdateras varje måndag av
 // GitHub Actions. Filen kan saknas (första körningen, eller lokalt) — då sorteras
 // guiderna i sin nuvarande ordning, bygget ska aldrig krascha på det.
@@ -74,27 +110,36 @@ module.exports = function (eleventyConfig) {
   );
 
   // Köpblock i artiklarna: {% kopblock "produktnyckel" %}
-  // Saknar produkten en url renderas blocket utan knapp och utan annonsmärkning —
-  // affiliatelänkarna läggs till senare, ett ställe per produkt, i produkter.js.
+  // Saknar produkten en url renderas blocket utan knapp och utan annonsmärkning.
+  // Blocket visar med flit inget pris — handlarnas priser rör sig varje vecka och en
+  // siffra här skulle bli fel utan att någon märkte det. Ungefärliga priser står i
+  // tabellerna i löptexten, med källa och förbehåll.
   eleventyConfig.addShortcode("kopblock", (nyckel) => {
     const produkt = produkter[nyckel];
     if (!produkt) {
       throw new Error(`kopblock: hittar ingen produkt med nyckeln "${nyckel}" i produkter.js`);
     }
 
-    const knappOchMarkning = produkt.url
+    const lank = produkt.url ? sparadUrl(produkt.handlare, produkt.url) : null;
+    const knappOchMarkning = lank
       ? `
     <p class="kopblock-markning">Annonslänk. Sajten får provision om du köper via den — priset för dig är detsamma. <a href="/sa-tjanar-sajten-pengar/">Så tjänar sajten pengar</a></p>
-    <a class="kopblock-knapp" href="${produkt.url}" rel="sponsored nofollow noopener" target="_blank">Se priset hos ${produkt.handlare}</a>`
+    <a class="kopblock-knapp" href="${lank}" rel="sponsored nofollow noopener" target="_blank">Se aktuellt pris hos ${produkt.handlare}</a>`
       : "";
 
     return `<div class="kopblock">
     <h3 class="kopblock-namn">${produkt.namn}</h3>
     <p class="kopblock-spec">${produkt.specifikation}</p>
-    <p class="kopblock-motivering">${produkt.motivering}</p>
-    <p class="kopblock-pris">${produkt.pris}</p>${knappOchMarkning}
+    <p class="kopblock-motivering">${produkt.motivering}</p>${knappOchMarkning}
   </div>`;
   });
+
+  // Annonsnotisen högst upp i en guide får bara synas om guidens länkar faktiskt
+  // renderas. Saknas program-ID blir länkarna vanlig text, och då vore notisen en
+  // varning om reklam som inte finns. Filtret används i base.njk.
+  eleventyConfig.addFilter("aktivaHandlare", (varden) =>
+    [].concat(varden || []).filter((h) => h === true || harProgram(h))
+  );
 
   // Radar upp namn på svenska: ["A"] -> "A", ["A","B"] -> "A och B",
   // ["A","B","C"] -> "A, B och C". Används i annonsnotisen högst upp i guiderna.
@@ -104,17 +149,21 @@ module.exports = function (eleventyConfig) {
     return `${lista.slice(0, -1).join(", ")} och ${lista[lista.length - 1]}`;
   });
 
-  // Affiliatelänk i löptext: {% annonslank "https://...", "Handlare", "länktext" %}
+  // Affiliatelänk i löptext: {% annonslank "https://handlarens-sida", "Handlare", "länktext" %}
+  // Skicka handlarens riktiga adress — spårningen läggs på av sparadUrl ovan.
   // Märkningen ligger inuti <a> med flit — skärmläsare som listar sidans länkar
   // läser då upp att länken är reklam, precis som en seende läsare ser det.
   // Notisen högst upp i guiden är den primära märkningen; den här är förstärkningen.
+  // Saknas program-ID renderas bara länktexten, så att en ospårad länk aldrig går live.
   eleventyConfig.addShortcode("annonslank", (url, handlare, text) => {
     if (!url || !handlare || !text) {
       throw new Error(
         `annonslank: kräver url, handlare och länktext — fick "${url}", "${handlare}", "${text}"`
       );
     }
-    return `<a class="annonslank" href="${url}" rel="sponsored nofollow noopener" target="_blank">${text}<span class="annonslank-markning"> (annonslänk till ${handlare})</span></a>`;
+    const lank = sparadUrl(handlare, url);
+    if (!lank) return text;
+    return `<a class="annonslank" href="${lank}" rel="sponsored nofollow noopener" target="_blank">${text}<span class="annonslank-markning"> (annonslänk till ${handlare})</span></a>`;
   });
 
   // Datumformat för sitemap och RSS-flöde

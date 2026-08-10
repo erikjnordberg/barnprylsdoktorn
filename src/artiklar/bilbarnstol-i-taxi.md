@@ -3,8 +3,9 @@ title: Bilbarnstol i taxi — vad lagen faktiskt säger
 ingress: "Kort svar: ja, det finns ett undantag. Det är smalare än de flesta tror, och det gäller aldrig framsätet."
 beskrivning: Bilbarnstol i taxi — vad lagen kräver, de två undantagen för korta sträckor, och hur du undviker att stå utan stol vid akuten eller på flygplatsen.
 date: 2026-08-07
-uppdaterad: 2026-08-08
+uppdaterad: 2026-08-10
 lasharnast: ["bilbarnstol-flyg-och-hyrbil", "baltesstol-eller-balteskudde"]
+annonslankar: ["Babysam"]
 ---
 
 Klockan är halv fem, taxin väntar, och det finns ingen bilbarnstol. Eller: barnet har feber och du ska till akuten, nu. Frågan kommer alltid när du inte har tid att slå upp den.
@@ -52,7 +53,7 @@ Taxichauffören kommer inte att neka dig skjuts med hänvisning till att du sakn
 
 **Ta med babyskyddet.** Är barnet fortfarande i [babyskydd](/guider/babyskydd-for-nyfodda/) är det ändå bärbart. De flesta babyskydd är godkända för bältesmontering utan bas, och tar då någon minut att spänna fast. Kolla i manualen hur bältesvägen ser ut *innan* du står på trottoaren.
 
-**För det större barnet: en bälteskudde i väskan.** Har barnet kommit till [bältesstol eller bälteskudde](/guider/baltesstol-eller-balteskudde/) finns kompakta modeller som väger under ett kilo och får plats i en ryggsäck. För taxiresor, semesterveckan och skjuts hem från kalas är det den enskilt mest användbara pryl du kan äga i den här kategorin.
+**För det större barnet: en bälteskudde i väskan.** Har barnet kommit till [bältesstol eller bälteskudde](/guider/baltesstol-eller-balteskudde/) finns {% annonslank "https://www.babysam.se/bilbarnstolar-framaatvaenda-bilbarnstolar-baelteskuddar", "Babysam", "kompakta modeller" %} som väger under ett kilo och får plats i en ryggsäck. För taxiresor, semesterveckan och skjuts hem från kalas är det den enskilt mest användbara pryl du kan äga i den här kategorin. Kom bara ihåg 125-centimetersregeln — en kudde utan ryggstöd är avsedd för de största barnen, och den gäller även när den ligger i en ryggsäck.
 
 **Bakåtvänd stol i taxi går sällan att lösa på plats.** En [bakåtvänd stol](/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/) med underförankringsband tar tio minuter att montera rätt och kräver att du vet var fästpunkterna sitter i just den bilen. Det är inte något du gör i en taxikö. Har du barn i det spannet: förbeställ, eller planera för att inte behöva taxi.
 

@@ -446,6 +446,10 @@ a.kicker:hover { color: var(--accent-mork); }
   border-radius: var(--radie);
 }
 
+/* Blocket kan sluta med knappen eller, för en produkt utan länk, med motiveringen.
+   Sista elementet ska aldrig lägga marginal ovanpå blockets egen padding. */
+.kopblock > :last-child { margin-bottom: 0; }
+
 .kopblock-namn { margin: 0 0 0.4rem; }
 
 .kopblock-spec {
@@ -454,12 +458,7 @@ a.kicker:hover { color: var(--accent-mork); }
   margin: 0 0 0.9rem;
 }
 
-.kopblock-motivering { margin: 0 0 0.9rem; }
-
-.kopblock-pris {
-  font-weight: 650;
-  margin: 0 0 1rem;
-}
+.kopblock-motivering { margin: 0 0 1rem; }
 
 .kopblock-markning {
   font-size: 0.875rem;

@@ -98,8 +98,9 @@ scripts/hamta-statistik.js hämtar besöksstatistik från Cloudflare, se nedan
 research/                  underlag och granskningar — ingår inte i bygget
 copy-granskning.md         senaste copygranskningen, i roten
 eleventy.config.js         filter: version, datum, typo, htmlDateString, isoDate, rssDate,
-                           sorteraEfterBesok
-                           shortcode: kopblock
+                           sorteraEfterBesok, listaSvenska, aktivaHandlare
+                           shortcode: kopblock, annonslank
+                           ADTRACTION_PROGRAM: program-ID per handlare, se Komponenter
                            passthrough: css, bilder, fonter, js, _headers
                            markdown-it-anchor ger h2 och h3 id via rubrikTillId,
                            som translittererar å/ä/ö. Bara id, ingen länkikon.
@@ -139,9 +140,21 @@ Sajten ska fungera bäst på mobil. Utgå från mobilvyn först.
 ### Komponenter
 
 - **Köpblock.** `{% kopblock "nyckel" %}` hämtar produkten ur `src/_data/produkter.js`.
-  Saknas `url` renderas blocket utan knapp och utan annonsmärkning — det är läget nu.
-  Blocket ska ligga både vid beslutet (direkt efter punktlistan i Kort svar) och vid
-  motiveringen i produktavsnittet.
+  Saknas `url` — eller saknas handlarens Adtraction-program-ID — renderas blocket utan
+  knapp och utan annonsmärkning. Blocket ska ligga både vid beslutet (direkt efter
+  punktlistan i Kort svar) och vid motiveringen i produktavsnittet.
+  **Köpblocket visar inget pris.** Handlarnas priser rör sig varje vecka och en siffra
+  där skulle bli fel utan att någon märkte det; knappen säger "Se aktuellt pris hos X".
+  Ungefärliga priser hör hemma i tabellerna i löptexten, med källa och förbehåll.
+- **Adtraction-spårning.** `produkter.js` och `{% annonslank %}` innehåller **handlarens
+  riktiga adress** — aldrig en färdig spårningslänk. Spårningen byggs i
+  `eleventy.config.js` av `sparadUrl()`, som slår upp handlaren i `ADTRACTION_PROGRAM`
+  och hänger på `&url=<måladress>`. Värdet i `ADTRACTION_PROGRAM` är **hela spårlänken
+  Adtraction ger, utan `url`-parameter** — varje program kan ha egen spårdomän (Babysam
+  går via `to.babyworld.se`, inte `track.adtraction.com`), så den går inte att bygga av
+  ett ID. Nytt program godkänt: lägg till en rad, inget annat. Saknas handlaren renderas
+  länkarna som vanlig text, knappen uteblir och annonsnotisen döljs — hellre osynlig länk
+  än trafik vi inte får betalt för. Bygget varnar i konsollen.
 - **Annonsmärkning.** Två delar, båda krävs av Adtractions regler och Jollyrooms
   programvillkor:
   - **`.annonsnotis`** — notisen högst upp i guiden, före innehållet. Renderas av
@@ -150,7 +163,8 @@ Sajten ska fungera bäst på mobil. Utgå från mobilvyn först.
     "innehåller reklam genom annonslänkar för Jollyroom och Babyland", vilket är
     exakt den formulering Jollyroom kräver. Sätt `true` bara om guiden har
     generella länkar utan namngiven handlare. Utelämnas nyckeln syns ingen notis.
-    Filtret `listaSvenska` radar upp namnen ("A, B och C").
+    Filtret `listaSvenska` radar upp namnen ("A, B och C"), och `aktivaHandlare`
+    sållar först bort handlare vars program-ID inte är ifyllt.
   - **`{% annonslank "url", "Handlare", "länktext" %}`** — affiliatelänk i löptext.
     Sätter `rel="sponsored nofollow noopener"` och lägger "(annonslänk till X)"
     inuti `<a>`, så att skärmläsare som listar sidans länkar också hör märkningen.
@@ -312,20 +326,37 @@ både din egen och Cloudflares.
    Lekmer SE och Kids Concept SE; alla tre står som Pending, och Babyshop och Lekmer har
    historiskt 100 % approval rate. Gemensam programkontakt för de två första är
    `affiliate@babyshop.se`. Kanalen Barnprylsdoktorn hos Adtraction (ID 2100860918) är
-   godkänd sedan 2026-08-10, och nio ansökningar är inskickade samma dag, alla med status
-   Waiting: Axkid (5 %), Jollyroom (5 %, 7 % på egna varumärken), Babyland (4 %),
-   Babysam (8 %), Bonti (5 %), Köpbarnvagn (5 %), Baby V (7 %), Stor&Liten (4 %) och
-   Emmaljunga (10 %). Kvar att söka när det finns anledning: Safekid, Kid's Concept.
+   godkänd sedan 2026-08-10, och nio ansökningar är inskickade samma dag. **Babysam (8 %)
+   är godkänt sedan 2026-08-10** — första och hittills enda godkända annonsören, och den
+   med högst provision av de nio. Övriga åtta står som Waiting: Axkid (5 %), Jollyroom
+   (5 %, 7 % på egna varumärken), Babyland (4 %), Bonti (5 %), Köpbarnvagn (5 %),
+   Baby V (7 %), Stor&Liten (4 %) och Emmaljunga (10 %).
+   Kvar att söka när det finns anledning: Safekid, Kid's Concept.
    Jollyroom är osäkrast av de nio — de nekar directorysajter och väljer publicister
    utifrån varumärkesstrategi. Emmaljunga har bara ett babyskydd (BeSafe iZi Go Modular
    X1) plus vagnadaptrar, alltså tunnast sortiment för nischen.
-   Det som saknas i koden är fortfarande bara `url` och `handlare` i `produkter.js`.
-   **Ingen SEM på varumärkesnamn** i något av programmen — påverkar inget idag, men låser
+   Babysams spårlänk ligger i `ADTRACTION_PROGRAM` i `eleventy.config.js` och länkarna
+   är live. **Ingen SEM på varumärkesnamn** i något av programmen — påverkar inget idag, men låser
    en eventuell Google Ads-satsning.
-2. **Tillbehörslänkar i löptexten.** Åtta placeringar är kartlagda med ordagranna
-   FÖRE-citat i `research/tillbehorslankar-2026-08-09.md`. Frågan om annonsmärkning är
-   löst — använd `{% annonslank %}` i löptexten och sätt `annonslankar` i frontmatter,
-   se Komponenter ovan.
+2. **Tillbehörslänkar i löptexten.** Åtta placeringar kartlagda i
+   `research/tillbehorslankar-2026-08-09.md`. Genomfört mot Babysam 2026-08-10:
+   köpblocken i `bakatvand-bilbarnstol-vilken-ska-jag-kopa` och `basta-bilbarnstolen`
+   (Max-Safe Pro, TinySeats Two), samt placering 1 (bälteskudde, `bilbarnstol-i-taxi`),
+   3 (transportväska, `bilbarnstol-flyg-och-hyrbil`) och 6 (bilspegel,
+   `bilbarnstol-fram-och-airbag` — omskriven så att den inte påstår något om
+   krocksäkerhet, eftersom ingen svensk myndighetskälla om bilbarnstolsspeglar hittats).
+   Kvar och medvetet ogjort:
+   - **BeSafe Beyond får ingen länk.** Babysam säljer bara efterföljaren Beyond², som
+     inte är den stol Folksam testade 2025. Att länka dit vore att tillskriva en annan
+     produkt ett testresultat den inte har. Öppnas om ett program med den faktiska
+     Beyond godkänns, eller om Beyond² visar sig vara samma stol.
+   - **Placering 4 och 5 (åkpåse utanpå selen) är blockerade.** Babysams sex åkpåsar för
+     bilbarnstol är alla av typen barnet ligger *i*, alltså med ett lager mellan sele och
+     kropp — precis det guiderna varnar för. Ingen länk förrän en produkt av rätt typ
+     hittats och verifierats mot tillverkarens beskrivning.
+   - Placering 2 (CARES) — säljs inte av Babysam. Placering 7 och 8 stryks enligt
+     underlaget.
+   Mät klickfrekvensen på de fem som ligger inne innan resten läggs in.
 3. **Faktakoll att åtgärda.** `research/faktakoll-2026-08-09.md` listar två kvarvarande
    punkter, båda i begagnatguiden: T-märkta stolar får inte användas efter 9 maj 2008, och
    godkännandenumret måste börja på 03 eller 04. Plustestets 56 km/h är numera belagt direkt

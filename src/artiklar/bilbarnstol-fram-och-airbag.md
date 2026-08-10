@@ -3,8 +3,9 @@ title: Bilbarnstol i framsätet — vad säger lagen om airbag?
 ingress: "Kort svar: bakåtvänt mot en aktiv krockkudde är förbjudet i lag. Är kudden avstängd är framsätet ofta det bättre valet — inte en kompromiss."
 beskrivning: Bilbarnstol i framsätet och krockkudde — vad lagen kräver, vad som bara är rekommendation, och varför framsätet ofta är säkrare än man tror.
 date: 2026-08-07
-uppdaterad: 2026-08-08
+uppdaterad: 2026-08-10
 lasharnast: ["bilbarnstol-plats-i-bilen", "montera-bilbarnstol-steg-for-steg"]
+annonslankar: ["Babysam"]
 ---
 
 ## Kort svar
@@ -94,6 +95,8 @@ Oavsett var i bilen stolen sitter är själva monteringen det som avgör mest. [
 Ett argument talar tydligt för baksätet: vid en sidokollision är barnet mer skyddat på **mittplatsen bak** än i framsätet. NTF beskriver den platsen som "längst ifrån alla krockzoner". Folksam nyanserar dock att sidokrockar är mer ovanliga än frontalkrockar.
 
 Mittplatsen kräver att både bilen och stolen är godkända för montering där, och den gör barnet svårare att hålla ögonkontakt med och övervaka under körningen. Är det viktigast för dig väger den avvägningen tyngre än vinsterna med framsätet.
+
+En {% annonslank "https://www.babysam.se/bilbarnstolar-bilbarnstolstillbehoer-bilspeglar", "Babysam", "spegel på nackstödet" %} löser halva det problemet. Två saker är värda att veta innan du köper: den ska sitta ordentligt fast i nackstödet och inte hänga löst, och den är till för ögonvrån — inte för att studeras under körning. Jag har inte hittat någon svensk myndighetsrekommendation om bilbarnstolsspeglar över huvud taget, varken hos NTF, Folksam eller Trafikverket. Behandla den alltså som en bekvämlighetspryl, inte som säkerhetsutrustning.
 
 ## Källor
 
