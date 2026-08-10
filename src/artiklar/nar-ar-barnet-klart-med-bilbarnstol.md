@@ -53,7 +53,7 @@ Sätt barnet direkt på sätet, utan kudde, och spänn bältet. Titta sedan efte
 
 Faller något av dessa ut fel behövs kudden kvar — även om måttbandet visar 137 cm. Och tvärtom: uppfyller barnet allt fyra vid 133 cm är det ändå lagen som gäller, och den säger kudde.
 
-Sitter ni fortfarande i valet mellan stol och kudde är [den frågan en egen guide](/guider/baltesstol-eller-balteskudde/), och för hela kedjan från babyskydd och framåt finns [köpguiden](/guider/basta-bilbarnstolen/).
+Sitter ni fortfarande i valet mellan stol och kudde är [den frågan en egen guide](/guider/baltesstol-eller-balteskudde/), och för hela kedjan från babyskydd och framåt finns [köpguiden](/guider/basta-bilbarnstolen/). Vill du bara ha besked om vilken stolstyp som gäller just nu svarar [väljaren](/vilken-bilbarnstol/) på tre frågor.
 
 ## Framsätet är en annan gräns
 

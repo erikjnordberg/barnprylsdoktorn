@@ -102,7 +102,7 @@ Bekvämlighet → BeSafe Beyond, med vridfunktionen.
 
 Och oavsett vilken du landar i: **provmontera den i din bil innan du bestämmer dig.** Flera tillverkare har billistor, och vissa återförsäljare erbjuder fri retur om stolen inte passar. En bra stol som inte går att montera rätt i just din bil är fel stol — [så tar du reda på om den faktiskt får plats](/guider/bilbarnstol-plats-i-bilen/), oavsett om ni ska ha en eller tre stolar i baksätet.
 
-När stolen väl är urvuxen — någonstans kring sex–sju år med de här modellerna — är nästa steg [bältesstol eller bälteskudde](/guider/baltesstol-eller-balteskudde/).
+När stolen väl är urvuxen — någonstans kring sex–sju år med de här modellerna — är nästa steg [bältesstol eller bälteskudde](/guider/baltesstol-eller-balteskudde/). Osäker på om ni är där än? [Tre frågor i väljaren](/vilken-bilbarnstol/) ger svaret, och länken går att klistra in om någon annan undrar samma sak.
 
 ## Ett förbehåll om priserna
 

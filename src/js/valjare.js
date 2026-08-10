@@ -193,6 +193,32 @@
     });
     svarRuta.appendChild(lankLista);
 
+    /* Adressen bär svaret, men ingen förstår det om vi inte säger det.
+       Det här är hela poängen med att väljaren ska gå att länka till. */
+    svarRuta.appendChild(
+      element(
+        "p",
+        "valjare-delahint",
+        "Länken till den här sidan innehåller ert svar. Klistrar du in den i en tråd eller ett meddelande får nästa förälder samma svar direkt, utan att klicka sig igenom frågorna."
+      )
+    );
+
+    var knappar = element("div", "valjare-knappar");
+
+    var dela = element("button", "valjare-dela", "Kopiera länk till svaret");
+    dela.type = "button";
+    dela.addEventListener("click", function () {
+      kopieraAdress(function (lyckades) {
+        dela.textContent = lyckades
+          ? "Länken är kopierad"
+          : "Kopiera adressen i adressfältet";
+        window.setTimeout(function () {
+          dela.textContent = "Kopiera länk till svaret";
+        }, 4000);
+      });
+    });
+    knappar.appendChild(dela);
+
     var omstart = element("button", "valjare-omstart", "Börja om");
     omstart.type = "button";
     omstart.addEventListener("click", function () {
@@ -207,10 +233,50 @@
         form.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     });
-    svarRuta.appendChild(omstart);
+    knappar.appendChild(omstart);
+    svarRuta.appendChild(knappar);
 
     svarRuta.hidden = false;
     status.hidden = true;
+  }
+
+  /* Kopiering utan tredjepartsanrop och utan att något lämnar webbläsaren.
+     Clipboard API först, den gamla execCommand-vägen som reserv för äldre
+     webbläsare, och misslyckas båda säger knappen till i stället för att
+     låtsas att det gick. */
+  function kopieraAdress(nar) {
+    var adress = location.href;
+
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(adress).then(
+        function () { nar(true); },
+        function () { nar(reservkopiering(adress)); }
+      );
+      return;
+    }
+
+    nar(reservkopiering(adress));
+  }
+
+  function reservkopiering(text) {
+    var ruta = document.createElement("textarea");
+    ruta.value = text;
+    ruta.setAttribute("readonly", "");
+    ruta.setAttribute("aria-hidden", "true");
+    ruta.style.position = "fixed";
+    ruta.style.top = "-1000px";
+    document.body.appendChild(ruta);
+
+    var lyckades = false;
+    try {
+      ruta.select();
+      lyckades = document.execCommand("copy");
+    } catch (e) {
+      lyckades = false;
+    }
+
+    document.body.removeChild(ruta);
+    return lyckades;
   }
 
   /* ---------- Läsa och skriva svaren ---------- */

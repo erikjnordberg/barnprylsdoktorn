@@ -622,6 +622,21 @@ a.kicker:hover { color: var(--accent-mork); }
 .valjare-lankar li { margin-bottom: 0.5rem; }
 .valjare-lankar a { font-weight: 650; }
 
+/* Raden som förklarar att adressen bär svaret. 5.37:1 mot papper-tint. */
+.valjare-delahint {
+  margin: 0 0 1rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--text-dampad);
+}
+
+.valjare-knappar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.valjare-dela,
 .valjare-omstart {
   display: flex;
   align-items: center;
@@ -638,17 +653,28 @@ a.kicker:hover { color: var(--accent-mork); }
   cursor: pointer;
 }
 
+/* Dela är det primära av de två — den ska synas utan att skrika */
+.valjare-dela {
+  border-color: var(--accent);
+  color: var(--accent-mork);
+}
+
+.valjare-dela:hover { background: var(--varm-ljus); }
+
 .valjare-omstart:hover {
   border-color: var(--accent);
   color: var(--accent-mork);
 }
 
+.valjare-dela:focus-visible,
 .valjare-omstart:focus-visible {
   outline: 2px solid var(--accent-mork);
   outline-offset: 3px;
 }
 
 @media (min-width: 34rem) {
+  .valjare-knappar { flex-direction: row; }
+  .valjare-dela,
   .valjare-omstart { display: inline-flex; }
 }
 

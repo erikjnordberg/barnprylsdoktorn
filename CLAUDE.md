@@ -181,6 +181,15 @@ Sajten ska fungera bäst på mobil. Utgå från mobilvyn först.
   `history.replaceState`, så att en länk kan klistras in i ett forum och ge samma
   svar. Siffrorna i svaren är belagda mot Transportstyrelsen och NTF: ändra dem
   aldrig utan att slå upp källan först.
+  **Svaret har en delningsknapp** (`.valjare-dela`) som kopierar adressen med
+  Clipboard API, med `execCommand` som reserv och en ärlig fallback-etikett om
+  båda misslyckas. Inga tredjepartsanrop. Raden ovanför (`.valjare-delahint`)
+  förklarar att adressen bär svaret — utan den förstår ingen att den går att dela,
+  och det är hela poängen med väljaren som länkbar tillgång.
+  Sidan har också en **statisk åldersöversikt** i en tabell. Den är sajtens
+  landningspunkt för sökningar som "bilbarnstol 2 år" och den enda delen av
+  väljaren en crawler kan läsa — resten renderas i webbläsaren. **Håll tabellen
+  synkad med `bestamKategori()` i `valjare.js`.**
 - **`.valjare-ingang`** — mörkt block som länkar in till väljaren, används på
   startsidan. I guiderna länkas väljaren från löptexten i stället.
 - **`.infografik`** — wrapper runt en informationsgrafik i löptexten, max 460 px och
