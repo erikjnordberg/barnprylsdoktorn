@@ -152,7 +152,9 @@ Sajten ska fungera bäst på mobil. Utgå från mobilvyn först.
   och hänger på `&url=<måladress>`. Värdet i `ADTRACTION_PROGRAM` är **hela spårlänken
   Adtraction ger, utan `url`-parameter** — varje program kan ha egen spårdomän (Babysam
   går via `to.babyworld.se`, inte `track.adtraction.com`), så den går inte att bygga av
-  ett ID. Nytt program godkänt: lägg till en rad, inget annat. Saknas handlaren renderas
+  ett ID. Nytt program godkänt: lägg till en rad, inget annat. Handlarnamnet skrivs ut i
+  HTML och escapas av `htmlText()` — namn med `&` i, som Stor&Liten, hade annars gett
+  ogiltig markup. Saknas handlaren renderas
   länkarna som vanlig text, knappen uteblir och annonsnotisen döljs — hellre osynlig länk
   än trafik vi inte får betalt för. Bygget varnar i konsollen.
 - **Annonsmärkning.** Två delar, båda krävs av Adtractions regler och Jollyrooms
@@ -332,22 +334,28 @@ både din egen och Cloudflares.
 
 ## Nästa steg i projektet
 
-1. **Affiliate — väntar på godkännanden.** Ansökningar inne hos Awin för Babyshop SE,
-   Lekmer SE och Kids Concept SE; alla tre står som Pending, och Babyshop och Lekmer har
-   historiskt 100 % approval rate. Gemensam programkontakt för de två första är
-   `affiliate@babyshop.se`. Kanalen Barnprylsdoktorn hos Adtraction (ID 2100860918) är
-   godkänd sedan 2026-08-10, och nio ansökningar är inskickade samma dag. **Babysam (8 %)
-   är godkänt sedan 2026-08-10** — första och hittills enda godkända annonsören, och den
-   med högst provision av de nio. Övriga åtta står som Waiting: Axkid (5 %), Jollyroom
-   (5 %, 7 % på egna varumärken), Babyland (4 %), Bonti (5 %), Köpbarnvagn (5 %),
-   Baby V (7 %), Stor&Liten (4 %) och Emmaljunga (10 %).
+1. **Affiliate — tre godkända program.** Kanalen Barnprylsdoktorn hos Adtraction
+   (ID 2100860918) är godkänd sedan 2026-08-10, och nio ansökningar skickades samma dag.
+   Godkända: **Babysam (8 %)** sedan 2026-08-10, **Babyland (4 %)** och **Stor&Liten (4 %)**
+   sedan 2026-08-12. Alla tre spårlänkarna ligger i `ADTRACTION_PROGRAM` i
+   `eleventy.config.js`.
+   **Alla live-länkar går mot Babysam, och ska fortsätta göra det.** Jämförelsen
+   2026-08-12 ligger i `research/handlarjamforelse-2026-08-12.md`: Babysam är billigare
+   eller likvärdig på varje överlappande produkt och betalar dubbla provisionen. Babyland
+   och Stor&Liten ligger inne som reserv om Babysam tar slut i lager, och Babyland täcker
+   dessutom cykelsits inför en eventuell breddning. Nästa gång ett program godkänns —
+   följ checklistan sist i den filen innan någon länk flyttas.
+   Fortfarande Waiting: Axkid (5 %), Jollyroom (5 %, 7 % på egna varumärken), Bonti (5 %),
+   Köpbarnvagn (5 %), Baby V (7 %) och Emmaljunga (10 %). Hos Awin står Babyshop SE,
+   Lekmer SE och Kids Concept SE som Pending; Babyshop och Lekmer har historiskt 100 %
+   approval rate, gemensam programkontakt för de två första är `affiliate@babyshop.se`.
    Kvar att söka när det finns anledning: Safekid, Kid's Concept.
    Jollyroom är osäkrast av de nio — de nekar directorysajter och väljer publicister
    utifrån varumärkesstrategi. Emmaljunga har bara ett babyskydd (BeSafe iZi Go Modular
    X1) plus vagnadaptrar, alltså tunnast sortiment för nischen.
-   Babysams spårlänk ligger i `ADTRACTION_PROGRAM` i `eleventy.config.js` och länkarna
-   är live. **Ingen SEM på varumärkesnamn** i något av programmen — påverkar inget idag, men låser
-   en eventuell Google Ads-satsning.
+   **Ingen SEM på varumärkesnamn** i något av programmen, och Google Shopping är förbjudet
+   hos Babyland och Stor&Liten — påverkar inget idag, men låser en eventuell
+   Google Ads-satsning.
 2. **Tillbehörslänkar i löptexten.** Åtta placeringar kartlagda i
    `research/tillbehorslankar-2026-08-09.md`. Genomfört mot Babysam 2026-08-10:
    köpblocken i `bakatvand-bilbarnstol-vilken-ska-jag-kopa` och `basta-bilbarnstolen`
@@ -355,16 +363,18 @@ både din egen och Cloudflares.
    3 (transportväska, `bilbarnstol-flyg-och-hyrbil`) och 6 (bilspegel,
    `bilbarnstol-fram-och-airbag` — omskriven så att den inte påstår något om
    krocksäkerhet, eftersom ingen svensk myndighetskälla om bilbarnstolsspeglar hittats).
-   Kvar och medvetet ogjort:
-   - **BeSafe Beyond får ingen länk.** Babysam säljer bara efterföljaren Beyond², som
-     inte är den stol Folksam testade 2025. Att länka dit vore att tillskriva en annan
-     produkt ett testresultat den inte har. Öppnas om ett program med den faktiska
-     Beyond godkänns, eller om Beyond² visar sig vara samma stol.
-   - **Placering 4 och 5 (åkpåse utanpå selen) är blockerade.** Babysams sex åkpåsar för
-     bilbarnstol är alla av typen barnet ligger *i*, alltså med ett lager mellan sele och
-     kropp — precis det guiderna varnar för. Ingen länk förrän en produkt av rätt typ
-     hittats och verifierats mot tillverkarens beskrivning.
-   - Placering 2 (CARES) — säljs inte av Babysam. Placering 7 och 8 stryks enligt
+   Kvar och medvetet ogjort — samtliga kontrollerade mot Babyland och Stor&Liten
+   2026-08-12 utan träff:
+   - **BeSafe Beyond får ingen länk.** Ingen av de tre handlarna säljer originalet, bara
+     efterföljaren Beyond², som inte är den stol Folksam testade 2025. Att länka dit vore
+     att tillskriva en annan produkt ett testresultat den inte har. Öppnas om ett program
+     med den faktiska Beyond godkänns, eller om Beyond² visar sig vara samma stol.
+   - **Placering 4 och 5 (åkpåse utanpå selen) är blockerade.** Babysams bilstolsåkpåsar
+     är alla av typen barnet ligger *i*, alltså med ett lager mellan sele och kropp —
+     precis det guiderna varnar för. Babylands och Stor&Litens åkpåsar är
+     barnvagnsmodeller. Ingen länk förrän en produkt av rätt typ hittats och verifierats
+     mot tillverkarens beskrivning.
+   - Placering 2 (CARES) — säljs inte av någon av de tre. Placering 7 och 8 stryks enligt
      underlaget.
    Mät klickfrekvensen på de fem som ligger inne innan resten läggs in.
 3. **Faktakoll — inga kända öppna punkter.** De två kvarvarande punkterna i

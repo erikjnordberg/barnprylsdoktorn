@@ -29,7 +29,14 @@ const rubrikTillId = (text) =>
 // lägg till en rad här, inget annat.
 const ADTRACTION_PROGRAM = {
   Babysam: "https://to.babyworld.se/t/t?a=1945556823&as=2100860918&t=2&tk=1",
+  Babyland: "https://pin.babyland.se/t/t?a=1066444612&as=2100860918&t=2&tk=1",
+  "Stor&Liten": "https://at.storochliten.se/t/t?a=1060728464&as=2100860918&t=2&tk=1",
 };
+
+// Handlarnamn skrivs ut i HTML av köpblocket och annonslänken. Ett namn med & i
+// ("Stor&Liten") ger ogiltig HTML om det skrivs rakt av — escapa det på vägen ut.
+const htmlText = (text) =>
+  String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 // Bygger den spårade adressen. Saknas handlaren returneras null, och då renderas
 // köpblocket utan knapp och annonslänken som vanlig text — hellre en osynlig länk än
@@ -124,7 +131,7 @@ module.exports = function (eleventyConfig) {
     const knappOchMarkning = lank
       ? `
     <p class="kopblock-markning">Annonslänk. Sajten får provision om du köper via den — priset för dig är detsamma. <a href="/sa-tjanar-sajten-pengar/">Så tjänar sajten pengar</a></p>
-    <a class="kopblock-knapp" href="${lank}" rel="sponsored nofollow noopener" target="_blank">Se aktuellt pris hos ${produkt.handlare}</a>`
+    <a class="kopblock-knapp" href="${lank}" rel="sponsored nofollow noopener" target="_blank">Se aktuellt pris hos ${htmlText(produkt.handlare)}</a>`
       : "";
 
     return `<div class="kopblock">
@@ -163,7 +170,7 @@ module.exports = function (eleventyConfig) {
     }
     const lank = sparadUrl(handlare, url);
     if (!lank) return text;
-    return `<a class="annonslank" href="${lank}" rel="sponsored nofollow noopener" target="_blank">${text}<span class="annonslank-markning"> (annonslänk till ${handlare})</span></a>`;
+    return `<a class="annonslank" href="${lank}" rel="sponsored nofollow noopener" target="_blank">${text}<span class="annonslank-markning"> (annonslänk till ${htmlText(handlare)})</span></a>`;
   });
 
   // Datumformat för sitemap och RSS-flöde
