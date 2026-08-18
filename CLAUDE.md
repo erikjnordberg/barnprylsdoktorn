@@ -350,25 +350,27 @@ både din egen och Cloudflares.
 
 ## Nästa steg i projektet
 
-1. **Affiliate — tre godkända program.** Kanalen Barnprylsdoktorn hos Adtraction
+1. **Affiliate — fyra godkända program.** Kanalen Barnprylsdoktorn hos Adtraction
    (ID 2100860918) är godkänd sedan 2026-08-10, och nio ansökningar skickades samma dag.
    Godkända: **Babysam (8 %)** sedan 2026-08-10, **Babyland (4 %)** och **Stor&Liten (4 %)**
-   sedan 2026-08-12. Alla tre spårlänkarna ligger i `ADTRACTION_PROGRAM` i
-   `eleventy.config.js`.
-   **Alla live-länkar går mot Babysam, och ska fortsätta göra det.** Jämförelsen
+   sedan 2026-08-12, **Baby V (7 %)** sedan 2026-08-13. **Jollyroom nekade 2026-08-13**
+   med motiveringen att kanalens innehåll inte matchar annonsörens produkter eller
+   marknadsföringsmål — de omprövar på förfrågan till `support@adtraction.com`.
+   Alla fyra spårlänkarna ligger i `ADTRACTION_PROGRAM` i `eleventy.config.js`. Baby V
+   spårar via `go.adt231.net`, ännu en egen spårdomän — bygg aldrig länken av ett ID.
+   **Alla live-länkar går mot Babysam, och ska fortsätta göra det** — med ett undantag:
+   Britax Römer Max-Safe Pro pekar sedan 2026-08-17 mot Baby V, se punkt 2. Jämförelsen
    2026-08-12 ligger i `research/handlarjamforelse-2026-08-12.md`: Babysam är billigare
    eller likvärdig på varje överlappande produkt och betalar dubbla provisionen. Babyland
    och Stor&Liten ligger inne som reserv om Babysam tar slut i lager, och Babyland täcker
    dessutom cykelsits inför en eventuell breddning. Nästa gång ett program godkänns —
    följ checklistan sist i den filen innan någon länk flyttas.
-   Fortfarande Waiting: Axkid (5 %), Jollyroom (5 %, 7 % på egna varumärken), Bonti (5 %),
-   Köpbarnvagn (5 %), Baby V (7 %) och Emmaljunga (10 %). Hos Awin står Babyshop SE,
+   Fortfarande Waiting: Axkid (5 %), Bonti (5 %), Köpbarnvagn (5 %) och Emmaljunga (10 %). Hos Awin står Babyshop SE,
    Lekmer SE och Kids Concept SE som Pending; Babyshop och Lekmer har historiskt 100 %
    approval rate, gemensam programkontakt för de två första är `affiliate@babyshop.se`.
    Kvar att söka när det finns anledning: Safekid, Kid's Concept.
-   Jollyroom är osäkrast av de nio — de nekar directorysajter och väljer publicister
-   utifrån varumärkesstrategi. Emmaljunga har bara ett babyskydd (BeSafe iZi Go Modular
-   X1) plus vagnadaptrar, alltså tunnast sortiment för nischen.
+   Emmaljunga har bara ett babyskydd (BeSafe iZi Go Modular X1) plus vagnadaptrar, alltså
+   tunnast sortiment för nischen.
    **Ingen SEM på varumärkesnamn** i något av programmen, och Google Shopping är förbjudet
    hos Babyland och Stor&Liten — påverkar inget idag, men låser en eventuell
    Google Ads-satsning.
@@ -381,6 +383,16 @@ både din egen och Cloudflares.
    krocksäkerhet, eftersom ingen svensk myndighetskälla om bilbarnstolsspeglar hittats).
    Kvar och medvetet ogjort — samtliga kontrollerade mot Babyland och Stor&Liten
    2026-08-12 utan träff:
+   - **Britax Römer Max-Safe Pro flyttad från Babysam till Baby V 2026-08-17.** Babysam
+     har den slutsåld online i alla tre färger (bara Klicka & Hämta i butik), Babyland har
+     markerat samtliga fyra färger "utgått ur sortimentet" och Stor&Liten ger noll träffar.
+     Även Britax egen svenska sajt står "Slut i lager", så det är brist i hela ledet.
+     Baby V har **Dusty Rose i lager, 3 995 kr, 1–2 dagars leverans** — enda färgen av sex
+     som går att köpa där. Länken pekar på den varianten, inte på samlingssidan, eftersom
+     samlingssidan öppnar på en slutsåld färg. `basta-bilbarnstolen` har därmed bara
+     Baby V-länkar och dess `annonslankar` är ändrad i takt med det. Kontrollera
+     lagerstatus varannan vecka — det här är sajtens topprekommendation. Flytta tillbaka
+     till Babysam (8 % mot Baby V:s 7 %) så fort de har den i lager online igen.
    - **BeSafe Beyond får ingen länk.** Ingen av de tre handlarna säljer originalet, bara
      efterföljaren Beyond², som inte är den stol Folksam testade 2025. Att länka dit vore
      att tillskriva en annan produkt ett testresultat den inte har. Öppnas om ett program

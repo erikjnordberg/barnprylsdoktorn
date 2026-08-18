@@ -5,7 +5,7 @@ beskrivning: BÃ¤sta bilbarnstolen 2026 enligt Folksams test och VTI:s Plustest â
 date: 2026-08-07
 uppdaterad: 2026-08-17
 lasharnast: ["bakatvand-bilbarnstol-vilken-ska-jag-kopa", "babyskydd-for-nyfodda"]
-annonslankar: ["Babysam"]
+annonslankar: ["Baby V"]
 ---
 
 ## Kort svar
