@@ -233,7 +233,7 @@ Sexton publicerade guider:
 |---|---|
 | `babyskydd-for-nyfodda` | Första stolen, Plustestet, lutning |
 | `bakatvand-bilbarnstol-vilken-ska-jag-kopa` | Folksams test 2025, tre stolar |
-| `i-size-vs-vikt` | R129, R44, i-Size, vad lagen kräver |
+| `i-size-vs-vikt` | R129, R44, i-Size, om gamla R44-stolar får användas, vad lagen kräver |
 | `isofix-eller-balte` | Monteringssätt, 33-kilosgränsen |
 | `baltesstol-eller-balteskudde` | Steget efter bakåtvänt, 125 cm-regeln |
 | `bilbarnstol-fram-och-airbag` | Framsätet, krockkudde, extra benutrymme |
@@ -348,6 +348,25 @@ Efter deploy: kontrollera i webbläsaren att det faktiskt ser rätt ut, inte bar
 gick igenom. Lägg på en query-parameter (`?v=2`) för att gå runt cachen vid kontroll —
 både din egen och Cloudflares.
 
+## Kanaler — vad vi gör och inte gör
+
+Erik skriver **inte** på sociala medier och **inte** i forum. Inga inlägg i Facebookgrupper,
+på Instagram, TikTok, Reddit, Familjeliv eller liknande — varken i eget namn eller som
+"lägg länken där frågan ställs". Föreslå det inte, och lägg aldrig en plan som förutsätter
+det. Att *andra* klistrar in våra länkar i trådar är fortfarande målet — det är därför
+väljaren och Plustest-listan är byggda som de är. Skillnaden är att vi inte gör det själva.
+
+Kanalerna vi använder:
+
+- **Mejl.** Kontakt med sajter, organisationer, handlare och redaktioner för länkar,
+  samarbeten och affiliateprogram. Det här är kanalen vi satsar på för räckvidd.
+- **Sajten själv.** Innehåll, verktyg och intern länkning.
+- **Sök.** Search Console, indexering, sökordsluckor.
+
+Betald annonsering är inte utesluten men inte aktuell — och Google Ads begränsas dessutom av
+programvillkoren: ingen SEM på varumärkesnamn i något program, och Google Shopping är
+förbjudet hos Babyland och Stor&Liten.
+
 ## Nästa steg i projektet
 
 1. **Affiliate — fyra godkända program.** Kanalen Barnprylsdoktorn hos Adtraction
@@ -439,11 +458,52 @@ både din egen och Cloudflares.
    är undantaget** — `bilbarnstol-pa-rea` indexeringsbegärdes 2026-08-17 samma dag den
    publicerades.
    Svagast internt länkade är `bilbarnstol-i-taxi`, `bilbarnstol-flyg-och-hyrbil`,
-   `basta-bilbarnstolen` och `montera-bilbarnstol-steg-for-steg`. Tunnast är
-   `i-size-vs-vikt` med 550 ord. Kanalen hos Adtraction anger 30 unika besökare i månaden —
-   uppdatera den siffran när den stiger, det är enda fältet som går att redigera i
-   efterhand.
-5. **Fler artiklar — skriv efter kalendern, inte efter listan.** Indexeringen tar fyra till
+   `basta-bilbarnstolen` och `montera-bilbarnstol-steg-for-steg`. Kanalen hos Adtraction
+   anger 30 unika besökare i månaden — uppdatera den siffran när den stiger, det är enda
+   fältet som går att redigera i efterhand.
+
+   **Trafiken 2026-08-18, avläst direkt i Cloudflare Web Analytics med Exclude bots = Yes:**
+
+   | | 7 dagar | 21 dagar |
+   |---|---|---|
+   | Besök | 49 | 150 |
+   | Sidvisningar | 50 | 190 |
+   | `/` | 47 | 140 |
+   | `/vilken-bilbarnstol/` | 0 | 10 |
+   | `/plustestade-bilbarnstolar/` | 2 | — |
+   | **Samtliga `/guider/`-sidor** | **0** | **0** |
+
+   Referrers 21 dagar: 130 direkt, 10 `secure.adtraction.com`, 10 `bing.com`, noll Google.
+   Länder 7 dagar: 33 USA, 9 Sverige, resten enstaka.
+
+   **Läs den här tabellen rätt: sajten har inga läsare.** Nästan all trafik är direkta
+   anrop mot `/` från USA med en sidvisning per besök — det är skannrar och botar som
+   Cloudflares botfilter inte fångar, inte människor. De tio besöken på väljaren sammanfaller
+   med de tio från `secure.adtraction.com` och är rimligen Adtractions egen granskning av
+   kanalen. **Guiderna har noll besök på tjugoen dagar.** Allt innehållsarbete som gjorts
+   sedan lanseringen har alltså ännu inte nått en enda läsare, och det beror inte på
+   innehållet utan på att sajten är osynlig i Google.
+
+   Konsekvenser: `sorteraEfterBesok` sorterar på brus och kommer göra det ett bra tag till.
+   Siffran i `popularitet.json` (montera-guiden, 10 besök) går inte att reproducera ur
+   aktuell data och jobbet har inte committat sedan 2026-08-10 — kolla GitHub Actions vid
+   tillfälle, men det spelar ingen roll förrän det finns trafik att mäta. Core Web Vitals
+   visar mycket rött på INP; med det här underlaget är siffran dock brus och ska inte
+   åtgärdas ännu.
+
+   **Länkoutreach startad 2026-08-18.** Prospektlistan ligger i
+   `research/lankprospekt-2026-08-18.md`: cirka trettiofem namngivna prospekt i fem tiers —
+   uthyrare av bilbarnstolar, NTF:s länsförbund, taxibolag med barnstolssida, husbils- och
+   campingsajter, samt försäkring och bilkunskap — plus tre mejlmallar och en
+   uppföljningsmall. Pitchen är `/plustestade-bilbarnstolar/`, sekundärt väljaren, aldrig
+   "läs min artikel". Takt: tio mejl i veckan, en uppföljning per prospekt. Nya länkar syns
+   först under referrers i Cloudflare Web Analytics.
+5. **Fler artiklar — skriv efter kalendern, inte efter listan.** Och skriv färre: så länge
+   sajten saknar externa länkar är artikel nummer sjutton inte det som flyttar nålen.
+   `i-size-vs-vikt` utökades 2026-08-18 från 618 till cirka 1 140 ord med avsnitt om att
+   R44-stolar fortfarande får användas efter säljstoppet 1 september 2024, hur etiketten
+   läses, vad R129 lade till och att godkännandet är ett golv och inte ett kvalitetsbetyg.
+   Faktakollen ligger i `research/faktakoll-i-size-vs-vikt-2026-08-18.md`. Indexeringen tar fyra till
    åtta veckor på den här domänen, så en säsongsguide måste ligga ute två till tre månader
    före toppen.
    `bilbarnstol-pa-rea` är publicerad 2026-08-17 med sikte på Black Friday **27 november
