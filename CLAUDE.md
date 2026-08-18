@@ -91,6 +91,11 @@ src/
   vilken-bilbarnstol.njk   väljaren, permalink /vilken-bilbarnstol/
                            OBS: .njk-filer parsar inte Markdown — skriv HTML här,
                            annars renderas "## Rubrik" och länkar som råtext
+  plustestade-bilbarnstolar.md   hela VTI-listan, permalink /plustestade-bilbarnstolar/
+                           Referenssida, inte guide — ligger utanför /guider/ med flit.
+                           Listan ägs av den här sidan; guiderna sammanfattar och länkar hit.
+                           Stäm av mot VTI kvartalsvis, VTI:s sida är klientrenderad och
+                           går bara att läsa i webbläsare.
   index.md, om.md, guider.njk, sa-tjanar-sajten-pengar.md, 404.md
   feed.njk, sitemap.njk, robots.njk
 scripts/hamta-statistik.js hämtar besöksstatistik från Cloudflare, se nedan
@@ -246,6 +251,16 @@ Sexton publicerade guider:
 Utöver guiderna finns `/sa-tjanar-sajten-pengar/`, länkad i sidfoten tillsammans med en
 kort affiliatemärkning.
 
+**`/plustestade-bilbarnstolar/` är sajtens referenssida**, inte en guide. Den innehåller
+hela VTI:s lista — 55 godkännanden, både aktuella och historiska — sorterad på tillverkare.
+Syftet är att vara den sida någon klistrar in i en tråd när frågan "är den här stolen
+plustestad?" dyker upp, eftersom VTI:s egen lista är på engelska och klientrenderad.
+**Listan ägs av den sidan.** Guiderna får sammanfatta men aldrig återge hela tabellen igen
+— det var därför tabellen bröts ut ur `basta-bilbarnstolen` 2026-08-17. Sex guider länkar
+in i löptexten: `basta-bilbarnstolen`, `bakatvand-bilbarnstol-vilken-ska-jag-kopa`,
+`begagnad-bilbarnstol`, `babyskydd-for-nyfodda`, `i-size-vs-vikt`, `baltesstol-eller-balteskudde`
+och `bilbarnstol-pa-rea`.
+
 Guiderna på `/guider/` och i "Mer att läsa" på startsidan sorteras fallande efter besök,
 via filtret `sorteraEfterBesok`. Siffrorna kommer från `src/_data/popularitet.json`, som
 uppdateras automatiskt varje måndag 05:00 UTC av `.github/workflows/statistik.yml` — jobbet
@@ -387,17 +402,31 @@ både din egen och Cloudflares.
    `research/faktakoll-alla-guider-2026-08-09.md` — elva fynd, alla åtgärdade och live.
    Plustest-tabellen i `basta-bilbarnstolen` bör stämmas av mot VTI kvartalsvis — listan
    uppdateras löpande, och sidan är klientrenderad så den går bara att läsa i webbläsare.
-4. **Indexeringen rampar upp normalt** — den är inte den flaskhals vi trodde. Genomgången
-   2026-08-10 ligger i `research/indexering-2026-08-10.md`. Kort: sajten är fyra dagar
-   gammal, GSC-rapporten är daterad 2026-08-07 och därför föråldrad, och en `site:`-sökning
-   2026-08-10 ger **sex indexerade sidor** — startsidan, `/guider/`, `/om/`,
-   `/vilken-bilbarnstol/`, `/sa-tjanar-sajten-pengar/` och `babyskydd-for-nyfodda`.
-   Tekniken är kontrollerad och ren: robots, sitemap, canonical, JSON-LD, unika titlar,
-   ingen noindex. Ingen kannibalisering (högsta överlapp mellan två guider 6 %) och ingen
-   föräldralös guide (minst två inkommande löptextlänkar var).
+4. **Indexeringen rampar upp normalt** — den är inte flaskhalsen. Den första genomgången
+   2026-08-10 ligger i `research/indexering-2026-08-10.md`; tekniken är kontrollerad och
+   ren (robots, sitemap, canonical, JSON-LD, unika titlar, ingen noindex), ingen
+   kannibalisering (högsta överlapp mellan två guider 6 %) och ingen föräldralös guide.
+
+   **Läget i GSC 2026-08-17, data per 2026-08-14: sju indexerade, fjorton inte.** Upp från
+   sex den 10 augusti. Tre orsaker till de fjorton:
+   - **Sida med omdirigering (1)** — `http://barnprylsdoktorn.se/`, alltså HTTP-versionen
+     som går till HTTPS. Korrekt beteende. **Åtgärda inte, och klicka inte på "Verifiera
+     att åtgärder vidtagits".**
+   - **Genomsökt – inte indexerad (9)** — hämtade, ännu inte indexerade.
+   - **Upptäckt – inte indexerad (4)** — kända, ännu inte hämtade.
+
+   Båda de sista är normala för en domän som är knappt två veckor gammal. **Men om
+   "Genomsökt – inte indexerad" ligger kvar efter oktober är det inte längre en kö utan en
+   bedömning av sajtens tyngd** — och då är externa länkar svaret, inte fler artiklar.
+
+   Sitemap: status Lyckades, 20 sidor, senast läst 2026-08-14. Skicka inte in den igen.
+   Resultatrapporten har två klick totalt och för lite underlag för att visa sökfrågor.
+
    **Det som avgör takten härifrån är externa länkar** — sajten har i praktiken inga.
-   Begär inte omindexering manuellt igen; sidorna är redan genomsökta och det påverkar bara
-   kön. Svagast internt länkade är `bilbarnstol-i-taxi`, `bilbarnstol-flyg-och-hyrbil`,
+   Begär inte omindexering av redan genomsökta sidor; det påverkar bara kön. **Nya URL:er
+   är undantaget** — `bilbarnstol-pa-rea` indexeringsbegärdes 2026-08-17 samma dag den
+   publicerades.
+   Svagast internt länkade är `bilbarnstol-i-taxi`, `bilbarnstol-flyg-och-hyrbil`,
    `basta-bilbarnstolen` och `montera-bilbarnstol-steg-for-steg`. Tunnast är
    `i-size-vs-vikt` med 550 ord. Kanalen hos Adtraction anger 30 unika besökare i månaden —
    uppdatera den siffran när den stiger, det är enda fältet som går att redigera i

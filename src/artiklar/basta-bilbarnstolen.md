@@ -24,7 +24,7 @@ Ett barn behöver tre stolar innan bältet sitter rätt av sig självt. De köps
 
 - **Det enda köp som är värt riktig research är den bakåtvända stolen.** Den ska räcka i fem år och är det som skiljer mest i skydd.
 - **Bland de bakåtvända:** Britax Römer Max-Safe Pro. Högsta betyget i Folksams test 2025, lägsta priset av de rekommenderade, och den enda som är godkänd till 36 kg.
-- **Leta efter Plustest-dekalen på den bakåtvända stolen.** Det är den enda svenska märkningen som mäter nackbelastningen — och den finns bara på bakåtvända småbarnsstolar, aldrig på babyskydd eller bältesstolar. Hela listan finns längre ner.
+- **Leta efter Plustest-dekalen på den bakåtvända stolen.** Det är den enda svenska märkningen som mäter nackbelastningen — och den finns bara på bakåtvända småbarnsstolar, aldrig på babyskydd eller bältesstolar. [Hela listan finns här](/plustestade-bilbarnstolar/).
 - **Babyskydd och bältesstol namnger jag inte.** Det finns inget svenskt testunderlag som skiljer modellerna åt — och jag tänker inte hitta på ett.
 
 {% kopblock "britax-max-safe-pro" %}
@@ -88,31 +88,13 @@ Folksam testade fem nya bakåtvända stolar 2025. Tre fick betyget **Bra val**:
 
 {% kopblock "britax-max-safe-pro" %}
 
-### Alla Plustestade stolar godkända till 125 cm
+### Plustestade stolar som räcker till 125 cm
 
-Folksam testar ett urval varje år. Plustestet är bredare — listan hos VTI innehåller varje stol som någonsin klarat testet. De här är godkända ända till 125 cm, alltså de som räcker längst:
+Folksam testar ett urval varje år. Plustestet är bredare — VTI:s lista innehåller varje stol som någonsin klarat testet. Femton av dem är godkända ända till 125 cm, alltså de som räcker längst: Axkid One-serien, Minikid 3 och 4, Minikid Core och Movekid, BeSafe Beyond-serien och Stretch-serien, Britax Max-Safe Pro och Safe-Way M, Joie i-Prodigi, Karwala Astro, AV370 Sky och AV370.Q, Klippan Opti 129 och Deplus, Maxi-Cosi Mobifix Pro samt Silver Cross Perform i-Size.
 
-| Stol | Plustest nr |
-|---|---|
-| Axkid One, One+, One 2, One+ 2, One 3, One+ 3 | VTI-0037 |
-| Axkid Minikid 3, Minikid 4 | VTI-0041 |
-| Axkid Minikid Core | VTI-0056 |
-| Axkid Movekid | VTI-0046 |
-| BeSafe Beyond, Beyond 2, Beyond B | VTI-0045 |
-| BeSafe Stretch, Stretch 2 | VTI-0040 |
-| BeSafe Stretch B | VTI-0042 |
-| Britax Max-Safe Pro, Safe-Way M | VTI-0044 |
-| Joie i-Prodigi | VTI-0043 |
-| Klippan Opti 129, Deplus | VTI-0027 |
-| Karwala AV370 Sky | VTI-0038 |
-| Karwala AV370.Q | VTI-0039 |
-| Karwala Astro | VTI-0052 |
-| Maxi-Cosi Mobifix Pro | VTI-0054 |
-| Silver Cross Perform i-Size | VTI-0055 |
+**[Hela listan med testnummer, inklusive de äldre stolarna, finns här](/plustestade-bilbarnstolar/)** — leta upp modellen du funderar på innan du köper.
 
-Listan är hämtad från VTI 7 augusti 2026 och uppdateras löpande — [kontrollera aktuell version här](https://www.vti.se/en/services/laboratory-and-testing/crash-safety-testing/child-restraint-systems/the-plus-test/plus-tested-models). Att en stol står med betyder att den klarat testet, inte att den fortfarande säljs.
-
-Att en stol saknas på listan betyder inte att den är osäker. Det betyder att tillverkaren inte skickat in den.
+Att en stol står med betyder att den klarat testet, inte att den fortfarande säljs. Och att en stol saknas på listan betyder inte att den är osäker — det betyder att tillverkaren inte skickat in den.
 
 ## Skede 3: bältesstolen
 

@@ -80,7 +80,7 @@ Den fortsätter dessutom som bältesstol till 135 cm när barnet vuxit ur det ba
 
 Men två saker måste sägas rakt ut.
 
-**Den är inte Plustestad.** Plustestet är det frivilliga svenska testet som mäter belastningen på barnets nacke vid en hårdare krock än lagkravet, och det är den märkning jag annars rekommenderar att leta efter. TinySeats Two har fått Bra val ändå, på sina övriga egenskaper — men om Plustest är ditt beslutskriterium faller den bort. Det är en fullt rimlig linje att dra.
+**Den är inte Plustestad.** Plustestet är det frivilliga svenska testet som mäter belastningen på barnets nacke vid en hårdare krock än lagkravet, och det är den märkning jag annars rekommenderar att leta efter — [här är alla stolar som klarat det](/plustestade-bilbarnstolar/). TinySeats Two har fått Bra val ändå, på sina övriga egenskaper — men om Plustest är ditt beslutskriterium faller den bort. Det är en fullt rimlig linje att dra.
 
 **Folksam noterar risk för felanvändning om den monteras framåtvänd.** Det är en varning värd att ta på allvar, eftersom en stol som går att montera fel förr eller senare monteras fel.
 

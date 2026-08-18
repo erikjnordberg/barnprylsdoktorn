@@ -3,7 +3,7 @@ title: i-Size och R129 — vad betyder det egentligen?
 ingress: Två standarder, en massa siffror, och en säljare som pratar som om du redan förstår. Här är översättningen.
 beskrivning: i-Size, R129 och R44 förklarat på svenska — vad skillnaden är, vad lagen kräver, och vad som faktiskt rekommenderas i Sverige.
 date: 2026-08-06
-uppdaterad: 2026-08-09
+uppdaterad: 2026-08-17
 lasharnast: ["bakatvand-bilbarnstol-vilken-ska-jag-kopa", "isofix-eller-balte"]
 ---
 
@@ -13,7 +13,7 @@ lasharnast: ["bakatvand-bilbarnstol-vilken-ska-jag-kopa", "isofix-eller-balte"]
 - **i-Size** är en kategori inom R129. Ser du den märkningen är stolen godkänd enligt det nyare regelverket och fungerar med Isofix. i-Size är alltid R129; alla R129-stolar är inte i-Size.
 - **R129-standarden** tillåter inte framåtvänt före 15 månader och 76 cm. **Svensk lag** kräver godkänd skyddsanordning tills barnet är 135 cm. Två olika krav, från två olika håll.
 - **Lagen är golvet — rekommendationen är målet.** Trafikverket och NTF säger bakåtvänt till **minst fyra år**, gärna längre. Det är den siffra som spelar roll.
-- **I butiken:** leta efter R129 eller i-Size, och efter hur högt upp i längd stolen tillåter bakåtvänt åkande. Är den dessutom **Plustestad** är du klar.
+- **I butiken:** leta efter R129 eller i-Size, och efter hur högt upp i längd stolen tillåter bakåtvänt åkande. Är den dessutom **Plustestad** är du klar — [här är alla stolar som klarat testet](/plustestade-bilbarnstolar/).
 
 Det är allt du behöver för att gå in i en butik. Vill du veta varför, fortsätt läsa.
 

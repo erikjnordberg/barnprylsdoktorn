@@ -28,7 +28,7 @@ Den är alltså **inte** urvuxen för att benen ser trångt placerade ut. Det ä
 
 NTF får frågan om man får sätta en stor treåring i bältesstol. Svaret är ja, det får du — men de avråder. Huvudet är tungt i förhållande till kroppen och nacken är inte färdig. I en frontalkrock löper ett framåtvänt barn upp till fem gånger högre risk för nack- och skallskador.
 
-Värt att veta: **ingen framåtvänd stol klarar Plustestet.** [Det frivilliga svenska testet](/guider/babyskydd-for-nyfodda/) mäter nackkrafterna i en frontalkollision, och hittills har bara bakåtvända stolar klarat det. Leta alltså inte efter Plustest-märkning på bältesstolar — den finns inte att hitta.
+Värt att veta: **ingen framåtvänd stol klarar Plustestet.** [Det frivilliga svenska testet](/plustestade-bilbarnstolar/) mäter nackkrafterna i en frontalkollision, och hittills har bara bakåtvända stolar klarat det. Leta alltså inte efter Plustest-märkning på bältesstolar — den finns inte att hitta.
 
 ## Bältesstol och bälteskudde — vad är skillnaden?
 

@@ -4,7 +4,7 @@ ingress: Den första stolen är den du köper när du har minst koll och mest an
 beskrivning: Så väljer du babyskydd till en nyfödd — hur länge skyddet räcker, vad bilen kräver, vad Plustestet betyder, och misstaget alla gör.
 date: 2026-08-05
 lasharnast: ["bakatvand-bilbarnstol-vilken-ska-jag-kopa", "basta-bilbarnstolen"]
-uppdaterad: 2026-08-09
+uppdaterad: 2026-08-17
 ---
 
 ## Kort svar
@@ -41,7 +41,7 @@ Alla stolar som säljs i Sverige är godkända enligt [R44 eller R129](/guider/i
 
 **Plustestet** är något annat: ett frivilligt svenskt test hos VTI där stolen krockas i 56 km/h med kortare inbromsningssträcka än lagkravet, och sensorer mäter belastningen på barnets nacke. Det är den märkning jag annars rekommenderar att leta efter — men inte här.
 
-VTI:s lista över godkända stolar innehåller inte ett enda babyskydd. Samtliga poster är godkända till minst 18 kg eller 105 cm, alltså bakåtvända småbarnsstolar. Letar du efter Plustest-dekalen på ett babyskydd kommer du inte att hitta den.
+[VTI:s lista över godkända stolar](/plustestade-bilbarnstolar/) innehåller inte ett enda babyskydd. Samtliga poster är godkända till minst 18 kg eller 105 cm, alltså bakåtvända småbarnsstolar. Letar du efter Plustest-dekalen på ett babyskydd kommer du inte att hitta den.
 
 Det betyder inte att babyskydd är osäkra. Det betyder att testet är byggt för det skede där barnet sitter längst och nackbelastningen är farligast. **Spara Plustest-kravet till nästa köp** — [den bakåtvända stolen](/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/), där det faktiskt går att ställa.
 

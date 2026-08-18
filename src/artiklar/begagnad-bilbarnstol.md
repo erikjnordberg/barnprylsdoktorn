@@ -83,7 +83,7 @@ Ordningen följer Folksams och NTF:s egna beskrivningar.
 
 Folksam: välj en stol som fått **Bäst i test** eller märkningen **Bra val** i deras test. Då kan du "vara trygg i ditt beslut" — förutsatt att skicket är kontrollerat enligt listan ovan.
 
-NTF lägger till att stolen gärna ska vara **Plustestad**. Plustestet är frivilligt, utförs vid VTI och mäter nackkrafterna vid en frontalkollision. Ingen framåtvänd stol klarar testet i dag.
+NTF lägger till att stolen gärna ska vara **Plustestad**. Plustestet är frivilligt, utförs vid VTI och mäter nackkrafterna vid en frontalkollision. Ingen framåtvänd stol klarar testet i dag. Står modellen i annonsen med på [listan över plustestade stolar](/plustestade-bilbarnstolar/) är det ett gott tecken — den innehåller även äldre modeller som inte längre säljs, alltså precis de årgångar som dyker upp begagnat.
 
 I praktiken betyder det: [de tre bakåtvända stolarna som redan fått Bra val i Folksams test](/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/) är precis de modeller du bör hålla utkik efter i andrahandsannonserna, inte bara i butiken.
 

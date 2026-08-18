@@ -49,7 +49,7 @@ Det mest aktuella exemplet: Folksam testade **BeSafe Beyond** 2025 och gav den B
 
 Åt andra hållet blir samma sak en möjlighet. **När en generation fasas ut reas den ofta ut** — och en utgående modell med ett dokumenterat testresultat kan vara ett klart bättre köp än efterföljaren till fullpris. Det är kanske det bästa som finns att hämta på en bilbarnstolsrea.
 
-Så: läs modellnamnet i annonsen tecken för tecken, och stäm av mot [Folksams test och hela Plustest-listan](/guider/basta-bilbarnstolen/). Står det en tvåa, en plus eller ett B efter namnet är det inte samma stol som i testet.
+Så: läs modellnamnet i annonsen tecken för tecken, och stäm av mot [Folksams test](/guider/basta-bilbarnstolen/) och [hela Plustest-listan](/plustestade-bilbarnstolar/). Står det en tvåa, en plus eller ett B efter namnet är det inte samma stol som i testet.
 
 ## 3. Vad händer om den inte passar i bilen?
 
