@@ -3,7 +3,7 @@ title: Bästa bilbarnstolen 2026 — vilken du ska köpa, i vilket skede
 ingress: Tre skeden, tre olika köp. Här är vad som faktiskt avgör i varje, och vilka stolar som har ett testresultat bakom sig.
 beskrivning: Bästa bilbarnstolen 2026 enligt Folksams test och VTI:s Plustest — babyskydd, bakåtvänd stol och bältesstol, med vad som avgör i varje skede.
 date: 2026-08-07
-uppdaterad: 2026-08-10
+uppdaterad: 2026-08-17
 lasharnast: ["bakatvand-bilbarnstol-vilken-ska-jag-kopa", "babyskydd-for-nyfodda"]
 annonslankar: ["Babysam"]
 ---
@@ -132,7 +132,7 @@ Lagen släpper barnet vid 135 cm. Rekommendationen säger 10–12 år. [Följ re
 
 **Kontrollera monteringen.** [Det vanligaste felet är slaka underförankringsband](/guider/vanliga-monteringsfel/), och kontrollen tar under en minut.
 
-**Prisskillnaden mellan de här stolarna är mindre än skillnaden mot en osäker stol.** Låt inte hundralapparna avgöra.
+**Prisskillnaden mellan de här stolarna är mindre än skillnaden mot en osäker stol.** Låt inte hundralapparna avgöra. Ska du ändå köpa på rea finns [fyra kontroller som avgör om sänkningen är värd något](/guider/bilbarnstol-pa-rea/).
 
 ## Vanliga frågor
 

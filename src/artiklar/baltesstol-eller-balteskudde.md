@@ -3,7 +3,7 @@ title: Bältesstol eller bälteskudde — vad kommer efter den bakåtvända?
 ingress: Steget efter bakåtvänt är det sämst beskrivna i hela kedjan. Här är vad som faktiskt skiljer alternativen åt, och när bytet ska ske.
 beskrivning: Bältesstol eller bälteskudde efter den bakåtvända bilbarnstolen — när barnet är redo, vad 135 cm-regeln betyder, och varför kudden bara får användas över 125 cm.
 date: 2026-08-06
-uppdaterad: 2026-08-08
+uppdaterad: 2026-08-17
 lasharnast: ["bilbarnstol-fram-och-airbag", "vanliga-monteringsfel"]
 ---
 
@@ -42,7 +42,7 @@ NTF konstaterar att de **reducerar skadorna lika bra** i en ren kollision. Men d
 
 Lägg till att barn somnar i bilen. Ett sovande barn utan ryggstöd faller framåt eller åt sidan, och då hamnar bältet någon annanstans än där det ska vara. Vid en påkörning bakifrån ger ryggstödet dessutom stöd åt nacke och bakhuvud.
 
-**Välj bältesstol.** Kudden sparar några hundralappar och lite bagageutrymme, och det är inte värt det för ett barn under 125 cm.
+**Välj bältesstol.** Kudden sparar några hundralappar och lite bagageutrymme, och det är inte värt det för ett barn under 125 cm. Det gäller även när kudden är [kraftigt nedsatt](/guider/bilbarnstol-pa-rea/) — en rea flyttar priset, inte 125-centimetersgränsen.
 
 Ett undantag: som extrastol att ha i väskan, till exempel för [en taxiresa](/guider/bilbarnstol-i-taxi/) eller en semester, är en kompakt kudde svår att slå för de äldre barnen — den väger nästan ingenting och tar ingen plats.
 

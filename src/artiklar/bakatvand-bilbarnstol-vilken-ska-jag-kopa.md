@@ -3,7 +3,7 @@ title: Bakåtvänd bilbarnstol — vilken ska jag köpa?
 ingress: Folksam testade fem stolar 2025 och rekommenderade tre. Här är vad som skiljer dem åt, och vilken som passar din situation.
 beskrivning: Tre bakåtvända bilbarnstolar med betyget Bra val av Folksam 2025 — pris, längdgränser, Plustest och montering, samt vilken som passar vem.
 date: 2026-08-06
-uppdaterad: 2026-08-10
+uppdaterad: 2026-08-17
 lasharnast: ["montera-bilbarnstol-steg-for-steg", "bilbarnstol-plats-i-bilen"]
 annonslankar: ["Babysam"]
 ---
@@ -106,7 +106,7 @@ När stolen väl är urvuxen — någonstans kring sex–sju år med de här mod
 
 ## Ett förbehåll om priserna
 
-Priserna kommer från Folksams test och är ungefärliga. Bilbarnstolar prisvarierar kraftigt mellan återförsäljare och över året — kontrollera aktuellt pris innan du köper, och låt inte prisskillnaden ensam avgöra. Skillnaden mellan de här tre stolarna och en osäker stol är betydligt större än skillnaden mellan dem inbördes.
+Priserna kommer från Folksams test och är ungefärliga. Bilbarnstolar prisvarierar kraftigt mellan återförsäljare och över året — kontrollera aktuellt pris innan du köper, och låt inte prisskillnaden ensam avgöra. Dyker någon av dem upp [på rea](/guider/bilbarnstol-pa-rea/) är det värt att kontrollera att det är samma modellnamn som Folksam testade. Skillnaden mellan de här tre stolarna och en osäker stol är betydligt större än skillnaden mellan dem inbördes.
 
 Tycker du ändå att till exempel BeSafe Beyonds 6 299 kr (plus basen) är mycket att lägga på en stol du växer ur om några år, är begagnat ett fullt rimligt alternativ för just de här tre modellerna — [så länge du kontrollerar rätt saker innan du betalar](/guider/begagnad-bilbarnstol/).
 

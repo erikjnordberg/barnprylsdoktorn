@@ -222,7 +222,7 @@ ska alltid gå genom filtret.**
 
 ## Innehåll
 
-Femton publicerade guider:
+Sexton publicerade guider:
 
 | Slug | Ämne |
 |---|---|
@@ -241,6 +241,7 @@ Femton publicerade guider:
 | `bilbarnstol-plats-i-bilen` | Fordonslista, mittplatsen, två eller tre stolar bak |
 | `vinterklader-bilbarnstol` | Vinteroverall och åkpåse, Folksams krockprov 2016 |
 | `nar-ar-barnet-klart-med-bilbarnstol` | 135 cm mot 10–12 år, kontroll av bältets passform |
+| `bilbarnstol-pa-rea` | 30-dagarsregeln, testad modell mot efterföljare, returrätt, Black Friday |
 
 Utöver guiderna finns `/sa-tjanar-sajten-pengar/`, länkad i sidfoten tillsammans med en
 kort affiliatemärkning.
@@ -401,12 +402,21 @@ både din egen och Cloudflares.
    `i-size-vs-vikt` med 550 ord. Kanalen hos Adtraction anger 30 unika besökare i månaden —
    uppdatera den siffran när den stiger, det är enda fältet som går att redigera i
    efterhand.
-5. **Fler artiklar.** Samtliga luckor från `research/sokordsluckor-2026-08.md` är nu
-   skrivna utom en: *bilbarnstolsregler i andra länder*. Den ska skrivas i mars–april, inte
-   maj — indexeringen tar fyra till åtta veckor på den här domänen, så säsongsinnehåll
-   måste ligga ute i god tid före säsongen. Den kräver dessutom löpande underhåll, med
-   datum och källa per land. Fråga Erik innan du börjar på nästa. Diskuterad breddning:
-   cykelbarnstol, cykelkärra och barncykelhjälm först, barnvagn därefter.
+5. **Fler artiklar — skriv efter kalendern, inte efter listan.** Indexeringen tar fyra till
+   åtta veckor på den här domänen, så en säsongsguide måste ligga ute två till tre månader
+   före toppen.
+   `bilbarnstol-pa-rea` är publicerad 2026-08-17 med sikte på Black Friday **27 november
+   2026**. Underlaget ligger i `research/reaguiden-underlag-2026-08-17.md` och faktakollen
+   i `research/faktakoll-bilbarnstol-pa-rea-2026-08-17.md`. **Guiden är medvetet evergreen**
+   — den ska ranka på "bilbarnstol rea" året runt och får inte skrivas om till en
+   Black Friday-landningssida. Enda årliga underhållet är datumet i avsnittet
+   "När är det rea på bilbarnstolar?".
+   Kvar av sökordsluckorna i `research/sokordsluckor-2026-08.md`: *bilbarnstolsregler i
+   andra länder*, som ska skrivas i mars–april inför resesäsongen och kräver löpande
+   underhåll med datum och källa per land.
+   Fråga Erik innan du börjar på nästa. Diskuterad breddning: cykelbarnstol, cykelkärra
+   och barncykelhjälm först, barnvagn därefter — men de är vårsäsong, så de hör hemma i
+   januari–februari, inte nu.
 6. **Löpande UX- och mobilgenomgång** med `ux-granskning`-skillen.
 
 Den här listan är färskvara. Blir ett steg klart, stryk det i samma commit — och lägg till

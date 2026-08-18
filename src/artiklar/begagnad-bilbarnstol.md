@@ -3,8 +3,8 @@ title: Begagnad bilbarnstol — är det säkert att köpa?
 ingress: "Kort svar: ja — men det hänger på två saker du inte kan se på en bild, och en av dem går inte att kontrollera hos en främling."
 beskrivning: Att köpa begagnad bilbarnstol — vad lagen tillåter, tioårsregeln, hur du kontrollerar skicket, och varför krockhistoriken avgör om du ska köpa alls.
 date: 2026-08-07
-uppdaterad: 2026-08-10
-lasharnast: ["bakatvand-bilbarnstol-vilken-ska-jag-kopa", "vanliga-monteringsfel"]
+uppdaterad: 2026-08-17
+lasharnast: ["bakatvand-bilbarnstol-vilken-ska-jag-kopa", "bilbarnstol-pa-rea"]
 ---
 
 ## Kort svar
@@ -93,7 +93,7 @@ Två saker är värda att vara ärlig om.
 
 **Begagnat är inte lika säkert som nytt, per automatik.** Varken Folksam eller NTF säger att det är det. De säger att en begagnad stol *kan* vara ett säkert val — om godkännande, ålder, skick och krockhistorik är i ordning. Skillnaden mot en ny stol ligger just i den sista punkten: den går inte att kontrollera hos någon du inte känner.
 
-Så: känner du inte säljaren och kan inte lita på vad hen säger om historien, är NTF:s råd att köpa nytt i stället. Detsamma gäller om etiketten saknas, om tillverkningsdatumet gör stolen äldre än tio år, eller om du hittar sprickor i frigoliten eller plaststommen när du tar av klädseln. Inget av det är värt att chansa på för att spara pengar.
+Så: känner du inte säljaren och kan inte lita på vad hen säger om historien, är NTF:s råd att köpa nytt i stället. Är priset skälet till att du tittar begagnat är [en rea på en ny stol](/guider/bilbarnstol-pa-rea/) ofta en bättre väg — där slipper du krockhistoriken helt. Detsamma gäller om etiketten saknas, om tillverkningsdatumet gör stolen äldre än tio år, eller om du hittar sprickor i frigoliten eller plaststommen när du tar av klädseln. Inget av det är värt att chansa på för att spara pengar.
 
 ## Källor
 
