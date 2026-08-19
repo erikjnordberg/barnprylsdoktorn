@@ -47,7 +47,12 @@ om han inte ber om det.
 ## Teknik
 
 - Eleventy (11ty) v3, artiklar i Markdown
-- Repo: `erikjnordberg/barnprylsdoktorn`, branch `main`, lokalt i `~/Desktop/bilbarnstolar`
+- Repo: `erikjnordberg/barnprylsdoktorn`, branch `main`, lokalt i `~/kod/bilbarnstolar`
+  **Flyttat hit från `~/Desktop/bilbarnstolar` 2026-08-19 — flytta aldrig tillbaka.**
+  Skrivbordet ligger i iCloud Drive, och med Optimera Mac-lagring påslaget evakuerade
+  macOS repots filer till molnet. Kvar blev platshållare: `.git` "försvann", filer gav
+  `Resource deadlock avoided` vid läsning, och verktyg utan Full Disk Access kom inte åt
+  dem. Ett git-repo hör inte hemma i en iCloud-synkad mapp.
 - Cloudflare Pages deployar automatiskt vid push till `main`
 - Projektnamn i Cloudflare: `barnprylsdoktorn`, konto-ID `ef8466a755154bee4f5f7028ac3a96ff`
 - Domänen köpt hos Loopia, DNS och DNSSEC hos Cloudflare
@@ -339,7 +344,7 @@ Körs du i en sandlåda utan GitHub-inloggning fastnar `git` på låsfiler och p
 igenom. Förbered ändringen och låt Erik köra:
 
 ```bash
-cd ~/Desktop/bilbarnstolar
+cd ~/kod/bilbarnstolar
 rm -f .git/HEAD.lock .git/index.lock
 git add -A && git commit -m "..." && git push origin main
 ```
@@ -412,6 +417,9 @@ förbjudet hos Babyland och Stor&Liten.
      Baby V-länkar och dess `annonslankar` är ändrad i takt med det. Kontrollera
      lagerstatus varannan vecka — det här är sajtens topprekommendation. Flytta tillbaka
      till Babysam (8 % mot Baby V:s 7 %) så fort de har den i lager online igen.
+     **Kontrollerad 2026-08-18: fortfarande slutsåld online hos Babysam**, bara
+     Klicka & Hämta i en butik, 3 995 kr nedsatt från 4 995. Länken ligger kvar mot
+     Baby V. Nästa kontroll omkring 2026-09-01.
    - **BeSafe Beyond får ingen länk.** Ingen av de tre handlarna säljer originalet, bara
      efterföljaren Beyond², som inte är den stol Folksam testade 2025. Att länka dit vore
      att tillskriva en annan produkt ett testresultat den inte har. Öppnas om ett program
