@@ -91,6 +91,10 @@ src/
                            och räkna med systemfallbacken. Internt aria-label ignoreras
                            också; alt-texten i <img> är den som läses upp.
   js/valjare.js            logiken bakom bilbarnstolsväljaren
+  nedladdningar/kolla-bilbarnstolen-pa-en-minut.pdf   tryckbar checklista, fem steg,
+                           samma innehåll som Minutkontrollen i `vanliga-monteringsfel`.
+                           Länkad därifrån och från "Sedan då?" i
+                           `montera-bilbarnstol-steg-for-steg`.
   artiklar/                guiderna i Markdown
   artiklar/artiklar.json   permalink /guider/<slug>/
   vilken-bilbarnstol.njk   väljaren, permalink /vilken-bilbarnstol/
@@ -111,7 +115,7 @@ eleventy.config.js         filter: version, datum, typo, htmlDateString, isoDate
                            sorteraEfterBesok, listaSvenska, aktivaHandlare
                            shortcode: kopblock, annonslank
                            ADTRACTION_PROGRAM: program-ID per handlare, se Komponenter
-                           passthrough: css, bilder, fonter, js, _headers
+                           passthrough: css, bilder, fonter, js, nedladdningar, _headers
                            markdown-it-anchor ger h2 och h3 id via rubrikTillId,
                            som translittererar å/ä/ö. Bara id, ingen länkikon.
 ```
@@ -255,6 +259,11 @@ Sexton publicerade guider:
 
 Utöver guiderna finns `/sa-tjanar-sajten-pengar/`, länkad i sidfoten tillsammans med en
 kort affiliatemärkning.
+
+**`/nedladdningar/kolla-bilbarnstolen-pa-en-minut.pdf`** är en tryckbar checklista, fem
+steg, samma innehåll som Minutkontrollen i `vanliga-monteringsfel`. Publicerad 2026-08-19,
+länkad från den guiden och från "Sedan då?" i `montera-bilbarnstol-steg-for-steg`. Ingen
+egen sida — bara filen, nådd via de två guiderna.
 
 **`/plustestade-bilbarnstolar/` är sajtens referenssida**, inte en guide. Den innehåller
 hela VTI:s lista — 55 godkännanden, både aktuella och historiska — sorterad på tillverkare.

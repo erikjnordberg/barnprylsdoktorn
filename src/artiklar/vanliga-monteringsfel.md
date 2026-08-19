@@ -92,6 +92,8 @@ Gör den här när du monterat om, när stolen flyttats mellan bilar, och en gå
 4. **Kläm på selen mot bröstkorgen.** Bara två fingrar.
 5. **Känn efter att det inte är en jacka mellan bandet och barnet.**
 
+[Ladda ner kontrollen som ett kort att sätta upp i bilen]({{ '/nedladdningar/kolla-bilbarnstolen-pa-en-minut.pdf' | version }}) (PDF).
+
 Och en sak till: den enda instruktionen som gäller din exakta stol i din exakta bil är tillverkarens manual. Har du köpt stolen [begagnad](/guider/begagnad-bilbarnstol/) och manualen saknas finns den nästan alltid som PDF hos tillverkaren. Flera återförsäljare och NTF-förbund erbjuder dessutom kostnadsfri monteringskontroll — det är den bästa gratistjänsten i hela den här branschen.
 
 ## Källor

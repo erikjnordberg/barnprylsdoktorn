@@ -73,7 +73,7 @@ En sak att hålla reda på: framåtvända barn under 140 cm ska enligt Folksam i
 
 Spänn fast barnet innanför ytterkläderna, inte utanpå. Selen ska ligga så tätt att du inte kan nypa ihop ett veck i bandet — NTF:s tumregel är att bara två fingrar ska få plats mellan bältet och barnets bröstkorg.
 
-Och gör om kontrollen: när du monterat om, när stolen bytt bil, och en gång i månaden annars. [Minutkontrollen och de sex vanligaste felen](/guider/vanliga-monteringsfel/) tar mindre tid än att skrapa rutan.
+Och gör om kontrollen: när du monterat om, när stolen bytt bil, och en gång i månaden annars. [Minutkontrollen och de sex vanligaste felen](/guider/vanliga-monteringsfel/) tar mindre tid än att skrapa rutan — eller [ladda ner den som ett kort]({{ '/nedladdningar/kolla-bilbarnstolen-pa-en-minut.pdf' | version }}) och sätt upp i bilen.
 
 Känner du dig osäker efteråt är det värt att veta att flera NTF-förbund och återförsäljare gör kostnadsfri monteringskontroll. Någon som gjort det tusen gånger tittar på din stol i din bil, gratis.
 

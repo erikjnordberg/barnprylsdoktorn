@@ -81,6 +81,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/bilder");
   eleventyConfig.addPassthroughCopy("src/fonter");
   eleventyConfig.addPassthroughCopy("src/js");
+  eleventyConfig.addPassthroughCopy("src/nedladdningar");
   eleventyConfig.addPassthroughCopy("src/_headers");
 
   // Hänger ett versionsnummer på en fils adress: /bilder/x.svg -> /bilder/x.svg?v=a1b2c3d4
