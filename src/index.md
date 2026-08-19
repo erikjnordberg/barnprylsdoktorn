@@ -44,10 +44,12 @@ Den här sajten är vad jag önskar hade funnits då.
 ## Mer att läsa
 
 {%- set utvalda = ["/guider/babyskydd-for-nyfodda/", "/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/", "/guider/i-size-vs-vikt/"] %}
+{%- set visade = 0 %}
 
 <ul class="artikellista">
 {%- for artikel in collections.artiklar | reverse | sorteraEfterBesok %}
-{%- if artikel.url not in utvalda %}
+{%- if artikel.url not in utvalda and visade < 5 %}
+{%- set visade = visade + 1 %}
   <li>
     <h3><a href="{{ artikel.url }}">{{ artikel.data.title | typo }}</a></h3>
     <p>{{ artikel.data.ingress | typo }}</p>

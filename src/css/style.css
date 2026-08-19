@@ -194,12 +194,27 @@ a:focus-visible {
   border-radius: 2px;
 }
 
+.hoppa {
+  position: absolute;
+  left: -9999px;
+}
+
+.hoppa:focus {
+  position: static;
+  display: block;
+  padding: 0.75rem var(--luft);
+  background: var(--text);
+  color: var(--varm-ljus);
+}
+
 .datum {
   font-family: var(--sans);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: var(--text-dampad);
   margin: -0.5rem 0 2rem;
 }
+
+.datum strong { color: var(--text); font-weight: 650; }
 
 strong { font-weight: 650; }
 img { max-width: 100%; height: auto; }
@@ -239,7 +254,7 @@ table {
   main table { width: calc(100% + 9rem); margin-left: -4.5rem; }
 }
 
-@media (max-width: 44rem) {
+@media (max-width: 51.99rem) {
   main table {
     display: block;
     overflow-x: auto;
@@ -271,7 +286,7 @@ th, td { text-align: left; padding: 0.7rem 0.85rem; border-bottom: 1px solid var
 
 th {
   background: var(--papper-tint);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -428,6 +443,19 @@ a.kicker:hover { color: var(--accent-mork); }
 
 /* --accent klarar bara 4.41:1 mot papper-tint — mörka varianten ger 6.66:1 */
 .annonsnotis a { color: var(--accent-mork); }
+
+/* Samma problem som .annonsnotis: allt som ligger på --papper-tint behöver
+   --accent-mork för att nå 4.5:1. --accent ger 4.41:1, --accent-mork ger 6.66:1. */
+.kopblock a:not(.kopblock-knapp),
+.valjare-svar a {
+  color: var(--accent-mork);
+  text-decoration-color: rgba(138, 67, 23, 0.4);
+}
+
+.kopblock a:not(.kopblock-knapp):hover,
+.valjare-svar a:hover {
+  text-decoration-color: var(--accent-mork);
+}
 
 /* Affiliatelänk i löptext */
 .annonslank-markning {
@@ -746,4 +774,5 @@ main a.valjare-ingang:hover .valjare-ingang-cta { color: #fff; }
   .ingress { font-size: 1.05rem; }
   .sidhuvud { padding-top: 1.5rem; }
   h2 { margin-top: 2.25rem; }
+  .navbar { gap: 1.1rem; }
 }

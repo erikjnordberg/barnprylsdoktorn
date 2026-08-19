@@ -80,22 +80,25 @@
 </head>
 <body>
 
+  <a class="hoppa" href="#innehall">Hoppa till innehållet</a>
+
   <header class="sidhuvud">
     <a class="logga" href="/">Barnprylsdoktorn</a>
     <nav class="navbar">
       <a href="/" {% if page.url == "/" %}class="aktiv"{% endif %}>Hem</a>
       <a href="/guider/" {% if "/guider/" in page.url %}class="aktiv"{% endif %}>Guider</a>
+      <a href="/vilken-bilbarnstol/" {% if page.url == "/vilken-bilbarnstol/" %}class="aktiv"{% endif %}>Väljaren</a>
       <a href="/om/" {% if page.url == "/om/" %}class="aktiv"{% endif %}>Om</a>
     </nav>
   </header>
 
-  <main>
+  <main id="innehall">
     {% if kicker %}<span class="kicker">{{ kicker }}</span>
-    {%- elif "/guider/" in page.url and page.url != "/guider/" %}<a class="kicker" href="/guider/">Guide</a>{% endif %}
+    {%- elif "/guider/" in page.url and page.url != "/guider/" %}<a class="kicker" href="/guider/" aria-label="Alla guider">Guide</a>{% endif %}
     <h1>{{ (h1 or title) | typo }}</h1>
     {% if ingress %}<p class="ingress">{{ ingress | typo }}</p>{% endif %}
     {%- if date and "/guider/" in page.url and page.url != "/guider/" %}
-    <p class="datum">Av Erik Nordberg &middot; Publicerad <time datetime="{{ date | htmlDateString }}">{{ date | datum }}</time>{%- if uppdaterad and (uppdaterad | htmlDateString) != (date | htmlDateString) %} &middot; Uppdaterad <time datetime="{{ uppdaterad | htmlDateString }}">{{ uppdaterad | datum }}</time>{%- endif %}</p>
+    <p class="datum">Av <strong>Erik Nordberg</strong> &middot; Publicerad <time datetime="{{ date | htmlDateString }}">{{ date | datum }}</time>{%- if uppdaterad and (uppdaterad | htmlDateString) != (date | htmlDateString) %} &middot; Uppdaterad <time datetime="{{ uppdaterad | htmlDateString }}">{{ uppdaterad | datum }}</time>{%- endif %}</p>
     {%- endif %}
     {%- set aktiva = annonslankar | aktivaHandlare %}
     {%- if aktiva | length %}
@@ -150,7 +153,7 @@
 
   <footer class="sidfot">
     <p><strong>Barnprylsdoktorn</strong> — skriven av Erik Nordberg, en förälder som googlade för mycket.</p>
-    <p><a href="/guider/">Guider</a> &middot; <a href="/om/">Om sajten</a> &middot; <a href="mailto:info@barnprylsdoktorn.se">Kontakt</a> &middot; <a href="/sa-tjanar-sajten-pengar/">Så tjänar sajten pengar</a> &middot; <a href="/feed.xml">RSS</a></p>
+    <p><a href="/guider/">Guider</a> &middot; <a href="/vilken-bilbarnstol/">Vilken bilbarnstol?</a> &middot; <a href="/plustestade-bilbarnstolar/">Plustestade stolar</a> &middot; <a href="/om/">Om sajten</a> &middot; <a href="mailto:info@barnprylsdoktorn.se">Kontakt</a> &middot; <a href="/sa-tjanar-sajten-pengar/">Så tjänar sajten pengar</a> &middot; <a href="/feed.xml">RSS</a></p>
     <p class="finstilt">Vissa länkar är affiliatelänkar. Det påverkar inte vad vi rekommenderar. Innehållet ersätter inte tillverkarens monteringsanvisning.</p>
   </footer>
 
