@@ -6,4 +6,6 @@ module.exports = {
   beskrivning:
     "Guider och jämförelser som hjälper dig välja rätt bilbarnstol — förklarat på svenska, utan branschjargong.",
   forfattare: "Barnprylsdoktorn",
+  // Google Analytics 4. Taggen laddas först efter samtycke, se src/js/samtycke.js.
+  matningsId: "G-111TXDWKJ3",
 };

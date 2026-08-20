@@ -776,3 +776,139 @@ main a.valjare-ingang:hover .valjare-ingang-cta { color: #fff; }
   h2 { margin-top: 2.25rem; }
   .navbar { gap: 1.1rem; }
 }
+
+/* ---------- Samtyckesbanner ---------- */
+/* Byggs av src/js/samtycke.js och läggs först i body, så att den nås direkt
+   med tangentbord. Kontraster uträknade mot --papper (#FFFFFF):
+   --text #181614 18.5:1, --accent-mork #8a4317 7.3:1, --text-dampad #6b6459
+   5.8:1 (kanten runt Neka, som bara behöver 3:1). Ingen opacity. */
+
+.samtycke {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  background: var(--papper);
+  border-top: 2px solid var(--text);
+  box-shadow: 0 -4px 24px rgba(24, 22, 20, 0.14);
+}
+
+.samtycke:focus { outline: none; }
+
+.samtycke-inner {
+  max-width: var(--max-bred);
+  margin: 0 auto;
+  padding: 1.1rem var(--luft) 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.samtycke h2 {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 0.35rem;
+}
+
+.samtycke p {
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text);
+  margin: 0;
+}
+
+.samtycke a {
+  color: var(--accent-mork);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+}
+
+.samtycke-knappar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.samtycke-knapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 1.5rem;
+  border-radius: var(--radie);
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+/* Godkänn och Neka har samma storlek och samma vikt i layouten — att neka
+   ska inte vara svårare än att godkänna. Skillnaden är bara fyllnadsfärgen. */
+.samtycke-ja {
+  background: var(--accent-mork);
+  border: 1px solid var(--accent-mork);
+  color: #fff;
+}
+
+.samtycke-ja:hover { background: var(--text); border-color: var(--text); }
+
+.samtycke-nej {
+  background: none;
+  border: 1px solid var(--text-dampad);
+  color: var(--text);
+}
+
+.samtycke-nej:hover { border-color: var(--text); background: var(--papper-tint); }
+
+.samtycke-knapp:focus-visible {
+  outline: 3px solid var(--accent-mork);
+  outline-offset: 2px;
+}
+
+@media (min-width: 46rem) {
+  .samtycke-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-top: 1.25rem;
+  }
+
+  .samtycke-text-block { flex: 1 1 auto; }
+
+  .samtycke-knappar {
+    flex-direction: row;
+    flex: 0 0 auto;
+  }
+
+  .samtycke-knapp { min-width: 8.5rem; }
+}
+
+/* Knappen "Ändra mitt val" i integritetspolicyn — samma form som Neka */
+.samtycke-oppna {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 1.25rem;
+  background: none;
+  border: 1px solid var(--text-dampad);
+  border-radius: var(--radie);
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  font-weight: 650;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.samtycke-oppna:hover { border-color: var(--text); background: var(--papper-tint); }
+
+.samtycke-oppna:focus-visible {
+  outline: 3px solid var(--accent-mork);
+  outline-offset: 2px;
+}

@@ -58,7 +58,11 @@ om han inte ber om det.
 - Domänen köpt hos Loopia, DNS och DNSSEC hos Cloudflare
 - Google Search Console verifierad via TXT-post i DNS, sitemap inskickad.
   Nya artiklar indexeringsbegärs manuellt i GSC.
-- Cloudflare Web Analytics påslagen med automatisk injicering — inga cookies, ingen samtyckesbanner
+- Cloudflare Web Analytics påslagen med automatisk injicering — inga cookies, kräver inget samtycke
+- **Google Analytics 4**, egendom `Barnprylsdoktorn`, mät-ID `G-111TXDWKJ3`, dataflöde
+  `Barnprylsdoktorn webb` (15470865251). Konto `a87758593`, tidszon Sverige, valuta SEK.
+  Förbättrad mätning är på, alltså mäts utgående klick — det är så affiliateklicken följs.
+  Taggen laddas **först efter samtycke**, se Samtyckesbanner under Komponenter.
 - JSON-LD för sajt och artiklar ligger i `base.njk`
 
 ## Kommandon
@@ -92,6 +96,7 @@ src/
                            och räkna med systemfallbacken. Internt aria-label ignoreras
                            också; alt-texten i <img> är den som läses upp.
   js/valjare.js            logiken bakom bilbarnstolsväljaren
+  js/samtycke.js           samtyckesbannern och laddningen av Google Analytics
   nedladdningar/kolla-bilbarnstolen-pa-en-minut.pdf   tryckbar checklista, fem steg,
                            samma innehåll som Minutkontrollen i `vanliga-monteringsfel`.
                            Länkad därifrån och från "Sedan då?" i
@@ -106,7 +111,7 @@ src/
                            Listan ägs av den här sidan; guiderna sammanfattar och länkar hit.
                            Stäm av mot VTI kvartalsvis, VTI:s sida är klientrenderad och
                            går bara att läsa i webbläsare.
-  index.md, om.md, guider.njk, sa-tjanar-sajten-pengar.md, 404.md
+  index.md, om.md, guider.njk, sa-tjanar-sajten-pengar.md, integritetspolicy.md, 404.md
   feed.njk, sitemap.njk, robots.njk
 scripts/hamta-statistik.js hämtar besöksstatistik från Cloudflare, se nedan — skriver
                            både popularitet.json och trafikblocket i den här filen
@@ -189,6 +194,20 @@ Sajten ska fungera bäst på mobil. Utgå från mobilvyn först.
     Notisen högst upp är den primära märkningen; den här är förstärkningen.
   **En guide med affiliatelänkar ska alltid ha `annonslankar` satt** — annars är
   löptextlänkarna märkta men sidan saknar märkning högst upp.
+- **Samtyckesbanner.** `src/js/samtycke.js`, laddad i `base.njk` med `defer` och
+  `data-ga="{{ site.matningsId }}"`. Skriptet ritar bannern, och **inget anrop går till
+  Google innan besökaren tryckt Godkänn** — gtag-skriptet injiceras först efter ett ja.
+  Consent Mode v2 sätts ändå, med `analytics_storage` som enda flagga som går till
+  `granted`; annonsflaggorna står kvar på `denied` eftersom vi inte annonserar via Google.
+  Valet sparas i `localStorage` under `bpd-samtycke` och gäller i ett år — medvetet inte
+  som kaka, så att ett nej inte i sig kräver samtycke. Bannern läggs **först i `body`**
+  så att tangentbordsbesökare når den direkt, utan att fokus rycks från den som läser.
+  Escape räknas som nej, och lyssnaren sitter på `document` — på bannern nås den aldrig,
+  eftersom fokus ligger kvar i sidan. Godkänn och Neka har samma storlek och samma vikt
+  i layouten; att neka ska inte vara svårare än att godkänna. Kontraster mot vitt:
+  `--accent-mork` 7.3:1, `--text` 18.5:1, kanten runt Neka 5.8:1.
+  Allt med `data-samtycke-oppna` öppnar bannern igen — knappen i integritetspolicyn
+  använder det, och `window.barnprylsdoktorn.samtycke.oppna()` gör samma sak.
 - **`.las-harnast`** — mörkt block sist i guiderna med två relaterade artiklar.
 - **`.produktkort`** — korten på startsidan, hela kortet klickbart.
 - **Tabeller** scrollar horisontellt under 44 rem med en skuggkant som affordans.
@@ -260,8 +279,10 @@ Sjutton publicerade guider:
 | `bilbarnstol-pa-rea` | 30-dagarsregeln, testad modell mot efterföljare, returrätt, Black Friday |
 | `efterfoljare-samma-stol` | Tvåan i modellnamnet: vad plustestet omfattar, vad Folksams betyg inte gör |
 
-Utöver guiderna finns `/sa-tjanar-sajten-pengar/`, länkad i sidfoten tillsammans med en
-kort affiliatemärkning.
+Utöver guiderna finns `/sa-tjanar-sajten-pengar/` och `/integritetspolicy/`, båda länkade i
+sidfoten tillsammans med en kort affiliatemärkning. Integritetspolicyn beskriver mätningen,
+Cloudflare, annonslänkarna och innehåller knappen som öppnar samtyckesbannern igen —
+**ändras mätningen ska den sidan uppdateras i samma commit.**
 
 **`/nedladdningar/kolla-bilbarnstolen-pa-en-minut.pdf`** är en tryckbar checklista, fem
 steg, samma innehåll som Minutkontrollen i `vanliga-monteringsfel`. Publicerad 2026-08-19,
@@ -552,7 +573,15 @@ förbjudet hos Babyland och Stor&Liten.
    Fråga Erik innan du börjar på nästa. Diskuterad breddning: cykelbarnstol, cykelkärra
    och barncykelhjälm först, barnvagn därefter — men de är vårsäsong, så de hör hemma i
    januari–februari, inte nu.
-6. **Löpande UX- och mobilgenomgång** med `ux-granskning`-skillen.
+6. **Google Analytics — två saker kvar att göra i gränssnittet.**
+   - **Datalagring står på två månader** (GA4:s standard). Höj till fjorton i
+     Administratör → Datainsamling och ändring → Datalagring, annars finns ingen
+     historik att jämföra mot till våren.
+   - **Länka Search Console till egendomen** när det finns trafik att koppla ihop.
+   Mät-ID och egendomsuppgifter står under Teknik. Bannern och dess regler står under
+   Komponenter. Data börjar samlas in först efter deploy, och GA rapporterar bara de
+   besökare som tryckt Godkänn — Cloudflare Web Analytics är fortsatt det som räknar alla.
+7. **Löpande UX- och mobilgenomgång** med `ux-granskning`-skillen.
 
 Den här listan är färskvara. Blir ett steg klart, stryk det i samma commit — och lägg till
 guiden i innehållstabellen ovan när en ny publiceras.

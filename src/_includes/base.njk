@@ -14,6 +14,10 @@
   <link rel="stylesheet" href="{{ '/css/style.css' | version }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.namn }}" href="/feed.xml">
 
+  {# Samtycke och mätning. Skriptet ligger på vår egen server och ritar bannern.
+     Inget anrop går till Google innan besökaren tryckt Godkänn. #}
+  <script src="{{ '/js/samtycke.js' | version }}" data-ga="{{ site.matningsId }}" defer></script>
+
   {# Så här ser sidan ut när någon delar länken i Messenger, Slack eller på Facebook #}
   <meta property="og:type" content="{% if page.url and '/guider/' in page.url and page.url != '/guider/' %}article{% else %}website{% endif %}">
   <meta property="og:site_name" content="{{ site.namn }}">
@@ -153,7 +157,7 @@
 
   <footer class="sidfot">
     <p><strong>Barnprylsdoktorn</strong> — skriven av Erik Nordberg, en förälder som googlade för mycket.</p>
-    <p><a href="/guider/">Guider</a> &middot; <a href="/vilken-bilbarnstol/">Vilken bilbarnstol?</a> &middot; <a href="/plustestade-bilbarnstolar/">Plustestade stolar</a> &middot; <a href="/om/">Om sajten</a> &middot; <a href="mailto:info@barnprylsdoktorn.se">Kontakt</a> &middot; <a href="/sa-tjanar-sajten-pengar/">Så tjänar sajten pengar</a> &middot; <a href="/feed.xml">RSS</a></p>
+    <p><a href="/guider/">Guider</a> &middot; <a href="/vilken-bilbarnstol/">Vilken bilbarnstol?</a> &middot; <a href="/plustestade-bilbarnstolar/">Plustestade stolar</a> &middot; <a href="/om/">Om sajten</a> &middot; <a href="mailto:info@barnprylsdoktorn.se">Kontakt</a> &middot; <a href="/sa-tjanar-sajten-pengar/">Så tjänar sajten pengar</a> &middot; <a href="/integritetspolicy/">Integritetspolicy</a> &middot; <a href="/feed.xml">RSS</a></p>
     <p class="finstilt">Vissa länkar är affiliatelänkar. Det påverkar inte vad vi rekommenderar. Innehållet ersätter inte tillverkarens monteringsanvisning.</p>
   </footer>
 
