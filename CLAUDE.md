@@ -67,6 +67,7 @@ om han inte ber om det.
 npx @11ty/eleventy --serve     # lokal dev-server, http://localhost:8080
 npx @11ty/eleventy             # bygg till _site/
 npm run statistik              # hämta besöksstatistik manuellt, kräver CF_API_TOKEN
+                               # skriver popularitet.json och trafikblocket i CLAUDE.md
 ```
 
 Kör alltid ett bygge innan du säger att något är klart. Ett bygge som går igenom är
@@ -107,7 +108,8 @@ src/
                            går bara att läsa i webbläsare.
   index.md, om.md, guider.njk, sa-tjanar-sajten-pengar.md, 404.md
   feed.njk, sitemap.njk, robots.njk
-scripts/hamta-statistik.js hämtar besöksstatistik från Cloudflare, se nedan
+scripts/hamta-statistik.js hämtar besöksstatistik från Cloudflare, se nedan — skriver
+                           både popularitet.json och trafikblocket i den här filen
 .github/workflows/statistik.yml   schemalägger scriptet varje måndag
 research/                  underlag och granskningar — ingår inte i bygget
 copy-granskning.md         senaste copygranskningen, i roten
@@ -279,8 +281,12 @@ och `bilbarnstol-pa-rea`.
 Guiderna på `/guider/` och i "Mer att läsa" på startsidan sorteras fallande efter besök,
 via filtret `sorteraEfterBesok`. Siffrorna kommer från `src/_data/popularitet.json`, som
 uppdateras automatiskt varje måndag 05:00 UTC av `.github/workflows/statistik.yml` — jobbet
-kör `scripts/hamta-statistik.js` mot Cloudflare Web Analytics och committar filen bara om
-den ändrats. `CF_API_TOKEN` ligger som secret i GitHub-repot, inte lokalt — den behövs inte
+kör `scripts/hamta-statistik.js` mot Cloudflare Web Analytics och committar bara det som
+ändrats. Samma körning skriver trafiksiffrorna i den här filen, i blocket mellan
+`<!-- TRAFIK:START -->` och `<!-- TRAFIK:END -->` under "Nästa steg". **Blocket ägs av
+jobbet — skriv aldrig i det för hand, och flytta inte markörerna utan att uppdatera
+scriptet.** Tolkningen av siffrorna står utanför markörerna och rörs inte av jobbet.
+`CF_API_TOKEN` ligger som secret i GitHub-repot, inte lokalt — den behövs inte
 för att bygga sajten, bara för att hämta statistik manuellt med `npm run statistik`.
 
 Guiderna är korslänkade i löptexten **och** har ett `Läs härnäst`-block sist. Löptextlänken
@@ -491,27 +497,26 @@ förbjudet hos Babyland och Stor&Liten.
    anger 30 unika besökare i månaden — uppdatera den siffran när den stiger, det är enda
    fältet som går att redigera i efterhand.
 
-   **Trafiken 2026-08-18, avläst direkt i Cloudflare Web Analytics med Exclude bots = Yes:**
+   **Trafiken, hämtad från Cloudflare Web Analytics av måndagsjobbet:**
 
-   | | 7 dagar | 21 dagar |
-   |---|---|---|
-   | Besök | 49 | 150 |
-   | Sidvisningar | 50 | 190 |
-   | `/` | 47 | 140 |
-   | `/vilken-bilbarnstol/` | 0 | 10 |
-   | `/plustestade-bilbarnstolar/` | 2 | — |
-   | **Samtliga `/guider/`-sidor** | **0** | **0** |
+   <!-- TRAFIK:START -->
+   *Ingen körning har skrivit här än. Blocket fylls måndag 05:00 UTC, eller direkt med
+   `CF_API_TOKEN=... npm run statistik`.*
+   <!-- TRAFIK:END -->
 
-   Referrers 21 dagar: 130 direkt, 10 `secure.adtraction.com`, 10 `bing.com`, noll Google.
-   Länder 7 dagar: 33 USA, 9 Sverige, resten enstaka.
+   Referrers och länder ingår inte i blocket — de läses i Cloudflare Web Analytics.
+   Manuell avläsning 2026-08-18, Exclude bots = Yes: 49 besök på 7 dagar och 150 på 21,
+   varav 140 på `/`, 10 på `/vilken-bilbarnstol/` och noll på guiderna. Referrers 21 dagar:
+   130 direkt, 10 `secure.adtraction.com`, 10 `bing.com`, noll Google. Länder 7 dagar:
+   33 USA, 9 Sverige, resten enstaka.
 
-   **Läs den här tabellen rätt: sajten har inga läsare.** Nästan all trafik är direkta
-   anrop mot `/` från USA med en sidvisning per besök — det är skannrar och botar som
-   Cloudflares botfilter inte fångar, inte människor. De tio besöken på väljaren sammanfaller
-   med de tio från `secure.adtraction.com` och är rimligen Adtractions egen granskning av
-   kanalen. **Guiderna har noll besök på tjugoen dagar.** Allt innehållsarbete som gjorts
-   sedan lanseringen har alltså ännu inte nått en enda läsare, och det beror inte på
-   innehållet utan på att sajten är osynlig i Google.
+   **Läs siffrorna rätt — bedömningen från 2026-08-18 står kvar: sajten har inga läsare.**
+   Nästan all trafik är direkta anrop mot `/` från USA med en sidvisning per besök — det är
+   skannrar och botar som Cloudflares botfilter inte fångar, inte människor. De tio besöken på
+   väljaren sammanfaller med de tio från `secure.adtraction.com` och är rimligen Adtractions
+   egen granskning av kanalen. **Guiderna har noll besök på tjugoen dagar.** Allt
+   innehållsarbete som gjorts sedan lanseringen har alltså ännu inte nått en enda läsare, och
+   det beror inte på innehållet utan på att sajten är osynlig i Google.
 
    Konsekvenser: `sorteraEfterBesok` sorterar på brus och kommer göra det ett bra tag till.
    Siffran i `popularitet.json` (montera-guiden, 10 besök) går inte att reproducera ur

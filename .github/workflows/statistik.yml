@@ -23,11 +23,10 @@ jobs:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
         run: node scripts/hamta-statistik.js
 
-      - name: Committa om filen ändrats
+      - name: Committa om något ändrats
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if [ -f src/_data/popularitet.json ]; then
-            git add src/_data/popularitet.json
-            git diff --staged --quiet || (git commit -m "Uppdatera besöksstatistik" && git push)
-          fi
+          git add src/_data/popularitet.json CLAUDE.md
+          git diff --staged --quiet || (git commit -m "Uppdatera besöksstatistik" && git push)
