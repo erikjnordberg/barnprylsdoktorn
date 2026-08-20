@@ -236,7 +236,7 @@ ska alltid gå genom filtret.**
 
 ## Innehåll
 
-Sexton publicerade guider:
+Sjutton publicerade guider:
 
 | Slug | Ämne |
 |---|---|
@@ -256,6 +256,7 @@ Sexton publicerade guider:
 | `vinterklader-bilbarnstol` | Vinteroverall och åkpåse, Folksams krockprov 2016 |
 | `nar-ar-barnet-klart-med-bilbarnstol` | 135 cm mot 10–12 år, kontroll av bältets passform |
 | `bilbarnstol-pa-rea` | 30-dagarsregeln, testad modell mot efterföljare, returrätt, Black Friday |
+| `efterfoljare-samma-stol` | Tvåan i modellnamnet: vad plustestet omfattar, vad Folksams betyg inte gör |
 
 Utöver guiderna finns `/sa-tjanar-sajten-pengar/`, länkad i sidfoten tillsammans med en
 kort affiliatemärkning.
@@ -266,7 +267,7 @@ länkad från den guiden och från "Sedan då?" i `montera-bilbarnstol-steg-for-
 egen sida — bara filen, nådd via de två guiderna.
 
 **`/plustestade-bilbarnstolar/` är sajtens referenssida**, inte en guide. Den innehåller
-hela VTI:s lista — 55 godkännanden, både aktuella och historiska — sorterad på tillverkare.
+hela VTI:s lista — 54 godkännanden, både aktuella och historiska — sorterad på tillverkare.
 Syftet är att vara den sida någon klistrar in i en tråd när frågan "är den här stolen
 plustestad?" dyker upp, eftersom VTI:s egen lista är på engelska och klientrenderad.
 **Listan ägs av den sidan.** Guiderna får sammanfatta men aldrig återge hela tabellen igen
@@ -299,6 +300,17 @@ publiceras. **Ny guide ska alltid ha `lasharnast` satt**, och ska dessutom lägg
 
 Ändras sakinnehållet i en publicerad guide sätts `uppdaterad: ÅÅÅÅ-MM-DD` i frontmatter.
 `base.njk` visar det bara när det skiljer sig från `date`.
+
+**`efterfoljare-samma-stol` äger frågan om vad tvåan i modellnamnet betyder.** Guiden kom
+till 2026-08-19 ur en avstämning mot VTI: plustestlistan räknar upp efterföljare på samma
+rad som originalet (`BeSafe Stretch, Stretch 2` under VTI-0040), medan Folksams betyg sitter
+på exakt den modell som testades. `bilbarnstol-pa-rea` sammanfattar det i tre meningar och
+länkar vidare — låt inte rea-guiden växa tillbaka in i ämnet.
+**Öppen punkt:** VTI-0041 säger `Axkid Minikid 3, Minikid 4`. Varken **Pro** eller **Max**
+står utskrivet. Folksam listar `Minikid 3/4/4 Max` som plustestad, alltså är Max belagd.
+För **Pro** finns inget belägg hos VTI trots att Babysam marknadsför den som PLUS
+Test-godkänd. Guiden säger därför att man ska fråga efter numret — påstå aldrig något
+starkare utan att först ha frågat Axkid eller VTI.
 
 En avgränsning som är lätt att bryta mot: **`bilbarnstol-plats-i-bilen` äger platsfrågan.**
 `montera-bilbarnstol-steg-for-steg` handlar om handgreppen och sammanfattar bara platsvalet

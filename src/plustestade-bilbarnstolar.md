@@ -13,7 +13,7 @@ Tre saker att veta innan du läser tabellen:
 
 - **Bara bakåtvända stolar kan klara Plustestet.** Ingen framåtvänd stol, ingen bältesstol och inget babyskydd finns på listan, och det beror inte på att de är sämre — de testas inte.
 - **Att en stol saknas betyder inte att den är osäker.** Det betyder att tillverkaren inte skickat in den. Testet är frivilligt.
-- **Godkännandet gäller ett modellnamn.** En efterföljare med en tvåa i namnet är en annan produkt och ärver inte resultatet, om den inte står med på egen rad.
+- **Godkännandet gäller ett modellnamn.** En efterföljare med en tvåa i namnet är en annan produkt och ärver inte resultatet, om den inte står med på egen rad. [Så skiljer sig plustestet från Folksams betyg när modellnamnet ändras.](/guider/efterfoljare-samma-stol/)
 
 ## Hela listan
 
@@ -76,7 +76,7 @@ Godkännandet anges i **längd** för nyare stolar och i **vikt** för äldre. D
 | Thule Elm & Elm 180 Connect RWF | 105 cm | VTI-0050 |
 | Volvo bakåtvänd bilbarnstol | 115 cm | VTI-0047 |
 
-Listan är hämtad från VTI den **17 augusti 2026** och innehåller 55 godkännanden. VTI uppdaterar sin lista löpande — [kontrollera aktuell version hos VTI](https://www.vti.se/en/services/laboratory-and-testing/crash-safety-testing/child-restraint-systems/the-plus-test/plus-tested-models) om du vill vara helt säker. Modellnamnen är återgivna som VTI skriver dem.
+Listan är hämtad från VTI den **17 augusti 2026**, senast kontrollerad **19 augusti 2026**, och innehåller 54 godkännanden. VTI uppdaterar sin lista löpande — [kontrollera aktuell version hos VTI](https://www.vti.se/en/services/laboratory-and-testing/crash-safety-testing/child-restraint-systems/the-plus-test/plus-tested-models) om du vill vara helt säker. Modellnamnen är återgivna som VTI skriver dem.
 
 ## De som räcker längst
 

@@ -90,7 +90,7 @@ Folksam testade fem nya bakåtvända stolar 2025. Tre fick betyget **Bra val**:
 
 ### Plustestade stolar som räcker till 125 cm
 
-Folksam testar ett urval varje år. Plustestet är bredare — VTI:s lista innehåller varje stol som någonsin klarat testet. Femton av dem är godkända ända till 125 cm, alltså de som räcker längst: Axkid One-serien, Minikid 3 och 4, Minikid Core och Movekid, BeSafe Beyond-serien och Stretch-serien, Britax Max-Safe Pro och Safe-Way M, Joie i-Prodigi, Karwala Astro, AV370 Sky och AV370.Q, Klippan Opti 129 och Deplus, Maxi-Cosi Mobifix Pro samt Silver Cross Perform i-Size.
+Folksam testar ett urval varje år. Plustestet är bredare — VTI:s lista innehåller varje stol som någonsin klarat testet. Femton av dem är godkända ända till 125 cm, alltså de som räcker längst: Axkid One-serien, Minikid 3 och 4, Minikid Core och Movekid, BeSafe Beyond-serien och Stretch-serien, Britax Max-Safe Pro och Safe-Way M, Joie i-Prodigi, Karwala Astro, AV370 Sky och AV370.Q, Klippan Opti 129 och Deplus, Maxi-Cosi Mobifix Pro samt Silver Cross Perform i-Size. Flera av raderna räknar upp både originalet och efterföljaren — [en viktig skillnad mot hur Folksams betyg fungerar](/guider/efterfoljare-samma-stol/).
 
 **[Hela listan med testnummer, inklusive de äldre stolarna, finns här](/plustestade-bilbarnstolar/)** — leta upp modellen du funderar på innan du köper.
 
