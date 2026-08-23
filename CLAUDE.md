@@ -593,18 +593,15 @@ förbjudet hos Babyland och Stor&Liten.
    Fråga Erik innan du börjar på nästa. Diskuterad breddning: cykelbarnstol, cykelkärra
    och barncykelhjälm först, barnvagn därefter — men de är vårsäsong, så de hör hemma i
    januari–februari, inte nu.
-6. **Google Analytics — två saker kvar att göra i gränssnittet.**
-   - **Datalagring står på två månader** (GA4:s standard). Höj till fjorton i
-     Administratör → Datainsamling och ändring → Datalagring, annars finns ingen
-     historik att jämföra mot till våren.
-     Egendoms-ID är **p550859009**, alltså
-     `https://analytics.google.com/analytics/web/#/a87758593p550859009/admin/dataretention`.
-     **GA:s gränssnitt går inte att styra med webbläsarautomation** — appen fastnar på
-     "Läser in ..." i en automatiserad flik, bekräftat igen 2026-08-21. Datorstyrning på
-     Eriks Mac är ingen väg runt det: webbläsare kan bara beviljas i läsläge, alltså utan
-     klick. Cloudflares dashboard fastnar likadant. Försök inte igen; de här två sakerna
-     måste Erik klicka själv.
-   - **Länka Search Console till egendomen** när det finns trafik att koppla ihop.
+6. **Google Analytics.** **Åtgärdat 2026-08-23, av Erik själv i gränssnittet:**
+   datalagring höjd från två till fjorton månader, och Search Console länkad till
+   egendomen. **GA:s gränssnitt går inte att styra med webbläsarautomation** — appen
+   fastnar på "Läser in ..." i en automatiserad flik, bekräftat både 2026-08-21 och
+   2026-08-23 (deep link till egendoms-ID p550859009 studsade dessutom till en annan
+   egendom, p551118288, i den automatiserade fliken). Datorstyrning på Eriks Mac är
+   ingen väg runt det: webbläsare kan bara beviljas i läsläge, alltså utan klick.
+   Cloudflares dashboard fastnar likadant. De här två sakerna kräver alltså alltid att
+   Erik klickar själv — försök inte igen med automation.
    Mät-ID och egendomsuppgifter står under Teknik. Bannern och dess regler står under
    Komponenter. Data börjar samlas in först efter deploy, och GA rapporterar bara de
    besökare som tryckt Godkänn — Cloudflare Web Analytics är fortsatt det som räknar alla.
