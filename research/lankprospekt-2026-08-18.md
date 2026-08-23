@@ -217,3 +217,92 @@ En gång, efter sju till tio dagar, i samma tråd:
   i Search Console.
 - **Berätta alltid att sajten har annonslänkar.** Sajten har `/sa-tjanar-sajten-pengar/`
   just för det — att dölja det är både fel och sämre outreach.
+
+---
+
+## Logg och adresskontroll — 2026-08-20
+
+### Skickat
+
+| Prospekt | Datum | Svar |
+|---|---|---|
+| My Baby Torslanda (`butik@mybaby.se`) | 2026-08-19 | — |
+| Babyringen (`info@babyringen.se`) | 2026-08-19 | — |
+| Kids1 (`info@kids1.se`) | 2026-08-19 | — |
+| Parently (`hej@parently.se`) | 2026-08-19 | Autosvar |
+| Husvagn & Camping (`redaktionen@husvagnochcamping.se`) | 2026-08-19 | — |
+| Taxi 08 (`info@taxi08.se`) | 2026-08-20 | — |
+| Taxitill (`taxijarfalla@gmail.com`) | 2026-08-20 | — |
+| Axkid Care (`care@axkid.com`) | 2026-08-20 | — |
+
+Alla åtta skickade från `info@barnprylsdoktorn.se`.
+Uppföljning: de fem första omkring 2026-08-27, de tre sista omkring 2026-08-28.
+**Åtta mejl den här veckan** — takten på tio i veckan är i princip hållen.
+
+Vinklarna i de tre senaste:
+
+- **Taxi 08** — deras sida säger rent ut att de saknar bakåtvänt babyskydd
+- **Taxitill** — barnstol som tillval i bokningen, mycket Arlanda
+- **Axkid Care** — frågan om VTI-0041, plus plustestlistan
+
+**Axkid-mejlet bär två ärenden med flit.** Frågan om Minikid 4 Pro och 4 Max är
+den öppna punkten i `CLAUDE.md` som blockerar modellsidorna, och en fråga får
+oftare svar än en länkpitch. Kommer svaret ska det in i
+`research/modellsidor-urval-2026-08-19.md` och i plustestlistan.
+
+### Tier 3 håller inte — kontrollerat 2026-08-20
+
+Fem av sju taxiprospekt går inte att mejla, och listan bör krympas:
+
+- **STKLM Taxi** — mallsajt. Enda adressen är temats platshållare
+  `hello@driver.com`, och sidan anger Taxi Stockholms växelnummer som sitt eget.
+  En länk därifrån är inte värd ett mejl. **Stryk.**
+- **Taxi Puls** — domänen svarar inte längre. **Stryk.**
+- **Taxi Göteborg** — publicerar bara `polisfraga@taxigoteborg.se`, avsedd för
+  polisärenden. Ingen allmän kontaktadress. **Stryk tills annan väg hittas.**
+- **Taxipriser.se** — gick inte att nå vid kontrollen, oklart om den lever.
+  **Kontrollera igen innan den räknas.**
+- **Taxi Bambino** — amerikanskt bolag, engelskspråkigt, San Antonio. En svensk
+  genomgång av svensk taxilagstiftning är marginellt intressant för dem.
+  **Låg prioritet.**
+
+Mönstret bakom: svenska taxibolag publicerar sällan en mejladress alls — de
+hänvisar till växel och app. Kanalen mejl passar därför tier 3 dåligt, oavsett
+hur bra guiden är. **Vikta om mot tier 1**, där sex av tio uthyrare fortfarande
+är okontaktade och adresserna går att hitta.
+
+### Tier 1 — adresser framtagna 2026-08-20
+
+Fyra utkast ligger i Gmail, ej skickade:
+
+| Prospekt | Adress | Vinkel |
+|---|---|---|
+| BeSafe / hyrabilstol.com | `subscription.se@besafe.com` | Frågan om Beyond mot Beyond², plus plustestlistan |
+| Hygglo | `hej@hygglo.se` | Begagnatguiden — deras hyresgäster har exakt begagnatköparens frågor |
+| Babyproffsen | `info@babyproffsen.se` | Plustestlistan som uppslagsverk i butik, plus fråga efter webbansvarig |
+| Lekia | `kundtjanst@lekia.se` | Väljaren, med uttrycklig bön om vidarebefordran |
+
+**BeSafe-mejlet är samma grepp som Axkid-mejlet.** Folksam testade BeSafe Beyond 2025,
+men i handeln finns bara Beyond². `CLAUDE.md` säger att Beyond inte får någon länk förrän
+det är utrett om Beyond² är samma stol — och tillverkaren är den enda som kan svara.
+Kommer svaret ska det in i `efterfoljare-samma-stol` och i punkt 2 i `CLAUDE.md`.
+
+`subscription.se@besafe.com` driver **If Barn i bil** tillsammans med försäkringsbolaget If,
+via `hyrabilstol.com`. Den adressen täcker alltså både tier 1-posten "BeSafe uthyrning" och
+tier 5-posten "If (hyra bilbarnstol)" — stryk den senare som eget prospekt.
+
+Noteringar om adresserna:
+
+- **Babyproffsen** är fristående butiker under ett kedjenamn. `info@` är kedjans adress;
+  mejlet frågar därför uttryckligen efter webbansvarig i stället för att gissa.
+- **Hygglo** publicerar namngivna medarbetaradresser på Om oss-sidan. Använd dem inte —
+  `hej@hygglo.se` är bolagets egen kontaktadress och rätt väg in.
+- **Lekia** publicerar bara en kundtjänstadress för order och returer. Låga odds, och
+  mejlet är skrivet som en vidarebefordringsbegäran just därför. Ingen uppföljning på den.
+- **BeSafe** ligger bakom en samtyckesvägg som döljer sidinnehållet. Adressen kommer från
+  `hyrabilstol.com`, som HTS BeSafe själva driver.
+- **Räddningstjänsten Skellefteå** hoppas över. Ingen publik mejlväg utom kommunväxeln, och
+  en kommunal räddningstjänst länkar inte till en affiliatesajt. **Stryk.**
+
+Kvar i tier 1 efter det här: inget. Nästa tier att beta av är **tier 2 (NTF:s länsförbund)**
+eller **tier 4 (husbil och camping)**, där Husvagn & Camping redan är kontaktad.

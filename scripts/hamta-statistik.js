@@ -200,19 +200,53 @@ function skrivBlock(mdText, rader) {
   return `${fore}\n${indraget}\n${efter}`;
 }
 
+// popularitet.json räknar **besök**, inte sidvisningar. Cloudflare räknar ett besök
+// först när sidan öppnas från en annan domän — en läsare som klickar sig från
+// startsidan till en guide ger en sidvisning men inget besök. Filen höll därför
+// siffror som inte gick att hitta igen i Web Analytics gränssnitt, där besök är det
+// som visas. Samma mått i filen som i trafikblocket, så att de går att stämma av
+// mot varandra.
 function skrivPopularitet(lang) {
   const besok = {};
+  const sidvisningar = {};
   for (const [sokvag, varde] of lang.sidor) {
     const match = sokvag.match(GUIDE_SOKVAG);
     if (!match) continue;
-    besok[match[1]] = (besok[match[1]] ?? 0) + varde.sidvisningar;
+    sidvisningar[match[1]] = (sidvisningar[match[1]] ?? 0) + varde.sidvisningar;
+    if (varde.besok > 0) {
+      besok[match[1]] = (besok[match[1]] ?? 0) + varde.besok;
+    }
   }
+
+  const guidesidvisningar = Object.entries(sidvisningar)
+    .sort(([, a], [, b]) => b - a)
+    .slice(0, 3)
+    .map(([slug, antal]) => `${slug} (${antal})`)
+    .join(", ");
+  console.log(
+    guidesidvisningar
+      ? `Guide-sökvägar med sidvisningar men räknas inte för sorteringen: ${guidesidvisningar}`
+      : "Inga guide-sökvägar alls i svaret."
+  );
 
   const slugar = Object.keys(besok);
   if (slugar.length === 0) {
-    console.log(
-      `Inga guide-sökvägar matchade i svaret (${lang.rader} rader totalt från Cloudflare). Behåller befintlig popularitet.json orörd.`
-    );
+    // Två olika lägen som såg likadana ut förut. Noll rader alls betyder oftast att
+    // frågan gick fel — då är gammal data bättre än ingen. Rader men inga
+    // guide-besök betyder att guiderna faktiskt hade noll besök, och då ska filen
+    // tömmas: annars sorterar sorteraEfterBesok resten av året på en siffra som inte
+    // längre går att belägga.
+    if (lang.rader === 0) {
+      console.log("Cloudflare returnerade noll rader — behåller befintlig popularitet.json orörd.");
+      return;
+    }
+    const tomt = "{}\n";
+    fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
+    const nuvarande = fs.existsSync(OUTPUT_PATH) ? fs.readFileSync(OUTPUT_PATH, "utf8") : "";
+    if (nuvarande !== tomt) {
+      fs.writeFileSync(OUTPUT_PATH, tomt);
+    }
+    console.log(`Inga guide-besök bland ${lang.rader} rader — nollställer popularitet.json.`);
     return;
   }
 

@@ -303,7 +303,14 @@ Guiderna på `/guider/` och i "Mer att läsa" på startsidan sorteras fallande e
 via filtret `sorteraEfterBesok`. Siffrorna kommer från `src/_data/popularitet.json`, som
 uppdateras automatiskt varje måndag 05:00 UTC av `.github/workflows/statistik.yml` — jobbet
 kör `scripts/hamta-statistik.js` mot Cloudflare Web Analytics och committar bara det som
-ändrats. Samma körning skriver trafiksiffrorna i den här filen, i blocket mellan
+ändrats. **Filen räknar besök, inte sidvisningar** — samma mått som trafikblocket och som
+Web Analytics gränssnitt, så att siffrorna går att stämma av mot varandra. Cloudflare
+räknar ett besök först när sidan öppnas från en annan domän: en läsare som klickar sig
+från startsidan till en guide ger en sidvisning men inget besök. Får jobbet rader från
+Cloudflare men inget besök på någon `/guider/`-sökväg **nollställs `popularitet.json` till
+`{}`** — sorteringen faller då tillbaka på nyast först i stället för på en gammal siffra.
+Kommer noll rader alls är det däremot ett tecken på att frågan gick fel, och den gamla
+filen lämnas orörd. Guidernas sidvisningar loggas separat i körningen, som diagnostik. Samma körning skriver trafiksiffrorna i den här filen, i blocket mellan
 `<!-- TRAFIK:START -->` och `<!-- TRAFIK:END -->` under "Nästa steg". **Blocket ägs av
 jobbet — skriv aldrig i det för hand, och flytta inte markörerna utan att uppdatera
 scriptet.** Tolkningen av siffrorna står utanför markörerna och rörs inte av jobbet.
@@ -333,10 +340,12 @@ till 2026-08-19 ur en avstämning mot VTI: plustestlistan räknar upp efterfölj
 rad som originalet (`BeSafe Stretch, Stretch 2` under VTI-0040), medan Folksams betyg sitter
 på exakt den modell som testades. `bilbarnstol-pa-rea` sammanfattar det i tre meningar och
 länkar vidare — låt inte rea-guiden växa tillbaka in i ämnet.
-**Öppen punkt:** VTI-0041 säger `Axkid Minikid 3, Minikid 4`. Varken **Pro** eller **Max**
-står utskrivet. Folksam listar `Minikid 3/4/4 Max` som plustestad, alltså är Max belagd.
-För **Pro** finns inget belägg hos VTI trots att Babysam marknadsför den som PLUS
-Test-godkänd. Guiden säger därför att man ska fråga efter numret — påstå aldrig något
+**Öppen punkt, kontrollerad mot källorna 2026-08-21:** VTI-0041 säger ordagrant
+`Axkid Minikid 3, Minikid 4`. Varken **Pro** eller **Max** står utskrivet. Folksams rad
+heter ordagrant `Axkid Minikid 3/Minikid 4/Minikid 4 Max`, pris 4 995–6 499 kr, PlusTest
+"Ja, 125 cm", testår 2023 — alltså är **Max belagd, Pro inte**. Babysam marknadsför ändå
+Minikid 4 Pro som "PLUS Test-godkänd" och säljer den för 3 795 kr, under Folksams
+prisintervall för de testade varianterna. Skriv aldrig ut betyg eller plustest för Pro. Guiden säger därför att man ska fråga efter numret — påstå aldrig något
 starkare utan att först ha frågat Axkid eller VTI.
 
 En avgränsning som är lätt att bryta mot: **`bilbarnstol-plats-i-bilen` äger platsfrågan.**
@@ -465,9 +474,10 @@ förbjudet hos Babyland och Stor&Liten.
      Baby V-länkar och dess `annonslankar` är ändrad i takt med det. Kontrollera
      lagerstatus varannan vecka — det här är sajtens topprekommendation. Flytta tillbaka
      till Babysam (8 % mot Baby V:s 7 %) så fort de har den i lager online igen.
-     **Kontrollerad 2026-08-18: fortfarande slutsåld online hos Babysam**, bara
-     Klicka & Hämta i en butik, 3 995 kr nedsatt från 4 995. Länken ligger kvar mot
-     Baby V. Nästa kontroll omkring 2026-09-01.
+     **Kontrollerad 2026-08-21: fortfarande slutsåld online hos Babysam**, nu i två
+     butiker, 3 995 kr nedsatt från 4 995. Baby V har Dusty Rose i lager, 3 995 kr,
+     1–2 dagars leverans. Länken ligger kvar mot Baby V. Nästa kontroll omkring
+     2026-09-01.
    - **BeSafe Beyond får ingen länk.** Ingen av de tre handlarna säljer originalet, bara
      efterföljaren Beyond², som inte är den stol Folksam testade 2025. Att länka dit vore
      att tillskriva en annan produkt ett testresultat den inte har. Öppnas om ett program
@@ -540,9 +550,19 @@ förbjudet hos Babyland och Stor&Liten.
    det beror inte på innehållet utan på att sajten är osynlig i Google.
 
    Konsekvenser: `sorteraEfterBesok` sorterar på brus och kommer göra det ett bra tag till.
-   Siffran i `popularitet.json` (montera-guiden, 10 besök) går inte att reproducera ur
-   aktuell data och jobbet har inte committat sedan 2026-08-10 — kolla GitHub Actions vid
-   tillfälle, men det spelar ingen roll förrän det finns trafik att mäta. Core Web Vitals
+   `popularitet.json` innehöll fram till 2026-08-21 en siffra (montera-guiden, 10) som
+   inte gick att hitta igen i Web Analytics, och som pinnade den guiden överst på
+   startsidan och `/guider/`. **Jobbet var aldrig trasigt.** Körningarna 2026-08-10 och
+   2026-08-17 gick båda igenom — den andra hade inget att committa eftersom den räknade
+   fram exakt samma siffra, och därför står den senaste statistikcommiten 2026-08-10.
+   Felet var måttet: filen fylldes med **sidvisningar** medan gränssnittet visar **besök**,
+   och Cloudflare räknar ett besök först när sidan öppnas från en annan domän. Tio
+   sidvisningar och noll besök på samma guide är alltså ingen motsägelse — det är tio
+   klick vidare från startsidan. Åtgärdat 2026-08-21: skriptet skriver besök i stället för
+   sidvisningar, loggar sidvisningarna separat och nollställer filen när rader kommer men
+   inget guide-besök finns. `popularitet.json` är `{}` och sorteringen faller tillbaka på
+   nyast först. Måndagsjobbet skriver dessutom trafikblocket nedan först från och med
+   körningen 2026-08-24 — funktionen fanns inte vid förra körningen. Core Web Vitals
    visar mycket rött på INP; med det här underlaget är siffran dock brus och ska inte
    åtgärdas ännu.
 
@@ -577,6 +597,13 @@ förbjudet hos Babyland och Stor&Liten.
    - **Datalagring står på två månader** (GA4:s standard). Höj till fjorton i
      Administratör → Datainsamling och ändring → Datalagring, annars finns ingen
      historik att jämföra mot till våren.
+     Egendoms-ID är **p550859009**, alltså
+     `https://analytics.google.com/analytics/web/#/a87758593p550859009/admin/dataretention`.
+     **GA:s gränssnitt går inte att styra med webbläsarautomation** — appen fastnar på
+     "Läser in ..." i en automatiserad flik, bekräftat igen 2026-08-21. Datorstyrning på
+     Eriks Mac är ingen väg runt det: webbläsare kan bara beviljas i läsläge, alltså utan
+     klick. Cloudflares dashboard fastnar likadant. Försök inte igen; de här två sakerna
+     måste Erik klicka själv.
    - **Länka Search Console till egendomen** när det finns trafik att koppla ihop.
    Mät-ID och egendomsuppgifter står under Teknik. Bannern och dess regler står under
    Komponenter. Data börjar samlas in först efter deploy, och GA rapporterar bara de
