@@ -531,8 +531,30 @@ förbjudet hos Babyland och Stor&Liten.
    **Trafiken, hämtad från Cloudflare Web Analytics av måndagsjobbet:**
 
    <!-- TRAFIK:START -->
-   *Ingen körning har skrivit här än. Blocket fylls måndag 05:00 UTC, eller direkt med
-   `CF_API_TOKEN=... npm run statistik`.*
+   *Hämtad automatiskt 2026-08-24 av `scripts/hamta-statistik.js` från Cloudflare
+   Web Analytics, botar bortfiltrerade.
+   Skriv inte i blocket för hand — det skrivs över varje måndag.*
+
+   | | 7 dagar | 30 dagar |
+   |---|---|---|
+   | Besök | 58 | 230 |
+   | Sidvisningar | 72 | 270 |
+   | **Samtliga `/guider/`-sidor, besök** | **12** | **20** |
+
+   Mest besökta sökvägar, 30 dagar (2026-07-25–2026-08-24):
+
+   | Sökväg | Besök 7 d | Besök 30 d |
+   |---|---|---|
+   | `/` | 33 | 190 |
+   | `/plustestade-bilbarnstolar/` | 11 | 10 |
+   | `/vilken-bilbarnstol/` | 0 | 10 |
+   | `/guider/bilbarnstol-plats-i-bilen/` | 2 | 10 |
+   | `/guider/bilbarnstol-i-taxi/` | 2 | 10 |
+   | `/guider/basta-bilbarnstolen/` | 2 | 0 |
+   | `/om/` | 1 | 0 |
+   | `/guider/montera-bilbarnstol-steg-for-steg/` | 0 | 0 |
+   | `/guider/babyskydd-for-nyfodda/` | 0 | 0 |
+   | `/guider/bilbarnstol-flyg-och-hyrbil/` | 1 | 0 |
    <!-- TRAFIK:END -->
 
    Referrers och länder ingår inte i blocket — de läses i Cloudflare Web Analytics.
