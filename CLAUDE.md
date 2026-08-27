@@ -439,8 +439,9 @@ förbjudet hos Babyland och Stor&Liten.
    marknadsföringsmål — de omprövar på förfrågan till `support@adtraction.com`.
    Alla fyra spårlänkarna ligger i `ADTRACTION_PROGRAM` i `eleventy.config.js`. Baby V
    spårar via `go.adt231.net`, ännu en egen spårdomän — bygg aldrig länken av ett ID.
-   **Alla live-länkar går mot Babysam, och ska fortsätta göra det** — med ett undantag:
-   Britax Römer Max-Safe Pro pekar sedan 2026-08-17 mot Baby V, se punkt 2. Jämförelsen
+   **Alla live-länkar går mot Babysam, och gör det igen sedan 2026-08-27** — se punkt 2
+   för historiken kring Britax Römer Max-Safe Pro, som var flyttad till Baby V mellan
+   2026-08-17 och 2026-08-27. Jämförelsen
    2026-08-12 ligger i `research/handlarjamforelse-2026-08-12.md`: Babysam är billigare
    eller likvärdig på varje överlappande produkt och betalar dubbla provisionen. Babyland
    och Stor&Liten ligger inne som reserv om Babysam tar slut i lager, och Babyland täcker
@@ -464,20 +465,19 @@ förbjudet hos Babyland och Stor&Liten.
    krocksäkerhet, eftersom ingen svensk myndighetskälla om bilbarnstolsspeglar hittats).
    Kvar och medvetet ogjort — samtliga kontrollerade mot Babyland och Stor&Liten
    2026-08-12 utan träff:
-   - **Britax Römer Max-Safe Pro flyttad från Babysam till Baby V 2026-08-17.** Babysam
-     har den slutsåld online i alla tre färger (bara Klicka & Hämta i butik), Babyland har
-     markerat samtliga fyra färger "utgått ur sortimentet" och Stor&Liten ger noll träffar.
-     Även Britax egen svenska sajt står "Slut i lager", så det är brist i hela ledet.
-     Baby V har **Dusty Rose i lager, 3 995 kr, 1–2 dagars leverans** — enda färgen av sex
-     som går att köpa där. Länken pekar på den varianten, inte på samlingssidan, eftersom
-     samlingssidan öppnar på en slutsåld färg. `basta-bilbarnstolen` har därmed bara
-     Baby V-länkar och dess `annonslankar` är ändrad i takt med det. Kontrollera
-     lagerstatus varannan vecka — det här är sajtens topprekommendation. Flytta tillbaka
-     till Babysam (8 % mot Baby V:s 7 %) så fort de har den i lager online igen.
-     **Kontrollerad 2026-08-21: fortfarande slutsåld online hos Babysam**, nu i två
-     butiker, 3 995 kr nedsatt från 4 995. Baby V har Dusty Rose i lager, 3 995 kr,
-     1–2 dagars leverans. Länken ligger kvar mot Baby V. Nästa kontroll omkring
-     2026-09-01.
+   - **Britax Römer Max-Safe Pro tillbaka hos Babysam sedan 2026-08-27.** Var flyttad
+     till Baby V 2026-08-17 eftersom Babysam hade stolen slutsåld online i alla färger.
+     **Kontrollerad 2026-08-27: Babysam köpbar online igen**, Space Black 3 995 kr
+     (ord. 4 995 kr), "28 stycken på väg in i lager", leverans 12–15 vardagar (plus
+     Klicka & Hämta i två butiker). Baby V hade samtidigt Dusty Rose i lager för samma
+     pris med 1–2 dagars leverans, men provisionsskillnaden (8 % mot 7 %) väger tyngre
+     än leveranstiden i den här prisklassen, så länken flyttades tillbaka. `produkter.js`,
+     `basta-bilbarnstolen` och `bakatvand-bilbarnstol-vilken-ska-jag-kopa` pekar nu alla
+     på Babysam igen, och `annonslankar` i båda guiderna är ändrat i takt med det.
+     **Öppen punkt:** tabellen och löptexten i båda guiderna anger fortfarande 4 495 kr
+     för Max-Safe Pro (Folksams pris vid testtillfället), mot det verifierade
+     handlarpriset 3 995 kr — inte ändrat utan avstämning med Erik. Stäm av Babysams
+     inleverans igen omkring 2026-09-10 för att bekräfta att den faktiskt kom in.
    - **BeSafe Beyond får ingen länk.** Ingen av de tre handlarna säljer originalet, bara
      efterföljaren Beyond², som inte är den stol Folksam testade 2025. Att länka dit vore
      att tillskriva en annan produkt ett testresultat den inte har. Öppnas om ett program

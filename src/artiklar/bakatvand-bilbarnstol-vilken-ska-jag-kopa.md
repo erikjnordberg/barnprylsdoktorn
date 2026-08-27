@@ -5,7 +5,7 @@ beskrivning: Tre bakåtvända bilbarnstolar med betyget Bra val av Folksam 2025 
 date: 2026-08-06
 uppdaterad: 2026-08-17
 lasharnast: ["montera-bilbarnstol-steg-for-steg", "bilbarnstol-plats-i-bilen"]
-annonslankar: ["Babysam", "Baby V"]
+annonslankar: ["Babysam"]
 ---
 
 ## Kort svar

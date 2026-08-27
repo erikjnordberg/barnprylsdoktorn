@@ -14,13 +14,8 @@ module.exports = {
     specifikation: "61–125 cm · max 36 kg · bältesmonterad · Plustestad",
     motivering:
       "Högst betyg, lägst pris och högst viktgräns av de tre — bäst om du vill slippa fundera mer.",
-    // Flyttad från Babysam till Baby V 2026-08-17. Babysam har stolen slutsåld online
-    // i alla färger, Babyland har tagit bort den ur sortimentet och Stor&Liten för den
-    // inte. Baby V har bara Dusty Rose i lager av sex färger, 1–2 dagars leverans —
-    // därför pekar länken på den varianten och inte på samlingssidan, som öppnar på en
-    // slutsåld färg. Flytta tillbaka till Babysam (8 % mot 7 %) när de fyllt på.
-    url: "https://www.babyv.se/sv/articles/2.63.21659/britax-romer-max-safe-pro-dusty-rose",
-    handlare: "Baby V",
+    url: "https://www.babysam.se/britax-roemer-max-safe-pro-bilbarnstol-space-black-onesize",
+    handlare: "Babysam",
   },
   "besafe-beyond": {
     namn: "BeSafe Beyond",
