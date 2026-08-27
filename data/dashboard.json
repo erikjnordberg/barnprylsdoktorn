@@ -1,7 +1,7 @@
 {
-  "hamtad": "2026-08-27T19:04:55.377Z",
+  "hamtad": "2026-08-27T19:27:15.320Z",
   "fel": [
-    "Sitemap gav 0 URLer. Status 403, content-type text/html; charset=UTF-8, cf-cache-status null, längd 5379. Första 300 tecken: \"<!DOCTYPE html><html lang=\\\"en-US\\\"><head><title>Just a moment...</title><meta http-equiv=\\\"Content-Type\\\" content=\\\"text/html; charset=UTF-8\\\"><meta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"IE=Edge\\\"><meta name=\\\"robots\\\" content=\\\"noindex,nofollow\\\"><meta name=\\\"viewport\\\" content=\\\"width=device-width,initial-scal\""
+    "Sitemap gav 0 URLer. Status 403, content-type text/html; charset=UTF-8, cf-cache-status null, längd 5486. Första 300 tecken: \"<!DOCTYPE html><html lang=\\\"en-US\\\"><head><title>Just a moment...</title><meta http-equiv=\\\"Content-Type\\\" content=\\\"text/html; charset=UTF-8\\\"><meta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"IE=Edge\\\"><meta name=\\\"robots\\\" content=\\\"noindex,nofollow\\\"><meta name=\\\"viewport\\\" content=\\\"width=device-width,initial-scal\""
   ],
   "sajt": {
     "sitemapUrler": 0,
@@ -572,7 +572,7 @@
     },
     "besok28": 240,
     "sidvisningar28": 280,
-    "besok7": 38,
+    "besok7": 34,
     "besokOfiltrerat28": 240,
     "botandel": 0,
     "guideBesok28": 20,
