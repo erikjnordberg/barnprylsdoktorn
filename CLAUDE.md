@@ -474,6 +474,11 @@ Detaljer som är lätta att gå på:
 inte, eftersom miljön blockerar `*.frame.claudeusercontent.com` och den publicerade sidan
 därför inte går att läsa tillbaka. Föreslå aldrig en schemalagd uppgift med GitHub-token i
 — klassificeraren blockerar det, och `api.github.com` går genom en proxy som svarar 403.
+**Manuell publicering fungerar dock fint** — `data/dashboard.html` är redan skrivet enligt
+Artifact-verktygets krav (ingen `<!DOCTYPE>`/`<html>`/`<head>`/`<body>`, egen komplett
+ljus/mörk-temapalett), så filen går att publicera direkt utan omarbetning. Först publicerad
+2026-08-27. Uppdatera samma artefakt genom att publicera om samma filsökväg i en
+konversation som redan har URL:en, annars skapas en ny.
 
 ## Git och deploy
 
