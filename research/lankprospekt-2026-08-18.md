@@ -306,3 +306,31 @@ Noteringar om adresserna:
 
 Kvar i tier 1 efter det här: inget. Nästa tier att beta av är **tier 2 (NTF:s länsförbund)**
 eller **tier 4 (husbil och camping)**, där Husvagn & Camping redan är kontaktad.
+
+## Avstämning och uppföljning — 2026-08-27
+
+**Rättelse av loggen ovan:** vid avstämning mot Gmail visade det sig att BeSafe-mejlet
+(`subscription.se@besafe.com`) faktiskt skickades 2026-08-20, inte bara låg som utkast som
+det stod ovan. Kids1 skickades också 2026-08-19, men från `erik.j.nordberg@gmail.com` i
+stället för `info@barnprylsdoktorn.se`, vilket är varför det inte syntes vid en sökning på
+avsändaren. **Nio mejl är alltså skickade totalt**, inte åtta: de sju ursprungliga plus
+Kids1 och BeSafe. Tre ligger fortfarande som utkast, oskickade: Lekia, Babyproffsen, Hygglo.
+
+**Inga riktiga svar på nio mejl** — bara Parentlys autosvar, samma som noterat 2026-08-20.
+
+**Uppföljning skickad i samma trådar 2026-08-27** för alla nio (sju–åtta dagar efter
+utskick, enligt arbetssättet ovan): My Baby Torslanda, Babyringen, Kids1, Parently,
+Husvagn & Camping, Taxi 08, Taxitill, Axkid Care, BeSafe. Alla ligger som utkast i Gmail,
+redo att skickas — ingen är skickad automatiskt.
+
+**Tier 2 påbörjad.** Fem NTF-länsförbund researchade för adress. Bara en gick att verifiera
+med en egen adress: **NTF Skaraborg, `skaraborg@ntf.se`** — utkast skrivet och ligger i
+Gmail. De fyra andra (Väst, FyrBoDal, Sörmland–Örebro–Östergötland, Värmland) har fått
+omstrukturerade webbplatser sedan listan gjordes — flera undersidor ger 404, och det som
+går att hitta pekar bara på den centrala `info@ntf.se`, som är för generisk för att lita på
+utan vidare kontroll. Kvar att göra: hitta rätt regional adress för de fyra, eller ring.
+
+**Nästa steg:** stäm av vilka av de tre gamla utkasten (Lekia, Babyproffsen, Hygglo) och de
+tio nya (nio uppföljningar + Skaraborg) som ska skickas, skicka dem, och fortsätt sedan med
+tier 4 (Husbil.se, Husbilsemester, Leva med husbil, Husbilsresor & äventyr — fyra kvar,
+Husvagn & Camping redan kontaktad).
