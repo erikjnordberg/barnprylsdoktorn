@@ -1,13 +1,132 @@
 {
-  "hamtad": "2026-08-27T19:27:15.320Z",
-  "fel": [
-    "Sitemap gav 0 URLer. Status 403, content-type text/html; charset=UTF-8, cf-cache-status null, längd 5486. Första 300 tecken: \"<!DOCTYPE html><html lang=\\\"en-US\\\"><head><title>Just a moment...</title><meta http-equiv=\\\"Content-Type\\\" content=\\\"text/html; charset=UTF-8\\\"><meta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"IE=Edge\\\"><meta name=\\\"robots\\\" content=\\\"noindex,nofollow\\\"><meta name=\\\"viewport\\\" content=\\\"width=device-width,initial-scal\""
-  ],
+  "hamtad": "2026-08-27T19:36:56.221Z",
+  "fel": [],
   "sajt": {
-    "sitemapUrler": 0,
-    "kontroll": [],
+    "sitemapUrler": 24,
+    "kontroll": [
+      {
+        "url": "https://barnprylsdoktorn.se/guider/babyskydd-for-nyfodda/",
+        "status": 200,
+        "ms": 168
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/",
+        "status": 200,
+        "ms": 102
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/baltesstol-eller-balteskudde/",
+        "status": 200,
+        "ms": 218
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/i-size-vs-vikt/",
+        "status": 200,
+        "ms": 40
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/isofix-eller-balte/",
+        "status": 200,
+        "ms": 234
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/basta-bilbarnstolen/",
+        "status": 200,
+        "ms": 57
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/begagnad-bilbarnstol/",
+        "status": 200,
+        "ms": 195
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-flyg-och-hyrbil/",
+        "status": 200,
+        "ms": 198
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-fram-och-airbag/",
+        "status": 200,
+        "ms": 208
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-i-taxi/",
+        "status": 200,
+        "ms": 73
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/vanliga-monteringsfel/",
+        "status": 200,
+        "ms": 67
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-plats-i-bilen/",
+        "status": 200,
+        "ms": 70
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/montera-bilbarnstol-steg-for-steg/",
+        "status": 200,
+        "ms": 197
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/nar-ar-barnet-klart-med-bilbarnstol/",
+        "status": 200,
+        "ms": 162
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/vinterklader-bilbarnstol/",
+        "status": 200,
+        "ms": 175
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-pa-rea/",
+        "status": 200,
+        "ms": 176
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/efterfoljare-samma-stol/",
+        "status": 200,
+        "ms": 82
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/",
+        "status": 200,
+        "ms": 52
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/",
+        "status": 200,
+        "ms": 57
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/integritetspolicy/",
+        "status": 200,
+        "ms": 61
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/om/",
+        "status": 200,
+        "ms": 49
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/plustestade-bilbarnstolar/",
+        "status": 200,
+        "ms": 91
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/sa-tjanar-sajten-pengar/",
+        "status": 200,
+        "ms": 51
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/vilken-bilbarnstol/",
+        "status": 200,
+        "ms": 86
+      }
+    ],
     "trasiga": [],
-    "snittsvar": 0
+    "snittsvar": 120
   },
   "innehall": {
     "guider": [
@@ -524,8 +643,8 @@
         "handlare": "Babysam",
         "kalla": "produkter.js",
         "nyckel": "tinyseats-two",
-        "status": 200,
-        "lage": "svarar",
+        "status": 500,
+        "lage": "svarar inte",
         "slutUrl": null
       },
       {
@@ -534,8 +653,8 @@
         "handlare": "Babysam",
         "kalla": "bilbarnstol-flyg-och-hyrbil",
         "nyckel": null,
-        "status": 200,
-        "lage": "svarar",
+        "status": 500,
+        "lage": "svarar inte",
         "slutUrl": null
       },
       {
@@ -544,8 +663,8 @@
         "handlare": "Babysam",
         "kalla": "bilbarnstol-fram-och-airbag",
         "nyckel": null,
-        "status": 200,
-        "lage": "svarar",
+        "status": 500,
+        "lage": "svarar inte",
         "slutUrl": null
       },
       {
@@ -560,7 +679,7 @@
       }
     ],
     "utanLank": 1,
-    "doda": 0,
+    "doda": 3,
     "blockerade": 0
   },
   "cloudflare": {
@@ -888,9 +1007,202 @@
   },
   "indexering": {
     "tillganglig": true,
-    "kontrollerade": 0,
-    "indexerade": 0,
-    "sidor": []
+    "kontrollerade": 24,
+    "indexerade": 5,
+    "sidor": [
+      {
+        "url": "https://barnprylsdoktorn.se/guider/babyskydd-for-nyfodda/",
+        "verdict": "PASS",
+        "lage": "Angiven och indexerad",
+        "robots": "ALLOWED",
+        "sistaCrawl": "2026-08-20T12:18:54Z",
+        "upptackt": "SUCCESSFUL"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/",
+        "verdict": "NEUTRAL",
+        "lage": "Genomsökt – inte indexerad för närvarande",
+        "robots": "ALLOWED",
+        "sistaCrawl": "2026-08-08T14:04:32Z",
+        "upptackt": "SUCCESSFUL"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/baltesstol-eller-balteskudde/",
+        "verdict": "NEUTRAL",
+        "lage": "Upptäckt – inte indexerad för närvarande",
+        "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "sistaCrawl": null,
+        "upptackt": "PAGE_FETCH_STATE_UNSPECIFIED"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/i-size-vs-vikt/",
+        "verdict": "NEUTRAL",
+        "lage": "Upptäckt – inte indexerad för närvarande",
+        "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "sistaCrawl": null,
+        "upptackt": "PAGE_FETCH_STATE_UNSPECIFIED"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/isofix-eller-balte/",
+        "verdict": "NEUTRAL",
+        "lage": "Upptäckt – inte indexerad för närvarande",
+        "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "sistaCrawl": null,
+        "upptackt": "PAGE_FETCH_STATE_UNSPECIFIED"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/basta-bilbarnstolen/",
+        "verdict": "NEUTRAL",
+        "lage": "Genomsökt – inte indexerad för närvarande",
+        "robots": "ALLOWED",
+        "sistaCrawl": "2026-08-09T18:44:34Z",
+        "upptackt": "SUCCESSFUL"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/begagnad-bilbarnstol/",
+        "verdict": "NEUTRAL",
+        "lage": "Genomsökt – inte indexerad för närvarande",
+        "robots": "ALLOWED",
+        "sistaCrawl": "2026-08-07T08:56:28Z",
+        "upptackt": "SUCCESSFUL"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-flyg-och-hyrbil/",
+        "verdict": "NEUTRAL",
+        "lage": "Genomsökt – inte indexerad för närvarande",
+        "robots": "ALLOWED",
+        "sistaCrawl": "2026-08-07T21:00:39Z",
+        "upptackt": "SUCCESSFUL"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-fram-och-airbag/",
+        "verdict": "NEUTRAL",
+        "lage": "Genomsökt – inte indexerad för närvarande",
+        "robots": "ALLOWED",
+        "sistaCrawl": "2026-08-07T08:36:19Z",
+        "upptackt": "SUCCESSFUL"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-i-taxi/",
+        "verdict": "NEUTRAL",
+        "lage": "Genomsökt – inte indexerad för närvarande",
+        "robots": "ALLOWED",
+        "sistaCrawl": "2026-08-08T16:31:00Z",
+        "upptackt": "SUCCESSFUL"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/vanliga-monteringsfel/",
+        "verdict": "NEUTRAL",
+        "lage": "Genomsökt – inte indexerad för närvarande",
+        "robots": "ALLOWED",
+        "sistaCrawl": "2026-08-09T18:40:34Z",
+        "upptackt": "SUCCESSFUL"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-plats-i-bilen/",
+        "verdict": "NEUTRAL",
+        "lage": "Webbadressen är okänd för Google",
+        "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "sistaCrawl": null,
+        "upptackt": "PAGE_FETCH_STATE_UNSPECIFIED"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/montera-bilbarnstol-steg-for-steg/",
+        "verdict": "NEUTRAL",
+        "lage": "Genomsökt – inte indexerad för närvarande",
+        "robots": "ALLOWED",
+        "sistaCrawl": "2026-08-09T18:42:34Z",
+        "upptackt": "SUCCESSFUL"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/nar-ar-barnet-klart-med-bilbarnstol/",
+        "verdict": "NEUTRAL",
+        "lage": "Genomsökt – inte indexerad för närvarande",
+        "robots": "ALLOWED",
+        "sistaCrawl": "2026-08-11T07:30:53Z",
+        "upptackt": "SUCCESSFUL"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/vinterklader-bilbarnstol/",
+        "verdict": "NEUTRAL",
+        "lage": "Genomsökt – inte indexerad för närvarande",
+        "robots": "ALLOWED",
+        "sistaCrawl": "2026-08-22T17:40:01Z",
+        "upptackt": "SUCCESSFUL"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-pa-rea/",
+        "verdict": "NEUTRAL",
+        "lage": "Genomsökt – inte indexerad för närvarande",
+        "robots": "ALLOWED",
+        "sistaCrawl": "2026-08-18T16:20:53Z",
+        "upptackt": "SUCCESSFUL"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/efterfoljare-samma-stol/",
+        "verdict": "NEUTRAL",
+        "lage": "Webbadressen är okänd för Google",
+        "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "sistaCrawl": null,
+        "upptackt": "PAGE_FETCH_STATE_UNSPECIFIED"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/",
+        "verdict": "NEUTRAL",
+        "lage": "Genomsökt – inte indexerad för närvarande",
+        "robots": "ALLOWED",
+        "sistaCrawl": "2026-08-20T14:46:51Z",
+        "upptackt": "SUCCESSFUL"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/",
+        "verdict": "PASS",
+        "lage": "Angiven och indexerad",
+        "robots": "ALLOWED",
+        "sistaCrawl": "2026-08-27T17:39:03Z",
+        "upptackt": "SUCCESSFUL"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/integritetspolicy/",
+        "verdict": "NEUTRAL",
+        "lage": "Upptäckt – inte indexerad för närvarande",
+        "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "sistaCrawl": null,
+        "upptackt": "PAGE_FETCH_STATE_UNSPECIFIED"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/om/",
+        "verdict": "PASS",
+        "lage": "Angiven och indexerad",
+        "robots": "ALLOWED",
+        "sistaCrawl": "2026-08-07T01:01:36Z",
+        "upptackt": "SUCCESSFUL"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/plustestade-bilbarnstolar/",
+        "verdict": "NEUTRAL",
+        "lage": "Genomsökt – inte indexerad för närvarande",
+        "robots": "ALLOWED",
+        "sistaCrawl": "2026-08-18T18:08:43Z",
+        "upptackt": "SUCCESSFUL"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/sa-tjanar-sajten-pengar/",
+        "verdict": "PASS",
+        "lage": "Angiven och indexerad",
+        "robots": "ALLOWED",
+        "sistaCrawl": "2026-08-12T03:25:31Z",
+        "upptackt": "SUCCESSFUL"
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/vilken-bilbarnstol/",
+        "verdict": "PASS",
+        "lage": "Angiven och indexerad",
+        "robots": "ALLOWED",
+        "sistaCrawl": "2026-08-20T11:26:35Z",
+        "upptackt": "SUCCESSFUL"
+      }
+    ]
   },
   "ga4": {
     "tillganglig": true,
@@ -989,8 +1301,8 @@
       "klick28": 4,
       "visningar28": 9,
       "position": 25.11111111111111,
-      "indexerade": 0,
-      "kontrollerade": 0,
+      "indexerade": 5,
+      "kontrollerade": 24,
       "sessioner28": 6,
       "guider": 17
     }
