@@ -1,1 +1,996 @@
-{}
+{
+  "hamtad": "2026-08-27T18:59:05.086Z",
+  "fel": [],
+  "sajt": {
+    "sitemapUrler": 0,
+    "kontroll": [],
+    "trasiga": [],
+    "snittsvar": 0
+  },
+  "innehall": {
+    "guider": [
+      {
+        "fil": "efterfoljare-samma-stol.md",
+        "slug": "efterfoljare-samma-stol",
+        "titel": "Stretch 2, Beyond 2, Minikid 4 — är efterföljaren samma stol?",
+        "publicerad": "2026-08-19",
+        "uppdaterad": null,
+        "ord": 1052,
+        "kallor": 4,
+        "kallDomaner": [
+          "www.vti.se",
+          "www.folksam.se",
+          "ntf.se"
+        ],
+        "annonslankar": null,
+        "harAffiliate": false,
+        "omarkt": false,
+        "lasharnast": [
+          "bakatvand-bilbarnstol-vilken-ska-jag-kopa",
+          "basta-bilbarnstolen"
+        ],
+        "saknarLasharnast": false,
+        "inlankar": 3,
+        "lasharnastIn": 1,
+        "foraldralos": false
+      },
+      {
+        "fil": "bilbarnstol-pa-rea.md",
+        "slug": "bilbarnstol-pa-rea",
+        "titel": "Bilbarnstol på rea — så vet du om det är ett bra köp",
+        "publicerad": "2026-08-17",
+        "uppdaterad": null,
+        "ord": 1460,
+        "kallor": 9,
+        "kallDomaner": [
+          "www.konsumentverket.se",
+          "www.hallakonsument.se",
+          "www.folksam.se",
+          "www.vti.se",
+          "ntf.se"
+        ],
+        "annonslankar": [
+          "Babysam"
+        ],
+        "harAffiliate": true,
+        "omarkt": false,
+        "lasharnast": [
+          "efterfoljare-samma-stol",
+          "basta-bilbarnstolen"
+        ],
+        "saknarLasharnast": false,
+        "inlankar": 4,
+        "lasharnastIn": 1,
+        "foraldralos": false
+      },
+      {
+        "fil": "nar-ar-barnet-klart-med-bilbarnstol.md",
+        "slug": "nar-ar-barnet-klart-med-bilbarnstol",
+        "titel": "När är barnet klart med bilbarnstol?",
+        "publicerad": "2026-08-10",
+        "uppdaterad": null,
+        "ord": 1309,
+        "kallor": 5,
+        "kallDomaner": [
+          "www.transportstyrelsen.se",
+          "ntf.se",
+          "www.folksam.se",
+          "news.cision.com"
+        ],
+        "annonslankar": null,
+        "harAffiliate": false,
+        "omarkt": false,
+        "lasharnast": [
+          "baltesstol-eller-balteskudde",
+          "bilbarnstol-fram-och-airbag"
+        ],
+        "saknarLasharnast": false,
+        "inlankar": 4,
+        "lasharnastIn": 0,
+        "foraldralos": false
+      },
+      {
+        "fil": "vinterklader-bilbarnstol.md",
+        "slug": "vinterklader-bilbarnstol",
+        "titel": "Vinteroverall i bilbarnstolen — vad säger krocktesterna?",
+        "publicerad": "2026-08-10",
+        "uppdaterad": null,
+        "ord": 1088,
+        "kallor": 4,
+        "kallDomaner": [
+          "www.folksam.se",
+          "news.cision.com",
+          "ntf.se",
+          "www.transportstyrelsen.se"
+        ],
+        "annonslankar": null,
+        "harAffiliate": false,
+        "omarkt": false,
+        "lasharnast": [
+          "vanliga-monteringsfel",
+          "montera-bilbarnstol-steg-for-steg"
+        ],
+        "saknarLasharnast": false,
+        "inlankar": 4,
+        "lasharnastIn": 1,
+        "foraldralos": false
+      },
+      {
+        "fil": "bilbarnstol-plats-i-bilen.md",
+        "slug": "bilbarnstol-plats-i-bilen",
+        "titel": "Får bilbarnstolen plats i min bil?",
+        "publicerad": "2026-08-08",
+        "uppdaterad": null,
+        "ord": 1112,
+        "kallor": 5,
+        "kallDomaner": [
+          "ntf.se",
+          "www.transportstyrelsen.se"
+        ],
+        "annonslankar": null,
+        "harAffiliate": false,
+        "omarkt": false,
+        "lasharnast": [
+          "isofix-eller-balte",
+          "bakatvand-bilbarnstol-vilken-ska-jag-kopa"
+        ],
+        "saknarLasharnast": false,
+        "inlankar": 6,
+        "lasharnastIn": 3,
+        "foraldralos": false
+      },
+      {
+        "fil": "montera-bilbarnstol-steg-for-steg.md",
+        "slug": "montera-bilbarnstol-steg-for-steg",
+        "titel": "Montera bilbarnstolen — steg för steg",
+        "publicerad": "2026-08-08",
+        "uppdaterad": "2026-08-09",
+        "ord": 1170,
+        "kallor": 5,
+        "kallDomaner": [
+          "ntf.se",
+          "www.folksam.se",
+          "news.cision.com",
+          "www.transportstyrelsen.se"
+        ],
+        "annonslankar": null,
+        "harAffiliate": false,
+        "omarkt": false,
+        "lasharnast": [
+          "vanliga-monteringsfel",
+          "vinterklader-bilbarnstol"
+        ],
+        "saknarLasharnast": false,
+        "inlankar": 4,
+        "lasharnastIn": 5,
+        "foraldralos": false
+      },
+      {
+        "fil": "basta-bilbarnstolen.md",
+        "slug": "basta-bilbarnstolen",
+        "titel": "Bästa bilbarnstolen 2026 — vilken du ska köpa, i vilket skede",
+        "publicerad": "2026-08-07",
+        "uppdaterad": "2026-08-17",
+        "ord": 1478,
+        "kallor": 5,
+        "kallDomaner": [
+          "www.folksam.se",
+          "www.vti.se",
+          "ntf.se",
+          "www.trafikverket.se"
+        ],
+        "annonslankar": [
+          "Babysam"
+        ],
+        "harAffiliate": true,
+        "omarkt": false,
+        "lasharnast": [
+          "bakatvand-bilbarnstol-vilken-ska-jag-kopa",
+          "babyskydd-for-nyfodda"
+        ],
+        "saknarLasharnast": false,
+        "inlankar": 7,
+        "lasharnastIn": 3,
+        "foraldralos": false
+      },
+      {
+        "fil": "begagnad-bilbarnstol.md",
+        "slug": "begagnad-bilbarnstol",
+        "titel": "Begagnad bilbarnstol — är det säkert att köpa?",
+        "publicerad": "2026-08-07",
+        "uppdaterad": "2026-08-17",
+        "ord": 1534,
+        "kallor": 8,
+        "kallDomaner": [
+          "www.transportstyrelsen.se",
+          "www.folksam.se",
+          "ntf.se",
+          "www.vti.se"
+        ],
+        "annonslankar": null,
+        "harAffiliate": false,
+        "omarkt": false,
+        "lasharnast": [
+          "bakatvand-bilbarnstol-vilken-ska-jag-kopa",
+          "bilbarnstol-pa-rea"
+        ],
+        "saknarLasharnast": false,
+        "inlankar": 9,
+        "lasharnastIn": 1,
+        "foraldralos": false
+      },
+      {
+        "fil": "bilbarnstol-flyg-och-hyrbil.md",
+        "slug": "bilbarnstol-flyg-och-hyrbil",
+        "titel": "Flyg och hyrbil — ska du släpa med stolen?",
+        "publicerad": "2026-08-07",
+        "uppdaterad": "2026-08-10",
+        "ord": 1027,
+        "kallor": 6,
+        "kallDomaner": [
+          "www.transportstyrelsen.se",
+          "www.faa.gov",
+          "www.amsafe.com",
+          "www.folksam.se",
+          "ntf.se"
+        ],
+        "annonslankar": [
+          "Babysam"
+        ],
+        "harAffiliate": true,
+        "omarkt": false,
+        "lasharnast": [
+          "bilbarnstol-i-taxi",
+          "begagnad-bilbarnstol"
+        ],
+        "saknarLasharnast": false,
+        "inlankar": 2,
+        "lasharnastIn": 1,
+        "foraldralos": false
+      },
+      {
+        "fil": "bilbarnstol-fram-och-airbag.md",
+        "slug": "bilbarnstol-fram-och-airbag",
+        "titel": "Bilbarnstol i framsätet — vad säger lagen om airbag?",
+        "publicerad": "2026-08-07",
+        "uppdaterad": "2026-08-10",
+        "ord": 1652,
+        "kallor": 10,
+        "kallDomaner": [
+          "www.transportstyrelsen.se",
+          "www.riksdagen.se",
+          "www.trafikverket.se",
+          "ntf.se",
+          "www.folksam.se",
+          "mb.cision.com"
+        ],
+        "annonslankar": [
+          "Babysam"
+        ],
+        "harAffiliate": true,
+        "omarkt": false,
+        "lasharnast": [
+          "bilbarnstol-plats-i-bilen",
+          "montera-bilbarnstol-steg-for-steg"
+        ],
+        "saknarLasharnast": false,
+        "inlankar": 7,
+        "lasharnastIn": 3,
+        "foraldralos": false
+      },
+      {
+        "fil": "bilbarnstol-i-taxi.md",
+        "slug": "bilbarnstol-i-taxi",
+        "titel": "Bilbarnstol i taxi — vad lagen faktiskt säger",
+        "publicerad": "2026-08-07",
+        "uppdaterad": "2026-08-10",
+        "ord": 894,
+        "kallor": 5,
+        "kallDomaner": [
+          "www.transportstyrelsen.se",
+          "www.riksdagen.se",
+          "www.rikshandboken-bhv.se",
+          "ntf.se"
+        ],
+        "annonslankar": [
+          "Babysam"
+        ],
+        "harAffiliate": true,
+        "omarkt": false,
+        "lasharnast": [
+          "bilbarnstol-flyg-och-hyrbil",
+          "baltesstol-eller-balteskudde"
+        ],
+        "saknarLasharnast": false,
+        "inlankar": 2,
+        "lasharnastIn": 1,
+        "foraldralos": false
+      },
+      {
+        "fil": "vanliga-monteringsfel.md",
+        "slug": "vanliga-monteringsfel",
+        "titel": "Sitter stolen rätt? Sex fel som nästan alla gör",
+        "publicerad": "2026-08-07",
+        "uppdaterad": "2026-08-09",
+        "ord": 1291,
+        "kallor": 5,
+        "kallDomaner": [
+          "news.cision.com",
+          "www.folksam.se",
+          "ntf.se",
+          "www.transportstyrelsen.se"
+        ],
+        "annonslankar": null,
+        "harAffiliate": false,
+        "omarkt": false,
+        "lasharnast": [
+          "montera-bilbarnstol-steg-for-steg",
+          "bilbarnstol-fram-och-airbag"
+        ],
+        "saknarLasharnast": false,
+        "inlankar": 11,
+        "lasharnastIn": 3,
+        "foraldralos": false
+      },
+      {
+        "fil": "bakatvand-bilbarnstol-vilken-ska-jag-kopa.md",
+        "slug": "bakatvand-bilbarnstol-vilken-ska-jag-kopa",
+        "titel": "Bakåtvänd bilbarnstol — vilken ska jag köpa?",
+        "publicerad": "2026-08-06",
+        "uppdaterad": "2026-08-17",
+        "ord": 1247,
+        "kallor": 3,
+        "kallDomaner": [
+          "www.folksam.se",
+          "ntf.se",
+          "www.trafikverket.se"
+        ],
+        "annonslankar": [
+          "Babysam"
+        ],
+        "harAffiliate": true,
+        "omarkt": false,
+        "lasharnast": [
+          "montera-bilbarnstol-steg-for-steg",
+          "bilbarnstol-plats-i-bilen"
+        ],
+        "saknarLasharnast": false,
+        "inlankar": 12,
+        "lasharnastIn": 6,
+        "foraldralos": false
+      },
+      {
+        "fil": "baltesstol-eller-balteskudde.md",
+        "slug": "baltesstol-eller-balteskudde",
+        "titel": "Bältesstol eller bälteskudde — vad kommer efter den bakåtvända?",
+        "publicerad": "2026-08-06",
+        "uppdaterad": "2026-08-17",
+        "ord": 1309,
+        "kallor": 5,
+        "kallDomaner": [
+          "ntf.se",
+          "www.folksam.se"
+        ],
+        "annonslankar": null,
+        "harAffiliate": false,
+        "omarkt": false,
+        "lasharnast": [
+          "bilbarnstol-fram-och-airbag",
+          "vanliga-monteringsfel"
+        ],
+        "saknarLasharnast": false,
+        "inlankar": 12,
+        "lasharnastIn": 2,
+        "foraldralos": false
+      },
+      {
+        "fil": "i-size-vs-vikt.md",
+        "slug": "i-size-vs-vikt",
+        "titel": "i-Size och R129 — vad betyder det egentligen?",
+        "publicerad": "2026-08-06",
+        "uppdaterad": "2026-08-18",
+        "ord": 1073,
+        "kallor": 7,
+        "kallDomaner": [
+          "ntf.se",
+          "www.trafikverket.se",
+          "www.transportstyrelsen.se",
+          "www.folksam.se"
+        ],
+        "annonslankar": null,
+        "harAffiliate": false,
+        "omarkt": false,
+        "lasharnast": [
+          "bakatvand-bilbarnstol-vilken-ska-jag-kopa",
+          "isofix-eller-balte"
+        ],
+        "saknarLasharnast": false,
+        "inlankar": 8,
+        "lasharnastIn": 0,
+        "foraldralos": false
+      },
+      {
+        "fil": "isofix-eller-balte.md",
+        "slug": "isofix-eller-balte",
+        "titel": "Isofix eller bälte — spelar det roll?",
+        "publicerad": "2026-08-06",
+        "uppdaterad": "2026-08-09",
+        "ord": 792,
+        "kallor": 3,
+        "kallDomaner": [
+          "ntf.se",
+          "www.folksam.se"
+        ],
+        "annonslankar": null,
+        "harAffiliate": false,
+        "omarkt": false,
+        "lasharnast": [
+          "montera-bilbarnstol-steg-for-steg",
+          "bilbarnstol-plats-i-bilen"
+        ],
+        "saknarLasharnast": false,
+        "inlankar": 10,
+        "lasharnastIn": 2,
+        "foraldralos": false
+      },
+      {
+        "fil": "babyskydd-for-nyfodda.md",
+        "slug": "babyskydd-for-nyfodda",
+        "titel": "Babyskydd för nyfödda — så väljer du rätt",
+        "publicerad": "2026-08-05",
+        "uppdaterad": "2026-08-17",
+        "ord": 888,
+        "kallor": 7,
+        "kallDomaner": [
+          "ntf.se",
+          "www.folksam.se",
+          "www.vti.se"
+        ],
+        "annonslankar": null,
+        "harAffiliate": false,
+        "omarkt": false,
+        "lasharnast": [
+          "bakatvand-bilbarnstol-vilken-ska-jag-kopa",
+          "basta-bilbarnstolen"
+        ],
+        "saknarLasharnast": false,
+        "inlankar": 8,
+        "lasharnastIn": 1,
+        "foraldralos": false
+      }
+    ],
+    "antal": 17,
+    "totaltOrd": 20376,
+    "affiliateprogram": {
+      "Babysam": true,
+      "Babyland": true,
+      "Stor&Liten": true,
+      "Baby V": true
+    },
+    "aktivaProgram": 4,
+    "omarkta": [],
+    "foraldralosa": [],
+    "utanLasharnast": [],
+    "svagastLankade": [
+      {
+        "slug": "bilbarnstol-flyg-och-hyrbil",
+        "inlankar": 2
+      },
+      {
+        "slug": "bilbarnstol-i-taxi",
+        "inlankar": 2
+      },
+      {
+        "slug": "efterfoljare-samma-stol",
+        "inlankar": 3
+      },
+      {
+        "slug": "bilbarnstol-pa-rea",
+        "inlankar": 4
+      },
+      {
+        "slug": "nar-ar-barnet-klart-med-bilbarnstol",
+        "inlankar": 4
+      }
+    ]
+  },
+  "lankhalsa": {
+    "tillganglig": true,
+    "lankar": [
+      {
+        "url": "https://www.babysam.se/britax-roemer-max-safe-pro-bilbarnstol-space-black-onesize",
+        "namn": "Britax Römer Max-Safe Pro",
+        "handlare": "Babysam",
+        "kalla": "produkter.js",
+        "nyckel": "britax-max-safe-pro",
+        "status": 200,
+        "lage": "svarar",
+        "slutUrl": null
+      },
+      {
+        "url": "",
+        "namn": "BeSafe Beyond",
+        "handlare": "",
+        "kalla": "produkter.js",
+        "nyckel": "besafe-beyond",
+        "status": null,
+        "lage": "ingen länk"
+      },
+      {
+        "url": "https://www.babysam.se/tinyseats-two-bilbarnstol-baelteskudde-onesize",
+        "namn": "TinySeats Two",
+        "handlare": "Babysam",
+        "kalla": "produkter.js",
+        "nyckel": "tinyseats-two",
+        "status": 200,
+        "lage": "svarar",
+        "slutUrl": null
+      },
+      {
+        "url": "https://www.babysam.se/axkid-up-transportvaeska-black-onesize",
+        "namn": "vadderad transportväska",
+        "handlare": "Babysam",
+        "kalla": "bilbarnstol-flyg-och-hyrbil",
+        "nyckel": null,
+        "status": 200,
+        "lage": "svarar",
+        "slutUrl": null
+      },
+      {
+        "url": "https://www.babysam.se/bilbarnstolar-bilbarnstolstillbehoer-bilspeglar",
+        "namn": "spegel på nackstödet",
+        "handlare": "Babysam",
+        "kalla": "bilbarnstol-fram-och-airbag",
+        "nyckel": null,
+        "status": 200,
+        "lage": "svarar",
+        "slutUrl": null
+      },
+      {
+        "url": "https://www.babysam.se/bilbarnstolar-framaatvaenda-bilbarnstolar-baelteskuddar",
+        "namn": "kompakta modeller",
+        "handlare": "Babysam",
+        "kalla": "bilbarnstol-i-taxi",
+        "nyckel": null,
+        "status": 200,
+        "lage": "svarar",
+        "slutUrl": null
+      }
+    ],
+    "utanLank": 1,
+    "doda": 0,
+    "blockerade": 0
+  },
+  "cloudflare": {
+    "tillganglig": true,
+    "botfiltrerat": true,
+    "period": {
+      "start": "2026-07-30",
+      "slut": "2026-08-27"
+    },
+    "besok28": 240,
+    "sidvisningar28": 280,
+    "besok7": 38,
+    "besokOfiltrerat28": 240,
+    "botandel": 0,
+    "guideBesok28": 20,
+    "guideSidvisningar28": 40,
+    "toppsidor": [
+      {
+        "sokvag": "/",
+        "besok": 200,
+        "sidvisningar": 210
+      },
+      {
+        "sokvag": "/vilken-bilbarnstol/",
+        "besok": 10,
+        "sidvisningar": 10
+      },
+      {
+        "sokvag": "/guider/bilbarnstol-plats-i-bilen/",
+        "besok": 10,
+        "sidvisningar": 10
+      },
+      {
+        "sokvag": "/guider/bilbarnstol-i-taxi/",
+        "besok": 10,
+        "sidvisningar": 10
+      },
+      {
+        "sokvag": "/plustestade-bilbarnstolar/",
+        "besok": 10,
+        "sidvisningar": 10
+      },
+      {
+        "sokvag": "/guider/montera-bilbarnstol-steg-for-steg/",
+        "besok": 0,
+        "sidvisningar": 10
+      },
+      {
+        "sokvag": "/guider/basta-bilbarnstolen/",
+        "besok": 0,
+        "sidvisningar": 10
+      },
+      {
+        "sokvag": "/om/",
+        "besok": 0,
+        "sidvisningar": 10
+      }
+    ],
+    "hanvisare": [
+      {
+        "vard": "bing.com",
+        "besok": 10,
+        "sidvisningar": 10
+      }
+    ],
+    "hanvisandeDomaner": 1,
+    "egnaHanvisare": 2
+  },
+  "gsc": {
+    "tillganglig": true,
+    "period": {
+      "start": "2026-07-30",
+      "slut": "2026-08-26"
+    },
+    "totalt": {
+      "klick": 4,
+      "visningar": 9,
+      "ctr": 0.4444444444444444,
+      "position": 25.11111111111111
+    },
+    "foregaende": {
+      "klick": 0,
+      "visningar": 0,
+      "ctr": 0,
+      "position": null
+    },
+    "perDag": [
+      {
+        "datum": "2026-08-05",
+        "klick": 0,
+        "visningar": 0,
+        "position": 0
+      },
+      {
+        "datum": "2026-08-06",
+        "klick": 0,
+        "visningar": 0,
+        "position": 0
+      },
+      {
+        "datum": "2026-08-07",
+        "klick": 1,
+        "visningar": 1,
+        "position": 1
+      },
+      {
+        "datum": "2026-08-08",
+        "klick": 0,
+        "visningar": 0,
+        "position": 0
+      },
+      {
+        "datum": "2026-08-09",
+        "klick": 1,
+        "visningar": 1,
+        "position": 2
+      },
+      {
+        "datum": "2026-08-10",
+        "klick": 0,
+        "visningar": 1,
+        "position": 1
+      },
+      {
+        "datum": "2026-08-11",
+        "klick": 0,
+        "visningar": 0,
+        "position": 0
+      },
+      {
+        "datum": "2026-08-12",
+        "klick": 0,
+        "visningar": 0,
+        "position": 0
+      },
+      {
+        "datum": "2026-08-13",
+        "klick": 0,
+        "visningar": 0,
+        "position": 0
+      },
+      {
+        "datum": "2026-08-14",
+        "klick": 0,
+        "visningar": 0,
+        "position": 0
+      },
+      {
+        "datum": "2026-08-15",
+        "klick": 0,
+        "visningar": 0,
+        "position": 0
+      },
+      {
+        "datum": "2026-08-16",
+        "klick": 0,
+        "visningar": 0,
+        "position": 0
+      },
+      {
+        "datum": "2026-08-17",
+        "klick": 0,
+        "visningar": 0,
+        "position": 0
+      },
+      {
+        "datum": "2026-08-18",
+        "klick": 0,
+        "visningar": 0,
+        "position": 0
+      },
+      {
+        "datum": "2026-08-19",
+        "klick": 0,
+        "visningar": 0,
+        "position": 0
+      },
+      {
+        "datum": "2026-08-20",
+        "klick": 0,
+        "visningar": 0,
+        "position": 0
+      },
+      {
+        "datum": "2026-08-21",
+        "klick": 0,
+        "visningar": 0,
+        "position": 0
+      },
+      {
+        "datum": "2026-08-22",
+        "klick": 0,
+        "visningar": 0,
+        "position": 0
+      },
+      {
+        "datum": "2026-08-23",
+        "klick": 0,
+        "visningar": 1,
+        "position": 1
+      },
+      {
+        "datum": "2026-08-24",
+        "klick": 1,
+        "visningar": 1,
+        "position": 1
+      },
+      {
+        "datum": "2026-08-25",
+        "klick": 1,
+        "visningar": 2,
+        "position": 35
+      },
+      {
+        "datum": "2026-08-26",
+        "klick": 0,
+        "visningar": 2,
+        "position": 75
+      }
+    ],
+    "toppfragor": [
+      {
+        "fraga": "bilstolar ålder",
+        "klick": 0,
+        "visningar": 1,
+        "ctr": 0,
+        "position": 67
+      },
+      {
+        "fraga": "bältesstol ålder",
+        "klick": 0,
+        "visningar": 1,
+        "ctr": 0,
+        "position": 69
+      },
+      {
+        "fraga": "ålder bilbarnstol",
+        "klick": 0,
+        "visningar": 1,
+        "ctr": 0,
+        "position": 83
+      }
+    ],
+    "toppsidor": [
+      {
+        "url": "https://barnprylsdoktorn.se/",
+        "klick": 3,
+        "visningar": 5,
+        "ctr": 0.6,
+        "position": 1.2
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/om/",
+        "klick": 1,
+        "visningar": 4,
+        "ctr": 0.25,
+        "position": 2.25
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/",
+        "klick": 0,
+        "visningar": 1,
+        "ctr": 0,
+        "position": 2
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/guider/babyskydd-for-nyfodda/",
+        "klick": 0,
+        "visningar": 3,
+        "ctr": 0,
+        "position": 4.666666666666666
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/sa-tjanar-sajten-pengar/",
+        "klick": 0,
+        "visningar": 4,
+        "ctr": 0,
+        "position": 4.75
+      },
+      {
+        "url": "https://barnprylsdoktorn.se/vilken-bilbarnstol/",
+        "klick": 0,
+        "visningar": 7,
+        "ctr": 0,
+        "position": 33.285714285714285
+      }
+    ],
+    "lander": [
+      {
+        "land": "swe",
+        "klick": 4,
+        "visningar": 5,
+        "ctr": 0.8,
+        "position": 1.2
+      },
+      {
+        "land": "idn",
+        "klick": 0,
+        "visningar": 1,
+        "ctr": 0,
+        "position": 67
+      },
+      {
+        "land": "phl",
+        "klick": 0,
+        "visningar": 1,
+        "ctr": 0,
+        "position": 83
+      },
+      {
+        "land": "usa",
+        "klick": 0,
+        "visningar": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "land": "vnm",
+        "klick": 0,
+        "visningar": 1,
+        "ctr": 0,
+        "position": 69
+      }
+    ]
+  },
+  "indexering": {
+    "tillganglig": true,
+    "kontrollerade": 0,
+    "indexerade": 0,
+    "sidor": []
+  },
+  "ga4": {
+    "tillganglig": true,
+    "totalt": {
+      "sessioner": 6,
+      "anvandare": 5,
+      "sidvisningar": 15
+    },
+    "perDag": [
+      {
+        "datum": "20260820",
+        "sessioner": 2,
+        "anvandare": 1,
+        "sidvisningar": 7
+      },
+      {
+        "datum": "20260823",
+        "sessioner": 1,
+        "anvandare": 1,
+        "sidvisningar": 1
+      },
+      {
+        "datum": "20260824",
+        "sessioner": 1,
+        "anvandare": 1,
+        "sidvisningar": 1
+      },
+      {
+        "datum": "20260825",
+        "sessioner": 1,
+        "anvandare": 1,
+        "sidvisningar": 5
+      },
+      {
+        "datum": "20260827",
+        "sessioner": 1,
+        "anvandare": 1,
+        "sidvisningar": 1
+      }
+    ],
+    "toppsidor": [
+      {
+        "sokvag": "/",
+        "sidvisningar": 9,
+        "snittid": 193.36204419999999
+      },
+      {
+        "sokvag": "/guider/",
+        "sidvisningar": 1,
+        "snittid": 33.297029
+      },
+      {
+        "sokvag": "/guider/basta-bilbarnstolen/",
+        "sidvisningar": 1,
+        "snittid": 18.689097
+      },
+      {
+        "sokvag": "/guider/bilbarnstol-i-taxi/",
+        "sidvisningar": 1,
+        "snittid": 26.982733
+      },
+      {
+        "sokvag": "/guider/i-size-vs-vikt/",
+        "sidvisningar": 1,
+        "snittid": 153.652507
+      },
+      {
+        "sokvag": "/om/",
+        "sidvisningar": 1,
+        "snittid": 117.025753
+      },
+      {
+        "sokvag": "/plustestade-bilbarnstolar/",
+        "sidvisningar": 1,
+        "snittid": 102.629646
+      }
+    ],
+    "kanaler": [
+      {
+        "kanal": "Direct",
+        "sessioner": 4
+      },
+      {
+        "kanal": "Organic Search",
+        "sessioner": 2
+      }
+    ],
+    "utgaendeKlick": []
+  },
+  "historik": [
+    {
+      "datum": "2026-08-27",
+      "hanvisandeDomaner": 1,
+      "besok28": 240,
+      "guideBesok28": 20,
+      "klick28": 4,
+      "visningar28": 9,
+      "position": 25.11111111111111,
+      "indexerade": 0,
+      "kontrollerade": 0,
+      "sessioner28": 6,
+      "guider": 17
+    }
+  ]
+}
