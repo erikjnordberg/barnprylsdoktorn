@@ -433,20 +433,22 @@ båda sajterna — inget eget Google Cloud-projekt behövs här. Search Console-
 GA4-behörigheterna för Barnprylsdoktorn var redan på plats när det begärdes 2026-08-27
 (troligen satta manuellt tidigare) — bara secreten/variabeln saknades i repot.
 
-**Cloudflare Bot Fight Mode blockerar sajtkontrollen — löst med en bypass-header.**
-Upptäckt 2026-08-27: `hamtaSajt()` fick `sitemapUrler: 0` två körningar i rad utan
-något loggat fel, trots frisk sitemap vid manuell curl. Diagnostikloggning avslöjade
-403 och Cloudflares "Just a moment..."-utmaningssida — en vanlig `fetch` från GitHub
-Actions egress-IP flaggas som bot och kan aldrig lösa JS-utmaningen. `BYPASS_HEADERS`
-i `dashboard-data.mjs` lägger på `X-Dashboard-Check: <DASHBOARD_BYPASS_SECRET>` på de
-två fetchar som går mot sajten själv (sitemap + varje sida i sajtkontrollen) — matchar
-en WAF-regel i Cloudflare (Security → WAF → Custom rules) som skippar utmaningen när
-headern stämmer. **Lägg aldrig headern på fetchar mot externa handlarsidor**
-(`hamtaLankhalsa`) — de ska genomgå samma kontroll som en riktig besökare. Kräver att
-Erik lägger till WAF-regeln själv i Cloudflare-gränssnittet (samma automationsbegränsning
-som GA4/Cloudflares dashboard, se punkt 6 i Nästa steg i projektet). Diagnostikloggningen i
-`hamtaSajt()` (`FEL.push` när `urler.length === 0`) är kvar tills vidare som skyddsnät —
-ta bort den när bypassen är verifierad och bekräftat stabil över några körningar.
+**Löst 2026-08-27: Cloudflare Bot Fight Mode blockerade sajtkontrollen.**
+`hamtaSajt()` fick `sitemapUrler: 0` upprepade körningar utan något loggat fel, trots
+frisk sitemap vid manuell curl. Diagnostikloggning (sedan borttagen) avslöjade 403 och
+Cloudflares "Just a moment..."-utmaningssida — en vanlig `fetch` från GitHub Actions
+egress-IP flaggades som bot. Första försöket var en WAF-regel med en hemlig header
+(`X-Dashboard-Check`, secreten `DASHBOARD_BYPASS_SECRET`) som skippar Security Level,
+Browser Integrity Check och Super Bot Fight Mode — men **löste inte problemet**:
+Cloudflares vanliga (gratis) Bot Fight Mode går inte att skippa via en WAF-regel
+överhuvudtaget, bara den betalda Super Bot Fight Mode stöder det. Den faktiska fixen
+var att stänga av Bot Fight Mode helt för zonen (Security → Settings → Bot traffic →
+Bot fight mode). `BYPASS_HEADERS`/`X-Dashboard-Check` i `dashboard-data.mjs` och
+WAF-regeln "Dashboard check bypass" i Cloudflare ligger kvar som extra skydd ifall
+Bot Fight Mode någonsin slås på igen, men gjorde inte skillnaden i sig. **Lägg aldrig
+headern på fetchar mot externa handlarsidor** (`hamtaLankhalsa`) — de ska genomgå
+samma kontroll som en riktig besökare. Verifierat med en körning efter avstängningen:
+`sitemapUrler: 24`, `trasiga: []`, indexering `24 kontrollerade / 5 indexerade`.
 
 **Toppraden är medvetet en annan än på forstahunden.** Där är indexeringen flaskhalsen och
 står först. Här rampar indexeringen upp normalt, och det som avgör takten är externa
@@ -718,19 +720,12 @@ förbjudet hos Babyland och Stor&Liten.
    Mät-ID och egendomsuppgifter står under Teknik. Bannern och dess regler står under
    Komponenter. Data börjar samlas in först efter deploy, och GA rapporterar bara de
    besökare som tryckt Godkänn — Cloudflare Web Analytics är fortsatt det som räknar alla.
-7. **Dashboarden väntar på tre behörigheter.** Koden ligger på plats sedan 2026-08-25,
-   men jobbet kan inte hämta något förrän det här är gjort — samtliga i gränssnitt som
-   inte går att automatisera, alltså Eriks egna klick:
-   - Search Console: lägg till `dashboard-lasare@forstahunden-data.iam.gserviceaccount.com`
-     som användare på `sc-domain:barnprylsdoktorn.se` med behörighet **Fullständig**.
-     Begränsad räcker inte — URL-granskning är avstängd för begränsade användare, och det
-     är den som ger indexeringsstatus per adress.
-   - GA4: samma adress som **Läsbehörig** på egendom 550859009.
-   - Repots inställningar: secret `GOOGLE_SA_KEY` med tjänstekontots JSON-nyckel, och
-     variabeln `GA4_PROPERTY_ID` = `550859009`. `CF_API_TOKEN` finns redan.
-
-   Kör därefter workflowen `Dashboarddata` manuellt en gång från fliken Actions i stället
-   för att vänta till 05:30. Första körningen tar tre till fyra minuter, mest URL-granskning.
+7. **Dashboarden är i drift sedan 2026-08-27.** Alla tre behörigheter klara (Search
+   Console och GA4 var redan satta manuellt tidigare, secreten `GOOGLE_SA_KEY` och
+   variabeln `GA4_PROPERTY_ID` lades till i repot 2026-08-27), och Bot Fight Mode-buggen
+   som gav `sitemapUrler: 0` är löst, se Dashboard-avsnittet ovan. Körs nattligt 03:30 UTC,
+   eller manuellt från Actions-fliken vid behov (tre till fyra minuter, mest
+   URL-granskning). Första fungerande publicering som Artifact: samma dag.
 8. **Löpande UX- och mobilgenomgång** med `ux-granskning`-skillen.
 
 Den här listan är färskvara. Blir ett steg klart, stryk det i samma commit — och lägg till
