@@ -424,10 +424,29 @@ Källorna, och varför var och en finns med:
 | Sajten själv | sitemap, svarskoder, svarstid | ingen |
 | Repot | guider, källor, korslänkning, annonsmärkning | ingen |
 
-Nycklar i repots inställningar: secrets `GOOGLE_SA_KEY` och `CF_API_TOKEN`, variabeln
-`GA4_PROPERTY_ID` = `550859009` (**numeriskt egendoms-id, inte mät-id G-...**).
+Nycklar i repots inställningar: secrets `GOOGLE_SA_KEY`, `CF_API_TOKEN` och
+`DASHBOARD_BYPASS_SECRET`, variabeln `GA4_PROPERTY_ID` = `550859009` (**numeriskt
+egendoms-id, inte mät-id G-...**, bekräftat 2026-08-27 att det verkligen är
+Barnprylsdoktorns eget — kontot i URL:en, `a87758593`/"Nordberg", matchar exakt).
 Tjänstekontot är `dashboard-lasare@forstahunden-data.iam.gserviceaccount.com` och läser
-båda sajterna — inget eget Google Cloud-projekt behövs här.
+båda sajterna — inget eget Google Cloud-projekt behövs här. Search Console- och
+GA4-behörigheterna för Barnprylsdoktorn var redan på plats när det begärdes 2026-08-27
+(troligen satta manuellt tidigare) — bara secreten/variabeln saknades i repot.
+
+**Cloudflare Bot Fight Mode blockerar sajtkontrollen — löst med en bypass-header.**
+Upptäckt 2026-08-27: `hamtaSajt()` fick `sitemapUrler: 0` två körningar i rad utan
+något loggat fel, trots frisk sitemap vid manuell curl. Diagnostikloggning avslöjade
+403 och Cloudflares "Just a moment..."-utmaningssida — en vanlig `fetch` från GitHub
+Actions egress-IP flaggas som bot och kan aldrig lösa JS-utmaningen. `BYPASS_HEADERS`
+i `dashboard-data.mjs` lägger på `X-Dashboard-Check: <DASHBOARD_BYPASS_SECRET>` på de
+två fetchar som går mot sajten själv (sitemap + varje sida i sajtkontrollen) — matchar
+en WAF-regel i Cloudflare (Security → WAF → Custom rules) som skippar utmaningen när
+headern stämmer. **Lägg aldrig headern på fetchar mot externa handlarsidor**
+(`hamtaLankhalsa`) — de ska genomgå samma kontroll som en riktig besökare. Kräver att
+Erik lägger till WAF-regeln själv i Cloudflare-gränssnittet (samma automationsbegränsning
+som GA4/Cloudflares dashboard, se punkt 6 i Nästa steg i projektet). Diagnostikloggningen i
+`hamtaSajt()` (`FEL.push` när `urler.length === 0`) är kvar tills vidare som skyddsnät —
+ta bort den när bypassen är verifierad och bekräftat stabil över några körningar.
 
 **Toppraden är medvetet en annan än på forstahunden.** Där är indexeringen flaskhalsen och
 står först. Här rampar indexeringen upp normalt, och det som avgör takten är externa

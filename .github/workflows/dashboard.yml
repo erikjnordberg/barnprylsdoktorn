@@ -39,6 +39,7 @@ jobs:
           GOOGLE_SA_KEY: ${{ secrets.GOOGLE_SA_KEY }}
           GA4_PROPERTY_ID: ${{ vars.GA4_PROPERTY_ID }}
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          DASHBOARD_BYPASS_SECRET: ${{ secrets.DASHBOARD_BYPASS_SECRET }}
         run: node scripts/dashboard-data.mjs
 
       - name: Rita om dashboarden

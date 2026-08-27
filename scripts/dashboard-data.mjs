@@ -6,9 +6,11 @@
  * publiceras på sajten.
  *
  * Kräver miljövariabler:
- *   GOOGLE_SA_KEY     hela JSON-nyckeln för tjänstekontot
- *   GA4_PROPERTY_ID   numeriskt egendoms-id (inte mät-id G-...)
- *   CF_API_TOKEN      samma secret som hamta-statistik.js använder
+ *   GOOGLE_SA_KEY            hela JSON-nyckeln för tjänstekontot
+ *   GA4_PROPERTY_ID          numeriskt egendoms-id (inte mät-id G-...)
+ *   CF_API_TOKEN             samma secret som hamta-statistik.js använder
+ *   DASHBOARD_BYPASS_SECRET  matchar värdet i Cloudflares WAF-regel som släpper
+ *                            igenom sajtkontrollen utan bot-utmaning, se nedan
  */
 
 import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync } from "node:fs";
@@ -17,6 +19,15 @@ import { load as yamlLoad } from "js-yaml";
 
 const SITE = "https://barnprylsdoktorn.se";
 const GSC_SITE = "sc-domain:barnprylsdoktorn.se";
+
+// Cloudflares Bot Fight Mode utmanar GitHub Actions-körarens fetchar mot sajten
+// med en JS-utmaning ("Just a moment...") — bekräftat 2026-08-27, en vanlig
+// fetch kan aldrig lösa den. Den här headern matchar en WAF-regel i Cloudflare
+// som släpper igenom just de här kontrollerna. Saknas secreten skickas ingen
+// header och kontrollen får samma utmaning som förut.
+const BYPASS_HEADERS = process.env.DASHBOARD_BYPASS_SECRET
+  ? { "X-Dashboard-Check": process.env.DASHBOARD_BYPASS_SECRET }
+  : {};
 const CF_ACCOUNT = "ef8466a755154bee4f5f7028ac3a96ff";
 const CF_SITE_TAG = "caa682bff1ab423b85c5380cd23f2bdb";
 const UT = "data/dashboard.json";
@@ -314,7 +325,9 @@ async function hamtaCloudflare() {
 /* ---------- Sajten ---------- */
 
 async function hamtaSajt() {
-  const svar = await fetch(`${SITE}/sitemap.xml`, { headers: { "Cache-Control": "no-cache" } });
+  const svar = await fetch(`${SITE}/sitemap.xml`, {
+    headers: { "Cache-Control": "no-cache", ...BYPASS_HEADERS },
+  });
   const xml = await svar.text();
   const urler = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
 
@@ -332,7 +345,7 @@ async function hamtaSajt() {
   for (const url of urler) {
     const t0 = Date.now();
     try {
-      const r = await fetch(url, { redirect: "manual" });
+      const r = await fetch(url, { redirect: "manual", headers: BYPASS_HEADERS });
       kontroll.push({ url, status: r.status, ms: Date.now() - t0 });
     } catch (e) {
       kontroll.push({ url, status: 0, ms: Date.now() - t0, fel: e.message });
