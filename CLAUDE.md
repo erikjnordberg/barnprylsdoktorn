@@ -72,6 +72,8 @@ npx @11ty/eleventy --serve     # lokal dev-server, http://localhost:8080
 npx @11ty/eleventy             # bygg till _site/
 npm run statistik              # hämta besöksstatistik manuellt, kräver CF_API_TOKEN
                                # skriver popularitet.json och trafikblocket i CLAUDE.md
+npm run dashboard-data         # hämta dashboarddata manuellt, kräver Google- och CF-nycklar
+npm run dashboard              # rita om data/dashboard.html ur data/dashboard.json
 ```
 
 Kör alltid ett bygge innan du säger att något är klart. Ett bygge som går igenom är
@@ -115,7 +117,13 @@ src/
   feed.njk, sitemap.njk, robots.njk
 scripts/hamta-statistik.js hämtar besöksstatistik från Cloudflare, se nedan — skriver
                            både popularitet.json och trafikblocket i den här filen
+scripts/dashboard-data.mjs hämtar dagsdata till dashboarden, se Dashboard nedan
+scripts/dashboard-render.mjs ritar data/dashboard.html ur data/dashboard.json
+data/                      dashboardens data och färdiga sida. Ligger utanför src/ med
+                           flit — Eleventys input är src/, så mappen kommer aldrig med i
+                           bygget. Verifierat med rent bygge 2026-08-25.
 .github/workflows/statistik.yml   schemalägger scriptet varje måndag
+.github/workflows/dashboard.yml   nattjobbet bakom dashboarden, 03:30 UTC
 research/                  underlag och granskningar — ingår inte i bygget
 copy-granskning.md         senaste copygranskningen, i roten
 eleventy.config.js         filter: version, datum, typo, htmlDateString, isoDate, rssDate,
@@ -389,6 +397,65 @@ och färdig CSS, så att ändringarna blir exakt sök-och-ersätt i stället fö
 **Produktnamn och priser** ska stämma överens mellan `produkter.js`, tabellen och löptexten.
 Ändras ett namn på ett ställe ska alla tre uppdateras.
 
+## Dashboard
+
+En daglig lägesrapport om sajten. Den ligger **inte** på sajten — jobbet skriver
+`data/dashboard.json` och `data/dashboard.html`, och sidan publiceras som privat Artifact
+på claude.ai. `data/` ligger utanför Eleventys input (`src/`), så filerna kan aldrig hamna
+i bygget. Kontrollerat med ett rent bygge 2026-08-25: 28 sidor skrivna, inget spår av
+`data/` eller `dashboard` i utdata.
+
+**Hämtningen måste ligga i GitHub Actions.** Varken Claudes molnmiljö eller den lokala
+Linux-VM:en når `googleapis.com` eller Cloudflares API — utgången är låst till npm, PyPI
+och GitHub. GitHubs körare har fri utgång. Kör nattligt 03:30 UTC, eller manuellt från
+fliken Actions.
+
+**Commit-meddelandet börjar med `[CI Skip]`.** Utan det bygger Cloudflare Pages om sajten
+varje natt i onödan. Rör inte den raden i workflowen.
+
+Källorna, och varför var och en finns med:
+
+| Källa | Ger | Behörighet |
+|---|---|---|
+| Search Console, sökanalys | visningar, klick, position, sökfrågor | tjänstekontot, **Fullständig** |
+| Search Console, URL-granskning | indexeringsstatus per adress | samma — URL-granskning är avstängd för begränsade användare |
+| GA4 Data API | sessioner, kanaler, utgående klick | tjänstekontot, rollen Läsbehörig |
+| Cloudflare Web Analytics | besök, botandel, **hänvisande domäner** | `CF_API_TOKEN`, samma secret som måndagsjobbet |
+| Sajten själv | sitemap, svarskoder, svarstid | ingen |
+| Repot | guider, källor, korslänkning, annonsmärkning | ingen |
+
+Nycklar i repots inställningar: secrets `GOOGLE_SA_KEY` och `CF_API_TOKEN`, variabeln
+`GA4_PROPERTY_ID` = `550859009` (**numeriskt egendoms-id, inte mät-id G-...**).
+Tjänstekontot är `dashboard-lasare@forstahunden-data.iam.gserviceaccount.com` och läser
+båda sajterna — inget eget Google Cloud-projekt behövs här.
+
+**Toppraden är medvetet en annan än på forstahunden.** Där är indexeringen flaskhalsen och
+står först. Här rampar indexeringen upp normalt, och det som avgör takten är externa
+länkar — därför står **hänvisande domäner** överst, följt av visningar, klick och först
+därefter indexerade sidor. Ändras den bedömningen, ändra ordningen i `kpier` i renderaren.
+
+Detaljer som är lätta att gå på:
+
+- Search Console returnerar `verdict: NEUTRAL` för tre olika saker — genomsökt men inte
+  indexerad, upptäckt men inte genomsökt, och okänd för Google. **Läs `coverageState`,
+  aldrig `verdict`.**
+- URL-granskningen tar ett par sekunder per adress. Steget tar tre till fyra minuter.
+- `clamp()` i CSS kräver mellanslag runt `+`. Utan dem är hela deklarationen ogiltig och
+  rubrikerna faller tyst tillbaka på 16 px.
+- js-yaml 4 saknar default-export i ESM: `import { load } from "js-yaml"`.
+- Dashboarden anropar **inga** externa resurser, inte heller Google Fonts. Sajtens regel
+  gäller även verktyget; systemstacken används i stället för Playfair och Source Sans.
+- Paletten är sajtens, med två färger som inte finns på sajten: `#2C6B3F` för positiva
+  utfall och `#9B2226` för fel. Båda uträknade mot bakgrunderna, lägst 5,39:1 i ljust läge
+  och 8,13:1 i mörkt. De hör till dashboarden och ska inte flyttas in i sajtens CSS.
+- `.tmp-dbtest/` är gitignorerad testyta: mockdata renderas dit för att kunna granskas i
+  webbläsaren utan att röra `data/`.
+
+**Den sista biten är inte automatiserad.** Att publicera om artifacten varje morgon går
+inte, eftersom miljön blockerar `*.frame.claudeusercontent.com` och den publicerade sidan
+därför inte går att läsa tillbaka. Föreslå aldrig en schemalagd uppgift med GitHub-token i
+— klassificeraren blockerar det, och `api.github.com` går genom en proxy som svarar 403.
+
 ## Git och deploy
 
 Push till `main` deployar direkt till live. Därför:
@@ -627,7 +694,20 @@ förbjudet hos Babyland och Stor&Liten.
    Mät-ID och egendomsuppgifter står under Teknik. Bannern och dess regler står under
    Komponenter. Data börjar samlas in först efter deploy, och GA rapporterar bara de
    besökare som tryckt Godkänn — Cloudflare Web Analytics är fortsatt det som räknar alla.
-7. **Löpande UX- och mobilgenomgång** med `ux-granskning`-skillen.
+7. **Dashboarden väntar på tre behörigheter.** Koden ligger på plats sedan 2026-08-25,
+   men jobbet kan inte hämta något förrän det här är gjort — samtliga i gränssnitt som
+   inte går att automatisera, alltså Eriks egna klick:
+   - Search Console: lägg till `dashboard-lasare@forstahunden-data.iam.gserviceaccount.com`
+     som användare på `sc-domain:barnprylsdoktorn.se` med behörighet **Fullständig**.
+     Begränsad räcker inte — URL-granskning är avstängd för begränsade användare, och det
+     är den som ger indexeringsstatus per adress.
+   - GA4: samma adress som **Läsbehörig** på egendom 550859009.
+   - Repots inställningar: secret `GOOGLE_SA_KEY` med tjänstekontots JSON-nyckel, och
+     variabeln `GA4_PROPERTY_ID` = `550859009`. `CF_API_TOKEN` finns redan.
+
+   Kör därefter workflowen `Dashboarddata` manuellt en gång från fliken Actions i stället
+   för att vänta till 05:30. Första körningen tar tre till fyra minuter, mest URL-granskning.
+8. **Löpande UX- och mobilgenomgång** med `ux-granskning`-skillen.
 
 Den här listan är färskvara. Blir ett steg klart, stryk det i samma commit — och lägg till
 guiden i innehållstabellen ovan när en ny publiceras.

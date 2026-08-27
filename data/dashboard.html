@@ -1,0 +1,343 @@
+<title>Barnprylsdoktorn dagsrapport</title>
+<style>
+/* Sajtens palett. Inga webbtypsnitt: sajten anropar aldrig Google Fonts, och
+   samma regel gäller verktyget — systemstacken får duga.
+   Kontraster uträknade, inte uppskattade. Lägst i ljust läge är --ink-dov mot
+   --yta-2: 4,92:1. I mörkt läge är lägsta 6,43:1. */
+:root{
+  --bg:#F7F5F2; --yta:#FFFFFF; --yta-2:#EFEBE5; --linje:#E4DFD8; --linje-stark:#CFC7BC;
+  --ink:#181614; --ink-dov:#6b6459; --ink-invert:#FFFFFF;
+  --accent:#8a4317; --graf:#B5581F; --bra:#2C6B3F; --varning:#8a4317; --fel:#9B2226;
+  --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --matt:72rem; --radie:2px; --radie-liten:2px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#16140F; --yta:#1E1B16; --yta-2:#262119; --linje:#332E27; --linje-stark:#46403A;
+    --ink:#F4F0E9; --ink-dov:#ADA396; --ink-invert:#16140F;
+    --accent:#E39068; --graf:#E39068; --bra:#86C08F; --varning:#E39068; --fel:#F09A96;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16140F; --yta:#1E1B16; --yta-2:#262119; --linje:#332E27; --linje-stark:#46403A;
+  --ink:#F4F0E9; --ink-dov:#ADA396; --ink-invert:#16140F;
+  --accent:#E39068; --graf:#E39068; --bra:#86C08F; --varning:#E39068; --fel:#F09A96;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.ram{max-width:var(--matt);margin:0 auto;padding:1.5rem 1rem 5rem}
+@media(min-width:768px){.ram{padding:3rem 2rem 6rem}}
+
+.huvud{border-bottom:1px solid var(--linje-stark);padding-bottom:1.5rem;margin-bottom:2rem}
+.kicker{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
+  font-weight:600;margin:0 0 .5rem}
+.huvud h1{font-family:var(--serif);font-weight:600;letter-spacing:-.015em;
+  font-size:clamp(2rem, 1.4rem + 2.6vw, 3rem);line-height:1.1;margin:0;text-wrap:balance}
+.huvud__meta{color:var(--ink-dov);font-size:.875rem;margin:.75rem 0 0}
+.huvud__meta strong{color:var(--ink);font-weight:600}
+
+.banner{background:var(--yta);border:1px solid var(--linje-stark);border-left:3px solid var(--varning);
+  border-radius:var(--radie);padding:1rem 1.125rem;margin:0 0 2rem}
+.banner p{margin:0;font-size:.9375rem}
+
+.kpirad{display:grid;gap:.75rem;grid-template-columns:repeat(2,minmax(0,1fr));margin:0 0 2.5rem}
+@media(min-width:768px){.kpirad{grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}}
+.kpirad--tre{margin-bottom:1.5rem}
+.kpirad--fyra{margin-bottom:1.5rem}
+@media(min-width:768px){.kpirad--tre{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.kpi{background:var(--yta);border:1px solid var(--linje);border-radius:var(--radie);
+  padding:1rem;display:flex;flex-direction:column;gap:.25rem}
+.kpi--varning{border-left:3px solid var(--varning)}
+.kpi--fel{border-left:3px solid var(--fel)}
+.kpi__etikett{margin:0;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink-dov);font-weight:600}
+.kpi__varde{margin:0;font-family:var(--serif);font-size:clamp(1.75rem, 1.3rem + 1.6vw, 2.5rem);
+  font-weight:600;line-height:1.05;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.kpi__av{font-size:.5em;color:var(--ink-dov);font-weight:400;letter-spacing:0}
+.kpi__under{margin:0;font-size:.8125rem;color:var(--ink-dov);line-height:1.4}
+.kpi__under code{font-size:.9em}
+.delta__mot{color:var(--ink-dov);font-weight:400}
+
+.delta{font-weight:600}
+.delta--upp{color:var(--bra)}
+.delta--ner{color:var(--fel)}
+.delta--lika{color:var(--ink-dov);font-weight:400}
+
+.panel{margin:0 0 3rem}
+.panel h2{font-family:var(--serif);font-weight:600;font-size:1.5rem;letter-spacing:-.01em;
+  margin:0 0 .25rem;padding-bottom:.5rem;border-bottom:1px solid var(--linje)}
+.panel h3{font-family:var(--sans);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink-dov);font-weight:600;margin:1.5rem 0 .625rem}
+.panel__intro{color:var(--ink-dov);font-size:.9375rem;margin:.625rem 0 1.25rem;max-width:52ch}
+.tomt{color:var(--ink-dov);font-size:.9375rem;background:var(--yta);border:1px dashed var(--linje-stark);
+  border-radius:var(--radie);padding:1rem 1.125rem;margin:1rem 0 0}
+.notis{color:var(--ink-dov);font-size:.8125rem;margin:.75rem 0 0}
+.varningsrad{font-size:.875rem;margin:1rem 0 0;padding:.75rem .875rem;background:var(--yta);
+  border-left:3px solid var(--varning);border-radius:var(--radie)}
+
+.tvakol{display:grid;gap:1.5rem}
+@media(min-width:768px){.tvakol{grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem}}
+
+.matare{margin:1.25rem 0 1.5rem}
+.matare__spar{height:10px;background:var(--yta-2);border-radius:999px;overflow:hidden}
+.matare__fyll{display:block;height:100%;background:var(--bra);border-radius:999px}
+.matare__text{margin:.5rem 0 0;font-size:.875rem;color:var(--ink-dov)}
+
+.chip{display:inline-block;font-size:.75rem;font-weight:600;padding:.1875rem .5rem;
+  border-radius:var(--radie-liten);border:1px solid currentColor;white-space:nowrap}
+.chip--bra{color:var(--bra)}
+.chip--varning{color:var(--varning)}
+.chip--fel{color:var(--fel)}
+.chip--vilande{color:var(--ink-dov)}
+.programrad{display:flex;flex-wrap:wrap;gap:.5rem;margin:0}
+
+.staplar{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.875rem}
+.staplar__topp{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.staplar__namn{font-size:.9375rem;min-width:0;overflow-wrap:anywhere}
+.staplar__tal{font-variant-numeric:tabular-nums;font-weight:600;font-size:.9375rem;flex:none}
+.staplar__spar{height:6px;background:var(--yta-2);border-radius:999px;margin-top:.375rem;overflow:hidden}
+.staplar__fyll{display:block;height:100%;border-radius:999px}
+.staplar__bi{font-size:.75rem;color:var(--ink-dov);margin-top:.3125rem;font-variant-numeric:tabular-nums}
+
+.minidiagram{display:grid;gap:1.75rem;margin-top:1.25rem}
+@media(min-width:900px){.minidiagram{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.minidiagram figure{margin:0}
+.minidiagram figcaption{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink-dov);font-weight:600;margin-bottom:.5rem}
+.figcaption__not{text-transform:none;letter-spacing:0;font-weight:400}
+.diagram{position:relative;background:var(--yta);border:1px solid var(--linje);
+  border-radius:var(--radie);padding:.75rem .75rem .5rem}
+.diagram svg{display:block;width:100%;height:auto}
+.rutnat{stroke:var(--linje);stroke-width:1;vector-effect:non-scaling-stroke}
+.diagram__axel{display:flex;justify-content:space-between;font-size:.6875rem;
+  color:var(--ink-dov);margin-top:.25rem}
+.tooltip{position:absolute;pointer-events:none;background:var(--ink);color:var(--ink-invert);
+  font-size:.75rem;line-height:1.35;padding:.375rem .5rem;border-radius:var(--radie-liten);
+  white-space:nowrap;transform:translate(-50%,-115%);z-index:2;font-variant-numeric:tabular-nums}
+
+.rullbar{overflow-x:auto;margin-top:1.25rem;border:1px solid var(--linje);border-radius:var(--radie)}
+.tabell{width:100%;border-collapse:collapse;font-size:.875rem;min-width:34rem}
+.tabell th{text-align:left;font-size:.6875rem;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink-dov);font-weight:600;padding:.75rem .875rem;background:var(--yta);
+  border-bottom:1px solid var(--linje-stark);white-space:nowrap}
+.tabell td{padding:.75rem .875rem;border-bottom:1px solid var(--linje);vertical-align:top}
+.tabell tr:last-child td{border-bottom:0}
+.tabell tbody tr:nth-child(even){background:var(--yta)}
+.tabell__tal{font-variant-numeric:tabular-nums;white-space:nowrap}
+.tabell__sokvag{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.8125rem;overflow-wrap:anywhere}
+.tabell__bi{display:block;font-size:.6875rem;color:var(--ink-dov);margin-top:.25rem}
+
+.atgard{background:var(--yta);border:1px solid var(--linje-stark);border-radius:var(--radie);
+  padding:1.25rem 1.25rem 1.375rem;margin:0 0 3rem}
+.atgard h2{font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:0 0 .75rem;
+  padding:0;border:0;letter-spacing:-.01em}
+.atgard ol{margin:0;padding-left:1.25rem;display:flex;flex-direction:column;gap:.625rem}
+.atgard li{font-size:.9375rem;line-height:1.55}
+.atgard li::marker{color:var(--accent);font-weight:600}
+.atgard--tom{border-left:3px solid var(--bra)}
+.atgard--tom p{margin:0;font-size:.9375rem;color:var(--ink-dov)}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.875em;
+  background:var(--yta-2);padding:.0625rem .25rem;border-radius:var(--radie-liten)}
+
+.fallbar{margin-top:1rem}
+.fallbar>summary{cursor:pointer;font-size:.8125rem;font-weight:600;letter-spacing:.04em;
+  color:var(--ink-dov);padding:.5rem 0;min-height:44px;display:flex;align-items:center}
+.fallbar>summary:hover{color:var(--accent)}
+
+.fot{border-top:1px solid var(--linje-stark);padding-top:1.5rem;margin-top:3rem;
+  color:var(--ink-dov);font-size:.8125rem}
+.fot p{margin:0 0 .5rem}
+.fel{margin-top:1rem}
+.fel summary{cursor:pointer;color:var(--fel);font-weight:600;min-height:44px;display:flex;align-items:center}
+.fel ul{margin:.5rem 0 0;padding-left:1.25rem}
+.fel li{overflow-wrap:anywhere}
+
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:var(--radie-liten)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="ram">
+  <header class="huvud">
+    <p class="kicker">Barnprylsdoktorn</p>
+    <h1>Dagsrapport</h1>
+    <p class="huvud__meta">Hämtad <strong>–</strong></p>
+  </header>
+
+  <div class="banner">
+      <p><strong>Search Console och GA4 och Cloudflare är inte kopplat än.</strong> Panelerna nedan visar det som går att läsa utan de källorna — innehåll, korslänkning, sitemap och affiliatelänkarnas hälsa. Så fort behörigheterna finns fylls resten i av sig själv, utan att sidan behöver byggas om.</p>
+    </div>
+
+  <div class="kpirad"><div class="kpi ">
+    <p class="kpi__etikett">Hänvisande domäner, 28 d</p>
+    <p class="kpi__varde">–</p>
+    <p class="kpi__under">väntar på Cloudflare</p>
+  </div><div class="kpi ">
+    <p class="kpi__etikett">Visningar, 28 dagar</p>
+    <p class="kpi__varde">–</p>
+    <p class="kpi__under">väntar på Search Console</p>
+  </div><div class="kpi ">
+    <p class="kpi__etikett">Klick, 28 dagar</p>
+    <p class="kpi__varde">–</p>
+    <p class="kpi__under">väntar på Search Console</p>
+  </div><div class="kpi ">
+    <p class="kpi__etikett">Indexerade sidor</p>
+    <p class="kpi__varde">–</p>
+    <p class="kpi__under">väntar på Search Console</p>
+  </div></div>
+
+  <section class="atgard">
+      <h2>Det här står i vägen</h2>
+      <ol><li><strong>Search Console, GA4, Cloudflare</strong> är inte kopplat till hämtningen än.</li></ol>
+    </section>
+
+  <section class="panel ">
+    <h2>Externa länkar</h2>
+    <p class="panel__intro">Sajten har sjutton guider och tekniken är ren. Det som avgör takten härifrån är att någon annan länkar hit — därför står den här siffran överst.</p>
+    <p class="tomt">Hänvisande domäner läses ur Cloudflare Web Analytics. Panelen fylls när <code>CF_API_TOKEN</code> finns i jobbet.</p>
+  </section>
+
+  <section class="panel ">
+    <h2>Synlighet över tid</h2>
+    <p class="panel__intro">Visningar rör sig först, klicken följer efter. Positionen är ett viktat snitt över alla sökningar.</p>
+    <p class="tomt">Kurvorna ritas när Search Console-hämtningen är igång.</p>
+  </section>
+
+  <section class="panel ">
+    <h2>Sökningar sajten syns på</h2>
+    <p class="panel__intro">Frågor med många visningar men dålig position är kandidater för nästa guide — och för att skärpa en befintlig.</p>
+    <p class="tomt">Väntar på Search Console.</p>
+  </section>
+
+  <section class="panel ">
+    <h2>Sidor som syns</h2>
+    
+    <p class="tomt">Väntar på Search Console.</p>
+  </section>
+
+  <section class="panel ">
+    <h2>Trafik — alla mot dem som sagt ja</h2>
+    <p class="panel__intro">Cloudflare räknar varje besök, GA4 bara den som tryckt Godkänn. Skillnaden mellan talen är samtyckesgraden, och botandelen säger hur mycket av besöken som aldrig var människor.</p>
+    <p class="tomt">Varken Cloudflare eller GA4 svarar. Panelen fylls när jobbet har tokens.</p>
+  </section>
+
+  <section class="panel ">
+    <h2>Intäktsspåret</h2>
+    <p class="panel__intro">Fyra program är godkända och spårlänkarna ligger inne. Det som går sönder härifrån är enskilda produktsidor och märkningen.</p>
+    <div class="kpirad kpirad--tre">
+    <div class="kpi ">
+    <p class="kpi__etikett">Affiliatelänkar som svarar</p>
+    <p class="kpi__varde">–</p>
+    <p class="kpi__under">kontrollen kunde inte köras</p>
+  </div>
+    <div class="kpi ">
+    <p class="kpi__etikett">Utgående klick, 28 d</p>
+    <p class="kpi__varde">–</p>
+    <p class="kpi__under">väntar på GA4</p>
+  </div>
+    <div class="kpi ">
+    <p class="kpi__etikett">Guider utan annonsnotis</p>
+    <p class="kpi__varde">0</p>
+    <p class="kpi__under">alla guider med affiliatelänkar är märkta</p>
+  </div>
+  </div>
+  <p class="programrad"></p>
+  
+  
+  </section>
+
+  <section class="panel ">
+    <h2>Indexering</h2>
+    <p class="panel__intro">Rampar upp normalt och är inte flaskhalsen — men den ska följas, och efter oktober betyder ett dröjande läge något annat än nu.</p>
+    <p class="tomt">Indexeringsstatus hämtas per adress från Search Console. Panelen fylls så fort tjänstekontot har läsrätt — behörigheten måste vara Fullständig, URL-granskning är avstängd för begränsade användare.</p>
+  </section>
+
+  <section class="panel ">
+    <h2>Sajtens hälsa</h2>
+    
+    <p class="tomt">Sajtkontrollen gick inte att köra.</p>
+  </section>
+
+  <section class="panel ">
+    <h2>Innehåll och korslänkning</h2>
+    <p class="panel__intro">Löptextlänken är den viktiga. En guide som ingen länkar till i löptexten är svår att hitta både för läsare och för Google.</p>
+    <div class="kpirad kpirad--fyra">
+    <div class="kpi ">
+    <p class="kpi__etikett">Publicerade guider</p>
+    <p class="kpi__varde">0</p>
+    <p class="kpi__under">i src/artiklar</p>
+  </div>
+    <div class="kpi ">
+    <p class="kpi__etikett">Ord totalt</p>
+    <p class="kpi__varde">0</p>
+    <p class="kpi__under">snitt 0 per guide</p>
+  </div>
+    <div class="kpi ">
+    <p class="kpi__etikett">Källor totalt</p>
+    <p class="kpi__varde">0</p>
+    <p class="kpi__under">länkar under Källor</p>
+  </div>
+    <div class="kpi ">
+    <p class="kpi__etikett">Föräldralösa guider</p>
+    <p class="kpi__varde">0</p>
+    <p class="kpi__under">varje guide länkas in någonstans</p>
+  </div>
+  </div>
+  
+  <details class="fallbar"><summary>Visa alla 0 guider</summary>
+  <div class="rullbar"><table class="tabell">
+    <thead><tr><th>Guide</th><th>Senast rörd</th><th class="tabell__tal">Ord</th><th class="tabell__tal">Källor</th><th class="tabell__tal">Inlänkar</th><th>Annonsläge</th></tr></thead>
+    <tbody></tbody>
+  </table></div></details>
+  </section>
+
+  <footer class="fot">
+    <p>Data hämtas varje natt av ett GitHub Actions-jobb i <code>erikjnordberg/barnprylsdoktorn</code> och sidan publiceras om varje morgon. Siffrorna kommer från Search Console, GA4, Cloudflare Web Analytics och sajten själv — inget är uppskattat.</p>
+    <p>Search Console släpper data med två till tre dygns fördröjning, så de sista dagarna i kurvorna fylls på i efterhand.</p>
+    
+  </footer>
+</div>
+
+<script>
+document.querySelectorAll(".diagram").forEach(function(ruta){
+  var serie, svg = ruta.querySelector("svg");
+  try { serie = JSON.parse(ruta.dataset.serie); } catch (e) { return; }
+  if (!svg || !serie || serie.length < 2) return;
+  var tip = ruta.querySelector(".tooltip"),
+      har = svg.querySelector(".krysshar"),
+      prick = svg.querySelector(".kryssprick"),
+      enhet = ruta.dataset.enhet;
+
+  var linje = svg.querySelectorAll("path")[1];
+  function langd(){ return linje.getTotalLength(); }
+
+  function visa(e){
+    var r = svg.getBoundingClientRect();
+    var andel = Math.min(1, Math.max(0, (e.clientX - r.left) / r.width));
+    var i = Math.round(andel * (serie.length - 1));
+    var p = serie[i];
+    var box = ruta.getBoundingClientRect();
+    var vb = svg.viewBox.baseVal;
+    var punkt = linje.getPointAtLength(langd() * (i / (serie.length - 1)));
+    har.setAttribute("x1", punkt.x); har.setAttribute("x2", punkt.x);
+    har.setAttribute("opacity", "0.45");
+    prick.setAttribute("cx", punkt.x); prick.setAttribute("cy", punkt.y);
+    prick.setAttribute("opacity", "1");
+    var dat = new Date(p.d);
+    tip.hidden = false;
+    tip.textContent = dat.toLocaleDateString("sv-SE",{day:"numeric",month:"short"}) + ": " +
+      p.v.toLocaleString("sv-SE") + (enhet ? " " + enhet : "");
+    tip.style.left = (punkt.x / vb.width * 100) + "%";
+    var svgRuta = svg.getBoundingClientRect();
+    tip.style.top = (svgRuta.top - box.top + punkt.y / vb.height * svgRuta.height) + "px";
+  }
+  function dolj(){ har.setAttribute("opacity","0"); prick.setAttribute("opacity","0"); tip.hidden = true; }
+
+  svg.addEventListener("pointermove", visa);
+  svg.addEventListener("pointerleave", dolj);
+  svg.addEventListener("pointerdown", visa);
+});
+</script>

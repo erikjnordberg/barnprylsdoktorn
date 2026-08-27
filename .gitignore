@@ -6,3 +6,5 @@ _site/
 # Gammalt kursmaterial och övningsfiler — ligger kvar på disken, men hör inte till sajten
 arkiv/
 kodhandledare-bilbarnstolar.md
+# Tillfällig testyta för dashboardrenderingen — hör inte till repot
+.tmp-dbtest/

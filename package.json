@@ -5,7 +5,9 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
-    "statistik": "node scripts/hamta-statistik.js"
+    "statistik": "node scripts/hamta-statistik.js",
+    "dashboard": "node scripts/dashboard-render.mjs",
+    "dashboard-data": "node scripts/dashboard-data.mjs"
   },
   "keywords": [],
   "author": "",

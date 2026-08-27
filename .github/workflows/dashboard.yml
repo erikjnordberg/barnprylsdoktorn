@@ -1,0 +1,58 @@
+name: Dashboarddata
+
+# Hämtar Search Console, GA4, Cloudflare Web Analytics och sajtstatus varje natt
+# och lägger resultatet i data/dashboard.json + data/dashboard.html.
+#
+# Commit-meddelandet börjar med [CI Skip], vilket gör att Cloudflare Pages hoppar
+# över bygget. data/ ligger utanför Eleventys input (src/), så filerna hamnar
+# aldrig på sajten — men utan [CI Skip] skulle Pages ändå bygga om varje natt.
+
+on:
+  schedule:
+    - cron: "30 3 * * *"   # 05:30 svensk sommartid, 04:30 vintertid
+  workflow_dispatch:        # går att köra manuellt från fliken Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dashboarddata
+  cancel-in-progress: false
+
+jobs:
+  hamta:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Installera det skriptet behöver
+        run: npm install --no-save --no-package-lock google-auth-library js-yaml
+
+      # URL-granskningen tar ett par sekunder per adress — räkna med tre till
+      # fyra minuter för steget, det är inte en hängning.
+      - name: Hämta data
+        env:
+          GOOGLE_SA_KEY: ${{ secrets.GOOGLE_SA_KEY }}
+          GA4_PROPERTY_ID: ${{ vars.GA4_PROPERTY_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+        run: node scripts/dashboard-data.mjs
+
+      - name: Rita om dashboarden
+        run: node scripts/dashboard-render.mjs
+
+      - name: Committa om något ändrats
+        run: |
+          git config user.name "dashboard-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/dashboard.json data/dashboard.html
+          if git diff --staged --quiet; then
+            echo "Ingen förändring."
+          else
+            git commit -m "[CI Skip] Dashboarddata $(date -u +%Y-%m-%d)"
+            git pull --rebase origin main
+            git push
+          fi
