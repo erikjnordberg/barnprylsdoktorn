@@ -314,8 +314,19 @@ async function hamtaCloudflare() {
 /* ---------- Sajten ---------- */
 
 async function hamtaSajt() {
-  const xml = await (await fetch(`${SITE}/sitemap.xml`, { headers: { "Cache-Control": "no-cache" } })).text();
+  const svar = await fetch(`${SITE}/sitemap.xml`, { headers: { "Cache-Control": "no-cache" } });
+  const xml = await svar.text();
   const urler = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+
+  // Tillfällig felsökning 2026-08-27: sitemapUrler kom tillbaka 0 två körningar i
+  // rad från GitHub Actions, trots att sitemapen är frisk vid manuell curl. Logga
+  // vad svaret faktiskt innehöll så nästa körning visar orsaken i stället för att
+  // bara gissa. Ta bort igen när orsaken är hittad och åtgärdad.
+  if (urler.length === 0) {
+    FEL.push(
+      `Sitemap gav 0 URLer. Status ${svar.status}, content-type ${svar.headers.get("content-type")}, cf-cache-status ${svar.headers.get("cf-cache-status")}, längd ${xml.length}. Första 300 tecken: ${JSON.stringify(xml.slice(0, 300))}`
+    );
+  }
 
   const kontroll = [];
   for (const url of urler) {
