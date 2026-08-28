@@ -95,7 +95,7 @@ Tre saker som är värda att säga rakt ut.
 
 Priserna nedan är hämtade från Folksams test 2025 och är ungefärliga.
 
-| Stol | Pris ca | Plustest |
+| Stol | Pris enligt Folksam | Plustest |
 |---|---|---|
 | Britax Römer Max-Safe Pro | 4 495 kr | Ja |
 | BeSafe Beyond | 6 299 kr* | Ja |

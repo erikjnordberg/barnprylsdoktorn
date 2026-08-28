@@ -567,10 +567,17 @@ förbjudet hos Babyland och Stor&Liten.
      än leveranstiden i den här prisklassen, så länken flyttades tillbaka. `produkter.js`,
      `basta-bilbarnstolen` och `bakatvand-bilbarnstol-vilken-ska-jag-kopa` pekar nu alla
      på Babysam igen, och `annonslankar` i båda guiderna är ändrat i takt med det.
-     **Öppen punkt:** tabellen och löptexten i båda guiderna anger fortfarande 4 495 kr
-     för Max-Safe Pro (Folksams pris vid testtillfället), mot det verifierade
-     handlarpriset 3 995 kr — inte ändrat utan avstämning med Erik. Stäm av Babysams
-     inleverans igen omkring 2026-09-10 för att bekräfta att den faktiskt kom in.
+     **Avgjort 2026-08-28: tabellerna anger Folksams pris, aldrig handlarens.**
+     Priset i guiderna hade 2026-08-27 ändrats till handlarpriset 3 995 kr, och var
+     redan dagen efter fel — Babysam låg 2026-08-28 på 3 495 kr (30 % rabatt från ord.
+     4 995 kr, lägsta pris 30 dagar 3 396 kr, 22 st i lager, leverans 2–5 vardagar,
+     alltså också inleveransen bekräftad). Alla tre tabeller är därför återställda till
+     Folksams 4 495 kr och prisrubriken heter nu **Pris enligt Folksam** i stället för
+     "Pris ca". Skälet: raden står i en tabell som återger Folksams test, där de två
+     andra raderna (6 299 kr respektive 5 995 kr) inte heller är handlarpriser, och ett
+     kampanjpris blir fel inom dagar. Samma resonemang som köpblocket redan bygger på —
+     det visar med flit inget pris utan skickar läsaren till "Se aktuellt pris hos
+     handlaren". **Skriv aldrig in ett handlarpris i en tabell igen.**
    - **BeSafe Beyond får ingen länk.** Ingen av de tre handlarna säljer originalet, bara
      efterföljaren Beyond², som inte är den stol Folksam testade 2025. Att länka dit vore
      att tillskriva en annan produkt ett testresultat den inte har. Öppnas om ett program

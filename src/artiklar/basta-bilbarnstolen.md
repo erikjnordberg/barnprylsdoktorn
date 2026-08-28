@@ -70,9 +70,9 @@ Här ligger pengarna och här ligger skyddet. Den här stolen ska bära barnet f
 
 Folksam testade fem nya bakåtvända stolar 2025. Tre fick betyget **Bra val**:
 
-| Stol | Pris ca | Längd/vikt | Montering | Plustest | Betyg |
+| Stol | Pris enligt Folksam | Längd/vikt | Montering | Plustest | Betyg |
 |---|---|---|---|---|---|
-| **Britax Römer Max-Safe Pro** | 3 995 kr | 61–125 cm, max 36 kg | Bälte | Ja | 4 |
+| **Britax Römer Max-Safe Pro** | 4 495 kr | 61–125 cm, max 36 kg | Bälte | Ja | 4 |
 | **BeSafe Beyond** | 6 299 kr* | 61–125 cm, max 22 kg | Isofix | Ja | 3 |
 | **TinySeats Two** | 5 995 kr | 61–125 cm, max 23 kg | Isofix | Nej | 3 |
 
