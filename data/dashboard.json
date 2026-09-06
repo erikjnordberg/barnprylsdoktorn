@@ -1,5 +1,5 @@
 {
-  "hamtad": "2026-09-05T07:49:21.661Z",
+  "hamtad": "2026-09-06T08:04:14.269Z",
   "fel": [],
   "sajt": {
     "sitemapUrler": 24,
@@ -7,62 +7,62 @@
       {
         "url": "https://barnprylsdoktorn.se/guider/babyskydd-for-nyfodda/",
         "status": 200,
-        "ms": 80
+        "ms": 84
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/",
         "status": 200,
-        "ms": 129
+        "ms": 209
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/baltesstol-eller-balteskudde/",
         "status": 200,
-        "ms": 77
+        "ms": 72
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/i-size-vs-vikt/",
         "status": 200,
-        "ms": 83
+        "ms": 145
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/isofix-eller-balte/",
         "status": 200,
-        "ms": 73
+        "ms": 79
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/basta-bilbarnstolen/",
         "status": 200,
-        "ms": 84
+        "ms": 200
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/begagnad-bilbarnstol/",
         "status": 200,
-        "ms": 72
+        "ms": 88
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-flyg-och-hyrbil/",
         "status": 200,
-        "ms": 89
+        "ms": 193
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-fram-och-airbag/",
         "status": 200,
-        "ms": 72
+        "ms": 76
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-i-taxi/",
         "status": 200,
-        "ms": 77
+        "ms": 359
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/vanliga-monteringsfel/",
         "status": 200,
-        "ms": 76
+        "ms": 96
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-plats-i-bilen/",
         "status": 200,
-        "ms": 83
+        "ms": 200
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/montera-bilbarnstol-steg-for-steg/",
@@ -72,61 +72,61 @@
       {
         "url": "https://barnprylsdoktorn.se/guider/nar-ar-barnet-klart-med-bilbarnstol/",
         "status": 200,
-        "ms": 70
+        "ms": 128
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/vinterklader-bilbarnstol/",
         "status": 200,
-        "ms": 80
+        "ms": 97
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-pa-rea/",
         "status": 200,
-        "ms": 72
+        "ms": 157
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/efterfoljare-samma-stol/",
         "status": 200,
-        "ms": 80
+        "ms": 99
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/",
         "status": 200,
-        "ms": 74
+        "ms": 153
       },
       {
         "url": "https://barnprylsdoktorn.se/",
         "status": 200,
-        "ms": 85
+        "ms": 39
       },
       {
         "url": "https://barnprylsdoktorn.se/integritetspolicy/",
         "status": 200,
-        "ms": 71
+        "ms": 126
       },
       {
         "url": "https://barnprylsdoktorn.se/om/",
         "status": 200,
-        "ms": 75
+        "ms": 73
       },
       {
         "url": "https://barnprylsdoktorn.se/plustestade-bilbarnstolar/",
         "status": 200,
-        "ms": 79
+        "ms": 142
       },
       {
         "url": "https://barnprylsdoktorn.se/sa-tjanar-sajten-pengar/",
         "status": 200,
-        "ms": 78
+        "ms": 87
       },
       {
         "url": "https://barnprylsdoktorn.se/vilken-bilbarnstol/",
         "status": 200,
-        "ms": 73
+        "ms": 178
       }
     ],
     "trasiga": [],
-    "snittsvar": 80
+    "snittsvar": 132
   },
   "innehall": {
     "guider": [
@@ -686,8 +686,8 @@
     "tillganglig": true,
     "botfiltrerat": true,
     "period": {
-      "start": "2026-08-08",
-      "slut": "2026-09-05"
+      "start": "2026-08-09",
+      "slut": "2026-09-06"
     },
     "besok28": 270,
     "sidvisningar28": 300,
@@ -756,8 +756,8 @@
   "gsc": {
     "tillganglig": true,
     "period": {
-      "start": "2026-08-08",
-      "slut": "2026-09-04"
+      "start": "2026-08-09",
+      "slut": "2026-09-05"
     },
     "totalt": {
       "klick": 3,
@@ -772,12 +772,6 @@
       "position": 1
     },
     "perDag": [
-      {
-        "datum": "2026-08-08",
-        "klick": 0,
-        "visningar": 0,
-        "position": 0
-      },
       {
         "datum": "2026-08-09",
         "klick": 1,
@@ -939,6 +933,12 @@
         "klick": 0,
         "visningar": 1,
         "position": 4
+      },
+      {
+        "datum": "2026-09-05",
+        "klick": 0,
+        "visningar": 0,
+        "position": 0
       }
     ],
     "toppfragor": [
@@ -1473,6 +1473,19 @@
     },
     {
       "datum": "2026-09-05",
+      "hanvisandeDomaner": 1,
+      "besok28": 270,
+      "guideBesok28": 40,
+      "klick28": 3,
+      "visningar28": 17,
+      "position": 30.235294117647058,
+      "indexerade": 5,
+      "kontrollerade": 24,
+      "sessioner28": 7,
+      "guider": 17
+    },
+    {
+      "datum": "2026-09-06",
       "hanvisandeDomaner": 1,
       "besok28": 270,
       "guideBesok28": 40,
