@@ -631,30 +631,29 @@ förbjudet hos Babyland och Stor&Liten.
    **Trafiken, hämtad från Cloudflare Web Analytics av måndagsjobbet:**
 
    <!-- TRAFIK:START -->
-   *Hämtad automatiskt 2026-08-31 av `scripts/hamta-statistik.js` från Cloudflare
+   *Hämtad automatiskt 2026-09-07 av `scripts/hamta-statistik.js` från Cloudflare
    Web Analytics, botar bortfiltrerade.
    Skriv inte i blocket för hand — det skrivs över varje måndag.*
 
    | | 7 dagar | 30 dagar |
    |---|---|---|
-   | Besök | 34 | 300 |
-   | Sidvisningar | 37 | 340 |
-   | **Samtliga `/guider/`-sidor, besök** | **7** | **40** |
+   | Besök | 18 | 270 |
+   | Sidvisningar | 18 | 300 |
+   | **Samtliga `/guider/`-sidor, besök** | **0** | **40** |
 
-   Mest besökta sökvägar, 30 dagar (2026-08-01–2026-08-31):
+   Mest besökta sökvägar, 30 dagar (2026-08-08–2026-09-07):
 
    | Sökväg | Besök 7 d | Besök 30 d |
    |---|---|---|
-   | `/` | 21 | 230 |
-   | `/guider/efterfoljare-samma-stol/` | 4 | 20 |
-   | `/plustestade-bilbarnstolar/` | 3 | 20 |
+   | `/` | 18 | 200 |
+   | `/guider/efterfoljare-samma-stol/` | 0 | 20 |
+   | `/plustestade-bilbarnstolar/` | 0 | 20 |
    | `/vilken-bilbarnstol/` | 0 | 10 |
    | `/guider/bilbarnstol-plats-i-bilen/` | 0 | 10 |
    | `/guider/bilbarnstol-i-taxi/` | 0 | 10 |
-   | `/guider/basta-bilbarnstolen/` | 2 | 0 |
-   | `/om/` | 1 | 0 |
    | `/guider/montera-bilbarnstol-steg-for-steg/` | 0 | 0 |
-   | `/guider/i-size-vs-vikt/` | 1 | 0 |
+   | `/guider/basta-bilbarnstolen/` | 0 | 0 |
+   | `/om/` | 0 | 0 |
    <!-- TRAFIK:END -->
 
    Referrers och länder ingår inte i blocket — de läses i Cloudflare Web Analytics.
