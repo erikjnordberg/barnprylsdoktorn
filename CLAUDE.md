@@ -631,29 +631,27 @@ förbjudet hos Babyland och Stor&Liten.
    **Trafiken, hämtad från Cloudflare Web Analytics av måndagsjobbet:**
 
    <!-- TRAFIK:START -->
-   *Hämtad automatiskt 2026-09-07 av `scripts/hamta-statistik.js` från Cloudflare
+   *Hämtad automatiskt 2026-09-14 av `scripts/hamta-statistik.js` från Cloudflare
    Web Analytics, botar bortfiltrerade.
    Skriv inte i blocket för hand — det skrivs över varje måndag.*
 
    | | 7 dagar | 30 dagar |
    |---|---|---|
-   | Besök | 18 | 270 |
-   | Sidvisningar | 18 | 300 |
+   | Besök | 11 | 210 |
+   | Sidvisningar | 11 | 220 |
    | **Samtliga `/guider/`-sidor, besök** | **0** | **40** |
 
-   Mest besökta sökvägar, 30 dagar (2026-08-08–2026-09-07):
+   Mest besökta sökvägar, 30 dagar (2026-08-15–2026-09-14):
 
    | Sökväg | Besök 7 d | Besök 30 d |
    |---|---|---|
-   | `/` | 18 | 200 |
+   | `/` | 10 | 140 |
    | `/guider/efterfoljare-samma-stol/` | 0 | 20 |
    | `/plustestade-bilbarnstolar/` | 0 | 20 |
-   | `/vilken-bilbarnstol/` | 0 | 10 |
+   | `/integritetspolicy/` | 1 | 10 |
    | `/guider/bilbarnstol-plats-i-bilen/` | 0 | 10 |
    | `/guider/bilbarnstol-i-taxi/` | 0 | 10 |
-   | `/guider/montera-bilbarnstol-steg-for-steg/` | 0 | 0 |
    | `/guider/basta-bilbarnstolen/` | 0 | 0 |
-   | `/om/` | 0 | 0 |
    <!-- TRAFIK:END -->
 
    Referrers och länder ingår inte i blocket — de läses i Cloudflare Web Analytics.
