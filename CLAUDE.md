@@ -524,14 +524,17 @@ förbjudet hos Babyland och Stor&Liten.
 
 ## Nästa steg i projektet
 
-1. **Affiliate — fyra godkända program.** Kanalen Barnprylsdoktorn hos Adtraction
+1. **Affiliate — sex godkända program.** Kanalen Barnprylsdoktorn hos Adtraction
    (ID 2100860918) är godkänd sedan 2026-08-10, och nio ansökningar skickades samma dag.
    Godkända: **Babysam (8 %)** sedan 2026-08-10, **Babyland (4 %)** och **Stor&Liten (4 %)**
-   sedan 2026-08-12, **Baby V (7 %)** sedan 2026-08-13. **Jollyroom nekade 2026-08-13**
+   sedan 2026-08-12, **Baby V (7 %)** sedan 2026-08-13, **Bonti (5 %)** och
+   **Köpbarnvagn (5 %)** sedan 2026-09-19 (exakt godkännandedatum okänt, upptäckt vid
+   kontroll denna dag). **Jollyroom nekade 2026-08-13**
    med motiveringen att kanalens innehåll inte matchar annonsörens produkter eller
    marknadsföringsmål — de omprövar på förfrågan till `support@adtraction.com`.
-   Alla fyra spårlänkarna ligger i `ADTRACTION_PROGRAM` i `eleventy.config.js`. Baby V
-   spårar via `go.adt231.net`, ännu en egen spårdomän — bygg aldrig länken av ett ID.
+   Alla sex spårlänkarna ligger i `ADTRACTION_PROGRAM` i `eleventy.config.js`. Baby V
+   spårar via `go.adt231.net`, Bonti via `in.bonti.se`, Köpbarnvagn via `to.kopbarnvagn.se`
+   — ännu fler egna spårdomäner, bygg aldrig en länk av ett ID.
    **Alla live-länkar går mot Babysam, och gör det igen sedan 2026-08-27** — se punkt 2
    för historiken kring Britax Römer Max-Safe Pro, som var flyttad till Baby V mellan
    2026-08-17 och 2026-08-27. Jämförelsen
@@ -540,7 +543,20 @@ förbjudet hos Babyland och Stor&Liten.
    och Stor&Liten ligger inne som reserv om Babysam tar slut i lager, och Babyland täcker
    dessutom cykelsits inför en eventuell breddning. Nästa gång ett program godkänns —
    följ checklistan sist i den filen innan någon länk flyttas.
-   Fortfarande Waiting: Axkid (5 %), Bonti (5 %), Köpbarnvagn (5 %) och Emmaljunga (10 %). Hos Awin står Babyshop SE,
+   **Bonti och Köpbarnvagn kontrollerade 2026-09-20 mot checklistan — inga länkar flyttade.**
+   Bonti har ett brett och relevant sortiment (Cybex, Thule, Maxi-Cosi, Nuna, BeSafe
+   Beyond²) men saknar både Britax Max-Safe Pro och TinySeats Two — de två produkter
+   sajten faktiskt länkar — i sin feed, och 5 % är lägre provision än både Babysam (8 %)
+   och Baby V (7 %). Fyller ingen av de tre kända luckorna heller: Bonti säljer bara
+   BeSafe Beyond² (samma icke-träff som Babyland), ingen CARES-sele, och Axkid Up
+   transportväska kostar 999 kr hos Bonti mot 395 kr hos Babysam. Sparad som reserv,
+   inget att byta till i dag. Värd att komma ihåg om sortimentet breddas — riktig
+   bilbarnstolskatalog, inte bara tillbehör.
+   Köpbarnvagn har **ingen produktfeed alls** i Adtraction (ingen "Product Feed"-badge på
+   brand-sidan, noll träffar på "bilbarnstol") — namnet stämmer, de säljer barnvagnar, inte
+   bilbarnstolar. Irrelevant för nischen i dag. Kan bli aktuellt när breddningen mot
+   barnvagn diskuteras (se steg 5), annars ingen uppföljning.
+   Fortfarande Waiting: Axkid (5 %) och Emmaljunga (10 %). Hos Awin står Babyshop SE,
    Lekmer SE och Kids Concept SE som Pending; Babyshop och Lekmer har historiskt 100 %
    approval rate, gemensam programkontakt för de två första är `affiliate@babyshop.se`.
    Kvar att söka när det finns anledning: Safekid, Kid's Concept.

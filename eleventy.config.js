@@ -32,6 +32,8 @@ const ADTRACTION_PROGRAM = {
   Babyland: "https://pin.babyland.se/t/t?a=1066444612&as=2100860918&t=2&tk=1",
   "Stor&Liten": "https://at.storochliten.se/t/t?a=1060728464&as=2100860918&t=2&tk=1",
   "Baby V": "https://go.adt231.net/t/t?a=1327902115&as=2100860918&t=2&tk=1",
+  Bonti: "https://in.bonti.se/t/t?a=1954032784&as=2100860918&t=2&tk=1",
+  Köpbarnvagn: "https://to.kopbarnvagn.se/t/t?a=2056646903&as=2100860918&t=2&tk=1",
 };
 
 // Handlarnamn skrivs ut i HTML av köpblocket och annonslänken. Ett namn med & i
