@@ -4,7 +4,7 @@ ingress: Steget efter bakåtvänt är det sämst beskrivna i hela kedjan. Här �
 beskrivning: Bältesstol eller bälteskudde efter den bakåtvända bilbarnstolen — när barnet är redo, vad 135 cm-regeln betyder, och varför kudden bara får användas över 125 cm.
 date: 2026-08-06
 uppdaterad: 2026-08-17
-lasharnast: ["bilbarnstol-fram-och-airbag", "vanliga-monteringsfel"]
+lasharnast: ["bilbarnstol-fram-och-airbag", "vanliga-monteringsfel", "nar-ar-barnet-klart-med-bilbarnstol"]
 annonslankar: ["Babysam"]
 ---
 

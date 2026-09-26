@@ -4,7 +4,7 @@ ingress: "Kort svar: inte för säkerheten. Men för chansen att du monterar rä
 beskrivning: Isofix eller bältesmontering av bilbarnstol — vad skillnaden är, vad som är säkrast, och vilket du bör välja.
 date: 2026-08-06
 uppdaterad: 2026-08-09
-lasharnast: ["montera-bilbarnstol-steg-for-steg", "bilbarnstol-plats-i-bilen"]
+lasharnast: ["montera-bilbarnstol-steg-for-steg", "bilbarnstol-plats-i-bilen", "i-size-vs-vikt"]
 ---
 
 ## Kort svar

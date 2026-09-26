@@ -23,10 +23,13 @@
      json">-block i vilken-bilbarnstol.njk. Saknas blocket eller går
      parsningen fel visas bara inget köpblock — aldrig ett trasigt svar. */
 
+  // "urvuxentest" har medvetet ingen produkt: kategorin är själva gränsfallet
+  // mellan att sitta kvar bakåtvänt och att byta till bältesstol, och svaret
+  // beror på om stolen är urvuxen eller inte — samma bakåtvända stol som
+  // skulle passa den ena halvan är fel råd för den andra.
   var PRODUKT_FOR_KATEGORI = {
     babyskydd: "britax-baby-safe-core",
     bakatvand: "britax-max-safe-pro",
-    urvuxentest: "britax-max-safe-pro",
     baltesstol: "tinyseats-two",
     balteskudde: "tinyseats-two"
   };

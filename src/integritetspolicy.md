@@ -28,7 +28,7 @@ Cloudflare levererar dessutom sajten. För att kunna göra det, och för att sto
 
 ## Typsnitt och skript
 
-Alla typsnitt och skript ligger på sajtens egen server. Sajten anropar inte Google Fonts, inga CDN:er för bibliotek och inga inbäddade spelare. Det enda tredjepartsanropet är Google Analytics, och det bara om du sagt ja.
+Alla typsnitt och skript ligger på sajtens egen server. Sajten anropar inte Google Fonts, inga CDN:er för bibliotek och inga inbäddade spelare. Utöver Cloudflare Web Analytics ovan och Google Analytics efter samtycke görs inga andra tredjepartsanrop.
 
 ## När du klickar på en annonslänk
 
