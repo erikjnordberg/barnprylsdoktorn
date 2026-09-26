@@ -61,6 +61,29 @@ const sparadUrl = (handlare, malUrl) => {
   return `${ADTRACTION_PROGRAM[handlare]}&url=${encodeURIComponent(malUrl)}`;
 };
 
+// Själva köpblocks-HTML:en, samma för {% kopblock %} i artiklarna och för
+// {% kopblockJSON %} till väljarens JS — en enda renderingsplats så att de
+// aldrig kan råka se olika ut.
+const renderKopblock = (nyckel) => {
+  const produkt = produkter[nyckel];
+  if (!produkt) {
+    throw new Error(`kopblock: hittar ingen produkt med nyckeln "${nyckel}" i produkter.js`);
+  }
+
+  const lank = produkt.url ? sparadUrl(produkt.handlare, produkt.url) : null;
+  const knappOchMarkning = lank
+    ? `
+    <p class="kopblock-markning">Annonslänk. Sajten får provision om du köper via den — priset för dig är detsamma. <a href="/sa-tjanar-sajten-pengar/">Så tjänar sajten pengar</a></p>
+    <a class="kopblock-knapp" href="${lank}" rel="sponsored nofollow noopener" target="_blank">Se aktuellt pris hos ${htmlText(produkt.handlare)}</a>`
+    : "";
+
+  return `<div class="kopblock">
+    <h3 class="kopblock-namn">${produkt.namn}</h3>
+    <p class="kopblock-spec">${produkt.specifikation}</p>
+    <p class="kopblock-motivering">${produkt.motivering}</p>${knappOchMarkning}
+  </div>`;
+};
+
 // Besöksstatistik från scripts/hamta-statistik.js, uppdateras varje måndag av
 // GitHub Actions. Filen kan saknas (första körningen, eller lokalt) — då sorteras
 // guiderna i sin nuvarande ordning, bygget ska aldrig krascha på det.
@@ -130,24 +153,21 @@ module.exports = function (eleventyConfig) {
   // Blocket visar med flit inget pris — handlarnas priser rör sig varje vecka och en
   // siffra här skulle bli fel utan att någon märkte det. Ungefärliga priser står i
   // tabellerna i löptexten, med källa och förbehåll.
-  eleventyConfig.addShortcode("kopblock", (nyckel) => {
-    const produkt = produkter[nyckel];
-    if (!produkt) {
-      throw new Error(`kopblock: hittar ingen produkt med nyckeln "${nyckel}" i produkter.js`);
+  eleventyConfig.addShortcode("kopblock", (nyckel) => renderKopblock(nyckel));
+
+  // Samma köpblock som ovan, men till väljaren (vilken-bilbarnstol.njk): den
+  // bygger sitt svar i webbläsaren och kan inte anropa sparadUrl() själv —
+  // spårningen ska bara byggas på ett ställe. {% kopblockJSON ["nyckel1", ...], "id" %}
+  // skriver ut ett <script type="application/json"> med redan spårad HTML per
+  // nyckel, som valjare.js läser med JSON.parse och sätter in rakt av.
+  eleventyConfig.addShortcode("kopblockJSON", (nycklar, id) => {
+    const block = {};
+    for (const nyckel of nycklar) {
+      block[nyckel] = renderKopblock(nyckel);
     }
-
-    const lank = produkt.url ? sparadUrl(produkt.handlare, produkt.url) : null;
-    const knappOchMarkning = lank
-      ? `
-    <p class="kopblock-markning">Annonslänk. Sajten får provision om du köper via den — priset för dig är detsamma. <a href="/sa-tjanar-sajten-pengar/">Så tjänar sajten pengar</a></p>
-    <a class="kopblock-knapp" href="${lank}" rel="sponsored nofollow noopener" target="_blank">Se aktuellt pris hos ${htmlText(produkt.handlare)}</a>`
-      : "";
-
-    return `<div class="kopblock">
-    <h3 class="kopblock-namn">${produkt.namn}</h3>
-    <p class="kopblock-spec">${produkt.specifikation}</p>
-    <p class="kopblock-motivering">${produkt.motivering}</p>${knappOchMarkning}
-  </div>`;
+    // Skyddar mot att en "</script>" råkar sluta blocket i förtid.
+    const json = JSON.stringify(block).replace(/</g, "\\u003c");
+    return `<script type="application/json" id="${id}">${json}</script>`;
   });
 
   // Annonsnotisen högst upp i en guide får bara synas om guidens länkar faktiskt

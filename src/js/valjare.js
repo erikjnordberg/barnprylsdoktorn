@@ -15,6 +15,30 @@
   var status = document.getElementById("valjare-status");
   if (!form || !svarRuta || !status) return;
 
+  /* ---------- Produktrekommendation ----------
+     Spårade Adtraction-länkar byggs bara på ett ställe: sparadUrl() i
+     eleventy.config.js, vid bygget. Den logiken duplicerar vi aldrig här —
+     i stället läser vi in redan färdigrenderad köpblocks-HTML som
+     {% kopblockJSON %} skrivit ut vid bygget, i ett <script type="application/
+     json">-block i vilken-bilbarnstol.njk. Saknas blocket eller går
+     parsningen fel visas bara inget köpblock — aldrig ett trasigt svar. */
+
+  var PRODUKT_FOR_KATEGORI = {
+    babyskydd: "britax-baby-safe-core",
+    bakatvand: "britax-max-safe-pro",
+    urvuxentest: "britax-max-safe-pro",
+    baltesstol: "tinyseats-two",
+    balteskudde: "tinyseats-two"
+  };
+
+  var produkter = null;
+  try {
+    var produktScript = document.getElementById("valjare-produkter");
+    if (produktScript) produkter = JSON.parse(produktScript.textContent);
+  } catch (e) {
+    produkter = null;
+  }
+
   /* ---------- Innehållet i svaren ---------- */
 
   var SVAR = {
@@ -24,7 +48,7 @@
         "Bakåtvänt babyskydd med internbälte och bärhandtag. Den första stolen, och den enda som är byggd för att bära barnet in och ut ur bilen.",
       punkter: [
         "Nya stolar säljs sedan 1 september 2024 bara enligt UN R129, som godkänner efter barnets längd i stället för vikt.",
-        "Välj gärna en plustestad stol. Plustestet mäter nackkrafterna i en frontalkrock och hittills har bara bakåtvända stolar klarat det.",
+        "Plustestet gäller inte babyskydd — bara bakåtvända stolar kan klara det. Spara det kravet till nästa köp.",
         "Babyskyddet är urvuxet när barnets huvud når överkanten — inte när benen ser trångt placerade ut."
       ],
       lankar: [
@@ -192,6 +216,13 @@
       lankLista.appendChild(li);
     });
     svarRuta.appendChild(lankLista);
+
+    var produktNyckel = PRODUKT_FOR_KATEGORI[kategori];
+    if (produkter && produktNyckel && produkter[produktNyckel]) {
+      var produktWrapper = document.createElement("div");
+      produktWrapper.innerHTML = produkter[produktNyckel];
+      svarRuta.appendChild(produktWrapper.firstChild);
+    }
 
     /* Adressen bär svaret, men ingen förstår det om vi inte säger det.
        Det här är hela poängen med att väljaren ska gå att länka till. */

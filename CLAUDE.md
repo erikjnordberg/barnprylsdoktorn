@@ -91,7 +91,8 @@ src/
   fonter/                  self-hostade woff2-filer
   bilder/                  tre SVG-illustrationer (babyskydd, bakatvand, framatvand),
                            fyra informationsgrafiker (langdtrappan, lutning, selhojd,
-                           bilbarnstol-placering) + delningsbild
+                           bilbarnstol-placering) + delningsbild (og:image,
+                           ritas av scripts/delningsbild.py — ändra texten där)
                            OBS: en SVG som laddas via <img> kan inte hämta externa
                            resurser. Self-hostade typsnitt gäller alltså inte i dem —
                            använd font-family "Source Sans 3, system-ui, sans-serif"
@@ -124,6 +125,7 @@ scripts/hamta-statistik.js hämtar besöksstatistik från Cloudflare, se nedan �
                            både popularitet.json och trafikblocket i den här filen
 scripts/favicon.py         ritar alla faviconfiler ur Playfair-typsnittet; kräver
                            fonttools, brotli, Pillow och Chrome
+scripts/delningsbild.py    ritar delningsbilden med sajtens fonter och palett via Chrome
 scripts/dashboard-data.mjs hämtar dagsdata till dashboarden, se Dashboard nedan
 scripts/dashboard-render.mjs ritar data/dashboard.html ur data/dashboard.json
 data/                      dashboardens data och färdiga sida. Ligger utanför src/ med
