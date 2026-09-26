@@ -5,6 +5,7 @@ beskrivning: Bältesstol eller bälteskudde efter den bakåtvända bilbarnstolen
 date: 2026-08-06
 uppdaterad: 2026-08-17
 lasharnast: ["bilbarnstol-fram-och-airbag", "vanliga-monteringsfel"]
+annonslankar: ["Babysam"]
 ---
 
 ## Kort svar
@@ -43,6 +44,10 @@ NTF konstaterar att de **reducerar skadorna lika bra** i en ren kollision. Men d
 Lägg till att barn somnar i bilen. Ett sovande barn utan ryggstöd faller framåt eller åt sidan, och då hamnar bältet någon annanstans än där det ska vara. Vid en påkörning bakifrån ger ryggstödet dessutom stöd åt nacke och bakhuvud.
 
 **Välj bältesstol.** Kudden sparar några hundralappar och lite bagageutrymme, och det är inte värt det för ett barn under 125 cm. Det gäller även när kudden är [kraftigt nedsatt](/guider/bilbarnstol-pa-rea/) — en rea flyttar priset, inte 125-centimetersgränsen.
+
+Har ni inte redan en stol som räcker hela vägen finns det modeller som täcker båda stegen i ett köp:
+
+{% kopblock "tinyseats-two" %}
 
 Ett undantag: som extrastol att ha i väskan, till exempel för [en taxiresa](/guider/bilbarnstol-i-taxi/) eller en semester, är en kompakt kudde svår att slå för de äldre barnen — den väger nästan ingenting och tar ingen plats.
 

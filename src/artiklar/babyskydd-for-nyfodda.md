@@ -5,6 +5,7 @@ beskrivning: Så väljer du babyskydd till en nyfödd — hur länge skyddet rä
 date: 2026-08-05
 lasharnast: ["bakatvand-bilbarnstol-vilken-ska-jag-kopa", "basta-bilbarnstolen"]
 uppdaterad: 2026-08-17
+annonslankar: ["Babysam"]
 ---
 
 ## Kort svar
@@ -65,6 +66,10 @@ Lutningen är bara en av flera detaljer som avgör om skyddet fungerar som det s
 - Passar den i **din** bil, på platsen du tänkt använda? Tillverkarna har billistor.
 - Kan du montera den utan att svettas? En krånglig stol monteras fel — och en felmonterad bra stol är sämre än en rätt monterad enkel.
 - Köper du begagnat: vet du stolens historia? Har den varit med i en krock ska den kasseras, och det syns inte utifrån. Svensk rekommendation är cirka tio års livslängd från inköpsdatum.
+
+Ett exempel som klarar alla fyra punkterna:
+
+{% kopblock "britax-baby-safe-core" %}
 
 ## En sak till
 

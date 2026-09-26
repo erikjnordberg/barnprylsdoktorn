@@ -38,4 +38,16 @@ module.exports = {
     url: "https://www.babysam.se/tinyseats-two-bilbarnstol-baelteskudde-onesize",
     handlare: "Babysam",
   },
+  // Babyskydd har inget Plustest att luta sig mot (VTI testar inte kategorin
+  // alls, se plustestade-bilbarnstolar.md) — R129/i-Size-godkännande och vikt
+  // är det som går att kontrollera och belägga här.
+  "britax-baby-safe-core": {
+    namn: "Britax Römer Baby-Safe Core",
+    specifikation:
+      "40–83 cm · 0–13 kg · Isofix-bas (säljs separat) eller bilbälte · Godkänd enligt R129/i-Size",
+    motivering:
+      "Låg vikt (3,9 kg) och går att montera både med Isofix-bas och med bilbälte — bra förstaval om du inte vill fundera mer än nödvändigt.",
+    url: "https://www.babysam.se/britax-roemer-baby-safe-core-babyskydd-space-black-onesize",
+    handlare: "Babysam",
+  },
 };
