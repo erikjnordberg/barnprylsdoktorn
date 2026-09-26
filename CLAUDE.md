@@ -97,6 +97,11 @@ src/
                            använd font-family "Source Sans 3, system-ui, sans-serif"
                            och räkna med systemfallbacken. Internt aria-label ignoreras
                            också; alt-texten i <img> är den som läses upp.
+  favicon.svg, favicon.ico, apple-touch-icon.png, icon-192.png, icon-512.png,
+  site.webmanifest         favicon: vitt Playfair-B på --accent. Ritas av
+                           scripts/favicon.py — ändra aldrig filerna för hand, kör
+                           om scriptet. Ligger i src-roten så att /favicon.ico finns
+                           där webbläsare och Google letar utan att fråga.
   js/valjare.js            logiken bakom bilbarnstolsväljaren
   js/samtycke.js           samtyckesbannern och laddningen av Google Analytics
   nedladdningar/kolla-bilbarnstolen-pa-en-minut.pdf   tryckbar checklista, fem steg,
@@ -117,6 +122,8 @@ src/
   feed.njk, sitemap.njk, robots.njk
 scripts/hamta-statistik.js hämtar besöksstatistik från Cloudflare, se nedan — skriver
                            både popularitet.json och trafikblocket i den här filen
+scripts/favicon.py         ritar alla faviconfiler ur Playfair-typsnittet; kräver
+                           fonttools, brotli, Pillow och Chrome
 scripts/dashboard-data.mjs hämtar dagsdata till dashboarden, se Dashboard nedan
 scripts/dashboard-render.mjs ritar data/dashboard.html ur data/dashboard.json
 data/                      dashboardens data och färdiga sida. Ligger utanför src/ med
@@ -130,7 +137,8 @@ eleventy.config.js         filter: version, datum, typo, htmlDateString, isoDate
                            sorteraEfterBesok, listaSvenska, aktivaHandlare
                            shortcode: kopblock, annonslank
                            ADTRACTION_PROGRAM: program-ID per handlare, se Komponenter
-                           passthrough: css, bilder, fonter, js, nedladdningar, _headers
+                           passthrough: css, bilder, fonter, js, nedladdningar, _headers,
+                           faviconfilerna
                            markdown-it-anchor ger h2 och h3 id via rubrikTillId,
                            som translittererar å/ä/ö. Bara id, ingen länkikon.
 ```

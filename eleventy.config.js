@@ -85,6 +85,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/nedladdningar");
   eleventyConfig.addPassthroughCopy("src/_headers");
+  // Favicon och hemskärmsikoner, ritade av scripts/favicon.py. Ligger i roten
+  // eftersom webbläsare och Google letar efter /favicon.ico där utan att fråga.
+  for (const fil of ["favicon.svg", "favicon.ico", "apple-touch-icon.png", "icon-192.png", "icon-512.png", "site.webmanifest"]) {
+    eleventyConfig.addPassthroughCopy(`src/${fil}`);
+  }
 
   // Hänger ett versionsnummer på en fils adress: /bilder/x.svg -> /bilder/x.svg?v=a1b2c3d4
   // Cloudflare cachar statiska filer hårt. Byter vi innehållet men behåller adressen
