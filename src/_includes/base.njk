@@ -81,6 +81,32 @@
   }
   </script>
   {%- endif %}
+
+  {#- Enda-frågan-FAQ-schema. Rubriker som redan är formulerade som en fråga
+      ("Får bilbarnstolen plats i min bil?") har redan ett färdigt kort svar i
+      `beskrivning` — samma text som redan ligger i mötesbeskrivningen ovan,
+      återanvänd i stället för att skrivas två gånger. Ingen bulletlista här:
+      "Kort svar"-punkterna är påståenden, inte frågor, och skulle vara fel
+      användning av FAQPage-typen. Google visar numera rich snippets för
+      FAQPage bara på ett fåtal auktoritativa domäner, så det här ger ingen
+      synlig SERP-effekt i dag — men kostar inget och kan plockas upp av
+      AI-svarsmotorer som läser strukturerad data även utan rich result. -#}
+  {%- if title and "?" in title %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": {
+      "@type": "Question",
+      "name": {{ title | dump | safe }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ (beskrivning or site.beskrivning) | dump | safe }}
+      }
+    }
+  }
+  </script>
+  {%- endif %}
 </head>
 <body>
 
