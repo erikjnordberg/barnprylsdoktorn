@@ -37,7 +37,7 @@ Den här sajten är vad jag önskar hade funnits då.
     <img src="{{ '/bilder/framatvand.svg' | version }}" alt="Framåtvänd bältesstol där bilbältet går diagonalt över barnets bröst" width="360" height="300">
     <h3>Framåtvänt och bältesstol</h3>
     <p>För de större barnen, fram tills bilbältet sitter rätt utan hjälp — oftast kring 135 cm.</p>
-    <p><a href="/guider/i-size-vs-vikt/">Vad reglerna säger</a></p>
+    <p><a href="/guider/baltesstol-eller-balteskudde/">Vilken ska jag välja?</a></p>
   </article>
 </section>
 
