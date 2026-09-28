@@ -657,27 +657,27 @@ förbjudet hos Babyland och Stor&Liten.
    **Trafiken, hämtad från Cloudflare Web Analytics av måndagsjobbet:**
 
    <!-- TRAFIK:START -->
-   *Hämtad automatiskt 2026-09-21 av `scripts/hamta-statistik.js` från Cloudflare
+   *Hämtad automatiskt 2026-09-28 av `scripts/hamta-statistik.js` från Cloudflare
    Web Analytics, botar bortfiltrerade.
    Skriv inte i blocket för hand — det skrivs över varje måndag.*
 
    | | 7 dagar | 30 dagar |
    |---|---|---|
-   | Besök | 5 | 160 |
-   | Sidvisningar | 5 | 160 |
-   | **Samtliga `/guider/`-sidor, besök** | **4** | **30** |
+   | Besök | 8 | 80 |
+   | Sidvisningar | 10 | 90 |
+   | **Samtliga `/guider/`-sidor, besök** | **6** | **20** |
 
-   Mest besökta sökvägar, 30 dagar (2026-08-22–2026-09-21):
+   Mest besökta sökvägar, 30 dagar (2026-08-29–2026-09-28):
 
    | Sökväg | Besök 7 d | Besök 30 d |
    |---|---|---|
-   | `/` | 0 | 110 |
-   | `/guider/efterfoljare-samma-stol/` | 0 | 20 |
-   | `/guider/basta-bilbarnstolen/` | 2 | 10 |
+   | `/` | 1 | 50 |
+   | `/guider/basta-bilbarnstolen/` | 0 | 10 |
+   | `/guider/bilbarnstol-fram-och-airbag/` | 2 | 10 |
    | `/integritetspolicy/` | 0 | 10 |
-   | `/plustestade-bilbarnstolar/` | 0 | 10 |
-   | `/guider/bilbarnstol-fram-och-airbag/` | 2 | 0 |
-   | `/basta-bilbarnstolen/` | 1 | 0 |
+   | `/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/` | 4 | 0 |
+   | `/sa-tjanar-sajten-pengar/` | 0 | 0 |
+   | `/plustestade-bilbarnstolar/` | 1 | 0 |
    <!-- TRAFIK:END -->
 
    Referrers och länder ingår inte i blocket — de läses i Cloudflare Web Analytics.
