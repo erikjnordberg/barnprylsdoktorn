@@ -1,5 +1,5 @@
 {
-  "hamtad": "2026-10-12T11:14:05.096Z",
+  "hamtad": "2026-10-13T10:56:21.539Z",
   "fel": [],
   "sajt": {
     "sitemapUrler": 24,
@@ -7,126 +7,126 @@
       {
         "url": "https://barnprylsdoktorn.se/guider/babyskydd-for-nyfodda/",
         "status": 200,
-        "ms": 97
+        "ms": 83
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/",
         "status": 200,
-        "ms": 143
+        "ms": 84
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/baltesstol-eller-balteskudde/",
         "status": 200,
-        "ms": 193
+        "ms": 84
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/i-size-vs-vikt/",
         "status": 200,
-        "ms": 35
+        "ms": 59
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/isofix-eller-balte/",
         "status": 200,
-        "ms": 81
+        "ms": 84
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/basta-bilbarnstolen/",
         "status": 200,
-        "ms": 74
+        "ms": 168
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/begagnad-bilbarnstol/",
         "status": 200,
-        "ms": 80
+        "ms": 88
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-flyg-och-hyrbil/",
         "status": 200,
-        "ms": 84
+        "ms": 87
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-fram-och-airbag/",
         "status": 200,
-        "ms": 67
+        "ms": 81
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-i-taxi/",
         "status": 200,
-        "ms": 79
+        "ms": 142
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/vanliga-monteringsfel/",
         "status": 200,
-        "ms": 107
+        "ms": 89
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-plats-i-bilen/",
         "status": 200,
-        "ms": 57
+        "ms": 78
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/montera-bilbarnstol-steg-for-steg/",
         "status": 200,
-        "ms": 44
+        "ms": 67
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/nar-ar-barnet-klart-med-bilbarnstol/",
         "status": 200,
-        "ms": 69
+        "ms": 82
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/vinterklader-bilbarnstol/",
         "status": 200,
-        "ms": 95
+        "ms": 63
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/bilbarnstol-pa-rea/",
         "status": 200,
-        "ms": 76
+        "ms": 65
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/efterfoljare-samma-stol/",
         "status": 200,
-        "ms": 64
+        "ms": 38
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/",
         "status": 200,
-        "ms": 53
+        "ms": 61
       },
       {
         "url": "https://barnprylsdoktorn.se/",
         "status": 200,
-        "ms": 86
+        "ms": 37
       },
       {
         "url": "https://barnprylsdoktorn.se/integritetspolicy/",
         "status": 200,
-        "ms": 59
+        "ms": 84
       },
       {
         "url": "https://barnprylsdoktorn.se/om/",
         "status": 200,
-        "ms": 81
+        "ms": 60
       },
       {
         "url": "https://barnprylsdoktorn.se/plustestade-bilbarnstolar/",
         "status": 200,
-        "ms": 56
+        "ms": 39
       },
       {
         "url": "https://barnprylsdoktorn.se/sa-tjanar-sajten-pengar/",
         "status": 200,
-        "ms": 121
+        "ms": 58
       },
       {
         "url": "https://barnprylsdoktorn.se/vilken-bilbarnstol/",
         "status": 200,
-        "ms": 59
+        "ms": 57
       }
     ],
     "trasiga": [],
-    "snittsvar": 82
+    "snittsvar": 77
   },
   "innehall": {
     "guider": [
@@ -706,17 +706,22 @@
     "tillganglig": true,
     "botfiltrerat": true,
     "period": {
-      "start": "2026-09-14",
-      "slut": "2026-10-12"
+      "start": "2026-09-15",
+      "slut": "2026-10-13"
     },
-    "besok28": 50,
-    "sidvisningar28": 60,
+    "besok28": 60,
+    "sidvisningar28": 70,
     "besok7": 12,
-    "besokOfiltrerat28": 50,
-    "botandel": 0,
-    "guideBesok28": 30,
-    "guideSidvisningar28": 40,
+    "besokOfiltrerat28": 90,
+    "botandel": 0.33333333333333337,
+    "guideBesok28": 40,
+    "guideSidvisningar28": 50,
     "toppsidor": [
+      {
+        "sokvag": "/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/",
+        "besok": 20,
+        "sidvisningar": 20
+      },
       {
         "sokvag": "/guider/basta-bilbarnstolen/",
         "besok": 10,
@@ -724,11 +729,6 @@
       },
       {
         "sokvag": "/guider/bilbarnstol-fram-och-airbag/",
-        "besok": 10,
-        "sidvisningar": 10
-      },
-      {
-        "sokvag": "/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/",
         "besok": 10,
         "sidvisningar": 10
       },
@@ -756,28 +756,22 @@
   "gsc": {
     "tillganglig": true,
     "period": {
-      "start": "2026-09-14",
-      "slut": "2026-10-11"
+      "start": "2026-09-15",
+      "slut": "2026-10-12"
     },
     "totalt": {
       "klick": 0,
       "visningar": 40,
       "ctr": 0,
-      "position": 23.05
+      "position": 23.45
     },
     "foregaende": {
       "klick": 2,
-      "visningar": 23,
-      "ctr": 0.08695652173913043,
-      "position": 31.608695652173914
+      "visningar": 24,
+      "ctr": 0.08333333333333333,
+      "position": 30.333333333333332
     },
     "perDag": [
-      {
-        "datum": "2026-09-14",
-        "klick": 0,
-        "visningar": 1,
-        "position": 1
-      },
       {
         "datum": "2026-09-15",
         "klick": 0,
@@ -939,6 +933,12 @@
         "klick": 0,
         "visningar": 2,
         "position": 10
+      },
+      {
+        "datum": "2026-10-12",
+        "klick": 0,
+        "visningar": 1,
+        "position": 17
       }
     ],
     "toppfragor": [
@@ -955,6 +955,13 @@
         "visningar": 1,
         "ctr": 0,
         "position": 71
+      },
+      {
+        "fraga": "bilbarnstol 5 år",
+        "klick": 0,
+        "visningar": 1,
+        "ctr": 0,
+        "position": 17
       },
       {
         "fraga": "bilbarnstol ålder",
@@ -1024,37 +1031,37 @@
       {
         "url": "https://barnprylsdoktorn.se/",
         "klick": 0,
-        "visningar": 4,
+        "visningar": 3,
         "ctr": 0,
-        "position": 5.25
+        "position": 5.333333333333333
       },
       {
         "url": "https://barnprylsdoktorn.se/guider/efterfoljare-samma-stol/",
         "klick": 0,
-        "visningar": 22,
+        "visningar": 21,
         "ctr": 0,
-        "position": 6.7272727272727275
+        "position": 7
       },
       {
         "url": "https://barnprylsdoktorn.se/om/",
         "klick": 0,
-        "visningar": 3,
+        "visningar": 2,
         "ctr": 0,
-        "position": 10.333333333333334
+        "position": 14.5
       },
       {
         "url": "https://barnprylsdoktorn.se/sa-tjanar-sajten-pengar/",
         "klick": 0,
-        "visningar": 2,
+        "visningar": 1,
         "ctr": 0,
-        "position": 4
+        "position": 5
       },
       {
         "url": "https://barnprylsdoktorn.se/vilken-bilbarnstol/",
         "klick": 0,
         "visningar": 17,
         "ctr": 0,
-        "position": 43.64705882352941
+        "position": 44.411764705882355
       }
     ],
     "lander": [
@@ -1082,16 +1089,16 @@
       {
         "land": "swe",
         "klick": 0,
-        "visningar": 33,
+        "visningar": 34,
         "ctr": 0,
-        "position": 26.818181818181817
+        "position": 26.529411764705884
       },
       {
         "land": "usa",
         "klick": 0,
-        "visningar": 2,
+        "visningar": 1,
         "ctr": 0,
-        "position": 5.5
+        "position": 10
       }
     ]
   },
@@ -1249,13 +1256,13 @@
         "verdict": "PASS",
         "lage": "Angiven och indexerad",
         "robots": "ALLOWED",
-        "sistaCrawl": "2026-09-30T18:06:07Z",
+        "sistaCrawl": "2026-10-09T08:50:10Z",
         "upptackt": "SUCCESSFUL"
       },
       {
         "url": "https://barnprylsdoktorn.se/integritetspolicy/",
         "verdict": "NEUTRAL",
-        "lage": "Upptäckt – inte indexerad för närvarande",
+        "lage": "Webbadressen är okänd för Google",
         "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
         "sistaCrawl": null,
         "upptackt": "PAGE_FETCH_STATE_UNSPECIFIED"
@@ -1299,15 +1306,9 @@
     "totalt": {
       "sessioner": 13,
       "anvandare": 13,
-      "sidvisningar": 19
+      "sidvisningar": 20
     },
     "perDag": [
-      {
-        "datum": "20260914",
-        "sessioner": 1,
-        "anvandare": 1,
-        "sidvisningar": 1
-      },
       {
         "datum": "20260919",
         "sessioner": 1,
@@ -1360,19 +1361,25 @@
         "datum": "20261011",
         "sessioner": 2,
         "anvandare": 2,
-        "sidvisningar": 2
+        "sidvisningar": 3
+      },
+      {
+        "datum": "20261012",
+        "sessioner": 1,
+        "anvandare": 1,
+        "sidvisningar": 1
       }
     ],
     "toppsidor": [
       {
         "sokvag": "/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/",
-        "sidvisningar": 5,
-        "snittid": 2.3905614
+        "sidvisningar": 6,
+        "snittid": 21.227519833333336
       },
       {
         "sokvag": "/",
         "sidvisningar": 3,
-        "snittid": 13.242015333333333
+        "snittid": 2.7066085
       },
       {
         "sokvag": "/guider/basta-bilbarnstolen/",
@@ -1417,16 +1424,12 @@
       {
         "kanal": "Organic Search",
         "sessioner": 1
-      },
-      {
-        "kanal": "Unassigned",
-        "sessioner": 1
       }
     ],
     "utgaendeKlick": [
       {
         "mal": "https://to.babyworld.se/t/t?a=1945556823&as=2100860918&t=2&tk=1&url=https%3A%2F%2Fwww.babysam.se%2Fb",
-        "antal": 1
+        "antal": 2
       }
     ]
   },
@@ -2037,6 +2040,19 @@
       "klick28": 0,
       "visningar28": 40,
       "position": 23.05,
+      "indexerade": 5,
+      "kontrollerade": 24,
+      "sessioner28": 13,
+      "guider": 17
+    },
+    {
+      "datum": "2026-10-13",
+      "hanvisandeDomaner": 1,
+      "besok28": 60,
+      "guideBesok28": 40,
+      "klick28": 0,
+      "visningar28": 40,
+      "position": 23.45,
       "indexerade": 5,
       "kontrollerade": 24,
       "sessioner28": 13,
