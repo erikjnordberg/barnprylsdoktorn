@@ -657,27 +657,26 @@ förbjudet hos Babyland och Stor&Liten.
    **Trafiken, hämtad från Cloudflare Web Analytics av måndagsjobbet:**
 
    <!-- TRAFIK:START -->
-   *Hämtad automatiskt 2026-10-12 av `scripts/hamta-statistik.js` från Cloudflare
+   *Hämtad automatiskt 2026-10-19 av `scripts/hamta-statistik.js` från Cloudflare
    Web Analytics, botar bortfiltrerade.
    Skriv inte i blocket för hand — det skrivs över varje måndag.*
 
    | | 7 dagar | 30 dagar |
    |---|---|---|
-   | Besök | 12 | 50 |
-   | Sidvisningar | 12 | 60 |
-   | **Samtliga `/guider/`-sidor, besök** | **4** | **30** |
+   | Besök | 13 | 60 |
+   | Sidvisningar | 13 | 70 |
+   | **Samtliga `/guider/`-sidor, besök** | **8** | **40** |
 
-   Mest besökta sökvägar, 30 dagar (2026-09-12–2026-10-12):
+   Mest besökta sökvägar, 30 dagar (2026-09-19–2026-10-19):
 
    | Sökväg | Besök 7 d | Besök 30 d |
    |---|---|---|
+   | `/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/` | 7 | 20 |
    | `/guider/basta-bilbarnstolen/` | 0 | 10 |
-   | `/` | 5 | 10 |
-   | `/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/` | 3 | 10 |
-   | `/plustestade-bilbarnstolar/` | 2 | 10 |
+   | `/plustestade-bilbarnstolar/` | 4 | 10 |
+   | `/` | 1 | 10 |
    | `/guider/bilbarnstol-fram-och-airbag/` | 0 | 10 |
-   | `/guider/montera-bilbarnstol-steg-for-steg/` | 1 | 0 |
-   | `/integritetspolicy/` | 1 | 0 |
+   | `/guider/baltesstol-eller-balteskudde/` | 1 | 0 |
    <!-- TRAFIK:END -->
 
    Referrers och länder ingår inte i blocket — de läses i Cloudflare Web Analytics.
