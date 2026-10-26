@@ -657,26 +657,27 @@ förbjudet hos Babyland och Stor&Liten.
    **Trafiken, hämtad från Cloudflare Web Analytics av måndagsjobbet:**
 
    <!-- TRAFIK:START -->
-   *Hämtad automatiskt 2026-10-19 av `scripts/hamta-statistik.js` från Cloudflare
+   *Hämtad automatiskt 2026-10-26 av `scripts/hamta-statistik.js` från Cloudflare
    Web Analytics, botar bortfiltrerade.
    Skriv inte i blocket för hand — det skrivs över varje måndag.*
 
    | | 7 dagar | 30 dagar |
    |---|---|---|
-   | Besök | 13 | 60 |
-   | Sidvisningar | 13 | 70 |
-   | **Samtliga `/guider/`-sidor, besök** | **8** | **40** |
+   | Besök | 7 | 60 |
+   | Sidvisningar | 7 | 60 |
+   | **Samtliga `/guider/`-sidor, besök** | **1** | **20** |
 
-   Mest besökta sökvägar, 30 dagar (2026-09-19–2026-10-19):
+   Mest besökta sökvägar, 30 dagar (2026-09-26–2026-10-26):
 
    | Sökväg | Besök 7 d | Besök 30 d |
    |---|---|---|
-   | `/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/` | 7 | 20 |
-   | `/guider/basta-bilbarnstolen/` | 0 | 10 |
-   | `/plustestade-bilbarnstolar/` | 4 | 10 |
-   | `/` | 1 | 10 |
-   | `/guider/bilbarnstol-fram-och-airbag/` | 0 | 10 |
-   | `/guider/baltesstol-eller-balteskudde/` | 1 | 0 |
+   | `/guider/bakatvand-bilbarnstol-vilken-ska-jag-kopa/` | 0 | 20 |
+   | `/wp-config.php` | 1 | 10 |
+   | `/.git/config` | 1 | 10 |
+   | `/.env` | 1 | 10 |
+   | `/plustestade-bilbarnstolar/` | 0 | 10 |
+   | `/` | 3 | 0 |
+   | `/guider/bilbarnstol-pa-rea/` | 1 | 0 |
    <!-- TRAFIK:END -->
 
    Referrers och länder ingår inte i blocket — de läses i Cloudflare Web Analytics.
