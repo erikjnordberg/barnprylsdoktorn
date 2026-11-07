@@ -649,6 +649,16 @@ förbjudet hos Babyland och Stor&Liten.
    Begär inte omindexering av redan genomsökta sidor; det påverkar bara kön. **Nya URL:er
    är undantaget** — `bilbarnstol-pa-rea` indexeringsbegärdes 2026-08-17 samma dag den
    publicerades.
+
+   **Undantag beslutat 2026-11-07 (Erik): en ny indexeringsbegäran för `bilbarnstol-pa-rea`
+   inför Black Friday 27 november.** Guiden har varit "Genomsökt – inte indexerad" sedan
+   genomsökningen 2026-08-18, och säsongstoppen ligger tre veckor bort. Undantaget gäller
+   bara den här sidan och den här gången. Regeln ovan gäller fortfarande för alla andra
+   genomsökta sidor. Begäran görs för hand i Search Console → Granskning av webbadress,
+   eftersom molnmiljön inte når Search Console. **Läget 2026-11-07, ur `data/dashboard.json`:**
+   5 av 24 indexerade sedan augusti, 14 guider "Genomsökt – inte indexerad", 0 hänvisande
+   domäner. Det är alltså passerat oktober, gränsen ovan för när läget ska läsas som en
+   bedömning av sajtens tyngd och inte längre som en kö.
    Svagast internt länkade är `bilbarnstol-i-taxi`, `bilbarnstol-flyg-och-hyrbil`,
    `basta-bilbarnstolen` och `montera-bilbarnstol-steg-for-steg`. Kanalen hos Adtraction
    anger 30 unika besökare i månaden — uppdatera den siffran när den stiger, det är enda
