@@ -659,6 +659,16 @@ förbjudet hos Babyland och Stor&Liten.
    5 av 24 indexerade sedan augusti, 14 guider "Genomsökt – inte indexerad", 0 hänvisande
    domäner. Det är alltså passerat oktober, gränsen ovan för när läget ska läsas som en
    bedömning av sajtens tyngd och inte längre som en kö.
+   **Tre guider har aldrig genomsökts, kontrollerat 2026-11-21:** `isofix-eller-balte`,
+   `baltesstol-eller-balteskudde` och `i-size-vs-vikt` har `sistaCrawl: null` i varje
+   dashboardkörning sedan augusti. Statusen växlar mellan "Upptäckt – inte indexerad"
+   och "Webbadressen är okänd för Google" från vecka till vecka. Det är brus i Googles
+   realtidsstatus, ingen förändring. **Inget tekniskt fel:** alla tre svarar 200, står i
+   sitemapen, har canonical mot sig själva, saknar noindex och har 8–14 inlänkande
+   sidor, fler än `basta-bilbarnstolen` som är genomsökt. Det är Googles prioritering av
+   en sajt utan externa länkar. Felsök det inte igen. Eftersom de aldrig genomsökts gäller
+   inte regeln mot omindexering ovan. En manuell indexeringsbegäran för de tre är
+   tillåten, och görs för hand i Search Console.
    Svagast internt länkade är `bilbarnstol-i-taxi`, `bilbarnstol-flyg-och-hyrbil`,
    `basta-bilbarnstolen` och `montera-bilbarnstol-steg-for-steg`. Kanalen hos Adtraction
    anger 30 unika besökare i månaden — uppdatera den siffran när den stiger, det är enda
