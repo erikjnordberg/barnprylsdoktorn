@@ -677,29 +677,30 @@ förbjudet hos Babyland och Stor&Liten.
    **Trafiken, hämtad från Cloudflare Web Analytics av måndagsjobbet:**
 
    <!-- TRAFIK:START -->
-   *Hämtad automatiskt 2026-11-16 av `scripts/hamta-statistik.js` från Cloudflare
+   *Hämtad automatiskt 2026-11-23 av `scripts/hamta-statistik.js` från Cloudflare
    Web Analytics, botar bortfiltrerade.
    Skriv inte i blocket för hand — det skrivs över varje måndag.*
 
    | | 7 dagar | 30 dagar |
    |---|---|---|
-   | Besök | 9 | 60 |
-   | Sidvisningar | 11 | 70 |
-   | **Samtliga `/guider/`-sidor, besök** | **1** | **0** |
+   | Besök | 7 | 70 |
+   | Sidvisningar | 7 | 80 |
+   | **Samtliga `/guider/`-sidor, besök** | **4** | **0** |
 
-   Mest besökta sökvägar, 30 dagar (2026-10-17–2026-11-16):
+   Mest besökta sökvägar, 30 dagar (2026-10-24–2026-11-23):
 
    | Sökväg | Besök 7 d | Besök 30 d |
    |---|---|---|
-   | `/` | 5 | 30 |
+   | `/` | 2 | 40 |
    | `/wp-config.php` | 0 | 10 |
    | `/.git/config` | 0 | 10 |
    | `/.env` | 0 | 10 |
    | `/guider/` | 0 | 0 |
-   | `/vilken-bilbarnstol/` | 2 | 0 |
    | `/guider/isofix-eller-balte/` | 1 | 0 |
-   | `/integritetspolicy/` | 1 | 0 |
-   | `/guider/baltesstol-eller-balteskudde/` | 0 | 0 |
+   | `/guider/baltesstol-eller-balteskudde/` | 1 | 0 |
+   | `/plustestade-bilbarnstolar/` | 1 | 0 |
+   | `/guider/begagnad-bilbarnstol/` | 1 | 0 |
+   | `/guider/vinterklader-bilbarnstol/` | 1 | 0 |
    <!-- TRAFIK:END -->
 
    Referrers och länder ingår inte i blocket — de läses i Cloudflare Web Analytics.
