@@ -44,6 +44,8 @@ använder det — inte en genomgång rad för rad. Frågar han djupare, gå djup
 **Felsökning:** fixa felet och säg i en mening vad som var fel. Ingen pedagogisk genomgång
 om han inte ber om det.
 
+**En fråga eller uppgift i taget till Erik** (Eriks beslut 2026-11-28, gäller alla hans repon). Behöver något hans beslut eller hans händer: ställ en fråga eller ge en uppgift, vänta på svaret och ta sedan nästa. Inga listor med flera saker att ta ställning till samtidigt.
+
 ## Teknik
 
 - Eleventy (11ty) v3, artiklar i Markdown
