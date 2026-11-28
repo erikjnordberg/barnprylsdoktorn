@@ -108,6 +108,30 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/nedladdningar");
   eleventyConfig.addPassthroughCopy("src/_headers");
+  // Säger åt Cloudflare Pages att botloggens funktion bara ska köras för
+  // sidorna och nedladdningarna, aldrig för CSS, JS, typsnitt, bilder och
+  // ikoner (spec 005 i erikjnordberg/getseeneverywhere).
+  eleventyConfig.addPassthroughCopy("src/_routes.json");
+
+  // Botloggen sparar bara sökvägar som står i sitemapen, plus filerna i
+  // /nedladdningar/ (checklistan är innehåll); allt annat blir [annan]. Listan
+  // läses ur den färdiga sitemap.xml, så att en ny guide räknas av sig själv.
+  // Cloudflare Pages bygger functions/ efter npm run build, så filen finns
+  // när funktionen paketeras.
+  eleventyConfig.on("eleventy.after", ({ dir }) => {
+    const sitemap = fs.readFileSync(path.join(dir.output, "sitemap.xml"), "utf8");
+    const sokvagar = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
+      (m) => new URL(m[1]).pathname
+    );
+    const nedladdningar = path.join(dir.output, "nedladdningar");
+    if (fs.existsSync(nedladdningar)) {
+      for (const fil of fs.readdirSync(nedladdningar)) sokvagar.push(`/nedladdningar/${fil}`);
+    }
+    fs.writeFileSync(
+      path.join(__dirname, "functions", "_sokvagar.json"),
+      JSON.stringify([...new Set(sokvagar)].sort(), null, 1) + "\n"
+    );
+  });
   // Favicon och hemskärmsikoner, ritade av scripts/favicon.py. Ligger i roten
   // eftersom webbläsare och Google letar efter /favicon.ico där utan att fråga.
   for (const fil of ["favicon.svg", "favicon.ico", "apple-touch-icon.png", "icon-192.png", "icon-512.png", "site.webmanifest"]) {

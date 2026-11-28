@@ -8,3 +8,6 @@ arkiv/
 kodhandledare-bilbarnstolar.md
 # Tillfällig testyta för dashboardrenderingen — hör inte till repot
 .tmp-dbtest/
+
+# Skrivs av eleventy.config.js vid varje bygge, ur sitemapen
+functions/_sokvagar.json

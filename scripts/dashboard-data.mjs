@@ -9,6 +9,8 @@
  *   GOOGLE_SA_KEY            hela JSON-nyckeln för tjänstekontot
  *   GA4_PROPERTY_ID          numeriskt egendoms-id (inte mät-id G-...)
  *   CF_API_TOKEN             samma secret som hamta-statistik.js använder
+ *   CF_D1_TOKEN              läsrätt till D1 för botloggen (valfri; annars prövas
+ *                            CF_API_TOKEN, om den fått D1-rätt)
  *   DASHBOARD_BYPASS_SECRET  matchar värdet i Cloudflares WAF-regel som släpper
  *                            igenom sajtkontrollen utan bot-utmaning, se nedan
  */
@@ -16,6 +18,7 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync } from "node:fs";
 import { JWT } from "google-auth-library";
 import { load as yamlLoad } from "js-yaml";
+import { hamtaAgenter } from "../botlogg/fragor.mjs";
 
 const SITE = "https://barnprylsdoktorn.se";
 const GSC_SITE = "sc-domain:barnprylsdoktorn.se";
@@ -508,6 +511,19 @@ function hamtaInnehall() {
 mkdirSync("data", { recursive: true });
 const tidigare = existsSync(UT) ? JSON.parse(readFileSync(UT, "utf8")) : {};
 const ut = { hamtad: new Date().toISOString(), fel: FEL };
+
+// Botloggen (spec 005): D1-databasen botlogg, delad med forstahunden.se. Inga
+// hemligheter här. Utan en token med D1-rätt ritas panelen som "inte kopplat än".
+const BOTLOGG = {
+  CF_ACCOUNT_ID: "ef8466a755154bee4f5f7028ac3a96ff",
+  BOTLOGG_DB_ID: "de4cdec1-74be-4b69-b2c1-17aeb20519c4",
+  SAJT: "barnprylsdoktorn.se",
+};
+ut.agenter = await hamtaAgenter(
+  { ...BOTLOGG, ...process.env, CF_D1_TOKEN: process.env.CF_D1_TOKEN || process.env.CF_API_TOKEN },
+  BOTLOGG.SAJT
+);
+if (!ut.agenter.tillganglig && process.env.CF_D1_TOKEN) FEL.push(`Botloggen: ${ut.agenter.orsak}`);
 
 try {
   ut.sajt = await hamtaSajt();

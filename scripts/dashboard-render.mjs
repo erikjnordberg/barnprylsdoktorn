@@ -283,6 +283,26 @@ const indexPanel = idx
 /* Trafik — två mätningar av samma sajt, med olika täckning */
 const samtyckesgrad = cf && ga && cf.besok28 ? ga.totalt.sessioner / cf.besok28 : null;
 
+/* Agenter (botloggen, spec 005) */
+const ag = d.agenter?.tillganglig ? d.agenter : null;
+const agentPanel = ag
+  ? `<div class="tvakol">
+      <div><h3>Per kategori, 30 d</h3>${stapellista(ag.kategorier.filter((k) => k.n > 0), {
+        varde: (r) => r.n,
+        etikett: (r) => esc(r.etikett),
+        bi: (r) => esc(r.agenter.map((a) => `${a.agent} ${tal(a.n)}`).join(" · ")),
+      })}</div>
+      <div><h3>Mest hämtade sidor</h3>${stapellista(ag.toppsidor, { varde: (r) => r.n, etikett: (r) => esc(r.sokvag) })}</div>
+    </div>
+    <div class="tvakol">
+      <div><h3>Per vecka, 8 veckor</h3>${stapellista(ag.veckor.map((v) => ({ ...v, n: Object.values(v.per).reduce((a, b) => a + b, 0) })), {
+        varde: (r) => r.n,
+        etikett: (r) => `Vecka från ${esc(datum(r.fran))}`,
+      })}</div>
+      <div><h3>Klick från AI-tjänster, 30 d</h3>${stapellista(ag.klick, { varde: (r) => r.n, etikett: (r) => esc(r.etikett) })}</div>
+    </div>`
+  : `<p class="tomt">Botloggen är inte kopplat än: dashboarden behöver en Cloudflare-token med läsrätt till D1 (secret <code>CF_D1_TOKEN</code>, eller D1-rätt tillagd i <code>CF_API_TOKEN</code>).</p>`;
+
 const trafikPanel = !cf && !ga
   ? `<p class="tomt">Varken Cloudflare eller GA4 svarar. Panelen fylls när jobbet har tokens.</p>`
   : `<div class="kpirad kpirad--fyra">
@@ -669,6 +689,10 @@ a{color:var(--accent)}
   })}
 
   ${panel("Sidor som syns", sidorPanel)}
+
+  ${panel("Agenter", agentPanel, {
+    intro: "Räknat på servern av Cloudflare Pages: AI-tjänster och sökmotorer som hämtar sidorna, och besök som kommer via en länk i en AI-tjänst. Cloudflares blockering av AI-botar stoppar träningsbotarna innan de räknas.",
+  })}
 
   ${panel("Trafik — alla mot dem som sagt ja", trafikPanel, {
     intro: "Cloudflare räknar varje besök, GA4 bara den som tryckt Godkänn. Skillnaden mellan talen är samtyckesgraden, och botandelen säger hur mycket av besöken som aldrig var människor.",

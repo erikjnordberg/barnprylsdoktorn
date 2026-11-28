@@ -76,6 +76,7 @@ npm run statistik              # hämta besöksstatistik manuellt, kräver CF_AP
                                # skriver popularitet.json och trafikblocket i CLAUDE.md
 npm run dashboard-data         # hämta dashboarddata manuellt, kräver Google- och CF-nycklar
 npm run dashboard              # rita om data/dashboard.html ur data/dashboard.json
+npm test                       # bygger och prövar botloggens del av bygget (test/)
 ```
 
 Kör alltid ett bygge innan du säger att något är klart. Ett bygge som går igenom är
@@ -123,6 +124,14 @@ src/
                            går bara att läsa i webbläsare.
   index.md, om.md, guider.njk, sa-tjanar-sajten-pengar.md, integritetspolicy.md, 404.md
   feed.njk, sitemap.njk, robots.njk
+  _routes.json             vilka adresser botloggens funktion körs för: allt utom CSS,
+                           JS, typsnitt, bilder och faviconfilerna
+functions/_middleware.js   botloggen, en Cloudflare Pages Function, se Botloggen nedan
+functions/_sokvagar.json   sidorna ur sitemapen plus nedladdningarna, skrivs av
+                           eleventy.config.js vid bygget. Gitignorerad.
+botlogg/                   agents.mjs och fragor.mjs: kopior ur erikjnordberg/
+                           getseeneverywhere paket/botlogg/, ändras där
+test/botlogg.test.mjs      körs av npm test
 scripts/hamta-statistik.js hämtar besöksstatistik från Cloudflare, se nedan — skriver
                            både popularitet.json och trafikblocket i den här filen
 scripts/favicon.py         ritar alla faviconfiler ur Playfair-typsnittet; kräver
@@ -142,7 +151,8 @@ eleventy.config.js         filter: version, datum, typo, htmlDateString, isoDate
                            shortcode: kopblock, annonslank
                            ADTRACTION_PROGRAM: program-ID per handlare, se Komponenter
                            passthrough: css, bilder, fonter, js, nedladdningar, _headers,
-                           faviconfilerna
+                           _routes.json, faviconfilerna
+                           eleventy.after: skriver functions/_sokvagar.json
                            markdown-it-anchor ger h2 och h3 id via rubrikTillId,
                            som translittererar å/ä/ö. Bara id, ingen länkikon.
 ```
@@ -437,7 +447,7 @@ Källorna, och varför var och en finns med:
 | Repot | guider, källor, korslänkning, annonsmärkning | ingen |
 
 Nycklar i repots inställningar: secrets `GOOGLE_SA_KEY`, `CF_API_TOKEN` och
-`DASHBOARD_BYPASS_SECRET`, variabeln `GA4_PROPERTY_ID` = `550859009` (**numeriskt
+`DASHBOARD_BYPASS_SECRET` (plus `CF_D1_TOKEN` för botloggen, när den finns), variabeln `GA4_PROPERTY_ID` = `550859009` (**numeriskt
 egendoms-id, inte mät-id G-...**, bekräftat 2026-08-27 att det verkligen är
 Barnprylsdoktorns eget — kontot i URL:en, `a87758593`/"Nordberg", matchar exakt).
 Tjänstekontot är `dashboard-lasare@forstahunden-data.iam.gserviceaccount.com` och läser
@@ -493,6 +503,30 @@ Artifact-verktygets krav (ingen `<!DOCTYPE>`/`<html>`/`<head>`/`<body>`, egen ko
 ljus/mörk-temapalett), så filen går att publicera direkt utan omarbetning. Först publicerad
 2026-08-27. Uppdatera samma artefakt genom att publicera om samma filsökväg i en
 konversation som redan har URL:en, annars skapas en ny.
+
+## Botloggen
+
+**Sedan 2026-11-28** (spec 005 i `erikjnordberg/getseeneverywhere`, push godkänd av
+Erik samma dag). `functions/_middleware.js` räknar per dag och sida hur ofta
+AI-tjänster och sökmotorer hämtar sidorna, och hur många sidladdningar som kommer via
+en länk i en AI-tjänst. Raderna hamnar i D1-databasen **`botlogg`**
+(`de4cdec1-74be-4b69-b2c1-17aeb20519c4`), delad med forstahunden.se och skild med
+kolumnen `sajt`. Bara etiketter och antal: ingen IP, ingen user-agent-sträng, ingen
+referer. Integritetspolicyn har ett avsnitt om det.
+
+- **Bindningen `BOTLOGG` och variabeln `SAJT` = `barnprylsdoktorn.se`** ligger i
+  Pages-projektets inställningar (produktion och förhandsversion), satta via
+  Cloudflares API. Ingen `wrangler.toml`. Saknas de räknas ingenting.
+- **Svaret väntar aldrig på räkningen.** Funktionen hämtar sidan med `next()`, lämnar
+  den oförändrad och skriver med `waitUntil`.
+- **Bara sidor i sitemapen och filerna i `/nedladdningar/` sparas med sin sökväg**,
+  plus `robots.txt`, `sitemap.xml`, `feed.xml` och `llms.txt`. Allt annat blir `[annan]`.
+- **`botlogg/` är kopior.** Ändra originalet i getseeneverywhere och kopiera hit.
+- **Cloudflares "Block AI bots" är på** (user-agent-test 2026-11-28: GPTBot, ClaudeBot,
+  PerplexityBot, CCBot och Bytespider får 403). De stoppas före funktionen och räknas
+  aldrig, så kategorin Träning är nästan tom med flit.
+- **Dashboardpanelen Agenter** läser D1 med `CF_D1_TOKEN`, eller med `CF_API_TOKEN` om
+  den fått läsrätt till D1. Utan det står panelen som "inte kopplat än".
 
 ## Git och deploy
 

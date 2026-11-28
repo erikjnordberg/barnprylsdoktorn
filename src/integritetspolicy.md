@@ -26,9 +26,13 @@ Sajten har också **Cloudflare Web Analytics**, som räknar sidvisningar utan ka
 
 Cloudflare levererar dessutom sajten. För att kunna göra det, och för att stoppa attacker, ser Cloudflare din IP-adress — precis som varje webbserver måste.
 
+## AI-tjänster
+
+Sajten räknar per dag hur ofta AI-tjänster hämtar sidorna och hur många besök som kommer från AI-tjänster, utan att spara något om besökaren. Det som sparas är tjänstens namn, sidans adress och ett antal per dag. Ingen IP-adress, ingen kaka och ingen uppgift om din webbläsare sparas. Räkningen sker på Cloudflares server och kräver inget samtycke, eftersom den inte rör några personuppgifter.
+
 ## Typsnitt och skript
 
-Alla typsnitt och skript ligger på sajtens egen server. Sajten anropar inte Google Fonts, inga CDN:er för bibliotek och inga inbäddade spelare. Utöver Cloudflare Web Analytics ovan och Google Analytics efter samtycke görs inga andra tredjepartsanrop.
+Alla typsnitt och skript ligger på sajtens egen server. Sajten anropar inte Google Fonts, inga CDN:er för bibliotek och inga inbäddade spelare. Utöver Cloudflare Web Analytics ovan och Google Analytics efter samtycke görs inga andra tredjepartsanrop. Räkningen av AI-tjänster görs på serversidan och syns inte i din webbläsare.
 
 ## När du klickar på en annonslänk
 
